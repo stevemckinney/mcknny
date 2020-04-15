@@ -1,0 +1,19 @@
+/**
+ * Base
+ */
+ 
+/*! purgecss start ignore */
+@import "framework/reset";
+@import "tailwindcss/components";
+/*! purgecss end ignore */
+
+/**
+ * Site
+ */
+@import "site/properties";
+@import "site/typography";
+
+/**
+ * Utilities (must be last)
+ */
+@import "tailwindcss/utilities";
