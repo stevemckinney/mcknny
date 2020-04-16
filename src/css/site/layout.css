@@ -2,7 +2,11 @@
  * Global
  */
 body {
-  margin: 0; }
+  margin: 0;
+  background: url(../images/bg.svg) var(--color-spruce);
+  color: var(--color-sidecar);
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale; }
 
 /**
  * Site grid
