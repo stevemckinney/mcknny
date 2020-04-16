@@ -43,14 +43,14 @@ module.exports = {
         theme_color: fullConfig.theme.colors.spruce,
         display: `minimal-ui`,
         icon: `src/images/apple-touch-icon.png`,
-      },
+      }
     },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-react-helmet-canonical-urls`,
       options: {
         siteUrl: `https://stevemckinney.net`,
-      },
+      }
     },
     {
       resolve: `gatsby-plugin-postcss`,
@@ -64,7 +64,7 @@ module.exports = {
             ? [require(`cssnano`)]
             : []),
         ],
-      },
+      }
     },
     {
       resolve: `gatsby-plugin-purgecss`,
@@ -74,12 +74,53 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `posts`,
+        path: `${__dirname}/src/posts/`,
+      }
+    },
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 640,
+            },
+          },
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-smartypants`,
+            options: {
+              dashes: `oldschool`
+            }
+          },
+          {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: {}
+          }
+        ]
+      },
+    },
+    {
      resolve: `gatsby-plugin-web-font-loader`,
       options: {
         typekit: {
-          id: 'cbu1mww'
+          id: `cbu1mww`
         }
-      } 
+      }
     }
   ],
 };
