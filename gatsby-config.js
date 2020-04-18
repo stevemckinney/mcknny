@@ -1,56 +1,56 @@
 const resolveConfig = require("tailwindcss/resolveConfig");
+
 const tailwindConfig = require("./tailwind.config.js");
 
 const fullConfig = resolveConfig(tailwindConfig);
-
 module.exports = {
   siteMetadata: {
     title: `steve mckinney`,
     short_name: `sm`,
     description: `Portfolio`,
-    author: `@irsteve`,
-    "navigation": [
+    author: `@stevemckinney`,
+    navigation: [
       {
-        "name": "home",
-        "link": "/"
+        name: "home",
+        link: "/",
       },
       {
-        "name": "portfolio",
-        "link": "/portfolio"
+        name: "portfolio",
+        link: "/portfolio",
       },
       {
-        "name": "about",
-        "link": "/about"
+        name: "about",
+        link: "/about",
       },
       {
-        "name": "contact",
-        "link": "/contact"
-      }
-    ]
+        name: "contact",
+        link: "/contact",
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-offline`,
     `gatsby-plugin-eslint`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `steve mckinney`,
         short_name: `sm`,
         start_url: `/`,
-        background_color: fullConfig.theme.colors.white,
-        theme_color: fullConfig.theme.colors.spruce,
+        background_color: fullConfig.theme.colors.background_color,
+        theme_color: fullConfig.theme.colors.theme_color,
         display: `minimal-ui`,
         icon: `src/images/apple-touch-icon.png`,
-      }
+      },
     },
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-react-helmet-canonical-urls`,
       options: {
         siteUrl: `https://stevemckinney.net`,
-      }
+      },
     },
     {
       resolve: `gatsby-plugin-postcss`,
@@ -59,12 +59,14 @@ module.exports = {
           require("postcss-import"),
           require(`tailwindcss`)(tailwindConfig),
           require(`autoprefixer`),
-          require(`postcss-preset-env`)({ stage: 0 }),
+          require(`postcss-preset-env`)({
+            stage: 0,
+          }),
           ...(process.env.NODE_ENV === `production`
             ? [require(`cssnano`)]
             : []),
         ],
-      }
+      },
     },
     {
       resolve: `gatsby-plugin-purgecss`,
@@ -76,11 +78,10 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `posts`,
-        path: `${__dirname}/src/posts/`,
-      }
+        name: `portfolio`,
+        path: `${__dirname}/src/pages/portfolio`,
+      },
     },
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -104,23 +105,30 @@ module.exports = {
           {
             resolve: `gatsby-remark-smartypants`,
             options: {
-              dashes: `oldschool`
-            }
+              dashes: `oldschool`,
+            },
           },
           {
             resolve: `gatsby-remark-autolink-headers`,
-            options: {}
-          }
-        ]
+            options: {
+              offsetY: `96`,
+            },
+          },
+          {
+            resolve: `gatsby-plugin-catch-links`,
+          },
+        ],
       },
     },
     {
-     resolve: `gatsby-plugin-web-font-loader`,
+      resolve: `gatsby-plugin-web-font-loader`,
       options: {
         typekit: {
-          id: `cbu1mww`
-        }
-      }
-    }
+          id: `cbu1mww`,
+        },
+      },
+    },
+    "gatsby-plugin-emotion",
+    "gatsby-plugin-layout",
   ],
 };
