@@ -34,6 +34,7 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -128,7 +129,5 @@ module.exports = {
         },
       },
     },
-    "gatsby-plugin-emotion",
-    "gatsby-plugin-layout",
   ],
 };
