@@ -48,7 +48,26 @@ module.exports = {
       "f1": "40px",
       "headline": "48px"
     },
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        '16': 'repeat(16, minmax(0, 1fr))'
+      },
+      gridColumnStart: {
+        '13': '13',
+        '14': '14',
+        '15': '15',
+        '16': '16'
+      },
+      gridColumnEnd: {
+        '13': '13',
+        '14': '14',
+        '15': '15',
+        '16': '16'
+      },
+      gridAutoColumns: {
+        'min-content': 'min-content'
+      }
+    },
   },
   variants: {
     spacing: ["responsive"],

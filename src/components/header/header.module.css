@@ -1,0 +1,7 @@
+.header {
+  @apply header absolute top-0 left-0 right-0 flex flex-wrap items-center justify-between;
+  grid-column: 2 / span 14;
+  grid-row: header / hero;
+  
+  @screen lg {
+    @apply py-16; } }

@@ -29,12 +29,13 @@ module.exports = {
     ],
   },
   plugins: [
-    `gatsby-plugin-offline`,
     `gatsby-plugin-eslint`,
+    `gatsby-plugin-tailwindcss`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-offline`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

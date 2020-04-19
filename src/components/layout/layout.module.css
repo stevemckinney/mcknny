@@ -1,0 +1,4 @@
+.header {
+  grid-column: 2 / span 14;
+  grid-row: header / hero;
+}

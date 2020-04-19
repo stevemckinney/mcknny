@@ -23,5 +23,6 @@
    */
   --spacing-base: 8px;
   --grid-gap: calc(var(--spacing-base * 4));
-  --grid-cols: 16;
+  /* (((1920 - (32 * 15)) / 16) / 1920) * 100 */
+  --grid-column-width: 4.6875%;
 }

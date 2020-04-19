@@ -22,5 +22,8 @@
     "plugin:react/recommended",
     // https://github.com/benmosher/eslint-plugin-import
     "plugin:import/recommended"
-  ]
+  ],
+  "globals": {
+    'tw': true
+  }
 }

@@ -11,4 +11,12 @@ body {
 /**
  * Site grid
  */
-.layout {}
+.layout {
+/*
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: [header] 152px [hero] calc(100vh - 152px) [content] auto [footer];
+  grid-auto-flow: row;
+*/
+  padding-right: calc(var(--grid-column-width) * 2);
+  padding-left: calc(var(--grid-column-width) * 2); }

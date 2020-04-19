@@ -5,9 +5,11 @@ import styles from "./hero.module.css";
 
 const Hero = () => {  
   return (
-    <section className={styles.hero}>
-      <h1 className="f5"><span className="text-white">Dazzlingly</span> quick websites with <span className="text-white">lovely</span> user focused design</h1>
-      <Link to="/portfolio">That’s what I need</Link>
+    <section className={styles.container}>
+      <div className={styles.content}>
+        <h1 className="text-f3 lg:text-headline mb-7"><span className="text-white">Dazzlingly</span> quick websites with <span className="text-white">lovely</span> user focused design</h1>
+        <Link to="/portfolio" className="text-f4">That’s what I need</Link>
+      </div>
     </section>
   );
 }

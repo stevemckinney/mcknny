@@ -2,18 +2,15 @@
  * Headings
  */
 :--headings {
-  font-family: var(--font-display);
+  @apply mt-0 font-display font-bold;
   color: inherit;
   text-rendering: optimizeLegibility;
-  line-height: 1.25;
-  margin-top: 0;
-  font-weight: 700; }
+  line-height: 1.166666667; }
 
 /**
  * General
  */
 p {
-  font-family: var(--font-body);
   margin: 0 0 8px; }
 
 a {
