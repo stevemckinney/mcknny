@@ -59,6 +59,9 @@ module.exports = {
       "f1": "40px",
       "headline": "48px"
     },
+    lineHeight: {
+      'x-tight': '1.166666667'
+    },
     rotate: {
       '-15': '-15deg',
       '-30': '-30deg',

@@ -4,7 +4,7 @@
   @screen mdMax {
     @apply text-center;
     max-width: 306px;
-    padding-bottom: 33vh; } }
+    padding-bottom: 31vh; } }
   
 .illo {
   @apply absolute;
