@@ -7,7 +7,7 @@ const Nav = ({ links }) => (
   <React.Fragment>
     <nav className={styles.nav}>
       {links.map(link => (
-        <Link className="no-underline inline-block text-f5 font-bold py-8 pl-8" key={link.title} to={link.route}>
+        <Link className="no-underline inline-block text-f7 md:text-f5 font-bold py-8 pl-8" key={link.title} to={link.route}>
           {link.title}
         </Link>
       ))}

@@ -5,19 +5,19 @@ module.exports = {
   theme: {
     screens: {
       xxs: "360px",
-      xxsMax: "359px",
+      xxsMax: {"max": "359px"},
       xs: "480px",
-      xsMax: "479px",
+      xsMax: {"max": "479px"},
       sm: "640px",
-      smMax: "639px",
+      smMax: {"max": "639px"},
       md: "768px",
-      mdMax: "767px",
+      mdMax: {"max": "767px"},
       lg: "960px",
-      lgMax: "959px",
+      lgMax: {"max": "959px"},
       xl: "1280px",
-      xlMax: "1279px",
+      xlMax: {"max": "1279px"},
       xxl: "1440px",
-      xxlMax: "1439px"
+      xxlMax: {"max": "1439px"}
     },
     fontFamily: {
       display: ["alverata", "serif"],

@@ -19,11 +19,18 @@ import Terminal from "../../images/terminal.inline.svg";
 const Hero = () => {  
   return (
     <React.Fragment>
-      <section className="relative flex items-center h-screen">
+      <section
+        className="
+          relative
+          flex items-end md:items-center
+          h-screen
+        "
+      >
         <div className={styles.content}>
-          <h1 className="text-f3 lg:text-headline mb-6"><span className="text-white">Dazzlingly</span> quick websites with <span className="text-white">lovely</span> user focused design</h1>
+          <h1 className="text-f3 lg:text-headline mb-4 md:mb-6"><span className="text-white">Dazzlingly</span> quick websites with <span className="text-white">lovely</span> user focused design</h1>
           <Action to="/portfolio/" text="Find out more" />
         </div>
+        
         <Eraser className={`${styles.illo} ${styles.eraser}`} />
         <Figma className={`${styles.illo} ${styles.figma}`} />
         <Palomino className={`${styles.illo} ${styles.palomino}`} />

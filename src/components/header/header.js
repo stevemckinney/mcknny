@@ -20,7 +20,7 @@ function Header() {
   `);
 
   return (
-    <header className={ `contain ${styles.header}` }>
+    <header className={ `contain header fixed right-0 left-0 flex items-center justify-between z-10 mdMax:bottom-0 mdMax:bg-madison md:top-0 ${styles.header}` }>
       <Link to="/" className="block text-f5 font-bold py-8">
         {site.siteMetadata.short_name}
       </Link>

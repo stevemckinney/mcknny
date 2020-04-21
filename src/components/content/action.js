@@ -5,7 +5,7 @@ import { Link } from "gatsby";
 import styles from "./action.module.css";
 
 const Action = props => {
-  const actionClass = `relative text-f4 font-bold text-tumbleweed ${styles.action}`;
+  const actionClass = `relative text-f6 md:text-f4 font-bold text-tumbleweed ${styles.action}`;
   
   return (
     <React.Fragment>
