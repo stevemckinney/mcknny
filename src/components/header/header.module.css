@@ -1,7 +1,5 @@
 .header {
-  @apply header absolute top-0 left-0 right-0 flex flex-wrap items-center justify-between;
-  grid-column: 2 / span 14;
-  grid-row: header / hero;
+  @apply header fixed top-0 right-0 left-0 flex items-center justify-between z-10;
   
   @screen lg {
-    @apply py-16; } }
+    @apply py-8; } }

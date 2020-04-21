@@ -8,6 +8,7 @@
   --color-feldspar: #F3DFC1;
   --color-seagull: #7DB8CA;
   --color-thulian: #DC77A8;
+  --color-tumbleweed: #DDA985;
   --color-blanc: #DBD4BF;
   --color-sidecar: #F3DFC1;
   --color-pearl: #F4ECEB;
@@ -21,8 +22,13 @@
   /**
    * spacing
    */
-  --spacing-base: 8px;
-  --grid-gap: calc(var(--spacing-base * 4));
+  --spacing: 8px;
+  --grid-container: 1920px;
+  --grid-gap: 32px;
+  --grid-gap-percentage: calc((var(--grid-gap) / var(--grid-container)) * 100);
   /* (((1920 - (32 * 15)) / 16) / 1920) * 100 */
-  --grid-column-width: 4.6875%;
+  --grid-column-width: 90px;
+  --grid-column-width-percentage: calc((90px / var(--grid-container)) * 100);
+  
+  --grid-contain: calc((((90 * 2) + (32 * 2)) / 1920) * 100%);
 }

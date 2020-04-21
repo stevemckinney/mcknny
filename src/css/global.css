@@ -6,12 +6,12 @@
 @import "framework/reset";
 @import "framework/selectors";
 @import "tailwindcss/components";
-@import "site/properties";
 /*! purgecss end ignore */
 
 /**
  * Site
  */
+@import "site/properties";
 @import "site/layout";
 @import "site/typography";
 

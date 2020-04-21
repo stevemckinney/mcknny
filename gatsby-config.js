@@ -7,24 +7,25 @@ module.exports = {
   siteMetadata: {
     title: `steve mckinney`,
     short_name: `sm`,
+    siteUrl: `https://stevemckinney.net`,
     description: `Portfolio`,
     author: `@stevemckinney`,
     navigation: [
       {
-        name: "home",
-        link: "/",
+        title: `portfolio`,
+        route: `/portfolio`,
       },
       {
-        name: "portfolio",
-        link: "/portfolio",
+        title: `blog`,
+        route: `/blog`,
       },
       {
-        name: "about",
-        link: "/about",
+        title: `about`,
+        route: `/about`,
       },
       {
-        name: "contact",
-        link: "/contact",
+        title: `contact`,
+        route: `/contact`,
       },
     ],
   },
@@ -36,6 +37,14 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-react-svg`,
+      options: {
+        rule: {
+          include: /\.inline\.svg$/,
+        }
+      }
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

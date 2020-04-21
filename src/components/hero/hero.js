@@ -1,16 +1,41 @@
 import React from "react";
-import { Link } from "gatsby";
+import Action from "../content/action";
 
+// style
 import styles from "./hero.module.css";
+
+// svg
+import Eraser from "../../images/eraser.inline.svg";
+import Figma from "../../images/figma.inline.svg";
+import Illustrator from "../../images/illustrator.inline.svg";
+import Palomino from "../../images/palomino.inline.svg";
+import Pen from "../../images/pen.inline.svg";
+import Pencil from "../../images/pencil.inline.svg";
+import Phone from "../../images/phone.inline.svg";
+import Ruler from "../../images/ruler.inline.svg";
+import Sharpener from "../../images/sharpener.inline.svg";
+import Terminal from "../../images/terminal.inline.svg";
 
 const Hero = () => {  
   return (
-    <section className={styles.container}>
-      <div className={styles.content}>
-        <h1 className="text-f3 lg:text-headline mb-7"><span className="text-white">Dazzlingly</span> quick websites with <span className="text-white">lovely</span> user focused design</h1>
-        <Link to="/portfolio" className="text-f4">That’s what I need</Link>
-      </div>
-    </section>
+    <React.Fragment>
+      <section className="relative flex items-center h-screen">
+        <div className={styles.content}>
+          <h1 className="text-f3 lg:text-headline mb-6"><span className="text-white">Dazzlingly</span> quick websites with <span className="text-white">lovely</span> user focused design</h1>
+          <Action to="/portfolio/" text="Find out more" />
+        </div>
+        <Eraser className={`${styles.illo} ${styles.eraser}`} />
+        <Figma className={`${styles.illo} ${styles.figma}`} />
+        <Palomino className={`${styles.illo} ${styles.palomino}`} />
+        <Illustrator className={`${styles.illo} ${styles.illustrator}`} />
+        <Pen className={`${styles.illo} ${styles.pen}`} />
+        <Pencil className={`${styles.illo} ${styles.pencil}`} />
+        <Phone className={`${styles.illo} ${styles.phone}`} />
+        <Ruler className={`${styles.illo} ${styles.ruler}`} />
+        <Sharpener className={`${styles.illo} ${styles.sharpener}`} />
+        <Terminal className={`${styles.illo} ${styles.terminal}`} />
+      </section>
+    </React.Fragment>
   );
 }
 

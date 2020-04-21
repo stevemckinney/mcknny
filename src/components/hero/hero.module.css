@@ -1,7 +1,60 @@
-.container {
-  @apply flex items-center h-screen;
-  grid-column: 2 / span 14;
-  grid-row: hero / content; }
-
 .content {
   max-width: 614px; }
+  
+.illo {
+  @apply absolute;
+  z-index: -1;
+  transform-origin: center center; }
+
+.eraser {
+  transform: rotate(-45deg);
+  top: 374px;
+  right: 464px; }
+
+.figma {
+  transform: rotate(-15deg);
+  top: 622px;
+  right: 662px; }
+
+.illustrator {
+  transform: rotate(15deg);
+  top: 890px;
+  right: 208px; }
+
+.pen {
+  transform: rotate(-30deg);
+  top: 682px;
+  right: 372px; }
+
+.palomino {
+  transform: rotate(-30deg);
+  top: 11px;
+  right: 268px; }
+
+.pencil {
+  transform: rotate(-30deg);
+  top: 174px;
+  right: 50px; }
+
+.phone {
+  transform: rotate(-45deg);
+  top: -364px;
+  right: -296px;
+  
+  @screen md {
+    display: block; } }
+
+.ruler {
+  transform: rotate(30deg);
+  top: -24px;
+  right: 664px; }
+
+.sharpener {
+  transform: rotate(-30deg);
+  top: 648px;
+  right: -166px; }
+
+.terminal {
+  transform: rotate(-15deg);
+  top: 882px;
+  right: 528px; }

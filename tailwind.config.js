@@ -4,10 +4,20 @@ const { colors } = require(`tailwindcss/defaultTheme`);
 module.exports = {
   theme: {
     screens: {
+      xxs: "360px",
+      xxsMax: "359px",
+      xs: "480px",
+      xsMax: "479px",
       sm: "640px",
+      smMax: "639px",
       md: "768px",
-      lg: "1024px",
+      mdMax: "767px",
+      lg: "960px",
+      lgMax: "959px",
       xl: "1280px",
+      xlMax: "1279px",
+      xxl: "1440px",
+      xxlMax: "1439px"
     },
     fontFamily: {
       display: ["alverata", "serif"],
@@ -31,6 +41,7 @@ module.exports = {
       feldspar: "var(--color-feldspar)",
       seagull: "var(--color-seagull)",
       thulian: "var(--color-thulian)",
+      tumbleweed: "var(--color-tumbleweed)",
       
       // Shades & text
       blanc: "var(--color-blanc)",
@@ -48,25 +59,27 @@ module.exports = {
       "f1": "40px",
       "headline": "48px"
     },
-    extend: {
-      gridTemplateColumns: {
-        '16': 'repeat(16, minmax(0, 1fr))'
-      },
-      gridColumnStart: {
-        '13': '13',
-        '14': '14',
-        '15': '15',
-        '16': '16'
-      },
-      gridColumnEnd: {
-        '13': '13',
-        '14': '14',
-        '15': '15',
-        '16': '16'
-      },
-      gridAutoColumns: {
-        'min-content': 'min-content'
-      }
+    rotate: {
+      '-15': '-15deg',
+      '-30': '-30deg',
+      '45': '45deg',
+    },
+  },
+  extend: {
+    gridTemplateColumns: {
+      '16': 'repeat(16, minmax(0, 1fr))'
+    },
+    gridColumnStart: {
+      '13': '13',
+      '14': '14',
+      '15': '15',
+      '16': '16'
+    },
+    gridColumnEnd: {
+      '13': '13',
+      '14': '14',
+      '15': '15',
+      '16': '16'
     },
   },
   variants: {
