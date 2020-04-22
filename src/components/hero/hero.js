@@ -16,16 +16,12 @@ import Ruler from "../../images/ruler.inline.svg";
 import Sharpener from "../../images/sharpener.inline.svg";
 import Terminal from "../../images/terminal.inline.svg";
 
-const Hero = () => {  
+const Hero = () => {
+  const heroStyles = `${styles.container} relative flex items-end md:items-center`;
+  
   return (
     <React.Fragment>
-      <section
-        className="
-          relative
-          flex items-end md:items-center
-          h-screen
-        "
-      >
+      <section className={heroStyles}>
         <div className={styles.content}>
           <h1 className="text-f3 mdMax:leading-tight lg:text-headline mb-4 md:mb-6"><span className="text-white">Dazzlingly</span> quick websites with <span className="text-white">lovely</span> user focused design</h1>
           <Action to="/portfolio/" text="Find out more" />

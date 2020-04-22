@@ -1,3 +1,10 @@
 .header {
+  display: grid;
+  grid-gap: var(--grid-gutter);
+  grid-template-columns: var(--grid);
+  
   @screen lg {
     @apply py-8; } }
+
+.logo {
+  grid-column: content-start / 6; }

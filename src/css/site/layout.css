@@ -19,10 +19,11 @@ body,
 /**
  * grid
  */
-@variants responsive {
-  .contain {
-    padding-right: var(--grid-contain);
-    padding-left: var(--grid-contain); }
+.layout {
+  display: grid;
+  grid-gap: var(--spacing * 2);
+  grid-template-columns: var(--grid-sm);
   
-  .grid-auto-columns-content {
-    grid-auto-columns: min-content; } }
+  @screen lg {
+    grid-gap: var(--grid-gutter);
+    grid-template-columns: var(--grid-lg); } }

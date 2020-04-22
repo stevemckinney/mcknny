@@ -1,5 +1,15 @@
+.container {
+  display: grid;
+  grid-gap: var(--grid-gutter);
+  grid-template-columns: var(--grid-lg);
+  height: calc(100vh - var(--tabbar-height));
+  
+  @screen md {
+    @apply h-screen; } }
+
 .content {
   max-width: 614px;
+  grid-column: content-start / -1;
   
   @screen mdMax {
     @apply text-center;
@@ -20,12 +30,12 @@
   @screen md {
     transform: rotate(-45deg);
     top: 374px;
-    right: 464px; } }
+    right: 706px; } }
 
 .figma {
   transform: rotate(-15deg);
   top: 622px;
-  right: 662px;
+  right: 904px;
   
   @screen mdMax {
     display: none; }
@@ -36,7 +46,7 @@
 .illustrator {
   transform: rotate(15deg);
   top: 890px;
-  right: 208px;
+  right: 452px;
   
   @screen mdMax {
     display: none; }
@@ -53,7 +63,7 @@
   
   @screen md {
     top: 682px;
-    right: 372px; } }
+    right: 616px; } }
 
 .palomino {
   transform: rotate(-30deg);
@@ -64,7 +74,7 @@
   
   @screen md {
     top: 11px;
-    right: 268px; } }
+    right: 512px; } }
 
 .pencil {
   transform: rotate(-30deg);
@@ -75,12 +85,12 @@
   
   @screen md {
     top: 174px;
-    right: 50px; } }
+    right: 294px; } }
 
 .phone {
   transform: rotate(-45deg);
   top: -364px;
-  right: -296px;
+  right: -48px;
   
   @screen mdMax {
     display: none; }
@@ -96,8 +106,8 @@
   
   @screen md {
     transform: rotate(30deg);
-    top: -24px;
-    right: 664px; } }
+    top: -22px;
+    right: 908px; } }
 
 .sharpener {
   @screen mdMax {
@@ -108,12 +118,12 @@
   @screen md {
     transform: rotate(-30deg);
     top: 648px;
-    right: -166px; } }
+    right: 78px; } }
 
 .terminal {
   transform: rotate(-15deg);
   top: 882px;
-  right: 528px;
+  right: 772px;
   
   @screen mdMax {
     display: none; }

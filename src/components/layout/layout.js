@@ -20,7 +20,7 @@ function Layout({ children }) {
       </Helmet>
       <Header />
       
-      <main className="content contain">
+      <main className="content">
         {children}
       </main>
 

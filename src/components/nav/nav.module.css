@@ -1,2 +1,10 @@
 .nav {
-  @apply flex; }
+  @screen lg {
+    grid-column: 6 / content-end;
+  
+    @supports (not (gap: 1px)) {
+      a {
+        @apply pl-8; } }
+  
+    @supports (gap: 1px) {
+      gap: var(--grid-gutter); } } }
