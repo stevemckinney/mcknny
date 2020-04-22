@@ -1,6 +1,7 @@
 import { graphql, useStaticQuery, Link } from "gatsby";
 import React from "react";
 import Nav from "../nav";
+import Tabbar from "../nav/tabbar";
 import styles from "./header.module.css";
 
 function Header() {
@@ -19,17 +20,21 @@ function Header() {
     }
   `);
   
-  const headerStyles = `${styles.header} fixed right-0 left-0 z-10 mdMax:bottom-0 mdMax:bg-madison md:top-0`;
-  const logoStyles = `${styles.logo} block text-f7 md:text-f5 font-bold py-8`; 
+  const headerStyles = `${styles.header} grid mdMax:hidden fixed right-0 left-0 z-10 top-0 lg:layout`;
+  const logoStyles = `${styles.logo} block text-f5 font-bold py-8`; 
 
   return (
-    <header className={ headerStyles }>
-      <Link to="/" className={ logoStyles }>
-        {site.siteMetadata.short_name}
-      </Link>
-
-      <Nav links={site.siteMetadata.navigation} />
-    </header>
+    <React.Fragment>
+      <header className={ headerStyles }>
+        <Link to="/" className={ logoStyles }>
+          {site.siteMetadata.short_name}
+        </Link>
+  
+        <Nav links={site.siteMetadata.navigation} />
+      </header>
+      
+      <Tabbar logo={site.siteMetadata.short_name} links={site.siteMetadata.navigation} />
+    </React.Fragment>
   );
 }
 

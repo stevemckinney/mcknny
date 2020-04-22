@@ -19,11 +19,12 @@ body,
 /**
  * grid
  */
-.layout {
-  display: grid;
+.sm\:layout {
   grid-gap: var(--spacing * 2);
-  grid-template-columns: var(--grid-sm);
-  
+  grid-template-columns: var(--grid-sm); }
+
+.layout,
+.lg\:layout {
   @screen lg {
     grid-gap: var(--grid-gutter);
     grid-template-columns: var(--grid-lg); } }

@@ -1,7 +1,4 @@
 .container {
-  display: grid;
-  grid-gap: var(--grid-gutter);
-  grid-template-columns: var(--grid-lg);
   height: calc(100vh - var(--tabbar-height));
   
   @screen md {
@@ -12,9 +9,8 @@
   grid-column: content-start / -1;
   
   @screen mdMax {
-    @apply text-center;
-    max-width: 306px;
-    padding-bottom: 31vh; } }
+    @apply text-center pb-16;
+    grid-column: content; } }
   
 .illo {
   @apply absolute;

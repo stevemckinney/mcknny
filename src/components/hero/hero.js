@@ -17,7 +17,7 @@ import Sharpener from "../../images/sharpener.inline.svg";
 import Terminal from "../../images/terminal.inline.svg";
 
 const Hero = () => {
-  const heroStyles = `${styles.container} relative flex items-end md:items-center`;
+  const heroStyles = `${styles.container} grid sm:layout lg:layout relative flex items-end md:items-center`;
   
   return (
     <React.Fragment>
@@ -39,7 +39,7 @@ const Hero = () => {
         <Terminal className={`${styles.illo} ${styles.terminal}`} />
       </section>
     </React.Fragment>
-  );
+  )
 }
 
 export default Hero;

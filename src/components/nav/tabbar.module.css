@@ -1,0 +1,7 @@
+.tabbar {}
+
+.link {
+  padding: .75rem 0 .125rem;
+  
+  svg {
+    margin-bottom: .125rem; } }

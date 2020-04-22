@@ -1,8 +1,4 @@
-.header {
-  display: grid;
-  grid-gap: var(--grid-gutter);
-  grid-template-columns: var(--grid);
-  
+.header {  
   @screen lg {
     @apply py-8; } }
 

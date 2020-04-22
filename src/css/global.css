@@ -18,4 +18,5 @@
 /**
  * Utilities (must be last)
  */
+@import "utilities/svg";
 @import "tailwindcss/utilities";
