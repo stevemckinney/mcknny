@@ -1,6 +1,10 @@
-<svg width="952" height="184" viewBox="0 0 952 184" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path opacity="0.4" d="M928 12H28C19.1634 12 12 19.1634 12 28V160C12 168.837 19.1635 176 28 176H928C936.837 176 944 168.837 944 160V28C944 19.1634 936.837 12 928 12Z" fill="#2A3C51"/>
-<path opacity="0.8" d="M924 8H8C3.58172 8 0 11.5817 0 16V156C0 160.418 3.5817 164 7.99998 164H924C928.418 164 932 160.418 932 156V16C932 11.5817 928.418 8 924 8Z" fill="#2A3C51"/>
+<svg width="944" height="176" viewBox="0 0 944 176" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g style="mix-blend-mode:soft-light" opacity="0.2">
+<path d="M928 12H28C19.1634 12 12 19.1634 12 28V160C12 168.837 19.1635 176 28 176H928C936.837 176 944 168.837 944 160V28C944 19.1634 936.837 12 928 12Z" fill="#2A3C51"/>
+</g>
+<g style="mix-blend-mode:soft-light" opacity="0.4">
+<path d="M924 8H8C3.58172 8 0 11.5817 0 16V156C0 160.418 3.5817 164 7.99998 164H924C928.418 164 932 160.418 932 156V16C932 11.5817 928.418 8 924 8Z" fill="#2A3C51"/>
+</g>
 <path d="M924 160H4C1.8 160 0 158.2 0 156V4C0 1.8 1.8 0 4 0H924C926.2 0 928 1.8 928 4V156C928 158.2 926.2 160 924 160Z" fill="#D89F31"/>
 <path d="M32 160V112" stroke="#B27C26" stroke-width="2" stroke-miterlimit="10"/>
 <path d="M80 160V112" stroke="#B27C26" stroke-width="2" stroke-miterlimit="10"/>

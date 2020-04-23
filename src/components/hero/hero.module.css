@@ -14,7 +14,7 @@
   
 .illo {
   @apply absolute;
-  z-index: -1;
+  z-index: 1;
   transform-origin: center center; }
 
 .eraser {
@@ -25,13 +25,13 @@
   
   @screen md {
     transform: rotate(-45deg);
-    top: 374px;
-    right: 706px; } }
+    top: 716px;
+    right: 1024px; } }
 
 .figma {
   transform: rotate(-15deg);
-  top: 622px;
-  right: 904px;
+  top: 418px;
+  right: 876px;
   
   @screen mdMax {
     display: none; }
@@ -41,8 +41,8 @@
 
 .illustrator {
   transform: rotate(15deg);
-  top: 890px;
-  right: 452px;
+  top: 694px;
+  right: 710px;
   
   @screen mdMax {
     display: none; }
@@ -51,15 +51,15 @@
     display: block; } }
 
 .pen {
-  transform: rotate(-30deg);
+  transform: rotate(-45deg);
   
   @screen mdMax {
     top: 536px;
     left: -88px; }
   
   @screen md {
-    top: 682px;
-    right: 616px; } }
+    top: 64px;
+    right: 838px; } }
 
 .palomino {
   transform: rotate(-30deg);
@@ -69,8 +69,8 @@
     left: -178px; }
   
   @screen md {
-    top: 11px;
-    right: 512px; } }
+    top: 220px;
+    right: 502px; } }
 
 .pencil {
   transform: rotate(-30deg);
@@ -80,13 +80,13 @@
     left: -188px; }
   
   @screen md {
-    top: 174px;
-    right: 294px; } }
+    top: 354px;
+    right: 254px; } }
 
 .phone {
-  transform: rotate(-45deg);
-  top: -364px;
-  right: -48px;
+  transform: rotate(-60deg);
+  top: -342px;
+  right: -40px;
   
   @screen mdMax {
     display: none; }
@@ -102,8 +102,8 @@
   
   @screen md {
     transform: rotate(30deg);
-    top: -22px;
-    right: 908px; } }
+    top: -46px;
+    right: 956px; } }
 
 .sharpener {
   @screen mdMax {
@@ -113,13 +113,13 @@
   
   @screen md {
     transform: rotate(-30deg);
-    top: 648px;
-    right: 78px; } }
+    top: 582px;
+    right: 120px; } }
 
 .terminal {
   transform: rotate(-15deg);
-  top: 882px;
-  right: 772px;
+  top: 970px;
+  right: 584px;
   
   @screen mdMax {
     display: none; }

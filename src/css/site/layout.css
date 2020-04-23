@@ -6,7 +6,6 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  background: url(../images/bg.svg) var(--color-spruce) fixed;
   color: var(--color-sidecar);
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale; }
@@ -15,6 +14,9 @@ body,
 #___gatsby,
 #gatsby-focus-wrapper {
   min-height: 100vh; }
+  
+.bg {
+  background: url(../images/bg.svg) var(--color-spruce); }
 	
 /**
  * grid
