@@ -62,6 +62,9 @@ module.exports = {
     lineHeight: {
       'x-tight': '1.166666667'
     },
+    letterSpacing: {
+      'tight': '-1px'
+    },
     rotate: {
       '-15': '-15deg',
       '-30': '-30deg',

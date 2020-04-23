@@ -6,7 +6,7 @@ const fullConfig = resolveConfig(tailwindConfig);
 module.exports = {
   siteMetadata: {
     title: `steve mckinney`,
-    short_name: `sm`,
+    short_name: `sm.`,
     siteUrl: `https://stevemckinney.net`,
     description: `Portfolio`,
     author: `@stevemckinney`,
@@ -15,10 +15,12 @@ module.exports = {
         title: `portfolio`,
         route: `/portfolio`,
       },
+/*
       {
         title: `blog`,
         route: `/blog`,
       },
+*/
       {
         title: `about`,
         route: `/about`,

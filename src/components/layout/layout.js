@@ -7,7 +7,7 @@ import Footer from "../footer";
 import styles from "./layout.module.css";
 
 function Layout({ children }) {
-  const layoutClass = `font-body ${styles.layout}`;
+  const layoutClass = `font-body bg ${styles.layout}`;
   
   return (
     <React.Fragment>

@@ -20,8 +20,8 @@ function Header() {
     }
   `);
   
-  const headerStyles = `${styles.header} grid mdMax:hidden fixed right-0 left-0 z-10 top-0 lg:layout`;
-  const logoStyles = `${styles.logo} block text-f5 font-bold py-8`; 
+  const headerStyles = `${styles.header} grid mdMax:hidden fixed right-0 left-0 z-10 top-0 lg:layout items-center`;
+  const logoStyles = `${styles.logo} block text-f4 font-bold py-8`; 
 
   return (
     <React.Fragment>
