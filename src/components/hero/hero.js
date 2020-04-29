@@ -30,7 +30,7 @@ const Hero = () => {
   return (
     <React.Fragment>
       <section className={heroStyles}>
-        <h1 className={headingStyles}>Dazzlingly <span className="text-remy">quick websites with</span> lovely <span className="text-remy">user focused design</span></h1>
+        <h1 className={headingStyles}>Dazzlingly <span className="text-remy">quick websites with</span> lovely <span className="text-remy">people focused design</span></h1>
         <Action to="/portfolio/" text="View all projects" />
         
         <Eraser className={`${styles.illo} ${styles.eraser}`} />
