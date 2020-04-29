@@ -1,5 +1,10 @@
 .container {
-  height: calc(100vh - var(--tabbar-height));
+  grid-template-rows: repeat(3, [row] 1fr);
+  height: 100vh;
+  height: -webkit-fill-available;
+  
+  @screen mdMax {
+    padding-bottom: calc(var(--tabbar-height) + (var(--spacing) * 4)); }
   
   @screen md {
     @apply h-screen; } }
@@ -7,9 +12,11 @@
 .content {
   max-width: 614px;
   grid-column: content-start / -1;
+  grid-row: 2;
   
   @screen mdMax {
     @apply text-center pb-16;
+    grid-row: 3;
     grid-column: content; } }
   
 .illo {
@@ -19,15 +26,16 @@
 
 .eraser {
   @screen mdMax {
-    transform: rotate(-90deg);
-    top: 258px;
+    transform: rotate(-90deg) translate3d(50%, 0, 0);
+    top: 50%;
     right: -16px; }
   
   @screen md {
     transform: rotate(-45deg);
-    top: 716px;
-    right: 1024px; } }
+    top: 244px;
+    right: 846px; } }
 
+/*
 .figma {
   transform: rotate(-15deg);
   top: 418px;
@@ -49,17 +57,18 @@
   
   @screen md {
     display: block; } }
+*/
 
-.pen {
-  transform: rotate(-45deg);
-  
+.pen {  
   @screen mdMax {
+    transform: rotate(-45deg);
     top: 536px;
     left: -88px; }
   
   @screen md {
-    top: 64px;
-    right: 838px; } }
+    transform: rotate(-30deg);
+    top: 724px;
+    right: 616px; } }
 
 .palomino {
   transform: rotate(-30deg);
@@ -69,8 +78,8 @@
     left: -178px; }
   
   @screen md {
-    top: 220px;
-    right: 502px; } }
+    top: -18px;
+    right: 542px; } }
 
 .pencil {
   transform: rotate(-30deg);
@@ -80,13 +89,13 @@
     left: -188px; }
   
   @screen md {
-    top: 354px;
-    right: 254px; } }
+    top: 72px;
+    right: 354px; } }
 
 .phone {
-  transform: rotate(-60deg);
-  top: -342px;
-  right: -40px;
+  transform: rotate(-30deg);
+  top: -250px;
+  right: -122px;
   
   @screen mdMax {
     display: none; }
@@ -101,21 +110,22 @@
     left: -402px; }
   
   @screen md {
-    transform: rotate(30deg);
-    top: -46px;
-    right: 956px; } }
+    transform: rotate(15deg);
+    left: -244px;
+    bottom: -80px; } }
 
-.sharpener {
+.sharpener {  
   @screen mdMax {
     transform: rotate(-60deg);
-    top: 506px;
+    bottom: 0;
     right: -64px; }
   
   @screen md {
-    transform: rotate(-30deg);
-    top: 582px;
-    right: 120px; } }
+    transform: rotate(-60deg);
+    top: 522px;
+    right: 694px; } }
 
+/*
 .terminal {
   transform: rotate(-15deg);
   top: 970px;
@@ -126,3 +136,4 @@
   
   @screen md {
     display: block; } }
+*/

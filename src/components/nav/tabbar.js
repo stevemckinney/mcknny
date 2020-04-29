@@ -10,7 +10,7 @@ import About from "../../images/icon/about.inline.svg";
 import Contact from "../../images/icon/contact.inline.svg";
 
 const Tabbar = ({ logo, links }) => {
-  const navStyles = `${styles.tabbar} fixed bottom-0 right-0 left-0 flex bg-madison md:hidden`;
+  const navStyles = `${styles.tabbar} z-10 fixed bottom-0 right-0 left-0 flex bg-madison md:hidden`;
   const linkStyles = `${styles.link} flex flex-col items-center flex-1 text-f8 font-bold no-underline`;
   
   return (

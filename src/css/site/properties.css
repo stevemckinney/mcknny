@@ -6,12 +6,14 @@
   --color-spruce: #364E51;
   --color-gold: #D89F31;
   --color-feldspar: #F3DFC1;
+  --color-melon: #F9C6BB;
+  --color-remy: #F9E0D9;
+  --color-pearl: #F4ECEB;
   --color-seagull: #7DB8CA;
   --color-thulian: #DC77A8;
   --color-tumbleweed: #DDA985;
   --color-blanc: #DBD4BF;
   --color-sidecar: #F3DFC1;
-  --color-pearl: #F4ECEB;
   
   /**
    * fonts
@@ -31,9 +33,9 @@
   --grid-gutter: 32px;
   --grid-gap: 32px;
   --grid: [container-start] repeat(2, 1fr) [content-start] repeat(12, 1fr) [content-end] repeat(2, 1fr) [container-end];
-  --grid-lg: calc(var(--spacing) * 2) [container-start] repeat(2, 1fr) [content-start] repeat(12, 1fr) [content-end] repeat(2, 1fr) [container-end] calc(var(--spacing) * 2);
+  --grid-lg: calc(var(--spacing) * 2) [container-start] repeat(2, minmax(0, 1fr)) [content-start] repeat(12, minmax(0, 1fr)) [content-end] repeat(2, minmax(0, 1fr)) [container-end] calc(var(--spacing) * 2);
   --grid-md: var(--grid);
-  --grid-sm: 16px [container-start] calc(var(--spacing) * 2) [content-wide-start] 1fr [content-start] repeat(4, 1fr) [content-end] 1fr [content-wide-end] calc(var(--spacing) * 2) [container-end];
+  --grid-sm: [container-start] calc(var(--spacing) * 2) [content-wide-start] 1fr [content-start] repeat(4, 1fr) [content-end] 1fr [content-wide-end] calc(var(--spacing) * 2) [container-end];
   
   /**
    * elements

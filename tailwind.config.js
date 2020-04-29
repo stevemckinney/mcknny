@@ -39,6 +39,9 @@ module.exports = {
       
       // Secondary
       feldspar: "var(--color-feldspar)",
+      melon: "var(--color-melon)",
+      remy: "var(--color-remy)",
+      pearl: "var(--color-pearl)",
       seagull: "var(--color-seagull)",
       thulian: "var(--color-thulian)",
       tumbleweed: "var(--color-tumbleweed)",

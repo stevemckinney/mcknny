@@ -1,14 +1,15 @@
 .action {
+  grid-row: 3;
+  grid-column: content;
+    
+  @screen md {
+    grid-column: content; }
+  
   &:hover,
   &:focus {
-    color: var(--color-sidecar);
-  }
+    color: var(--color-sidecar); }
     
   &:after {
     content: "";
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
     height: 4px;
     background-color: var(--color-madison); } }
