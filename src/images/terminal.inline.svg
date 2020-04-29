@@ -1,8 +1,8 @@
 <svg width="258" height="198" viewBox="0 0 258 198" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g style="mix-blend-mode:soft-light" opacity="0.2">
+<g style="mix-blend-mode:overlay" opacity="0.2">
 <path d="M238 10H20C8.9543 10 0 18.9543 0 30V178C0 189.046 8.9543 198 20 198H238C249.046 198 258 189.046 258 178V30C258 18.9543 249.046 10 238 10Z" fill="#2A3C51"/>
 </g>
-<g style="mix-blend-mode:soft-light" opacity="0.4">
+<g style="mix-blend-mode:overlay" opacity="0.4">
 <path d="M244 4H24C16.268 4 10 10.268 10 18V170C10 177.732 16.268 184 24 184H244C251.732 184 258 177.732 258 170V18C258 10.268 251.732 4 244 4Z" fill="#2A3C51"/>
 </g>
 <path d="M248 172H24C22.9 172 22 171.1 22 170V10C22 8.9 22.9 8 24 8H248C249.1 8 250 8.9 250 10V170C250 171.1 249.1 172 248 172Z" fill="#364E51" stroke="#2A3C51" stroke-width="8" stroke-miterlimit="10"/>

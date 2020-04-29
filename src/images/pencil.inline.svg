@@ -1,8 +1,8 @@
 <svg width="60" height="960" viewBox="0 0 60 960" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g style="mix-blend-mode:soft-light" opacity="0.2">
+<g style="mix-blend-mode:overlay" opacity="0.2">
 <path d="M4 0C1.79 0 0 1.79 0 4V86V90V94V98V112V850L31 960L44 850V112V98V94V90V86V4C44 1.79 42.21 0 40 0H4Z" fill="#2A3C51"/>
 </g>
-<g style="mix-blend-mode:soft-light" opacity="0.4">
+<g style="mix-blend-mode:overlay" opacity="0.4">
 <path d="M16 0C13.79 0 12 1.79 12 4V32V44V48V52V56V86V90V94V98V112V850L34 960L56 850V112V98V94V90V86V56V52V48V44V32V4C56 1.79 54.21 0 52 0H16Z" fill="#2A3C51"/>
 </g>
 <path d="M60 32H16V112H60V32Z" fill="#F3DFC1"/>
