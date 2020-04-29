@@ -1,13 +1,8 @@
 .nav {
-  @screen lg {
-    grid-column: 6 / content-end;
+  grid-column: 6 / content-end;
   
-    @supports (not (gap: 1px)) {
-      a {
-        @apply pl-8; } }
-  
-    @supports (gap: 1px) {
-      gap: var(--grid-gutter); } } }
+  & > a {
+    @apply pl-8; } }
 
 .link {
   grid-column: content-start / content-end; }
