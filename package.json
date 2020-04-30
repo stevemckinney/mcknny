@@ -5,6 +5,7 @@
   "author": "Steve McKinney",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.7",
+    "eslint-import-resolver-alias": "^1.1.2",
     "gatsby": "^2.20.25",
     "gatsby-plugin-catch-links": "^2.2.2",
     "gatsby-plugin-manifest": "^2.3.3",

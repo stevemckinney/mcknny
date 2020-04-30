@@ -18,11 +18,6 @@
     @apply text-center pb-16;
     grid-row: 3;
     grid-column: content; } }
-  
-.illo {
-  @apply absolute;
-  z-index: 1;
-  transform-origin: center center; }
 
 .eraser {
   @screen mdMax {
@@ -35,18 +30,6 @@
     top: 244px;
     right: 846px; } }
 
-/*
-.figma {
-  transform: rotate(-15deg);
-  top: 418px;
-  right: 876px;
-  
-  @screen mdMax {
-    display: none; }
-  
-  @screen md {
-    display: block; } }
-
 .illustrator {
   transform: rotate(15deg);
   top: 694px;
@@ -57,18 +40,6 @@
   
   @screen md {
     display: block; } }
-*/
-
-.pen {  
-  @screen mdMax {
-    transform: rotate(-45deg);
-    top: 536px;
-    left: -88px; }
-  
-  @screen md {
-    transform: rotate(-30deg);
-    top: 724px;
-    right: 616px; } }
 
 .palomino {
   transform: rotate(-30deg);
@@ -114,6 +85,8 @@
     left: -244px;
     bottom: -80px; } }
 
+.safari {}
+
 .sharpener {  
   @screen mdMax {
     transform: rotate(-60deg);
@@ -124,16 +97,3 @@
     transform: rotate(-60deg);
     top: 522px;
     right: 694px; } }
-
-/*
-.terminal {
-  transform: rotate(-15deg);
-  top: 970px;
-  right: 584px;
-  
-  @screen mdMax {
-    display: none; }
-  
-  @screen md {
-    display: block; } }
-*/

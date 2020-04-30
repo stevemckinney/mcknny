@@ -1,13 +1,15 @@
 import { Link } from "gatsby";
 import React from "react";
 import PropTypes from "prop-types";
+
+// css
 import styles from "./tabbar.module.css";
 
 // icons
-import Home from "../../images/icon/home.inline.svg";
-import Portfolio from "../../images/icon/portfolio.inline.svg";
-import About from "../../images/icon/about.inline.svg";
-import Contact from "../../images/icon/contact.inline.svg";
+import Home from "@icons/home.inline.svg";
+import Portfolio from "@icons/portfolio.inline.svg";
+import About from "@icons/about.inline.svg";
+import Contact from "@icons/contact.inline.svg";
 
 const Tabbar = ({ logo, links }) => {
   const navStyles = `${styles.tabbar} z-10 fixed bottom-0 right-0 left-0 flex bg-madison md:hidden`;

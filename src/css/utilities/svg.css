@@ -1,5 +1,16 @@
+/* fills */
 .fill-currentcolor {
   fill: currentcolor; }
 
 .fill-alternate {
   fill: none; }
+
+.fill-shadow {
+  mix-blend-mode: overlay;
+  fill: #2A3C51; }
+
+/* specific */
+.illo {
+  @apply absolute;
+  z-index: 1;
+  transform-origin: center center; }

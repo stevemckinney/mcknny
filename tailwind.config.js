@@ -47,6 +47,7 @@ module.exports = {
       tumbleweed: "var(--color-tumbleweed)",
       
       // Shades & text
+      jungle: "var(--color-jungle)",
       blanc: "var(--color-blanc)",
       sidecar: "var(--color-sidecar)"
     },

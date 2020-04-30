@@ -1,0 +1,34 @@
+.about {}
+
+.pen {  
+  @screen mdMax {
+    transform: rotate(-45deg);
+    top: 536px;
+    left: -88px; }
+  
+  @screen md {
+    transform: rotate(-30deg);
+    top: 724px;
+    right: 616px; } }
+
+.figma {
+  transform: rotate(-15deg);
+  top: 418px;
+  right: 876px;
+  
+  @screen mdMax {
+    display: none; }
+  
+  @screen md {
+    display: block; } }
+
+.terminal {
+  transform: rotate(-15deg);
+  top: 970px;
+  right: 584px;
+  
+  @screen mdMax {
+    display: none; }
+  
+  @screen md {
+    display: block; } }

@@ -13,7 +13,15 @@
   "settings": {
     "react": {
        "version": "detect"
-     }
+     },
+    "import/resolver": {
+      "alias": [
+        ["@components", "./src/components"],
+        ["@pages", "./src/pages"],
+        ["@images", "./src/images"],
+        ["@icons", "./src/images/icons"],
+      ]
+    }
   },
   "extends": [
     // https://eslint.org/docs/rules/

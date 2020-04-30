@@ -1,9 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
-import Arrow from "../../images/icon/arrow-right-24.inline.svg";
 
+// css
 import styles from "./action.module.css";
+
+// icons
+import Arrow from "@icons/arrow-right-24.inline.svg";
 
 const Action = props => {
   const actionClass = `relative mdMax:justify-center text-f5 md:text-f3 font-bold text-melon flex items-center action ${styles.action}`;

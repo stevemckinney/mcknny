@@ -1,15 +1,13 @@
-<svg width="258" height="198" viewBox="0 0 258 198" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g style="mix-blend-mode:overlay" opacity="0.2">
-<path d="M238 10H20C8.9543 10 0 18.9543 0 30V178C0 189.046 8.9543 198 20 198H238C249.046 198 258 189.046 258 178V30C258 18.9543 249.046 10 238 10Z" fill="#2A3C51"/>
+<svg width="258" height="198" viewBox="0 0 258 198" fill="none" xmlns="http://www.w3.org/2000/svg" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" color-interpolation-filters="sRGB">
+<g class="fill-shadow">
+<path d="M238 10H20C8.9543 10 0 18.9543 0 30V178C0 189.046 8.9543 198 20 198H238C249.046 198 258 189.046 258 178V30C258 18.9543 249.046 10 238 10Z" opacity=".2"/>
+<path d="M244 4H24C16.268 4 10 10.268 10 18V170C10 177.732 16.268 184 24 184H244C251.732 184 258 177.732 258 170V18C258 10.268 251.732 4 244 4Z" opacity=".4"/>
 </g>
-<g style="mix-blend-mode:overlay" opacity="0.4">
-<path d="M244 4H24C16.268 4 10 10.268 10 18V170C10 177.732 16.268 184 24 184H244C251.732 184 258 177.732 258 170V18C258 10.268 251.732 4 244 4Z" fill="#2A3C51"/>
-</g>
-<path d="M248 172H24C22.9 172 22 171.1 22 170V10C22 8.9 22.9 8 24 8H248C249.1 8 250 8.9 250 10V170C250 171.1 249.1 172 248 172Z" fill="#364E51" stroke="#2A3C51" stroke-width="8" stroke-miterlimit="10"/>
-<path d="M44.5 32L52.5 38L44.5 44" stroke="#D89F31" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M56.5 46H67.5" stroke="#D89F31" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M248 172H24C22.9 172 22 171.1 22 170V10C22 8.9 22.9 8 24 8H248C249.1 8 250 8.9 250 10V170C250 171.1 249.1 172 248 172Z" fill="#364E51" stroke="#2A3C51" stroke-width="8"/>
+<path d="M44.5 32L52.5 38L44.5 44" stroke="#D89F31" stroke-width="4"/>
+<path d="M56.5 46H67.5" stroke="#D89F31" stroke-width="4"/>
 <path d="M247 178H25C20.05 178 16 173.95 16 169V11C16 6.05 20.05 2 25 2H247C251.95 2 256 6.05 256 11V169C256 173.95 251.95 178 247 178Z" stroke="#CAD4BF" stroke-width="4" stroke-miterlimit="10"/>
-<path d="M16 11C16 6.05 20.05 2 25 2H247C251.95 2 256 6.05 256 11" stroke="#F4ECEB" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 11C16 6.05 20.05 2 25 2H247C251.95 2 256 6.05 256 11" stroke="#F4ECEB" stroke-width="4"/>
 <path d="M256 169C256 173.95 251.95 178 247 178H25C20.05 178 16 173.95 16 169" stroke="#829994" stroke-width="4" stroke-miterlimit="10"/>
-<path d="M256 169C256 173.95 251.95 178 247 178H25C20.05 178 16 173.95 16 169" stroke="#628A85" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M256 169C256 173.95 251.95 178 247 178H25C20.05 178 16 173.95 16 169" stroke="#628A85" stroke-width="4"/>
 </svg>
