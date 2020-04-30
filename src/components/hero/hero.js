@@ -6,6 +6,7 @@ import styles from "./hero.module.css";
 
 // svg
 import Eraser from "@images/eraser.inline.svg";
+import Illustrator from "@images/illustrator.inline.svg";
 import Palomino from "@images/palomino.inline.svg";
 import Pencil from "@images/pencil.inline.svg";
 import Phone from "@images/phone.inline.svg";
@@ -23,7 +24,8 @@ const Hero = () => {
         <h1 className={headingStyles}>Dazzlingly <span className="text-remy">quick websites with</span> lovely <span className="text-remy">people focused design</span></h1>
         <Action to="/portfolio/" text="View all projects" />
         
-          <Eraser className={`illo ${styles.eraser}`} />
+        <Eraser className={`illo ${styles.eraser}`} />
+        <Illustrator className={`illo ${styles.illustrator}`} />
         <Palomino className={`illo ${styles.palomino}`} />
         <Pencil className={`illo ${styles.pencil}`} />
         <Phone className={`illo ${styles.phone}`} />

@@ -27,13 +27,13 @@
   
   @screen md {
     transform: rotate(-45deg);
-    top: 244px;
-    right: 846px; } }
+    top: 332px;
+    right: 780px; } }
 
 .illustrator {
   transform: rotate(15deg);
-  top: 694px;
-  right: 710px;
+  top: 76px;
+  right: 730px;
   
   @screen mdMax {
     display: none; }
@@ -49,8 +49,8 @@
     left: -178px; }
   
   @screen md {
-    top: -18px;
-    right: 542px; } }
+    top: 254px;
+    right: 390px; } }
 
 .pencil {
   transform: rotate(-30deg);
@@ -61,12 +61,12 @@
   
   @screen md {
     top: 72px;
-    right: 354px; } }
+    right: 342px; } }
 
 .phone {
   transform: rotate(-30deg);
-  top: -250px;
-  right: -122px;
+  top: -248px;
+  right: -134px;
   
   @screen mdMax {
     display: none; }
@@ -85,7 +85,15 @@
     left: -244px;
     bottom: -80px; } }
 
-.safari {}
+.safari {
+  top: 642px;
+  right: 624px;
+  
+  @screen mdMax {
+    display: none; }
+  
+  @screen md {
+    display: block; } }
 
 .sharpener {  
   @screen mdMax {
@@ -95,5 +103,5 @@
   
   @screen md {
     transform: rotate(-60deg);
-    top: 522px;
-    right: 694px; } }
+    top: 858px;
+    right: 480px; } }
