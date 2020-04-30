@@ -1,7 +1,7 @@
 <svg width="194" height="200" viewBox="0 0 194 200" fill="none" xmlns="http://www.w3.org/2000/svg" color-interpolation-filters="sRGB">
 <g class="fill-shadow">
-<circle cx="104" cy="110" r="90" fill="#2A3C51" opacity=".2"/>
-<circle cx="94" cy="94" r="90" fill="#2A3C51" opacity=".4"/>
+<circle cx="104" cy="110" r="90" opacity=".2"/>
+<circle cx="94" cy="94" r="90" opacity=".4"/>
 </g>
 <g stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
 <circle cx="88" cy="88" r="84" fill="#7DB8CA" stroke="#F4ECEB"/>
