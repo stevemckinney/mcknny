@@ -2,25 +2,38 @@
   /**
    * colour
    */
+   
+  /* blue */
   --color-madison: #2A3C51;
+  --color-seagull: #7DB8CA;
+  --color-ohahu: #CAE5EE;
+  
+  /* green */
+  --color-jungle: #1E2F31;
   --color-spruce: #364E51;
-  --color-gold: #D89F31;
-  --color-feldspar: #F3DFC1;
+  --color-harp: #CAD4BF;
+  --color-blanc: #DBD4BF;
+
+  /* pink */
+  --color-thulian: #DC77A8;
   --color-melon: #F9C6BB;
   --color-remy: #F9E0D9;
   --color-pearl: #F4ECEB;
-  --color-seagull: #7DB8CA;
-  --color-thulian: #DC77A8;
-  --color-tumbleweed: #DDA985;
-  --color-jungle: #1E2F31;
-  --color-blanc: #DBD4BF;
+  
+  /* orange */
+  --color-feldspar: #F3DFC1;
+  --color-tumbleweed: #DDA985;  
+  
+  /* yellow */
+  --color-gold: #D89F31;
   --color-sidecar: #F3DFC1;
   
   /**
    * fonts
    */
-  --font-display: alverata, sans-serif;
-  --font-body: gira-sans, sans-serif;
+  --font-display: gopher, sans-serif;
+  --font-title: roc-grotesk-wide, sans-serif;
+  --font-body: sofia-pro, sans-serif;
   
   /**
    * spacing

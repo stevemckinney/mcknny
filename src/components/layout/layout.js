@@ -1,8 +1,8 @@
 import React from "react";
 import Helmet from "react-helmet";
 import PropTypes from "prop-types";
-import Header from "../header";
-import Footer from "../footer";
+import Header from "@components/header";
+import Footer from "@components/footer";
 
 import styles from "./layout.module.css";
 

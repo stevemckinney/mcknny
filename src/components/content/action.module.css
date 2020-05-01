@@ -1,10 +1,4 @@
 .action {
-  grid-row: 3;
-  grid-column: content;
-    
-  @screen md {
-    grid-column: content; }
-  
   &:hover,
   &:focus {
     color: var(--color-sidecar); }

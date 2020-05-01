@@ -14,19 +14,33 @@ body,
 #___gatsby,
 #gatsby-focus-wrapper {
   min-height: 100vh; }
-  
+
+/**
+ * textured bg
+ */
 .bg {
   background: url(../images/bg.svg) var(--color-spruce); }
 	
 /**
  * grid
  */
+.layout {
+  grid-gap: var(--grid-gutter);
+  grid-template-columns: var(--grid-lg); }
+
 .sm\:layout {
-  grid-gap: var(--spacing * 2);
+  grid-gap: calc(var(--grid-gutter) / 2);
   grid-template-columns: var(--grid-sm); }
 
-.layout,
+.md\:layout {
+  @screen md {
+    grid-gap: var(--grid-gutter);
+    grid-template-columns: var(--grid-md); } }
+
 .lg\:layout {
   @screen lg {
     grid-gap: var(--grid-gutter);
     grid-template-columns: var(--grid-lg); } }
+    
+.content {
+  grid-column: content; }

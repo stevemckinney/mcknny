@@ -20,36 +20,43 @@ module.exports = {
       xxlMax: {"max": "1439px"}
     },
     fontFamily: {
-      display: ["alverata", "serif"],
-      body: ["gira-sans", "sans-serif"],
+      display: ["gopher", "serif"],
+      body: ["sofia-pro", "sans-serif"],
+      title: ["roc-grotesk-wide", "sans-serif"],
     },
     colors: {
-      // PWA
+      // pwa
       background_color: "#fff",
       theme_color: "#00ffff",
       
-      // General
+      // general
       black: colors.black,
       white: colors.white,
       
-      // Primary
+      // blue
       madison: "var(--color-madison)",
-      spruce: "var(--color-spruce)",
-      gold: "var(--color-gold)",
+      seagull: "var(--color-seagull)",
+      ohahu: "var(--color-ohahu)",
       
-      // Secondary
-      feldspar: "var(--color-feldspar)",
+      // green
+      jungle: "var(--color-jungle)",
+      spruce: "var(--color-spruce)",
+      harp: "var(--color-harp)",
+      blanc: "var(--color-blanc)",
+      
+      // pink
+      thulian: "var(--color-thulian)",
       melon: "var(--color-melon)",
       remy: "var(--color-remy)",
       pearl: "var(--color-pearl)",
-      seagull: "var(--color-seagull)",
-      thulian: "var(--color-thulian)",
+      
+      // orange
+      feldspar: "var(--color-feldspar)",
       tumbleweed: "var(--color-tumbleweed)",
       
-      // Shades & text
-      jungle: "var(--color-jungle)",
-      blanc: "var(--color-blanc)",
-      sidecar: "var(--color-sidecar)"
+      // yellow
+      gold: "var(--color-gold)",
+      sidecar: "var(--color-sidecar)",
     },
     fontSize: {
       "f9": "10px",
@@ -60,19 +67,26 @@ module.exports = {
       "f4": "21px",
       "f3": "24px",
       "f2": "32px",
-      "f1": "40px",
-      "headline": "48px"
-    },
-    lineHeight: {
-      'x-tight': '1.166666667'
-    },
-    letterSpacing: {
-      'tight': '-1px'
+      "f1": "48px",
+      "headline": "64px"
     },
     rotate: {
       '-15': '-15deg',
       '-30': '-30deg',
       '45': '45deg',
+    },
+    letterSpacing: {
+      headline: '-1px',
+      title: '2.5px'
+    },
+    lineHeight: {
+      none: '1',
+      tight: '1.25',
+      snug: '1.375',
+      normal: '1.5',
+      relaxed: '1.625',
+      loose: '2',
+      title: '1.166666667'
     },
   },
   extend: {
@@ -90,11 +104,11 @@ module.exports = {
       '14': '14',
       '15': '15',
       '16': '16'
-    },
+    }
   },
   variants: {
     spacing: ["responsive"],
-    fontSize: ["responsive"]
+    fontSize: ["responsive"],
   },
   corePlugins: {},
   // https://github.com/tailwindcss/custom-forms

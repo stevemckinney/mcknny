@@ -16,14 +16,15 @@ import Safari from "@images/safari.inline.svg";
 
 const Hero = () => {
   const heroStyles = `${styles.container} bg grid mdMax:justify-center sm:layout lg:layout relative flex items-end md:items-center`;
-  const headingStyles = `${styles.content} text-f3 mdMax:leading-tight lg:text-headline mb-0`;
+  const headingStyles = `mb-4 mdMax:leading-tight text-f3 lg:text-headline`;
   
   return (
     <React.Fragment>
       <section className={heroStyles}>
-        <h1 className={headingStyles}>Dazzlingly <span className="text-remy">quick websites with</span> lovely <span className="text-remy">people focused design</span></h1>
-        <Action to="/portfolio/" text="View all projects" />
-        
+        <div className={styles.content}>
+          <h1 className={headingStyles}><span className="text-harp">Dazzlingly</span> quick websites with <span className="text-melon">lovely</span> people focused design</h1>
+          <Action to="/portfolio/" text="View all projects" />
+        </div>
         <Eraser className={`illo ${styles.eraser}`} />
         <Illustrator className={`illo ${styles.illustrator}`} />
         <Palomino className={`illo ${styles.palomino}`} />

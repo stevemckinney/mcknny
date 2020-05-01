@@ -3,25 +3,21 @@ import React from "react";
 // style
 import styles from "./about.module.css";
 
-// svg
-import Figma from "@images/figma.inline.svg";
-import Pen from "@images/pen.inline.svg";
-import Terminal from "@images/terminal.inline.svg";
-
-const Hero = () => {
-  const heroStyles = `${styles.container} bg grid mdMax:justify-center sm:layout lg:layout relative flex items-end md:items-center`;
-  const headingStyles = `${styles.content} text-f3 mdMax:leading-tight lg:text-headline mb-0`;
+const About = () => {
+  const aboutStyles = `${styles.container} bg-madison grid mdMax:justify-center sm:layout lg:layout relative flex items-end md:items-center py-48`;
   
   return (
     <React.Fragment>
-      <section className={heroStyles}>
-        <h1 className={headingStyles}>Dazzlingly <span className="text-remy">quick websites with</span> lovely <span className="text-remy">people focused design</span></h1>
-        <Figma className={`${styles.illo} ${styles.figma}`} />
-        <Terminal className={`${styles.illo} ${styles.terminal}`} />
-        <Pen className={`${styles.illo} ${styles.pen}`} />
+      <section className={aboutStyles}>
+        <h2 className="text-f1 text-melon content mb-0"><span className="block text-f5 tracking-title uppercase text-pearl font-title font-medium pb-1">Hi there, I’m Steve McKinney</span> I’m a designer who codes</h2>
+        <div className="cols content text-f4">
+          <p>I enjoy the visual side of design from illustration to typography and I aim to let that shine through. But that shouldn’t come at the expense of slow load times. A fast loading website has a massive impact on the experience and trust a someone has with your brand.</p>
+          <p>That’s why code is a part of my workflow. I can understand things from both points of view. Which allows me to communicate ideas better, prototype & refine interactions.</p>
+          <p>I’m able to focus on the detail all throughout the process. Beautifully harmonious design, with load times your visitors expect.</p>
+        </div>
       </section>
     </React.Fragment>
   )
 }
 
-export default Hero;
+export default About;

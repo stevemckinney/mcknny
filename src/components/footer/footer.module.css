@@ -1,22 +1,4 @@
-.container {
-  grid-column: content;
-  margin-top: 48px;
-
-  &:before,
-  &:after {
-    content: "";
-    background-image: url(../../images/edge.svg);
-    background-position: center bottom;
-    position: absolute;
-    right: 0;
-    left: 0;
-    height: 48px; }
-    
-  &:before {
-    bottom: 100%; }
-    
-  &:after {
-    top: 100%; } }
+.about {}
 
 .pen {  
   @screen mdMax {
