@@ -81,8 +81,8 @@
     left: -402px; }
   
   @screen md {
-    transform: rotate(15deg);
-    left: -244px;
+    transform: rotate(7.5deg);
+    left: -40px;
     bottom: -80px; } }
 
 .safari {
