@@ -1,0 +1,5 @@
+.columns-two {
+  column-count: 2; }
+
+.columns-gutter {
+  column-gap: var(--grid-gutter); }

@@ -20,9 +20,9 @@ module.exports = {
       xxlMax: {"max": "1439px"}
     },
     fontFamily: {
-      display: ["gopher", "serif"],
-      body: ["sofia-pro", "sans-serif"],
-      title: ["roc-grotesk-wide", "sans-serif"],
+      display: ["var(--font-display)"],
+      body: ["var(--font-body)"],
+      title: ["var(--font-title)"],
     },
     colors: {
       // pwa
