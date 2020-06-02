@@ -2,7 +2,7 @@
  * Headings
  */
 :--headings {
-  @apply mt-0 font-display font-light leading-title;
+  @apply mt-0 font-display font-medium leading-title;
   color: inherit;
   text-rendering: optimizeLegibility; }
 

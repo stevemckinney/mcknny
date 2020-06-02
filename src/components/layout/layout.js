@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import Header from "@components/header";
 import Footer from "@components/footer";
 
+// css
 import styles from "./layout.module.css";
 
 function Layout({ children }) {
@@ -23,8 +24,8 @@ function Layout({ children }) {
       <main className="content">
         {children}
       </main>
-
-      <Footer />
+      
+      <Footer className="content" />
     </React.Fragment>
   );
 }

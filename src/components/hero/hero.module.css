@@ -10,7 +10,7 @@
     @apply h-screen; } }
 
 .content {
-  max-width: 614px;
+  max-width: 666px;
   grid-column: content-start / -1;
   grid-row: 2;
   

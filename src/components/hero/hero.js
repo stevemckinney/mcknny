@@ -15,15 +15,15 @@ import Sharpener from "@images/sharpener.inline.svg";
 import Safari from "@images/safari.inline.svg";
 
 const Hero = () => {
-  const heroStyles = `${styles.container} bg grid mdMax:justify-center sm:layout lg:layout relative flex items-end md:items-center`;
-  const headingStyles = `mb-4 mdMax:leading-tight text-f3 lg:text-headline`;
+  const heroStyles = `${styles.container} bg grid mdMax:justify-center sm:layout lg:layout flex items-end md:items-center`;
+  const headingStyles = `relative z-10 mb-4 mdMax:leading-tight text-f3 lg:text-headline tracking-headline`;
   
   return (
     <React.Fragment>
       <section className={heroStyles}>
         <div className={styles.content}>
-          <h1 className={headingStyles}><span className="text-harp">Dazzlingly</span> quick websites with <span className="text-melon">lovely</span> people focused design</h1>
-          <Action to="/portfolio/" text="View all projects" />
+          <h1 className={headingStyles}>Beautifully usable design your customers have come to expect</h1>
+          <Action to="/portfolio/" text="View case studies" />
         </div>
         <Eraser className={`illo ${styles.eraser}`} />
         <Illustrator className={`illo ${styles.illustrator}`} />

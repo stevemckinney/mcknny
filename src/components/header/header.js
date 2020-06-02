@@ -21,7 +21,7 @@ function Header() {
   `);
   
   const headerStyles = `${styles.header} grid mdMax:hidden fixed right-0 left-0 z-10 top-0 lg:layout items-center text-pearl`;
-  const logoStyles = `${styles.logo} block text-f5 font-bold font-title py-8`; 
+  const logoStyles = `${styles.logo} block text-f5 font-medium font-title py-8`; 
 
   return (
     <React.Fragment>

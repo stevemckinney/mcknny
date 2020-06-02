@@ -8,8 +8,8 @@
   
   @screen md {
     transform: rotate(-30deg);
-    top: 724px;
-    right: 616px; } }
+    top: 0;
+    right: 0; } }
 
 .figma {
   transform: rotate(-15deg);
@@ -24,11 +24,10 @@
 
 .terminal {
   transform: rotate(-15deg);
-  top: 970px;
-  right: 584px;
+  top: -50%;
+  right: 0;
   
   @screen mdMax {
     display: none; }
   
-  @screen md {
-    display: block; } }
+  @screen md { } }

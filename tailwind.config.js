@@ -41,6 +41,7 @@ module.exports = {
       // green
       jungle: "var(--color-jungle)",
       spruce: "var(--color-spruce)",
+      patina: "var(--color-patina)",
       harp: "var(--color-harp)",
       blanc: "var(--color-blanc)",
       
@@ -55,7 +56,10 @@ module.exports = {
       tumbleweed: "var(--color-tumbleweed)",
       
       // yellow
-      gold: "var(--color-gold)",
+      goldenrod: "var(--color-goldenrod)",
+      gold: "var(--color-goldenrod)",
+      jasmine: "var(--color-jasmine)",
+      marigold: "var(--color-gold)",
       sidecar: "var(--color-sidecar)",
     },
     fontSize: {
@@ -76,7 +80,7 @@ module.exports = {
       '45': '45deg',
     },
     letterSpacing: {
-      headline: '-1px',
+      headline: '-3px',
       title: '2.5px'
     },
     lineHeight: {

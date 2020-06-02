@@ -1,5 +1,9 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { graphql, useStaticQuery } from "gatsby";
+
+import About from "@components/sections/about";
+import Divider from "@components/content/divider";
 
 // style
 import styles from "./footer.module.css";
@@ -10,7 +14,7 @@ import styles from "./footer.module.css";
 import Pen from "@images/pen.inline.svg";
 import Terminal from "@images/terminal.inline.svg";
 
-function Footer() {
+const Footer = (props) => {
   const { site } = useStaticQuery(graphql`
     query FooterQuery {
       site {
@@ -22,13 +26,25 @@ function Footer() {
     }
   `);
   
+  const footerStyles = `${props.className} bg-i grid mdMax:justify-center sm:layout lg:layout flex items-end md:items-center pb-16`;
+  
   return (
-    <footer className="bg-madison py-16">
-      <p className="font-bold">© {new Date().getFullYear()} • {site.siteMetadata.title}</p>
-      <Pen className={`${styles.illo} ${styles.pen}`} />
-      <Terminal className={`${styles.illo} ${styles.terminal}`} />
-    </footer>
+    <React.Fragment>
+      <footer className={footerStyles}>
+        <About className="content" />
+        <Divider className="content" />
+
+        <p className="content text-f4 relative mb-0">© {new Date().getFullYear()} • {site.siteMetadata.title}</p>
+        <Pen className={`${styles.pen}`} />
+        <Terminal className={`${styles.terminal}`} />
+      </footer>
+    </React.Fragment>
   );
 }
+
+Footer.propTypes = {
+  className: PropTypes.node,
+}
+
 
 export default Footer;

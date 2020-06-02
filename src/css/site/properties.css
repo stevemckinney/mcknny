@@ -4,6 +4,7 @@
    */
    
   /* blue */
+  --color-prussian: #1A2D3D;
   --color-madison: #2A3C51;
   --color-seagull: #7DB8CA;
   --color-ohahu: #CAE5EE;
@@ -11,11 +12,13 @@
   /* green */
   --color-jungle: #1E2F31;
   --color-spruce: #364E51;
+  --color-patina: #628A85;
   --color-harp: #CAD4BF;
   --color-blanc: #DBD4BF;
 
   /* pink */
   --color-thulian: #DC77A8;
+  --color-amaranth: #F49FBC;
   --color-melon: #F9C6BB;
   --color-remy: #F9E0D9;
   --color-pearl: #F4ECEB;
@@ -25,7 +28,10 @@
   --color-tumbleweed: #DDA985;  
   
   /* yellow */
-  --color-gold: #D89F31;
+  --color-jasmine: #FFDC7F;
+  --color-goldenrod: #D89F31;
+  --color-gold: var(--color-goldenrod);
+  --color-marigold: #D89F31;
   --color-sidecar: #F3DFC1;
   
   /**

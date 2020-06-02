@@ -3,3 +3,6 @@
 
 .columns-gutter {
   column-gap: var(--grid-gutter); }
+
+.columns-all {
+  column-span: all; }
