@@ -1,31 +1,27 @@
-<svg width="60" height="960" viewBox="0 0 60 960" fill="none" xmlns="http://www.w3.org/2000/svg" color-interpolation-filters="sRGB">
-<g class="fill-shadow">
-<path d="M4 0C1.79 0 0 1.79 0 4V86V90V94V98V112V850L31 960L44 850V112V98V94V90V86V4C44 1.79 42.21 0 40 0H4Z" class="opacity-20"/>
-<path d="M16 0C13.79 0 12 1.79 12 4V32V44V48V52V56V86V90V94V98V112V850L34 960L56 850V112V98V94V90V86V56V52V48V44V32V4C56 1.79 54.21 0 52 0H16Z" class="opacity-40"/>
-</g>
-<path d="M60 32H16V112H60V32Z" fill="#F3DFC1"/>
-<path d="M16 4V32H60V4C60 1.79 58.21 0 56 0H20C17.79 0 16 1.79 16 4Z" fill="#DC77A8"/>
-<path d="M28 32H16V112H28V32Z" fill="#DDA985"/>
-<path opacity="0.6" d="M60 32H48V112H60V32Z" fill="#DDBEA8"/>
-<path d="M30 32H28V112H30V32Z" fill="#F4ECEB"/>
-<path opacity="0.4" d="M56 0H48V32H60V4C60 1.79 58.21 0 56 0Z" fill="#69406E"/>
-<path opacity="0.4" d="M28 0H20C17.79 0 16 1.79 16 4V32H28V0Z" fill="#66296E"/>
-<path d="M48 32H46V112H48V32Z" fill="#F4ECEB"/>
-<path d="M60 94H16V98H60V94Z" fill="#DDA985"/>
-<path d="M60 86H16V90H60V86Z" fill="#DDA985"/>
-<path d="M60 52H16V56H60V52Z" fill="#DDA985"/>
-<path d="M60 44H16V48H60V44Z" fill="#DDA985"/>
-<path d="M16 850H28L38 856L48 850H60L38 960L16 850Z" fill="#D2AE91"/>
-<path opacity="0.6" d="M20.08 850H16L38 960L40.04 949.89L20.08 850Z" fill="#854C39"/>
-<path opacity="0.2" d="M60 850H48L38 899L28 850H16L38 960L60 850Z" fill="#854C39"/>
-<path d="M45.27 924L37.99 960L30.73 924H45.27Z" fill="#564C5C"/>
-<path opacity="0.8" d="M34.81 924H30.73L38 959.98L40.04 949.88L34.81 924Z" fill="#272F39"/>
-<path d="M30.6401 924L37.9001 960L37.9101 959.98L30.6501 924H30.6401Z" fill="#564C5C"/>
-<path d="M60 112H16.09L16 850H28L38 856L48 850H59.91L60 112Z" fill="#CA8A7D"/>
-<path d="M60 850V112H48V850L53 855L60 850Z" fill="#AA6F62"/>
-<path opacity="0.6" d="M60 850V112H48V850L53 855L60 850Z" fill="#58375B"/>
-<path d="M28 112H16V850L23 855L28 850V112Z" fill="#A76659"/>
-<path opacity="0.6" d="M28 112H16V850L23 855L28 850V112Z" fill="#382E4D"/>
-<path opacity="0.3" d="M28 850V112H30V851.2L28 850Z" fill="#F9D4A1"/>
-<path opacity="0.3" d="M46 851.2V112H48V850L46 851.2Z" fill="#F9D4A1"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="960" fill="none" color-interpolation-filters="sRGB">
+  <g class="fill-shadow">
+    <path d="M4 8c-2.21 0-4 1.79-4 4v838l31 110 13-110V12c0-2.21-1.79-4-4-4H4z" class="opacity-20"/>
+    <path d="M16 0c-2.21 0-4 1.79-4 4v846l22 110 22-110V4c0-2.21-1.79-4-4-4H16z" class="opacity-40"/>
+  </g>
+  <path fill="#F3DFC1" d="M60 32H16v80h44V32z"/>
+  <path fill="#F49FBC" d="M16 4v28h44V4c0-2.21-1.79-4-4-4H20c-2.21 0-4 1.79-4 4z"/>
+  <path fill="#DDA985" d="M28 32H16v80h12V32z"/>
+  <path fill="#DDBEA8" d="M60 32H48v80h12V32z" opacity=".6"/>
+  <path fill="#F4ECEB" d="M30 32h-2v80h2V32z"/>
+  <path fill="#B8628D" d="M56 0h-8v32h12V4c0-2.21-1.79-4-4-4z" opacity=".7"/>
+  <path fill="#B8628D" d="M28 0h-8c-2.21 0-4 1.79-4 4v28h12V0z"/>
+  <path fill="#F4ECEB" d="M48 32h-2v80h2V32z"/>
+  <path fill="#DDA985" d="M60 94H16v4h44v-4zM60 86H16v4h44v-4zM60 52H16v4h44v-4zM60 44H16v4h44v-4z"/>
+  <path fill="#D2AE91" d="M16 850h12l10 6 10-6h12L38 960 16 850z"/>
+  <path fill="#854C39" d="M20.08 850H16l22 110 2.04-10.11L20.08 850z" opacity=".6"/>
+  <path fill="#854C39" d="M60 850H48l-10 49-10-49H16l22 110 22-110z" opacity=".2"/>
+  <path fill="#564C5C" d="M45.27 924l-7.28 36-7.26-36h14.54z"/>
+  <path fill="#272F39" d="M34.81 924h-4.08L38 959.98l2.04-10.1L34.81 924z" opacity=".8"/>
+  <path fill="#564C5C" d="M30.64 924l7.26 36 .01-.02L30.65 924h-.01z"/>
+  <path fill="#CA8A7D" d="M60 112H16.09L16 850h12l10 6 10-6h11.91L60 112z"/>
+  <path fill="#AA6F62" d="M60 850V112H48v738l5 5 7-5z"/>
+  <path fill="#58375B" d="M60 850V112H48v738l5 5 7-5z" opacity=".6"/>
+  <path fill="#A76659" d="M28 112H16v738l7 5 5-5V112z"/>
+  <path fill="#382E4D" d="M28 112H16v738l7 5 5-5V112z" opacity=".6"/>
+  <path fill="#F9C6BB" d="M28 850V112h2v739.2l-2-1.2zM46 851.2V112h2v738l-2 1.2z" opacity=".6"/>
 </svg>

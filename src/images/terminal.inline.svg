@@ -1,13 +1,18 @@
-<svg width="258" height="198" viewBox="0 0 258 198" fill="none" xmlns="http://www.w3.org/2000/svg" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" color-interpolation-filters="sRGB">
-<g class="fill-shadow">
-<path d="M238 10H20C8.9543 10 0 18.9543 0 30V178C0 189.046 8.9543 198 20 198H238C249.046 198 258 189.046 258 178V30C258 18.9543 249.046 10 238 10Z" class="opacity-20"/>
-<path d="M244 4H24C16.268 4 10 10.268 10 18V170C10 177.732 16.268 184 24 184H244C251.732 184 258 177.732 258 170V18C258 10.268 251.732 4 244 4Z" class="opacity-40"/>
-</g>
-<path d="M248 172H24C22.9 172 22 171.1 22 170V10C22 8.9 22.9 8 24 8H248C249.1 8 250 8.9 250 10V170C250 171.1 249.1 172 248 172Z" fill="#364E51" stroke="#2A3C51" stroke-width="8"/>
-<path d="M44.5 32L52.5 38L44.5 44" stroke="#D89F31" stroke-width="4"/>
-<path d="M56.5 46H67.5" stroke="#D89F31" stroke-width="4"/>
-<path d="M247 178H25C20.05 178 16 173.95 16 169V11C16 6.05 20.05 2 25 2H247C251.95 2 256 6.05 256 11V169C256 173.95 251.95 178 247 178Z" stroke="#CAD4BF" stroke-width="4" stroke-miterlimit="10"/>
-<path d="M16 11C16 6.05 20.05 2 25 2H247C251.95 2 256 6.05 256 11" stroke="#F4ECEB" stroke-width="4"/>
-<path d="M256 169C256 173.95 251.95 178 247 178H25C20.05 178 16 173.95 16 169" stroke="#829994" stroke-width="4" stroke-miterlimit="10"/>
-<path d="M256 169C256 173.95 251.95 178 247 178H25C20.05 178 16 173.95 16 169" stroke="#628A85" stroke-width="4"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="266" height="200" fill="none" color-interpolation-filters="sRGB">
+  <g class="fill-shadow">
+    <path fill="#2A3C51" d="M244 12H30C17.85 12 8 21.85 8 34v144c0 12.15 9.85 22 22 22h214c12.15 0 22-9.85 22-22V34c0-12.15-9.85-22-22-22z" opacity=".2"/>
+    <path fill="#2A3C51" d="M234 0H18C8.059 0 0 8.059 0 18v152c0 9.941 8.059 18 18 18h216c9.941 0 18-8.059 18-18V18c0-9.941-8.059-18-18-18z" opacity=".4"/>
+  </g>
+  <path fill="#1A2D3D" stroke="#092135" stroke-miterlimit="10" stroke-width="8" d="M234 172H10c-1.1 0-2-.9-2-2V10c0-1.1.9-2 2-2h224c1.1 0 2 .9 2 2v160c0 1.1-.9 2-2 2z"/>
+  <path stroke="#F49FBC" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="6" d="M34 122l8 8-8 8M54 138h12"/>
+  <path stroke="#DBD4BF" stroke-miterlimit="10" stroke-width="4" d="M233 178H11c-4.95 0-9-4.05-9-9V11c0-4.95 4.05-9 9-9h222c4.95 0 9 4.05 9 9v158c0 4.95-4.05 9-9 9z"/>
+  <path stroke="#F4ECEB" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4" d="M2 11c0-4.95 4.05-9 9-9h222c4.95 0 9 4.05 9 9"/>
+  <path stroke="#628A85" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4" d="M242 169c0 4.95-4.05 9-9 9H11c-4.95 0-9-4.05-9-9" opacity=".3"/>
+  <rect width="32" height="8" x="47" y="36" fill="#7DB8CA" rx="4"/>
+  <rect width="8" height="8" x="31" y="36" fill="#CAE5EE" rx="4"/>
+  <rect width="16" height="8" x="39" y="52" fill="#FFDC7F" rx="4"/>
+  <rect width="32" height="8" x="63" y="52" fill="#F4ECEB" rx="4"/>
+  <rect width="8" height="8" x="87" y="36" fill="#F49FBC" rx="4"/>
+  <rect width="8" height="8" x="31" y="68" fill="#F49FBC" rx="4"/>
+  <rect width="8" height="8" x="103" y="52" fill="#CAE5EE" rx="4"/>
 </svg>

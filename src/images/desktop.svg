@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1812" height="1194" fill="none" color-interpolation-filters="sRGB">
+  <g class="fill-shadow">
+    <rect width="1812" height="1180" y="14" rx="120" class="opacity-20"/>
+    <rect width="1772" height="1134" x="40" y="8" rx="88" class="opacity-40"/>
+  </g>
+  <rect width="1762" height="1130" x="50" fill="#334D50" rx="84"/>
+  <rect width="1746" height="1114" x="58" y="8" fill="#000" rx="76"/>
+  <rect width="1682" height="1052" x="91" y="39" fill="#121212" stroke="#242424" stroke-width="2" rx="45"/>
+</svg>
