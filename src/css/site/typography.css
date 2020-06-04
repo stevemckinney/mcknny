@@ -2,7 +2,7 @@
  * Headings
  */
 :--headings {
-  @apply mt-0 font-display font-medium;
+  @apply mt-0 font-display font-bold;
   line-height: 1.125;
   color: inherit;
   text-rendering: optimizeLegibility; }

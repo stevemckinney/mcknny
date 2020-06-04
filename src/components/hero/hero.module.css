@@ -1,13 +1,8 @@
 .container {
   grid-template-rows: repeat(3, [row] 1fr);
-  height: 100vh;
-  height: -webkit-fill-available;
   
   @screen mdMax {
-    padding-bottom: calc(var(--tabbar-height) + (var(--spacing) * 4)); }
-  
-  @screen md {
-    @apply h-screen; } }
+    padding-bottom: calc(var(--tabbar-height) + (var(--spacing) * 4)); } }
 
 .content {
   max-width: 664px;

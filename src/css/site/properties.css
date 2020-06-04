@@ -34,6 +34,10 @@
   --color-marigold: #D89F31;
   --color-sidecar: #F3DFC1;
   
+  /* general */
+  --color-white: #fff;
+  --color-black: #000;
+  
   /**
    * fonts
    */

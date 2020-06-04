@@ -26,7 +26,14 @@ body,
 
 .bg-i {
   background: url(../images/bg.svg) var(--color-spruce); }
-	
+
+/**
+ * screens
+ */
+.screen {
+  min-height: 100vh;
+  min-height: -webkit-fill-available; }
+
 /**
  * grid
  */
