@@ -22,7 +22,7 @@ body,
   background: url(../images/bg.svg) var(--color-spruce); }
 
 .bg-i {
-  background: url(../images/bg-inverse.svg) var(--color-jungle); }
+  background: url(../images/bg-inverse.svg) var(--color-prussian); }
 	
 /**
  * grid

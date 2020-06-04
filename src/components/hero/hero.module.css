@@ -26,75 +26,65 @@
     right: -16px; }
   
   @screen md {
-    transform: rotate(-45deg);
-    top: 332px;
-    right: 780px; } }
-
-.illustrator {
-  transform: rotate(15deg);
-  top: 76px;
-  right: 730px;
-  
-  @screen mdMax {
-    display: none; }
-  
-  @screen md {
-    display: block; } }
+    transform: rotate(-30deg);
+    top: 654px;
+    right: 646px; } }
 
 .palomino {
-  transform: rotate(-30deg);
+  transform: rotate(-60deg);
   
   @screen mdMax {
     top: -426px;
     left: -178px; }
   
   @screen md {
-    top: 254px;
-    right: 390px; } }
+    top: -138px;
+    right: 522px; } }
 
 .pencil {
-  transform: rotate(-30deg);
+  transform: rotate(-60deg);
   
   @screen mdMax {
     top: -644px;
     left: -188px; }
   
   @screen md {
-    top: 72px;
-    right: 342px; } }
+    top: 102px;
+    right: 482px; } }
 
 .phone {
+  transform: rotate(-60deg);
+  transform-origin: left top;
+  top: 68px;
+  right: 362px;
+  
+  .status-bar {
+    display: none;
+    color: #121212; }
+  
+  @screen mdMax {
+    display: none; }
+  
+  @screen md {
+    display: block; } }
+
+.pen {
   transform: rotate(-30deg);
-  top: -248px;
-  right: -134px;
+  bottom: -52px;
+  right: 474px; }
+
+.posca {
+  transform: rotate(75deg);
+  transform-origin: left bottom;
+  bottom: -30px;
+  right: calc(100vw - 228px);
   
   @screen mdMax {
     display: none; }
   
   @screen md {
     display: block; } }
-
-.ruler {  
-  @screen mdMax {
-    transform: rotate(60deg);
-    top: -298px;
-    left: -402px; }
-  
-  @screen md {
-    transform: rotate(7.5deg);
-    left: -40px;
-    bottom: -80px; } }
-
-.safari {
-  top: 642px;
-  right: 624px;
-  
-  @screen mdMax {
-    display: none; }
-  
-  @screen md {
-    display: block; } }
-
+    
 .sharpener {  
   @screen mdMax {
     transform: rotate(-60deg);
@@ -103,5 +93,5 @@
   
   @screen md {
     transform: rotate(-60deg);
-    top: 858px;
-    right: 480px; } }
+    top: 792px;
+    right: 350px; } }

@@ -19,5 +19,4 @@
 /* specific */
 .illo {
   @apply absolute;
-  z-index: 1;
-  transform-origin: center center; }
+  z-index: 1; }

@@ -1,6 +1,6 @@
 .header {  
   @screen lg {
-    @apply py-8; } }
+    @apply py-10; } }
 
 .logo {
   grid-column: content-start / 6; }
