@@ -9,7 +9,7 @@ import styles from "./about.module.css";
 import Ruler from "@images/ruler.inline.svg";
 
 const About = (props) => {
-  const containerStyles = `${styles.container} ${props.className} screen`;
+  const containerStyles = `${styles.container} ${props.className}`;
   const contentStyles = `${styles.content} relative content text-f3`;
   
   return (

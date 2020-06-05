@@ -1,0 +1,36 @@
+.content {
+  grid-column: content-start / 10; }
+
+.image {
+  grid-column: 10 / content-end;
+  height: 100%; }
+
+.title {
+  width: clamp(320px, 100%, 484px); }
+
+/**
+ * Illustrations
+ */
+.figma {
+  transform: rotate(-15deg) translate3d(0, -50%, 0);
+  top: 50%;
+  right: 0; }
+
+.illustrator {
+  transform: rotate(15deg) translate3d(-50%, 0, 0);
+  top: 0;
+  left: 58%; }
+
+.pen {
+  transform: rotate(-30deg);
+  bottom: -8%;
+  left: 12.5%; }
+
+.safari {
+  bottom: -20%;
+  left: 48%; }
+
+.terminal {
+  transform: rotate(15deg);
+  top: 0;
+  left: 0; }

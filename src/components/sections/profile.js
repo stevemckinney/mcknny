@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Logo from "../nav/logo";
 
 // style
 import styles from "./profile.module.css";
@@ -19,12 +20,33 @@ const Profile = (props) => {
     <React.Fragment>
       <aside className={containerStyles}>
         <div className={contentStyles}>
-          <h2 className="text-f1 text-melon content mb-4 content columns-all">I’m Steve McKinney, a Manchester based visual & ux designer</h2>
-          <Figma />
-          <Illustrator />
-          <Pen />
-          <Safari />
-          <Terminal />
+          <Logo className="pb-8" />
+          <h2 className={`${styles.title} text-f1 text-melon content mb-12`}>I’m Steve McKinney, a Manchester based visual & ux designer</h2>
+          <h3 className="block text-f6 text-pearl uppercase tracking-title font-title font-medium mb-4">Let’s talk design</h3>
+          <ul className="flex font-bold text-f5 m-0">
+            <li className="pr-8">
+              <a href="mailto:steve+mcknny@iamsteve.me" className="text-jasmine">Email</a>
+            </li>
+            <li className="pr-8">
+              <a href="https://instagram.com/studiomcknny" className="text-jasmine">Instagram</a>
+            </li>
+            <li className="pr-8">
+              <a href="https://www.behance.net/stevemckinney" className="text-jasmine">Behance</a>
+            </li>
+            <li className="pr-8">
+              <a href="https://twitter.com/irsteve" className="text-jasmine">Twitter</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/steve-mckinney-5b5836102" className="text-jasmine">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+        <div className={`${styles.image} relative`} role="presentation">
+          <Figma className={`illo ${styles.figma}`} />
+          <Illustrator className={`illo ${styles.illustrator}`} />
+          <Pen className={`illo ${styles.pen}`} />
+          <Safari className={`illo ${styles.safari}`} />
+          <Terminal className={`illo ${styles.terminal}`} />
         </div>
       </aside>
     </React.Fragment>
@@ -34,6 +56,5 @@ const Profile = (props) => {
 Profile.propTypes = {
   className: PropTypes.node,
 }
-
 
 export default Profile;

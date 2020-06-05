@@ -92,45 +92,26 @@ module.exports = {
       loose: '2',
       title: '1.166666667'
     },
-    spacing: {
-      px: '1px',
-      '0': '0',
-      '1': '0.25rem',
-      '2': '0.5rem',
-      '3': '0.75rem',
-      '4': '1rem',
-      '5': '1.25rem',
-      '6': '1.5rem',
-      '8': '2rem',
-      '10': '2.5rem',
-      '12': '3rem',
-      '16': '4rem',
-      '20': '5rem',
-      '24': '6rem',
-      '32': '8rem',
-      '36': '9rem',
-      '40': '10rem',
-      '48': '12rem',
-      '56': '14rem',
-      '64': '16rem',
-    }
-  },
-  extend: {
-    gridTemplateColumns: {
-      '16': 'repeat(16, minmax(0, 1fr))'
+    extend: {
+      spacing: {
+        '36': '9rem'
+      },
+      gridTemplateColumns: {
+        '16': 'repeat(16, minmax(0, 1fr))'
+      },
+      gridColumnStart: {
+        '13': '13',
+        '14': '14',
+        '15': '15',
+        '16': '16'
+      },
+      gridColumnEnd: {
+        '13': '13',
+        '14': '14',
+        '15': '15',
+        '16': '16'
+      }
     },
-    gridColumnStart: {
-      '13': '13',
-      '14': '14',
-      '15': '15',
-      '16': '16'
-    },
-    gridColumnEnd: {
-      '13': '13',
-      '14': '14',
-      '15': '15',
-      '16': '16'
-    }
   },
   variants: {
     spacing: ["responsive"],

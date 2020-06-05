@@ -1,10 +1,12 @@
-import { graphql, useStaticQuery, Link } from "gatsby";
 import React from "react";
+import PropTypes from "prop-types";
+import { graphql, useStaticQuery } from "gatsby";
 import Nav from "../nav";
+import Logo from "@components/nav/logo";
 import Tabbar from "../nav/tabbar";
 import styles from "./header.module.css";
 
-function Header() {
+const Header = (props) => {
   const { site } = useStaticQuery(graphql`
     query HeaderQuery {
       site {
@@ -20,22 +22,22 @@ function Header() {
     }
   `);
   
-  const headerStyles = `${styles.header} grid mdMax:hidden fixed right-0 left-0 z-10 top-0 lg:layout items-center text-pearl`;
-  const logoStyles = `${styles.logo} block text-f6 font-medium font-title py-8`; 
+  const headerStyles = `${styles.header} ${props.className} grid mdMax:hidden fixed right-0 left-0 z-10 top-0 lg:layout items-center text-pearl`;
 
   return (
     <React.Fragment>
       <header className={ headerStyles }>
-        <Link to="/" className={ logoStyles }>
-          {site.siteMetadata.short_name}.
-        </Link>
-  
+        <Logo className="py-8" />
         <Nav links={site.siteMetadata.navigation} />
       </header>
       
       <Tabbar logo={site.siteMetadata.short_name} links={site.siteMetadata.navigation} />
     </React.Fragment>
   );
+}
+
+Header.propTypes = {
+  className: PropTypes.node,
 }
 
 export default Header;

@@ -11,9 +11,9 @@ function IndexPage() {
   return (
     <Layout>
       <SEO title="ux & visual design" />
-      <Hero />
-      <About className="py-48 grid mdMax:justify-center sm:layout lg:layout flex items-end md:items-center content" />
-      <Featured className="py-48 grid mdMax:justify-center sm:layout lg:layout flex items-end md:items-center content" />
+      <Hero className="screen bg-i" />
+      <About className="py-36 screen grid mdMax:justify-center sm:layout lg:layout flex items-end md:items-center content" />
+      <Featured className="grid mdMax:justify-center sm:layout lg:layout flex items-end md:items-center content" />
     </Layout>
   )
 }

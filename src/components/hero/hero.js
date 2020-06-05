@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Action from "../content/action";
 
 // style
@@ -13,8 +14,8 @@ import Phone from "@images/phone.inline.svg";
 import Posca from "@images/posca.inline.svg";
 import Sharpener from "@images/sharpener.inline.svg";
 
-const Hero = () => {
-  const heroStyles = `${styles.container} bg-i grid mdMax:justify-center sm:layout lg:layout flex items-end md:items-center screen`;
+const Hero = props => {
+  const heroStyles = `${props.className} ${styles.container} grid sm:layout lg:layout flex mdMax:justify-center items-end md:items-center`;
   const headingStyles = `relative z-10 mb-6 mdMax:leading-tight text-f3 lg:text-headline tracking-headline`;
   
   return (
@@ -34,6 +35,10 @@ const Hero = () => {
       </section>
     </React.Fragment>
   )
+}
+
+Hero.propTypes = {
+  className: PropTypes.node,
 }
 
 export default Hero;
