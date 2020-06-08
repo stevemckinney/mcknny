@@ -34,6 +34,33 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`]
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      name: `pages`,
+      options: {
+        path: `${__dirname}/src/pages`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      name: `portfolio`,
+      options: {
+        path: `${__dirname}/src/pages/portfolio`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      name: `images`,
+      options: {
+        path: `${__dirname}/src/images`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-react-svg`,
       options: {
         rule: {
@@ -80,13 +107,6 @@ module.exports = {
       options: {
         tailwind: true,
         purgeOnly: [`src/css/global.css`],
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `portfolio`,
-        path: `${__dirname}/src/pages/portfolio`,
       },
     },
     {
