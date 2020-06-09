@@ -42,9 +42,9 @@ module.exports = {
     },
     {
       resolve: `gatsby-source-filesystem`,
-      name: `portfolio`,
+      name: `work`,
       options: {
-        path: `${__dirname}/src/pages/portfolio`,
+        path: `${__dirname}/src/pages/work`,
       },
     },
     {
@@ -106,34 +106,21 @@ module.exports = {
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
-        extensions: [`.mdx`, `.md`]
-      },
-      gatsbyRemarkPlugins: [
-        {
-          resolve: `gatsby-remark-smartypants`,
-          options: {
-            dashes: `oldschool`,
-          },
+        extensions: [`.mdx`, `.md`],
+        defaultLayouts: {
+          work: require.resolve("./src/components/layout/single.js"),
+          default: require.resolve("./src/components/layout/layout.js"),
         },
-        {
-          resolve: `gatsby-remark-autolink-headers`,
-          options: {
-            offsetY: `96`,
-          },
-        },
-        {
-          resolve: `gatsby-plugin-catch-links`,
-        },
+        gatsbyRemarkPlugins: [
         {
           resolve: `gatsby-remark-images`,
           options: {
-            // It's important to specify the maxWidth (in pixels) of
-            // the content container as this plugin uses this as the
-            // base for generating different widths of each image.
-            maxWidth: 640,
+            maxWidth: 960,
+            sizeByPixelDensity: true,
           },
         },
       ],
+      }
     },
     {
       resolve: `gatsby-plugin-web-font-loader`,

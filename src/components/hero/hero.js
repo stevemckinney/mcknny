@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Action from "../content/action";
+import Action from "@components/content/action";
 
 // style
 import styles from "./hero.module.css";
@@ -17,7 +17,7 @@ import Sharpener from "@images/sharpener.inline.svg";
 const Hero = props => {
   const heroStyles = `${props.className} ${styles.container} grid sm:layout lg:layout flex mdMax:justify-center items-end md:items-center`;
   const headingStyles = `relative z-10 mb-6 mdMax:leading-tight text-f3 lg:text-headline tracking-headline`;
-  
+
   return (
     <React.Fragment>
       <section className={heroStyles}>
