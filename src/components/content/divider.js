@@ -4,9 +4,9 @@ import PropTypes from "prop-types";
 // css
 import styles from "./divider.module.css";
 
-const Divider = (props) => {  
+const Divider = (props) => {
   return (
-    <hr className={`${styles.divider} ${props.className}`} />
+    <div className={`${styles.divider} ${props.className}`} />
   )
 }
 

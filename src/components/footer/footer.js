@@ -28,7 +28,7 @@ const Footer = (props) => {
   return (
     <React.Fragment>
       <Prompt className="py-36 grid mdMax:justify-center sm:layout md:layout lg:layout flex items-end md:items-center" />
-      <Divider className="divider" />
+      <div className="grid sm:layout md:layout lg:layout"><Divider className="divider" /></div>
       <Profile className="py-36 grid mdMax:justify-center sm:layout md:layout lg:layout flex items-end md:items-center" />
       <footer className={footerStyles}>
         <p className="content mb-0 text-f8 text-pearl uppercase tracking-title font-title font-bold">

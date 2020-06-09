@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Logo from "../nav/logo";
+
+// components
+import Logo from "@components/nav/logo";
 
 // style
 import styles from "./profile.module.css";
@@ -15,10 +17,11 @@ import Pen from "@images/pen.inline.svg";
 const Profile = (props) => {
   const containerStyles = `${styles.container} ${props.className}`;
   const contentStyles = `${styles.content} relative content text-f3`;
-  
+
   return (
     <React.Fragment>
       <aside className={containerStyles}>
+
         <div className={contentStyles}>
           <Logo className="pb-8" />
           <h2 className={`${styles.title} text-f1 text-melon content mb-12`}>I’m Steve McKinney, a Manchester based visual & ux designer</h2>
