@@ -3,8 +3,8 @@
  *
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
-const path = require("path");
-const { createFilePath } = require("gatsby-source-filesystem");
+const path = require(`path`);
+const { createFilePath } = require(`gatsby-source-filesystem`);
 
 // https://www.gatsbyjs.org/docs/node-apis/#onCreateWebpackConfig
 exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
@@ -21,22 +21,62 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
   });
 };
 
+exports.createPages = ({ actions, graphql }) => {
+  const { createPage } = actions;
+  const projectTemplate = path.resolve(
+    'src/components/layout/single.js'
+  );
+
+  return graphql(`
+    {
+      allMdx(
+        sort: { fields: [frontmatter___date], order: DESC }
+        filter: { frontmatter: { published: { eq: true } } }
+      ) {
+        nodes {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+          }
+        }
+      }
+    }
+  `).then(result => {
+    if (result.errors) {
+      throw result.errors;
+    }
+
+    const posts = result.data.allMdx.nodes;
+
+    // create page for each mdx node
+    posts.forEach((post, index) => {
+      const previous =
+        index === posts.length - 1 ? null : posts[index + 1];
+      const next = index === 0 ? null : posts[index - 1];
+
+      createPage({
+        path: post.fields.slug,
+        component: projectTemplate,
+        context: {
+          slug: post.fields.slug,
+          previous,
+          next,
+        },
+      });
+    });
+  });
+};
+
 exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions
-  // you only want to operate on `Mdx` nodes. If you had content from a
-  // remote CMS you could also check to see if the parent node was a
-  // `File` node here
-  if (node.internal.type === "Mdx") {
-    const value = createFilePath({ node, getNode })
+  const { createNodeField } = actions;
+  if (node.internal.type === `Mdx`) {
+    const value = createFilePath({ node, getNode });
     createNodeField({
-      // Name of the field you are adding
-      name: "slug",
-      // Individual MDX node
+      name: `slug`,
       node,
-      // Generated value based on filepath with "blog" prefix. you
-      // don"t need a separating "/" before the value because
-      // createFilePath returns a path with the leading "/".
-      value: `/work{value}`,
-    })
+      value,
+    });
   }
-}
+};

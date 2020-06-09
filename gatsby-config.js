@@ -12,8 +12,8 @@ module.exports = {
     author: `@stevemckinney`,
     navigation: [
       {
-        title: `portfolio`,
-        route: `/portfolio`,
+        title: `work`,
+        route: `/work`,
       },
       {
         title: `about`,

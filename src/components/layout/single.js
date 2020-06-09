@@ -1,6 +1,7 @@
 import React from "react";
-import { graphql } from "gatsby";
-import { MDXProvider } from "@mdx-js/react";
+import PropTypes from "prop-types";
+// import { graphql } from "gatsby";
+// import { MDXProvider } from "@mdx-js/react";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 
 // components
@@ -10,7 +11,7 @@ import { Link } from "gatsby";
 const shortcodes = { Link } // Provide common components here
 
 // hooks
-const Single = ({ children, context, data: { mdx } }) => {
+const Single = ({ data: { mdx: post } }) => {
   const {
     title,
     description,
@@ -19,21 +20,27 @@ const Single = ({ children, context, data: { mdx } }) => {
     date,
     category,
     url
-  } = context.frontmatter;
+  } = post.frontmatter;
+  const { body } = post;
 
   return (
     <Layout>
-      <SEO title="{title}" />
-      <header>
+      <SEO title={title} />
+      <header className="bg-i">
         <h1>{description}</h1>
+        {role}
+        {published}
+        {date}
+        {category}
+        {url}
       </header>
-      {children}
+      <MDXRenderer>{body}{shortcodes}</MDXRenderer>
     </Layout>
   )
 }
 
 Single.propTypes = {
-  children: PropTypes.node.isRequired,
+  data: PropTypes.node.isRequired,
 }
 
 export default Single;
