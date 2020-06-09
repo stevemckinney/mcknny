@@ -1,18 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="266" height="200" fill="none" color-interpolation-filters="sRGB">
-  <g class="fill-shadow">
-    <path fill="#2A3C51" d="M244 12H30C17.85 12 8 21.85 8 34v144c0 12.15 9.85 22 22 22h214c12.15 0 22-9.85 22-22V34c0-12.15-9.85-22-22-22z" opacity=".2"/>
-    <path fill="#2A3C51" d="M234 0H18C8.059 0 0 8.059 0 18v152c0 9.941 8.059 18 18 18h216c9.941 0 18-8.059 18-18V18c0-9.941-8.059-18-18-18z" opacity=".4"/>
+<svg width="266" height="200" fill="none" xmlns="http://www.w3.org/2000/svg" color-interpolation-filters="sRGB">
+  <g class="soft-light fill-madison">
+    <rect x="0" y="0" width="248" height="184" rx="20" class="fill-opacity-40"/>
+    <rect x="8" y="12" width="258" height="188" rx="28" class="fill-opacity-20" />
   </g>
-  <path fill="#1A2D3D" stroke="#092135" stroke-miterlimit="10" stroke-width="8" d="M234 172H10c-1.1 0-2-.9-2-2V10c0-1.1.9-2 2-2h224c1.1 0 2 .9 2 2v160c0 1.1-.9 2-2 2z"/>
-  <path stroke="#F49FBC" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="6" d="M34 122l8 8-8 8M54 138h12"/>
-  <path stroke="#DBD4BF" stroke-miterlimit="10" stroke-width="4" d="M233 178H11c-4.95 0-9-4.05-9-9V11c0-4.95 4.05-9 9-9h222c4.95 0 9 4.05 9 9v158c0 4.95-4.05 9-9 9z"/>
-  <path stroke="#F4ECEB" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4" d="M2 11c0-4.95 4.05-9 9-9h222c4.95 0 9 4.05 9 9"/>
-  <path stroke="#628A85" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4" d="M242 169c0 4.95-4.05 9-9 9H11c-4.95 0-9-4.05-9-9" opacity=".3"/>
-  <rect width="32" height="8" x="47" y="36" fill="#7DB8CA" rx="4"/>
-  <rect width="8" height="8" x="31" y="36" fill="#CAE5EE" rx="4"/>
-  <rect width="16" height="8" x="39" y="52" fill="#FFDC7F" rx="4"/>
-  <rect width="32" height="8" x="63" y="52" fill="#F4ECEB" rx="4"/>
-  <rect width="8" height="8" x="87" y="36" fill="#F49FBC" rx="4"/>
-  <rect width="8" height="8" x="31" y="68" fill="#F49FBC" rx="4"/>
-  <rect width="8" height="8" x="103" y="52" fill="#CAE5EE" rx="4"/>
+  <rect x="2" y="2" width="240" height="176" rx="14" stroke="#DBD4BF" stroke-width="4"/>
+  <rect x="8" y="8" width="228" height="164" rx="8" fill="#1A2D3D" stroke="#092135" stroke-width="8"/>
+  <path d="M0 18a2 2 0 104 0H0zm240 0a2 2 0 104 0h-4zM4 18v-2H0v2h4zM16 4h212V0H16v4zm224 12v2h4v-2h-4zM228 4c6.627 0 12 5.373 12 12h4c0-8.837-7.163-16-16-16v4zM4 16C4 9.373 9.373 4 16 4V0C7.163 0 0 7.163 0 16h4z" fill="#F4ECEB"/>
+  <path opacity=".4" d="M2 162v2c0 7.732 6.268 14 14 14h212c7.732 0 14-6.268 14-14v-2" stroke="#628A85" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M34 122l8 8-8 8M54 138h12" stroke="#F49FBC" stroke-width="6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="47" y="36" width="32" height="8" rx="4" fill="#7DB8CA"/>
+  <rect x="31" y="36" width="8" height="8" rx="4" fill="#CAE5EE"/>
+  <rect x="39" y="52" width="16" height="8" rx="4" fill="#FFDC7F"/>
+  <rect x="63" y="52" width="32" height="8" rx="4" fill="#F4ECEB"/>
+  <rect x="87" y="36" width="8" height="8" rx="4" fill="#F49FBC"/>
+  <rect x="31" y="68" width="8" height="8" rx="4" fill="#F49FBC"/>
+  <rect x="103" y="52" width="8" height="8" rx="4" fill="#CAE5EE"/>
 </svg>

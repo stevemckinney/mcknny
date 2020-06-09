@@ -6,8 +6,17 @@
   fill: none; }
 
 .fill-shadow {
-  mix-blend-mode: overlay;
+  mix-blend-mode: soft-light;
   fill: var(--color-madison); }
+
+.fill-madison {
+  fill: var(--color-madison); }
+
+.stroke-madison {
+  stroke: var(--color-madison); }
+
+.soft-light {
+  mix-blend-mode: soft-light; }
 
 /* opacity */
 .opacity-20 {
@@ -16,7 +25,13 @@
 .opacity-40 {
   opacity: .4; }
 
+.fill-opacity-20 {
+  fill-opacity: .2; }
+
+.fill-opacity-40 {
+  fill-opacity: .4; }
+
 /* specific */
 .illo {
   @apply absolute;
-  z-index: 1; }
+  z-index: 0; }

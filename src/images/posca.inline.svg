@@ -1,8 +1,10 @@
-<svg width="134" height="752" viewBox="0 0 134 752" fill="none" xmlns="http://www.w3.org/2000/svg" color-interpolation-filters="sRGB">
-  <g class="fill-shadow">
-    <rect x="12" y="6" width="122" height="746" rx="24" class="opacity-20" />
-    <rect x="4" y="4" width="110" height="728" rx="12" class="opacity-40"/>
-  </g>
+<svg width="134" height="752" viewBox="0 0 134 752" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g style="mix-blend-mode:soft-light" opacity="0.2">
+<rect x="12" y="12" width="122" height="740" rx="28" fill="#2A3C51"/>
+</g>
+<g style="mix-blend-mode:soft-light" opacity="0.4">
+<rect x="4" y="4" width="108" height="726" rx="16" fill="#2A3C51"/>
+</g>
 <path d="M4 9H104V715C104 719.418 100.418 723 96 723H12C7.58172 723 4 719.418 4 715V9Z" fill="#1A2D3D"/>
 <path opacity="0.8" d="M4 189H24V723H12C7.58172 723 4 719.418 4 715V189Z" fill="#092135"/>
 <path d="M84 189H104V715C104 719.418 100.418 723 96 723H84V189Z" fill="#092135"/>
