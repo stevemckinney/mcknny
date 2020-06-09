@@ -13,6 +13,7 @@ const shortcodes = { Link } // Provide common components here
 const Single = ({ children, context, data: { mdx } }) => {
   const {
     title,
+    description,
     role,
     published,
     date,
@@ -23,10 +24,16 @@ const Single = ({ children, context, data: { mdx } }) => {
   return (
     <Layout>
       <SEO title="{title}" />
-      <h1>{title}</h1>
+      <header>
+        <h1>{description}</h1>
+      </header>
       {children}
     </Layout>
   )
+}
+
+Single.propTypes = {
+  children: PropTypes.node.isRequired,
 }
 
 export default Single;
