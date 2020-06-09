@@ -16,8 +16,8 @@ module.exports = {
       lgMax: {"max": "959px"},
       xl: "1280px",
       xlMax: {"max": "1279px"},
-      xxl: "1440px",
-      xxlMax: {"max": "1439px"}
+      xxl: "1680px",
+      xxlMax: {"max": "1679px"}
     },
     fontFamily: {
       display: ["var(--font-display)"],
@@ -28,33 +28,33 @@ module.exports = {
       // pwa
       background_color: "#fff",
       theme_color: "#00ffff",
-      
+
       // general
       black: colors.black,
       white: colors.white,
-      
+
       // blue
       madison: "var(--color-madison)",
       seagull: "var(--color-seagull)",
       ohahu: "var(--color-ohahu)",
-      
+
       // green
       jungle: "var(--color-jungle)",
       spruce: "var(--color-spruce)",
       patina: "var(--color-patina)",
       harp: "var(--color-harp)",
       blanc: "var(--color-blanc)",
-      
+
       // pink
       thulian: "var(--color-thulian)",
       melon: "var(--color-melon)",
       remy: "var(--color-remy)",
       pearl: "var(--color-pearl)",
-      
+
       // orange
       feldspar: "var(--color-feldspar)",
       tumbleweed: "var(--color-tumbleweed)",
-      
+
       // yellow
       goldenrod: "var(--color-goldenrod)",
       gold: "var(--color-goldenrod)",
