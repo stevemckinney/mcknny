@@ -21,8 +21,8 @@ const Header = (props) => {
       }
     }
   `);
-  
-  const headerStyles = `${styles.header} ${props.className} grid mdMax:hidden fixed right-0 left-0 z-10 top-0 lg:layout items-center text-pearl`;
+
+  const headerStyles = `${styles.header} ${props.className} grid mdMax:hidden fixed right-0 left-0 z-10 top-0 sm:layout md:layout lg:layout items-center text-pearl`;
 
   return (
     <React.Fragment>
@@ -30,7 +30,7 @@ const Header = (props) => {
         <Logo className="py-8" />
         <Nav links={site.siteMetadata.navigation} />
       </header>
-      
+
       <Tabbar logo={site.siteMetadata.short_name} links={site.siteMetadata.navigation} />
     </React.Fragment>
   );

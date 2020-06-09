@@ -1,10 +1,1 @@
-.pen {  
-  @screen mdMax {
-    transform: rotate(-45deg);
-    top: 536px;
-    left: -88px; }
-  
-  @screen md {
-    transform: rotate(-30deg);
-    top: 0;
-    right: 0; } }
+.footer {}

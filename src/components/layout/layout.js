@@ -21,13 +21,14 @@ function Layout({ children }) {
         <link rel="preconnect" href="https://use.typekit.net" />
         <link rel="preconnect" href="https://p.typekit.net" />
       </Helmet>
+
       <Header />
 
-      <main className="content">
+      <main className="grid sm:layout md:layout lg:layout">
         {children}
       </main>
 
-      <Footer className="content" />
+      <Footer />
     </React.Fragment>
   );
 }

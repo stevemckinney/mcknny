@@ -1,6 +1,6 @@
 .nav {
   grid-column: 6 / content-end;
-  
+
   & > a {
     @apply pl-8; } }
 

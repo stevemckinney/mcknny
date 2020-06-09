@@ -7,8 +7,8 @@ import styles from "./featured.module.css";
 
 const Featured = (props) => {
   const containerStyles = `${styles.container} ${props.className}`;
-  const contentStyles = `${styles.content} relative content text-f3`;
-  
+  const contentStyles = `${styles.content} relative text-f3`;
+
   return (
     <React.Fragment>
       <aside className={containerStyles}>

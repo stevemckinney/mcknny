@@ -15,7 +15,7 @@ import Posca from "@images/posca.inline.svg";
 import Sharpener from "@images/sharpener.inline.svg";
 
 const Hero = props => {
-  const heroStyles = `${props.className} ${styles.container} grid sm:layout lg:layout flex mdMax:justify-center items-end md:items-center`;
+  const heroStyles = `${props.className} ${styles.container} grid sm:layout md:layout lg:layout flex mdMax:justify-center items-end md:items-center`;
   const headingStyles = `relative z-10 mb-6 mdMax:leading-tight text-f3 lg:text-headline tracking-headline`;
 
   return (
