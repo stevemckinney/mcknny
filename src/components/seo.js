@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import Helmet from "react-helmet";
 
-function SEO({ description, lang, meta, keywords, title }) {
+function SEO({ description, lang, meta, keywords, title, cover }) {
   const { site } = useStaticQuery(graphql`
     query DefaultSEOQuery {
       site {
@@ -17,6 +17,7 @@ function SEO({ description, lang, meta, keywords, title }) {
   `);
 
   const metaDescription = description || site.siteMetadata.description;
+  const ogImage = cover || `@images/social/opengraph.png`;
 
   return (
     <Helmet
@@ -41,8 +42,16 @@ function SEO({ description, lang, meta, keywords, title }) {
           content: `website`,
         },
         {
+          property: `og:image`,
+          content: ogImage
+        },
+        {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
+        },
+        {
+          name: `twitter:image`,
+          content: ogImage,
         },
         {
           name: `twitter:creator`,
@@ -84,6 +93,7 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.array,
   title: PropTypes.string.isRequired,
+  cover: PropTypes.string,
 };
 
 export default SEO;

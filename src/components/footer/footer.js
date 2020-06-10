@@ -22,8 +22,7 @@ const Footer = (props) => {
       }
     }
   `);
-  const propClassName = props.className || "footer";
-  const footerStyles = `${propClassName} ${styles.footer} grid mdMax:justify-center sm:layout md:layout lg:layout flex items-end md:items-center pb-16`;
+  const footerStyles = `${props.className} ${styles.footer} grid mdMax:justify-center sm:layout md:layout lg:layout flex items-end md:items-center pb-16`;
 
   return (
     <React.Fragment>
@@ -37,6 +36,10 @@ const Footer = (props) => {
       </footer>
     </React.Fragment>
   );
+}
+
+Footer.defaultProps = {
+  className: "footer"
 }
 
 Footer.propTypes = {

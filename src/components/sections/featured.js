@@ -1,6 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Action from "../content/action";
+
+// components
+import Action from "@components/content/action";
+import Projects from "@components/content/projects";
 
 // style
 import styles from "./featured.module.css";
@@ -17,6 +20,8 @@ const Featured = (props) => {
             <h2 className="text-f1 text-melon content mb-4 content columns-all">Featured projects</h2>
             <Action to="/work/" text="View all projects" />
           </header>
+
+          <Projects />
         </div>
       </aside>
     </React.Fragment>
@@ -26,6 +31,5 @@ const Featured = (props) => {
 Featured.propTypes = {
   className: PropTypes.node,
 }
-
 
 export default Featured;

@@ -9,7 +9,7 @@ module.exports = {
     short_name: `mcknny`,
     siteUrl: `https://mcknny.com`,
     description: `Portfolio of Steve McKinney`,
-    author: `@stevemckinney`,
+    author: `@irsteve`,
     navigation: [
       {
         title: `work`,
@@ -32,7 +32,6 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       name: `pages`,
@@ -103,6 +102,9 @@ module.exports = {
         purgeOnly: [`src/css/global.css`],
       },
     },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
@@ -111,15 +113,18 @@ module.exports = {
           work: require.resolve("./src/components/layout/single.js"),
           default: require.resolve("./src/components/layout/layout.js"),
         },
-        gatsbyRemarkPlugins: [
-        {
+        gatsbyRemarkPlugins: [{
           resolve: `gatsby-remark-images`,
           options: {
             maxWidth: 960,
             sizeByPixelDensity: true,
+            showCaptions: ['title'],
+            // Markdown captions do not work in mdx yet. More info: https://github.com/gatsbyjs/gatsby/pull/16574#issue-306869033
+            markdownCaptions: true,
+            linkImagesToOriginal: false,
+            tracedSVG: true,
           },
-        },
-      ],
+        }],
       }
     },
     {

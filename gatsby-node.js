@@ -48,19 +48,19 @@ exports.createPages = ({ actions, graphql }) => {
       throw result.errors;
     }
 
-    const posts = result.data.allMdx.nodes;
+    const pages = result.data.allMdx.nodes;
 
     // create page for each mdx node
-    posts.forEach((post, index) => {
+    pages.forEach((page, index) => {
       const previous =
-        index === posts.length - 1 ? null : posts[index + 1];
-      const next = index === 0 ? null : posts[index - 1];
+        index === pages.length - 1 ? null : pages[index + 1];
+      const next = index === 0 ? null : pages[index - 1];
 
       createPage({
-        path: post.fields.slug,
+        path: page.fields.slug,
         component: projectTemplate,
         context: {
-          slug: post.fields.slug,
+          slug: page.fields.slug,
           previous,
           next,
         },

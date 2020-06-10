@@ -1,17 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
-// import { graphql } from "gatsby";
-// import { MDXProvider } from "@mdx-js/react";
+import { graphql } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 
 // components
+import Dump from "@components/dump";
 import Layout from "@components/layout";
 import SEO from "@components/seo";
-import { Link } from "gatsby";
-const shortcodes = { Link } // Provide common components here
+// const shortcodes = { Link } // Provide common components here
 
 // hooks
-const Single = ({ data: { mdx: post } }) => {
+const Single = ({ data: { mdx: page } }) => {
   const {
     title,
     description,
@@ -20,13 +19,14 @@ const Single = ({ data: { mdx: post } }) => {
     date,
     category,
     url
-  } = post.frontmatter;
-  const { body } = post;
+  } = page.frontmatter;
+  const { body } = page;
 
   return (
     <Layout>
       <SEO title={title} />
-      <header className="bg-i">
+      <header className="bg-i grid sm:layout md:layout lg:layout flex mdMax:justify-center items-end md:items-center">
+        <Dump data={page} />
         <h1>{description}</h1>
         {role}
         {published}
@@ -34,10 +34,24 @@ const Single = ({ data: { mdx: post } }) => {
         {category}
         {url}
       </header>
-      <MDXRenderer>{body}{shortcodes}</MDXRenderer>
+      <section className="grid content">
+        <MDXRenderer>{body}</MDXRenderer>
+      </section>
     </Layout>
   )
 }
+
+export const query = graphql`
+  query projectsBySlug($slug: String!) {
+    mdx(fields: { slug: { eq: $slug } }) {
+      body
+      frontmatter {
+        title
+        date(formatString: "YYYY MMMM DD")
+      }
+    }
+  }
+`;
 
 Single.propTypes = {
   data: PropTypes.node.isRequired,

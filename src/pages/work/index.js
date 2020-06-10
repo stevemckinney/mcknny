@@ -1,16 +1,27 @@
 import React from "react";
-// import { graphql, Link } from "gatsby";
+import PropTypes from "prop-types";
 
 // components
 import Layout from "@components/layout";
-import SEO from "@components/seo";
+import Projects from "@components/content/projects";
 
-const WorkPage = () => {
+const WorkPage = (props) => {
   return (
-    <Layout>
-      <SEO title="work" />
-    </Layout>
+    <React.Fragment>
+      <Layout>
+        <section className={`${props.className} content`}>
+          <header className="py-64 mt-24">
+            <h1 className="relative z-10 mb-6 mdMax:leading-tight text-f3 lg:text-headline tracking-headline">Work</h1>
+          </header>
+          <Projects />
+        </section>
+      </Layout>
+    </React.Fragment>
   )
+}
+
+WorkPage.propTypes = {
+  className: PropTypes.node,
 }
 
 export default WorkPage;

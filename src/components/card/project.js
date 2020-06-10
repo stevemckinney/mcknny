@@ -1,22 +1,32 @@
-import { Link } from "gatsby";
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "gatsby";
+import Img from 'gatsby-image';
+import Dump from "@components/dump";
+
+// css
 import styles from "./project.module.css";
 
-const Project = ({ links }) => {
-  const projectStyles = `${styles.container} flex mdMax:w-full md:justify-end font-title`;
-  const linkStyles = `${styles.link} mdMax:flex-1 mdMax:text-center no-underline inline-block text-f7 md:text-f6 font-medium py-8`;
-  
+const Project = ({ link, data }) => {
+  const projectStyles = `${styles.container}`;
+  const linkStyles = `${styles.link}`;
+
   return (
     <React.Fragment>
-      <div className={projectStyles}>
-      </div>
+      <article className={projectStyles}>
+        <Dump image={data};
+        <Img fluid={data.image.childImageSharp.fluid} />
+        <h2 className="font-headline">{data.description}</h2>
+        <Link to={link} className={linkStyles}>View project</Link>
+      </article>
     </React.Fragment>
   )
 }
 
 Project.propTypes = {
-  links: PropTypes.array.isRequired
+  link: PropTypes.string.isRequired,
+  data: PropTypes.object.isRequired,
+  image: PropTypes.node
 }
 
 export default Project;
