@@ -1,9 +1,9 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { graphql, useStaticQuery } from "gatsby";
 
 // components
 import Project from "@components/card/project";
-//import Dump from "@components/dump";
 
 const Projects = () => {
   const data = useStaticQuery(graphql`
@@ -11,6 +11,7 @@ const Projects = () => {
       allMdx(
         sort: { fields: [frontmatter___date], order: DESC }
         filter: { frontmatter: { published: { eq: true } } }
+        limit: 2
       ) {
         nodes {
           fields {
@@ -44,6 +45,14 @@ const Projects = () => {
       ))}
     </React.Fragment>
   )
+}
+
+Projects.defaultProps = {
+  limit: -1,
+};
+
+Projects.propTypes = {
+  limit: PropTypes.number,
 }
 
 export default Projects;

@@ -6,27 +6,28 @@ import Action from "@components/content/action";
 import Projects from "@components/content/projects";
 
 // style
-import styles from "./featured.module.css";
+// import styles from "./featured.module.css";
 
 const Featured = (props) => {
-  const containerStyles = `${styles.container} ${props.className}`;
-  const contentStyles = `${styles.content} relative text-f3`;
+  const containerStyles = `${props.className}`;
 
   return (
     <React.Fragment>
       <aside className={containerStyles}>
-        <div className={contentStyles}>
-          <header className="flex justify-between">
-            <h2 className="text-f1 text-melon content mb-4 content columns-all">Featured projects</h2>
-            <Action to="/work/" text="View all projects" />
-          </header>
+        <header className="flex justify-between">
+          <h2 className="text-f1 text-melon content mb-4 content columns-all">Featured projects</h2>
+          <Action to="/work/" text="View all projects" />
+        </header>
 
-          <Projects />
-        </div>
+        <Projects />
       </aside>
     </React.Fragment>
   )
 }
+
+Featured.defaultProps = {
+  className: "featured",
+};
 
 Featured.propTypes = {
   className: PropTypes.node,
