@@ -9,7 +9,6 @@ import styles from "./project.module.css";
 
 const Project = ({ link, data }) => {
   const projectStyles = `${styles.container}`;
-  const linkStyles = `${styles.link}`;
 
   return (
     <React.Fragment>
