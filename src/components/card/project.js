@@ -13,11 +13,16 @@ const Project = ({ link, data }) => {
 
   return (
     <React.Fragment>
-      <article className={projectStyles}>
+      <article className={`${projectStyles}`}>
         {/*<Dump image={data}/>;*/}
-        <Img fluid={data.image.childImageSharp.fluid}/>
-        <h2 className="font-headline">{data.description}</h2>
-        <Link to={link} className={linkStyles}>View project</Link>
+          <Link to={link} className="block">
+            <Img fluid={data.image.childImageSharp.fluid} className="mb-8" />
+          </Link>
+          <h2 className="font-headline text-f3">
+            <Link to={link} className="block">
+              {data.description}
+            </Link>
+          </h2>
       </article>
     </React.Fragment>
   )

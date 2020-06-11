@@ -51,6 +51,11 @@
   --spacing: 8px;
 
   /**
+   * visual
+   */
+   --radius: 16px;
+
+  /**
    * grid
    */
   --grid-container: 1920px;

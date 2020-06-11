@@ -1,1 +1,2 @@
-
+.container img {
+  border-radius: var(--radius); }

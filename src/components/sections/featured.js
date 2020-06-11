@@ -14,7 +14,7 @@ const Featured = (props) => {
   return (
     <React.Fragment>
       <aside className={containerStyles}>
-        <header className="flex justify-between">
+        <header className="flex justify-between mb-8">
           <h2 className="text-f1 text-melon content mb-4 content columns-all">Featured projects</h2>
           <Action to="/work/" text="View all projects" />
         </header>
