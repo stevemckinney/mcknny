@@ -22,7 +22,7 @@ function Layout({ children }) {
         <link rel="preconnect" href="https://p.typekit.net" />
       </Helmet>
 
-      <Header />
+      <Header className="header" />
 
       <main className="grid sm:layout md:layout lg:layout">
         {children}

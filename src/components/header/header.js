@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { graphql, useStaticQuery } from "gatsby";
-import Nav from "../nav";
+import Nav from "@components/nav";
 import Logo from "@components/nav/logo";
-import Tabbar from "../nav/tabbar";
+import Tabbar from "@components/nav/tabbar";
 import styles from "./header.module.css";
 
 const Header = (props) => {
@@ -22,7 +22,7 @@ const Header = (props) => {
     }
   `);
 
-  const headerStyles = `${styles.header} ${props.className} grid mdMax:hidden fixed right-0 left-0 z-10 top-0 sm:layout md:layout lg:layout items-center text-pearl`;
+  const headerStyles = `${props.className} ${styles.header} grid mdMax:hidden fixed right-0 left-0 z-10 top-0 sm:layout md:layout lg:layout items-center text-pearl`;
 
   return (
     <React.Fragment>
