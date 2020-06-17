@@ -110,8 +110,7 @@ module.exports = {
       options: {
         extensions: [`.mdx`, `.md`],
         defaultLayouts: {
-          work: require.resolve("./src/components/layout/single.js"),
-          default: require.resolve("./src/components/layout/layout.js"),
+          default: require.resolve("./src/components/layout/single.js"),
         },
         gatsbyRemarkPlugins: [{
           resolve: `gatsby-remark-images`,
