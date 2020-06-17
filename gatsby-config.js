@@ -117,12 +117,12 @@ module.exports = {
           resolve: `gatsby-remark-images`,
           options: {
             maxWidth: 960,
-            sizeByPixelDensity: true,
             showCaptions: ['title'],
             // Markdown captions do not work in mdx yet. More info: https://github.com/gatsbyjs/gatsby/pull/16574#issue-306869033
             markdownCaptions: true,
             linkImagesToOriginal: false,
             tracedSVG: true,
+            quality: 95
           },
         }],
       }
