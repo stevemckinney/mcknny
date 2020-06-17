@@ -24,7 +24,7 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
   const projectTemplate = path.resolve(
-    'src/components/layout/single.js'
+    './src/components/layout/single.js'
   );
 
   return graphql(`
