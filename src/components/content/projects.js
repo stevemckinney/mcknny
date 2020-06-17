@@ -49,12 +49,7 @@ const Projects = (props) => {
   )
 }
 
-Projects.defaultProps = {
-  limit: -1,
-};
-
 Projects.propTypes = {
-  limit: PropTypes.number,
   classNameProject: PropTypes.string,
 }
 
