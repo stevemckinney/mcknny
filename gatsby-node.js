@@ -19,16 +19,13 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
       },
     },
   });
-};
+}
 
-exports.createPages = ({ actions, graphql }) => {
+exports.createPages = async ({ graphql, actions, reporter }) => {
+  // Destructure the createPage function from the actions object
   const { createPage } = actions;
-  const projectTemplate = path.resolve(
-    './src/components/layout/single.js'
-  );
-
-  return graphql(`
-    {
+  const result = await graphql(`
+    query {
       allMdx(
         sort: { fields: [frontmatter___date], order: DESC }
         filter: { frontmatter: { published: { eq: true } } }
@@ -43,40 +40,35 @@ exports.createPages = ({ actions, graphql }) => {
         }
       }
     }
-  `).then(result => {
-    if (result.errors) {
-      throw result.errors;
-    }
-
-    const pages = result.data.allMdx.nodes;
-
-    // create page for each mdx node
-    pages.forEach((page, index) => {
-      const previous =
-        index === pages.length - 1 ? null : pages[index + 1];
-      const next = index === 0 ? null : pages[index - 1];
-
-      createPage({
-        path: page.fields.slug,
-        component: projectTemplate,
-        context: {
-          slug: page.fields.slug,
-          previous,
-          next,
-        },
-      });
-    });
-  });
-};
+  `);
+  if (result.errors) {
+    reporter.panicOnBuild(`🚨  ERROR: Loading "createPages" query`);
+  }
+  // Create blog post pages.
+  const posts = result.data.allMdx.edges
+  // you'll call `createPage` for each result
+  posts.forEach(({ node }, index) => {
+    createPage({
+      // This is the slug you created before
+      // (or `node.frontmatter.slug`)
+      path: node.fields.slug,
+      // This component will wrap our MDX content
+      component: path.resolve(`./src/components/layout/single.js`),
+      // You can use the values in this context in
+      // our page layout component
+      context: { id: node.id },
+    })
+  })
+}
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions;
+  const { createNodeField } = actions
   if (node.internal.type === `Mdx`) {
-    const value = createFilePath({ node, getNode });
+    const value = createFilePath({ node, getNode })
     createNodeField({
       name: `slug`,
       node,
       value,
     });
   }
-};
+}
