@@ -7,6 +7,9 @@ const Dump = props => (
       border: "1px solid #efefef",
       padding: "15vw",
       background: "var(--color-spruce)",
+      gridColumn: "1 / -1",
+      position: "relative",
+      zIndex: "20"
     }}>
     {Object.entries(props).map(([key, val]) => (
       <pre key={key}>

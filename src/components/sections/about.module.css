@@ -5,11 +5,11 @@
 
 .ruler {
   transform: rotate(-15deg);
-  bottom: -240px;
+  bottom: -168px;
   left: calc(100% - 120px);
-  
+
   @screen mdMax {
     display: none; }
-  
+
   @screen md {
     display: block; } }

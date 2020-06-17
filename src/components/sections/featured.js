@@ -9,18 +9,16 @@ import Projects from "@components/content/projects";
 // import styles from "./featured.module.css";
 
 const Featured = (props) => {
-  const containerStyles = `${props.className}`;
-
   return (
     <React.Fragment>
-      <aside className={containerStyles}>
-        <header className="flex justify-between mb-8">
+      <section className={props.className}>
+        <header className="flex justify-between mb-8 col-span-12">
           <h2 className="text-f1 text-melon content mb-4 content columns-all">Featured projects</h2>
           <Action to="/work/" text="View all projects" />
         </header>
 
-        <Projects />
-      </aside>
+        <Projects classNameProject="col-span-6" />
+      </section>
     </React.Fragment>
   )
 }

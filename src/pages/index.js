@@ -13,7 +13,7 @@ function IndexPage() {
       <SEO title="ux &amp; visual design" />
       <Hero className="screen bg-i" />
       <About className="py-36 screen grid content flex items-end mdMax:justify-center md:items-center" />
-      <Featured className="grid content flex" />
+      <Featured className="grid grid-cols-12 content gap-16" />
     </Layout>
   )
 }

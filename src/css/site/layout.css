@@ -57,3 +57,6 @@ body,
 
 .content {
   grid-column: content-start / content-end; }
+
+.full {
+  grid-column: 1 / -1; }

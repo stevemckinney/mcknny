@@ -4,8 +4,9 @@ import { graphql, useStaticQuery } from "gatsby";
 
 // components
 import Project from "@components/card/project";
+// import Dump from "@components/dump";
 
-const Projects = () => {
+const Projects = (props) => {
   const data = useStaticQuery(graphql`
     query listProjects {
       allMdx(
@@ -40,7 +41,8 @@ const Projects = () => {
     <React.Fragment>
       {data.allMdx.nodes.map(({ fields, frontmatter }) => (
         <React.Fragment key={data.id}>
-          <Project link={fields.slug} data={frontmatter} />
+          {/*<Dump projectsProps={fields.slug} />*/}
+          <Project className={props.classNameProject} link={fields.slug} props={frontmatter} />
         </React.Fragment>
       ))}
     </React.Fragment>
@@ -53,6 +55,7 @@ Projects.defaultProps = {
 
 Projects.propTypes = {
   limit: PropTypes.number,
+  classNameProject: PropTypes.string,
 }
 
 export default Projects;
