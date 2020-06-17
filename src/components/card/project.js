@@ -10,7 +10,7 @@ import styles from "./project.module.css";
 const Project = ({ className, link, props }) => {
   return (
     <React.Fragment>
-      {/* <Dump link={props} /> */}
+      {/*<Dump individualProjectProps={props.image.childImageSharp} />*/}
       <article className={`${styles.container} ${className}`}>
         <Link to={link} className="block">
           <Img fluid={props.image.childImageSharp.fluid} className="mb-8" />

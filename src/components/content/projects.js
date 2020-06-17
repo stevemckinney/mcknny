@@ -1,56 +1,65 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { graphql, useStaticQuery } from "gatsby";
+import { StaticQuery, graphql } from "gatsby";
 
 // components
 import Project from "@components/card/project";
 // import Dump from "@components/dump";
 
-const Projects = (props) => {
-  const data = useStaticQuery(graphql`
-    query listProjects {
-      allMdx(
-        sort: { fields: [frontmatter___date], order: DESC }
-        filter: { frontmatter: { published: { eq: true } } }
-        limit: 2
-      ) {
-        nodes {
-          fields {
-            slug
-          }
-          frontmatter {
-            description
-            url
-            published
-            title
-            image {
-              childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid
+const Projects = ({ props }) => {
+  return (
+    <StaticQuery
+      query={graphql`
+        query listProjects {
+          allMdx(
+            sort: { fields: [frontmatter___date], order: DESC }
+            filter: { frontmatter: { published: { eq: true } } }
+            limit: 2
+          ) {
+            nodes {
+              id
+              body
+              frontmatter {
+                category
+                date
+                description
+                image {
+                  childImageSharp {
+                    fluid {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
                 }
+                role
+                title
+                url
+              }
+              fields {
+                slug
               }
             }
           }
-          id
         }
-      }
-    }
-  `);
-
-  return (
-    <React.Fragment>
-      {data.allMdx.nodes.map(({ fields, frontmatter }) => (
-        <React.Fragment key={data.id}>
-          {/*<Dump projectsProps={fields.slug} />*/}
-          <Project className={props.classNameProject} link={fields.slug} props={frontmatter} />
+      `}
+      render={data => (
+        <React.Fragment>
+          {/*<Dump projectsProps={props} />*/}
+          {/*<Dump projectsData={data} />*/}
+          {data.allMdx.nodes.map(({ fields, frontmatter }) => (
+            <React.Fragment key={data.id}>
+              <Project className={props.classNameProject} link={fields.slug} props={frontmatter} />
+            </React.Fragment>
+          ))}
         </React.Fragment>
-      ))}
-    </React.Fragment>
+      )}
+    />
   )
 }
 
 Projects.propTypes = {
   classNameProject: PropTypes.string,
+  data: PropTypes.node.isRequired,
+  props: PropTypes.node,
 }
 
 export default Projects;

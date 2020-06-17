@@ -4,16 +4,17 @@ const Dump = props => (
   <div
     style={{
       fontSize: 16,
-      border: "1px solid #efefef",
-      padding: "15vw",
+      padding: "64px",
       background: "var(--color-spruce)",
       gridColumn: "1 / -1",
       position: "relative",
-      zIndex: "20"
+      zIndex: "20",
+      marginBottom: "32px",
+      overflow: "hidden"
     }}>
     {Object.entries(props).map(([key, val]) => (
       <pre key={key}>
-        <strong style={{ color: "var(--color-madison)", background: "var(--color-amaranth)", padding: "1px 3px" }}>
+        <strong style={{ color: "var(--color-amaranth)" }}>
           {key} 💩
         </strong>
         {JSON.stringify(val, '', ' ')}

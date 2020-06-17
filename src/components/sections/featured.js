@@ -17,15 +17,15 @@ const Featured = (props) => {
           <Action to="/work/" text="View all projects" />
         </header>
 
-        <Projects classNameProject="col-span-6" />
+        <Projects props={{ classNameProject: "col-span-6" }} />
       </section>
     </React.Fragment>
   )
 }
 
 Featured.defaultProps = {
-  className: "featured",
-};
+  className: "featured content grid grid-cols-12 content gap-16",
+}
 
 Featured.propTypes = {
   className: PropTypes.node,
