@@ -9,7 +9,7 @@ import Footer from "@components/footer";
 // css
 import styles from "./layout.module.css";
 
-function Layout({ children }) {
+function Layout({ className, children }) {
   const layoutClass = `font-body bg ${styles.layout}`;
 
   return (
@@ -24,7 +24,7 @@ function Layout({ children }) {
 
       <Header className="header" />
 
-      <main className="grid sm:layout md:layout lg:layout">
+      <main className={className}>
         {children}
       </main>
 
@@ -33,8 +33,13 @@ function Layout({ children }) {
   );
 }
 
+Layout.defaultProps = {
+  className: "grid sm:layout md:layout lg:layout",
+}
+
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  className: PropTypes.node.isRequired,
 }
 
 export default Layout;

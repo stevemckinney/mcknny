@@ -1,65 +1,45 @@
+/* eslint react/prop-types: 0 */
 import React from "react";
-import PropTypes from "prop-types";
 import { graphql, Link } from "gatsby";
-import { MDXRenderer } from "gatsby-plugin-mdx";
-
-// components
-import Layout from "@components/layout";
-import SEO from "@components/seo";
-// const shortcodes = { Link } // Provide common components here
-import Dump from "@components/dump";
+import { MDXProvider } from "@mdx-js/react";
+import { MDXRenderer } from 'gatsby-plugin-mdx';
 
 // css
 import styles from "./single.module.css";
 
-// hooks
-const Single = ({ data: { mdx: page } }) => {
-  const {
-    title,
-    description,
-    category,
-    role,
-    url
-  } = page.frontmatter;
-  const body = page;
+// components
+import SEO from '@components/seo';
+import Layout from '@components/layout';
+import Action from '@components/content/action';
 
+const shortcodes = { Link, Action } // Provide common components here
+
+export default function Single({ data: { mdx } }) {
   return (
     <Layout>
-      <SEO title={title} />
-      <header className="screen full bg-i grid sm:layout md:layout lg:layout flex mdMax:justify-center items-end md:items-center relative">
-        <Dump data={page} />
-        <div className="content">
-          {url !== "" && <Link to="{url}">{url.replace("https", "")}</Link>}
-          <h1>{description}</h1>
-          {category}
-          {role}
+      <SEO title={mdx.frontmatter.title}/>
+      <header className="grid full screen bg-i sm:layout md:layout lg:layout mdMax:justify-center items-end md:items-center relative">
+        <div className={styles.content}>
+          <h1 className="relative z-10 mb-6 mdMax:leading-tight text-f3 lg:text-headline tracking-headline">{mdx.frontmatter.title}</h1>
         </div>
       </header>
-      <section className={`${styles.content} grid content text-f4`}>
-        <MDXRenderer>{body}</MDXRenderer>
-      </section>
+      <article className={`${styles.article} grid full text-f4 sm:layout md:layout lg:layout`}>
+        <MDXProvider components={shortcodes}>
+          <MDXRenderer>{mdx.body}</MDXRenderer>
+        </MDXProvider>
+      </article>
     </Layout>
   )
 }
 
-export const query = graphql`
-  query projectsBySlug($slug: String!) {
-    mdx(fields: { slug: { eq: $slug } }) {
+export const pageQuery = graphql`
+  query BlogPostQuery($id: String) {
+    mdx(id: { eq: $id }) {
+      id
       body
       frontmatter {
         title
-        description
-        date(formatString: "YYYY")
-        role
-        category
-        url
       }
     }
   }
-`;
-
-Single.propTypes = {
-  data: PropTypes.node.isRequired,
-}
-
-export default Single;
+`

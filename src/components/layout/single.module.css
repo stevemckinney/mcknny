@@ -1,5 +1,26 @@
+.article {
+  grid-row-gap: 0;
+
+  & > h2 {
+    font-size: var(--f2); }
+
+  & > :is(h1, h2, h3, h4, h5, h6, p, ul) {
+    margin: 0;
+    padding: 0;
+    grid-column: 7 / content-end; } }
+
+.article > p,
+.article > ul,
+.article > ol {
+  margin: 0;
+  padding: 0; }
+
 .content {
-  & > p + :is(h1, h2, h3, h4, h5, h6) {
-    margin-top: calc(var(--spacing) * 4)
-  }
-}
+  max-width: 664px;
+  grid-column: content-start / -1;
+  grid-row: 2;
+
+  @screen mdMax {
+    @apply text-center pb-16;
+    grid-row: 3;
+    grid-column: content; } }

@@ -43,7 +43,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       name: `work`,
       options: {
-        path: `${__dirname}/src/pages/work`,
+        path: `${__dirname}/content/work`,
       },
     },
     {
@@ -110,20 +110,25 @@ module.exports = {
       options: {
         extensions: [`.mdx`, `.md`],
         defaultLayouts: {
+          work: require.resolve("./src/components/layout/single.js"),
           default: require.resolve("./src/components/layout/single.js"),
         },
-        gatsbyRemarkPlugins: [{
-          resolve: `gatsby-remark-images`,
-          options: {
-            maxWidth: 960,
-            showCaptions: ['title'],
-            // Markdown captions do not work in mdx yet. More info: https://github.com/gatsbyjs/gatsby/pull/16574#issue-306869033
-            markdownCaptions: true,
-            linkImagesToOriginal: false,
-            tracedSVG: true,
-            quality: 95
-          },
-        }],
+        gatsbyRemarkPlugins: [
+          `gatsby-remark-smartypants`,
+          `gatsby-plugin-feed-mdx`,
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 960,
+              showCaptions: ['title'],
+              // Markdown captions do not work in mdx yet. More info: https://github.com/gatsbyjs/gatsby/pull/16574#issue-306869033
+              markdownCaptions: true,
+              linkImagesToOriginal: false,
+              tracedSVG: true,
+              quality: 95
+            },
+          }
+        ],
       }
     },
     {

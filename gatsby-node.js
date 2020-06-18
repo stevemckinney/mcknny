@@ -21,28 +21,50 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
   });
 }
 
+// Add the slug field to mdx
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions
+  // you only want to operate on `Mdx` nodes. If you had content from a
+  // remote CMS you could also check to see if the parent node was a
+  // `File` node here
+  if (node.internal.type === "Mdx") {
+    const value = createFilePath({ node, getNode })
+    createNodeField({
+      // Name of the field you are adding
+      name: "slug",
+      // Individual MDX node
+      node,
+      // Generated value based on filepath with "blog" prefix. you
+      // don't need a separating "/" before the value because
+      // createFilePath returns a path with the leading "/".
+      value: `/work${value}`,
+    })
+  }
+}
+
+// Create the mdx pages
 exports.createPages = async ({ graphql, actions, reporter }) => {
   // Destructure the createPage function from the actions object
-  const { createPage } = actions;
+  const { createPage } = actions
   const result = await graphql(`
     query {
       allMdx(
         sort: { fields: [frontmatter___date], order: DESC }
         filter: { frontmatter: { published: { eq: true } } }
       ) {
-        nodes {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
+        edges {
+          node {
+            id
+            fields {
+              slug
+            }
           }
         }
       }
     }
-  `);
+  `)
   if (result.errors) {
-    reporter.panicOnBuild(`🚨  ERROR: Loading "createPages" query`);
+    reporter.panicOnBuild('🚨  ERROR: Loading "createPages" query')
   }
   // Create blog post pages.
   const posts = result.data.allMdx.edges
@@ -59,16 +81,4 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       context: { id: node.id },
     })
   })
-}
-
-exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions
-  if (node.internal.type === `Mdx`) {
-    const value = createFilePath({ node, getNode })
-    createNodeField({
-      name: `slug`,
-      node,
-      value,
-    });
-  }
 }

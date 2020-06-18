@@ -46,6 +46,20 @@
   --font-body: sofia-pro, sans-serif;
 
   /**
+   * font size
+   */
+  --f9: 10px;
+  --f8: 12px;
+  --f7: 14px;
+  --f6: 16px;
+  --f5: 18px;
+  --f4: 21px;
+  --f3: 24px;
+  --f2: 32px;
+  --f1: 48px;
+  --headline: 64px;
+
+  /**
    * spacing
    */
   --spacing: 8px;

@@ -18,10 +18,7 @@ const Projects = ({ props }) => {
           ) {
             nodes {
               id
-              body
               frontmatter {
-                category
-                date
                 description
                 image {
                   childImageSharp {
@@ -30,9 +27,7 @@ const Projects = ({ props }) => {
                     }
                   }
                 }
-                role
                 title
-                url
               }
               fields {
                 slug
