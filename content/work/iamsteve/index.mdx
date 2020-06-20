@@ -10,21 +10,19 @@ path: /work/iamsteve/
 published: true
 ---
 
-import React from "react";
-import Action from "@components/content/action"
-import Link from "gatsby"
-
-<React.Fragment>
-  <Action to="/about/" text="Read my process" />
-  <Link to="/avbout">adadsasdas</Link>
-</React.Fragment>
-
 iamsteve.me is a design & code blog, with the goal of helping you to implement your design vision. It’s aimed at designers & developers, looking to improve their visual design & CSS skills.
 
 The website needed a design refresh to accommodate the change in focus—it was balanced between being a blog and a portfolio. As well, there was a need to improve the perception of this website being a place you can depend on to learn.
 
-![Small screen version of the homepage](.iamsteve-home-small@2x.png)
-![Large screen version of the homepage](./iamsteve-home-large@2x.png)
+<div className="flex full">
+  <Screen device="small">
+  </Screen>
+  <Screen device="large">
+  </Screen>
+</div>
+
+--![Small screen version of the homepage](./iamsteve-home-small@2x.png)
+--![Large screen version of the homepage](./iamsteve-home-large@2x.png)
 
 ## Understanding the visitors
 It’s important to understand the frame of mind people are in whilst looking for solutions in articles. So throughout the process I wanted to keep this in mind.
@@ -34,19 +32,23 @@ There are two primary types of people who visit this website. Those who are curr
 
 **The distinction between the two is the time they have**. The person working wants a quick solution and the person learning wants to be guided and understand why.
 
+<Story>
 ### I’m working
 I’m currently working on a project and in a hurry to find a solution to the problem. I want to skim the article, grab the solution and get back to what I’m doing.
 
 - When I’m stuck I want to find the solution quickly within the article.
 - I want to trust when I copy code or values it’s the complete solution.
 - When I’m using a tool in an application, I want to know where it is without having to spend time hunting for it.
+</Story>
 
+<Story>
 ### I’m learning
 I’ve heard of this particular topic, I’d like to research and learn more about the topic. I’ll search for tutorials on this topic.
 
 - When I’m trying to improve my skills, I want to understand a topic fully, so I can recall it easier when I’m working.
 - When I’m trying to improve my skills, I want to know why something is done this way, so I can form my own opinions.
 - When I’m using a new tool I want to know where it is, not only the keyboard shortcut.
+</Story>
 
 ## Understanding the workflow behind content
 There was a reasonable amount of articles already on the website—so a workflow is in place. I wanted to see where I could make the design of articles better without increasing workload where possible.
@@ -66,14 +68,14 @@ Starting out, laying the foundations for producing content and addressing the pr
 
 The aim is to be flexible and remain complementary. I wanted to give  variety in hues, tints and shades so that featured images and illustrations had enough freedom.
 
-![](./iamsteve-colour.svg)
+![A five colour palette](./iamsteve-colour.svg)
 
 ## Custom pixel perfect icons
 With the illustrations throughout the website having particular stylistic choices (eg: stroke weight) it made sense that the icons followed suit.
 
 All illustrations are drawn with 2px rounded strokes, so this was the main constraint to adhere to. Each icon is drawn on a 16px grid, being implemented in such a way the colour can be adjusted easily in code.
 
-![](./iamsteve-icons.svg)
+![A selection of icons for different uses](./iamsteve-icons.svg)
 _Scaled for dramatisation_
 
 ## Bold & clear typography, with enough white space

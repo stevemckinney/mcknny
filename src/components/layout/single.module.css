@@ -1,19 +1,24 @@
 .article {
-  grid-row-gap: 0;
+  grid-row-gap: 16px;
 
   & > h2 {
-    font-size: var(--f2); }
+    font-size: var(--f2);
+    margin-top: calc(var(--spacing) * 6); }
+
+  & > h3 {
+    font-size: var(--f3);
+    margin-top: calc(var(--spacing) * 4); }
+
+  & > h4 {
+    font-size: var(--f4); }
 
   & > :is(h1, h2, h3, h4, h5, h6, p, ul) {
-    margin: 0;
+    margin-bottom: 0;
     padding: 0;
-    grid-column: 7 / content-end; } }
+    grid-column: 7 / content-end; }
 
-.article > p,
-.article > ul,
-.article > ol {
-  margin: 0;
-  padding: 0; }
+  & li:not(:last-child) {
+    margin-bottom: var(--spacing); } }
 
 .content {
   max-width: 664px;

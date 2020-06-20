@@ -1,5 +1,5 @@
 /**
- * A custom reset inspired by: 
+ * A custom reset inspired by:
  * normalize
  * @hankchizljaw https://dev.to/hankchizljaw/a-modern-css-reset-6p3
  * http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
@@ -14,17 +14,38 @@ html {
 *:before,
 *:after {
   box-sizing: inherit; }
-  
+
 /**
- * List
+ * list
  */
+ul:not([class]),
+ol:not([class]) {
+  margin: 0;
+  padding: 0; }
+
+ul:not([class]) li:before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: -2px;
+  width: 8px;
+  height: 8px;
+  margin: 0 8px 0 -16px;
+  background-color: var(--color-seagull); }
+
+ul:not([class]),
 ul[class],
 ol[class] {
-  padding: 0;
   list-style: none; }
 
 /**
- * Form
+ * content
+ */
+figure {
+  margin: 0; }
+
+/**
+ * form
  */
 button,
 input,

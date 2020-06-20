@@ -11,8 +11,10 @@ import styles from "./single.module.css";
 import SEO from '@components/seo';
 import Layout from '@components/layout';
 import Action from '@components/content/action';
+import Story from '@components/card/story';
+import Screen from '@components/screen';
 
-const shortcodes = { Link, Action } // Provide common components here
+const shortcodes = { Link, Action, Screen, Story } // Provide common components here
 
 export default function Single({ data: { mdx } }) {
   return (
@@ -39,6 +41,9 @@ export const pageQuery = graphql`
       body
       frontmatter {
         title
+        role
+        category
+        url
       }
     }
   }
