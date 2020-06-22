@@ -76,7 +76,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-react-helmet-canonical-urls`,
       options: {
-        siteUrl: `https://stevemckinney.net`,
+        siteUrl: `https://mcknny.com`,
       },
     },
     {
