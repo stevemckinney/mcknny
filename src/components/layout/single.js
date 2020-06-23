@@ -18,7 +18,14 @@ import P from '@components/content/p';
 import Story from '@components/card/story';
 import Screen from '@components/screen';
 
-const shortcodes = { Link, Action, Screen, Story, P, H, List } // Provide common components here
+const shortcodes = {
+  Link,
+  Action,
+  Screen,
+  Story,
+  P,
+  H,
+  List } // Provide common components here
 
 export default function Single({ data: { mdx } }) {
   const {
@@ -45,7 +52,7 @@ export default function Single({ data: { mdx } }) {
           <ul className={`m-0 p-0 flex mb-4 text-f8 text-pearl uppercase tracking-title font-title font-bold gap-4`}>
             <li className="text-melon list-item">Role</li>
             {role.map((name, i) => [
-              <React.Fragment key={role.id}>
+              <React.Fragment key={name.id}>
                 <li className="list-item">
                   {name}
                 </li>
@@ -55,7 +62,7 @@ export default function Single({ data: { mdx } }) {
             <li className="list-item"><Bullet className="bg-madison" /></li>
             <li className="text-melon list-item">Type</li>
             {category.map((name, i) => [
-              <React.Fragment key={category.id}>
+              <React.Fragment key={name.id}>
                 <li className="list-item">
                   {name}
                 </li>
@@ -64,7 +71,7 @@ export default function Single({ data: { mdx } }) {
             ])}
           </ul>
           {introduction.map(p => (
-            <p key="p.id" className="text-f4">{p}</p>
+            <p key={p.id} className="text-f4">{p}</p>
           ))}
         </div>
       </header>
