@@ -10,11 +10,11 @@ import Glasses from "@images/glasses.inline.svg";
 
 const Prompt = props => {
   const PromptClass = `py-36 relative flex justify-center items-center prompt`;
-  
+
   return (
     <React.Fragment>
       <div className={PromptClass}>
-        <Link to={props.to} className="p-8 absolute font-display text-f5 md:text-headline font-bold text-jasmine">
+        <Link to={props.to} className="p-8 absolute z-10 font-display text-f5 md:text-headline font-bold text-jasmine">
           {props.text}
         </Link>
         <Glasses style={{ marginBottom: "-12px" }} />

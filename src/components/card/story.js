@@ -5,25 +5,25 @@ import PropTypes from "prop-types";
 // css
 import base from "./card.module.css";
 
-const Story = ({ className, children }) => {
+const Story = (props) => {
+  const { className, children, style } = props;
+  const classNameStory = `card p-16 ${className}`;
+
   return (
     <React.Fragment>
       {/*<Dump individualProjectProps={props.image.childImageSharp} />*/}
-      <article className={`${base.card} ${className}`}>
+      <article className={`${classNameStory} ${base.card}`} style={style}>
         {children}
       </article>
     </React.Fragment>
   )
 }
 
-Story.defaultProps = {
-  className: "auto-fit"
-};
-
-
 Story.propTypes = {
   children: PropTypes.node.isRequired,
   className: PropTypes.string,
+  props: PropTypes.node,
+  style: PropTypes.object
 }
 
 export default Story;

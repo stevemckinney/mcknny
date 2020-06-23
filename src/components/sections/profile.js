@@ -21,12 +21,11 @@ const Profile = (props) => {
   return (
     <React.Fragment>
       <aside className={containerStyles}>
-
         <div className={contentStyles}>
           <Logo className="pb-8" />
-          <h2 className={`${styles.title} text-f1 text-melon content mb-12`}>I’m Steve McKinney, a Manchester based visual & ux designer</h2>
+          <h2 className={`${styles.title} text-f1 text-remy content mb-12`}>I’m Steve McKinney, a Manchester based visual & ux designer</h2>
           <h3 className="block text-f6 text-pearl uppercase tracking-title font-title font-medium mb-4">Let’s talk design</h3>
-          <ul className="flex font-bold text-f5 m-0">
+          <ul className="flex font-bold text-f5 p-0 m-0">
             <li className="pr-8">
               <a href="mailto:steve+mcknny@iamsteve.me" className="text-jasmine">Email</a>
             </li>

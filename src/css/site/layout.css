@@ -55,6 +55,11 @@ body,
     grid-gap: var(--grid-gutter);
     grid-template-columns: var(--grid-16); } }
 
+.xxl\:layout {
+  @screen xxl {
+    grid-gap: var(--grid-gutter);
+    grid-template-columns: var(--grid-16); } }
+
 .content {
   grid-column: content-start / content-end; }
 
