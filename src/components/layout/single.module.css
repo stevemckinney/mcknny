@@ -18,13 +18,20 @@
   & > h3 {
     margin-top: calc(var(--spacing) * 4); }
 
+  & > :is(p, ul, ol) {
+    margin-top: calc(var(--spacing) * 2); }
+
   & :is(h1, h2, h3, h4, h5, h6) {
     color: var(--color-melon); }
 
-  & > :is(h1, h2, h3, h4, h5, h6, p, ul) {
+  & > :is(h1, h2, h3, h4, h5, h6, p, ul, ol) {
     margin-bottom: 0;
     padding: 0;
     grid-column: 9 / content-end; }
+
+  & > p + p,
+  & > h3 + p {
+    margin-top: calc(var(--spacing) * 2); }
 
   & li:not(:last-child) {
     margin-bottom: var(--spacing); } }

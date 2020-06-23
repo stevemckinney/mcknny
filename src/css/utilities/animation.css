@@ -1,0 +1,18 @@
+.stroke-animation path {
+  stroke-dasharray: 192px;
+  stroke-dashoffset: 192px;
+  stroke-linecap: round;
+  animation: dash 1.5s 0s linear infinite forwards;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 192px;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 192px;
+  }
+}

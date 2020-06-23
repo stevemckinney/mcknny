@@ -18,7 +18,7 @@ const H = props => {
 }
 
 H.defaultProps = {
-  className: "heading",
+  className: "heading mb-4",
 }
 
 H.propTypes = {

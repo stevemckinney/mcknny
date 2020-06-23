@@ -41,6 +41,9 @@ body,
   grid-gap: var(--grid-gutter);
   grid-template-columns: var(--grid-16); }
 
+.layout-rows {
+  grid-template-rows: [hero-start] 25vh 50vh 25vh [hero-end content-row-start] auto [content-row-end]; }
+
 .sm\:layout {
   grid-gap: calc(var(--grid-gutter) / 2);
   grid-template-columns: var(--grid-6); }

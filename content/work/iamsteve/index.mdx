@@ -20,7 +20,7 @@ import H from "@components/content/h";
 import List from "@components/content/list";
 import P from "@components/content/p";
 
-<div className="flex full">
+<div className="flex gap-8 full col-start-4 -ml-8">
   <Screen device="small">
   </Screen>
   <Screen device="large">
@@ -38,14 +38,15 @@ There are two primary types of people who visit this website. Those who are curr
 
 **The distinction between the two is the time they have**. The person working wants a quick solution and the person learning wants to be guided and understand why.
 
-<div className="grid grid-cols-10 col-start-6 col-span-10 gap-8">
+<div className="grid grid-cols-10 col-start-6 col-span-10 gap-8 mt-16">
   <Story className="col-span-5">
-    <svg width={128} height={10} viewBox="0 0 128 10" fill="none" className="mb-16">
+    <svg width={128} height={10} viewBox="0 0 128 10" fill="none" className="mb-16 stroke-animation">
       <path
         d="M0 1c4 0 4 8 7.999 8 4 0 4-8 7.999-8 3.999 0 3.999 8 7.998 8 4 0 4-8 7.999-8 4 0 4 8 7.999 8 4 0 4-8 7.998-8 4 0 4 8 8 8 3.999 0 3.999-8 7.998-8 4 0 4 8 7.999 8 4 0 4-8 7.998-8 4 0 4 8 8 8 3.999 0 3.999-8 7.998-8 4 0 4 8 7.999 8 3.999 0 3.999-8 7.998-8 4 0 4 8 8.009 8 4.01 0 4-8 8.009-8"
         stroke="#7DB8CA"
         strokeWidth={2}
         strokeMiterlimit={10}
+        pathLength={1}
       />
     </svg>
     <H as="h3">I’m working</H>
@@ -58,13 +59,14 @@ There are two primary types of people who visit this website. Those who are curr
       ]}
     />
   </Story>
-  <Story className="col-span-5" style={{ gridColumnStart: 6}}>
-    <svg width={128} height={10} viewBox="0 0 128 10" fill="none" className="mb-16">
+  <Story className="col-span-5">
+    <svg width={128} height={10} viewBox="0 0 128 10" fill="none" className="mb-16 stroke-animation">
       <path
         d="M0 1c10.67 0 10.67 8 21.33 8C32 9 32 1 42.66 1 53.33 1 53.33 9 64 9s10.67-8 21.33-8C96 1 96 9 106.66 9c10.66 0 10.67-8 21.34-8"
         stroke="#7DB8CA"
         strokeWidth={2}
         strokeMiterlimit={10}
+        pathLength={1}
       />
     </svg>
     <H as="h3">I’m learning</H>
@@ -134,27 +136,29 @@ Some of these things appear simple, but it was a challenge to define appropriate
 ![](./iamsteve-article-large-03@2x.png)
 
 ## Results
-The design wasn’t just a massive visual improvement, it was a restructuring and refocusing of a website that balanced two competing goals. Focusing on the writing side of the website saw the following
+The design wasn’t just a massive visual improvement, it was a restructuring and refocusing of a website that balanced two competing goals. Focusing on the writing side of the website saw the following:
 
-<Story className="col-span-5" style={{ gridColumnStart: 6}}>
-  <H as="h3">Newsletter growth</H>
-  <P>The newsletter grew from 0 to 587 subscribers within a year</P>
-</Story>
+<div className="grid grid-cols-10 col-start-6 col-span-10 gap-8 mt-16">
+  <Story className="col-span-5">
+    <H as="h3">Newsletter growth</H>
+    <P>The newsletter grew from 0 to 587 subscribers within a year</P>
+  </Story>
 
-<Story className="col-span-5">
-  <H as="h3">Monthly visits increased</H>
-  <P>Traffic trebled <a href="https://iamsteve.me/blog/entry/a-year-in-writing-2017#website-year-in-review">year on year</a> every month for at least a year</P>
-</Story>
+  <Story className="col-span-5">
+    <H as="h3">Monthly visits increased</H>
+    <P>Traffic trebled <a href="https://iamsteve.me/blog/entry/a-year-in-writing-2017#website-year-in-review">year on year</a> every month for at least a year</P>
+  </Story>
 
-<Story className="col-span-5" style={{ gridColumnStart: 6}}>
-  <H as="h3">Site speed improved</H>
-  <P>A Google web.dev score of 99 on the homepage, Adobe Fonts is -1.</P>
-</Story>
+  <Story className="col-span-5">
+    <H as="h3">Site speed improved</H>
+    <P>A Google web.dev score of 99 on the homepage, Adobe Fonts is -1.</P>
+  </Story>
 
-<Story className="col-span-5">
-  <H as="h3">More pages viewed</H>
-  <P>Visitors viewed more pages per session increasing from 1.4 to 2</P>
-</Story>
+  <Story className="col-span-5">
+    <H as="h3">More pages viewed</H>
+    <P>Visitors viewed more pages per session increasing from 1.4 to 2</P>
+  </Story>
+</div>
 
 ### Features
 - The website was saw a few submissions to user generated galleries like [Site Inspire](https://www.siteinspire.com/websites/7248-iamsteve),
