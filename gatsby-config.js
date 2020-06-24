@@ -99,7 +99,7 @@ module.exports = {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         tailwind: true,
-        whitelist: [`fill-shadow`, `opacity-20`, `opacity-40`],
+        whitelist: [`fill-shadow`, `opacity-20`, `opacity-40`, `grid-cols-10`],
         content: [
           path.join(process.cwd(), `content/**/!(*.d).{js,jsx,md,mdx,svg}`),
           path.join(process.cwd(), `src/**/!(*.d).{js,jsx,md,mdx,svg}`)
