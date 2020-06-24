@@ -18,13 +18,13 @@
   & > h3 {
     margin-top: calc(var(--spacing) * 4); }
 
-  & > :is(p, ul, ol) {
+  & > :matches(p, ul, ol) {
     margin-top: calc(var(--spacing) * 2); }
 
-  & :is(h1, h2, h3, h4, h5, h6) {
+  & :matches(h1, h2, h3, h4, h5, h6) {
     color: var(--color-melon); }
 
-  & > :is(h1, h2, h3, h4, h5, h6, p, ul, ol) {
+  & > :matches(h1, h2, h3, h4, h5, h6, p, ul, ol) {
     margin-bottom: 0;
     padding: 0;
     grid-column: 9 / content-end; }
