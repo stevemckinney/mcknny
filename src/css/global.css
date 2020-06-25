@@ -18,7 +18,7 @@
 /**
  * Utilities (must be last)
  */
-@import "utilities/animation";
+/* @import "utilities/animation"; */
 @import "utilities/svg";
 @import "utilities/columns";
 @import "tailwindcss/utilities";

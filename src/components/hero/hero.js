@@ -23,7 +23,7 @@ const Hero = props => {
       <section className={heroStyles}>
         <div className={styles.content}>
           <h1 className={headingStyles}>Beautifully usable design your customers have come to expect</h1>
-          <Action to="/portfolio/" text="View case studies" />
+          <Action to={props.link} text="View case studies" />
         </div>
         <Eraser className={`illo ${styles.eraser}`} />
         <Palomino className={`illo ${styles.palomino}`} />
@@ -39,6 +39,7 @@ const Hero = props => {
 
 Hero.propTypes = {
   className: PropTypes.node,
+  link: PropTypes.string.isRequired,
 }
 
 export default Hero;
