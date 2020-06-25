@@ -13,12 +13,16 @@ import styles from "./screen.module.css";
 const Screen = ({ caption, children, device }) => {
   return (
     <React.Fragment>
-      {/*<Dump individualPhoneProps={props.image.childImageSharp} />*/}
-      <figure className={`${styles.screen}`}>
-        {children}
-        { device === "small" && <Small />}
-        { device === "medium" && <Medium />}
-        { device === "large" && <Large />}
+      {/* <Dump cls={`${styles[device]}-image`} /> */}
+      <figure className={`${styles.container}`}>
+        <div className={`${styles[device]}`}>
+          <div className={`${styles.image} absolute`}>
+            {children}
+          </div>
+          { device === "small" && <Small role="presentation" />}
+          { device === "medium" && <Medium role="presentation" />}
+          { device === "large" && <Large role="presentation" />}
+        </div>
         {caption && <figcaption dangerouslySetInnerHTML={{ __html: caption }} />}
       </figure>
     </React.Fragment>

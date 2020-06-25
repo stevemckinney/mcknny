@@ -1,2 +1,27 @@
-.screen {
+.small .image {
+  max-width: 414px;
+  top: 68px;
+  right: 28px;
+  bottom: 32px;
+  left: 58px; }
+
+.medium .image {
+  max-width: 1366px;
+  top: 84px;
+  right: 28px;
+  bottom: 32px;
+  left: 108px; }
+
+.container {
   @apply relative; }
+
+.small,
+.medium,
+.large {
+  @apply relative;
+
+  & p {
+    margin-bottom: 0; }
+
+  & img {
+    border-radius: 20px; } }

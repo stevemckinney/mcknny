@@ -121,6 +121,7 @@ module.exports = {
           default: require.resolve("./src/components/layout/single.js"),
         },
         gatsbyRemarkPlugins: [
+          `gatsby-remark-unwrap-images`,
           `gatsby-remark-smartypants`,
           `gatsby-plugin-feed-mdx`,
           {

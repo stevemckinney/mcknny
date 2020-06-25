@@ -43,12 +43,12 @@ export default function Single({ data: { mdx } }) {
   return (
     <Layout>
       <SEO title={title}/>
-      <header className="grid full screen bg-i sm:layout md:layout lg:layout mdMax:justify-center items-center relative">
-        <div className={`${styles.content} col-span-5 col-start-4`}>
+      <header className="grid full screen screen-rows bg-i sm:layout md:layout lg:layout relative">
+        <div className={`${styles.content} screen-center col-span-5 col-start-4`}>
           <a href={url} className="mb-4 text-f8 text-melon uppercase tracking-title font-title font-bold">{url.replace("https://", "")}</a>
           <h1 className="relative z-10 mb-6 mdMax:leading-tight text-f3 lg:text-headline tracking-headline">{description}</h1>
         </div>
-        <div className="col-span-7">
+        <div className="screen-center col-span-7">
           <ul className={`m-0 p-0 flex mb-4 text-f8 text-pearl uppercase tracking-title font-title font-bold gap-4`}>
             <li className="text-melon list-item">Role</li>
             {role.map((name, i) => [
@@ -75,7 +75,7 @@ export default function Single({ data: { mdx } }) {
           ))}
         </div>
       </header>
-      <article className={`${styles.article} grid full text-f4 sm:layout md:layout lg:layout`} style={{ marginTop: "-20vh", gridRow: "content-row" }}>
+      <article className={`${styles.article} grid full text-f4 sm:layout md:layout lg:layout`} style={{ marginTop: `-25vh` }}>
         <MDXProvider components={shortcodes}>
           <MDXRenderer>{mdx.body}</MDXRenderer>
         </MDXProvider>
