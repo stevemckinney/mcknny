@@ -117,13 +117,19 @@ module.exports = {
       options: {
         extensions: [`.mdx`, `.md`],
         defaultLayouts: {
-          work: require.resolve("./src/components/layout/single.js"),
-          default: require.resolve("./src/components/layout/single.js"),
+          work: require.resolve(`./src/components/layout/single.js`),
+          default: require.resolve(`./src/components/layout/single.js`),
         },
         gatsbyRemarkPlugins: [
           `gatsby-remark-unwrap-images`,
           `gatsby-remark-smartypants`,
           `gatsby-plugin-feed-mdx`,
+          {
+            resolve: `gatsby-remark-copy-linked-files`,
+            options: {
+              ignoreFileExtensions: [`png`, `jpg`, `jpeg`, `bmp`, `tiff`],
+            },
+          },
           {
             resolve: `gatsby-remark-images`,
             options: {
