@@ -6,7 +6,11 @@ import { StaticQuery, graphql } from "gatsby";
 import Project from "@components/card/project";
 // import Dump from "@components/dump";
 
+// css
+import styles from "./projects.module.css";
+
 const Projects = ({ props }) => {
+  // 664x708
   return (
     <StaticQuery
       query={graphql`
@@ -22,7 +26,7 @@ const Projects = ({ props }) => {
                 description
                 image {
                   childImageSharp {
-                    fluid {
+                    fluid(maxWidth: 1328, maxHeight: 1416, quality: 98) {
                       ...GatsbyImageSharpFluid
                     }
                   }
@@ -42,7 +46,7 @@ const Projects = ({ props }) => {
           {/*<Dump projectsData={data} />*/}
           {data.allMdx.nodes.map(({ fields, frontmatter }) => (
             <React.Fragment key={data.id}>
-              <Project className={props.classNameProject} link={fields.slug} props={frontmatter} />
+              <Project className={`${props.classNameProject} ${styles.project}`} link={fields.slug} props={frontmatter} />
             </React.Fragment>
           ))}
         </React.Fragment>
