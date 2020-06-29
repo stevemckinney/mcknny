@@ -25,8 +25,8 @@
   transform: rotate(-30deg);
 
   @screen mdMax {
-    bottom: -25vh;
-    right: -17.5vmax; }
+    bottom: -8%;
+    right: -22.5%; }
 
   @screen md {
     top: 654px;
@@ -47,8 +47,8 @@
   transform: rotate(-60deg);
 
   @screen mdMax {
-    top: -48vmax;
-    left: -42vmax; }
+    bottom: -33%;
+    right: 140%; }
 
   @screen md {
     top: 102px;

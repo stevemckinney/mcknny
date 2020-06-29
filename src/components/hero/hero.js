@@ -22,7 +22,7 @@ const Hero = props => {
     <React.Fragment>
       <section className={`${heroStyles} z-10 relative`}>
         <div className={`${styles.content} z-10`}>
-          <h1 className={headingStyles} dangerouslySetInnerHTML={{ __html:`Beautifully usable design your customers have come&nbsp;to expect` }}/>
+          <h1 className={headingStyles} dangerouslySetInnerHTML={{ __html:`Beautifully usable design your&nbsp;customers&nbsp;have come&nbsp;to&nbsp;expect` }}/>
           <Action to={props.link} text="View case studies" />
         </div>
         {/* style={{ marginBottom: "-120px", paddingBottom: "120px" }} */}
