@@ -35,6 +35,7 @@ module.exports = {
 
       // blue
       madison: "var(--color-madison)",
+      prussian: "var(--color-prussian)",
       seagull: "var(--color-seagull)",
       ohahu: "var(--color-ohahu)",
 

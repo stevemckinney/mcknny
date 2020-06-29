@@ -15,23 +15,26 @@ import Posca from "@images/posca.inline.svg";
 import Sharpener from "@images/sharpener.inline.svg";
 
 const Hero = props => {
-  const heroStyles = `${props.className} ${styles.container} grid sm:layout md:layout lg:layout mdMax:justify-center items-end md:items-center relative`;
-  const headingStyles = `relative z-10 mb-6 mdMax:leading-tight text-f3 lg:text-headline tracking-headline`;
+  const heroStyles = `${props.className} ${styles.container} grid layout mdMax:justify-center items-end md:items-center relative`;
+  const headingStyles = `relative z-10 mb-2 md:mb-6 text-f4 md:text-f3 lg:text-headline lg:tracking-headline`;
 
   return (
     <React.Fragment>
-      <section className={heroStyles}>
-        <div className={styles.content}>
-          <h1 className={headingStyles}>Beautifully usable design your customers have come to expect</h1>
+      <section className={`${heroStyles} z-10 relative`}>
+        <div className={`${styles.content} z-10`}>
+          <h1 className={headingStyles} dangerouslySetInnerHTML={{ __html:`Beautifully usable design your customers have come&nbsp;to expect` }}/>
           <Action to={props.link} text="View case studies" />
         </div>
-        <Eraser className={`illo ${styles.eraser}`} />
-        <Palomino className={`illo ${styles.palomino}`} />
-        <Pen className={`illo ${styles.pen}`} />
-        <Pencil className={`illo ${styles.pencil}`} />
-        <Phone className={`illo ${styles.phone}`} />
-        <Posca className={`illo ${styles.posca}`} />
-        <Sharpener className={`illo ${styles.sharpener}`} />
+        {/* style={{ marginBottom: "-120px", paddingBottom: "120px" }} */}
+        <div className={`absolute inset-0 z-0 overflow-hidden`}>
+          <Eraser className={`illo ${styles.eraser}`} />
+          <Palomino className={`illo ${styles.palomino}`} />
+          <Pen className={`illo ${styles.pen}`} />
+          <Pencil className={`illo ${styles.pencil}`} />
+          <Phone className={`illo ${styles.phone}`} />
+          <Posca className={`illo ${styles.posca}`} />
+          <Sharpener className={`illo ${styles.sharpener}`} />
+        </div>
       </section>
     </React.Fragment>
   )

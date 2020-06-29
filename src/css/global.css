@@ -21,4 +21,5 @@
 /* @import "utilities/animation"; */
 @import "utilities/svg";
 @import "utilities/columns";
+@import "utilities/radius";
 @import "tailwindcss/utilities";

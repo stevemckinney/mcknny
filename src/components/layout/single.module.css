@@ -1,3 +1,4 @@
+/*! purgecss start ignore */
 .article {
   grid-row-gap: 0;
 
@@ -35,13 +36,4 @@
 
   & li:not(:last-child) {
     margin-bottom: var(--spacing); } }
-
-.content {
-  /* max-width: 664px; */
-  /* grid-column: content-start / -1; */
-  /* grid-row: 2; */
-
-  @screen mdMax {
-    @apply text-center pb-16;
-    grid-row: 3;
-    grid-column: content; } }
+/*! purgecss end ignore */

@@ -1,3 +1,4 @@
+/*! purgecss start ignore */
 .small .image {
   max-width: 414px;
   top: 68px;
@@ -25,3 +26,4 @@
 
   & img {
     border-radius: 20px; } }
+/*! purgecss end ignore */

@@ -5,6 +5,7 @@
 
   /* blue */
   --color-prussian: #1A2D3D;
+  --color-prussian-rgb: 26, 45, 61;
   --color-madison: #2A3C51;
   --color-seagull: #7DB8CA;
   --color-ohahu: #CAE5EE;
@@ -112,13 +113,13 @@
   --grid-6:
     [container-start]
       calc(var(--spacing) * 2)
-      [content-wide-start]
+      [content-start]
         1fr
-        [content-start]
+        [content-narrow-start]
           repeat(4, 1fr)
-        [content-end]
+        [content-narrow-end]
         1fr
-      [content-wide-end]
+      [content-end]
       calc(var(--spacing) * 2)
     [container-end];
 

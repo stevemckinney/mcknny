@@ -1,9 +1,16 @@
+/**
+ * viewport heights
+ * ui: 70 + 44 = 114
+ * 5s: 454px
+ * 6/7/8: 553px
+ * 6/7/8-plus: 622px
+ * xs: 698px
+ * xs max: 782px
+ */
+
 .container {
   grid-column: 1 / -1;
-  grid-template-rows: repeat(3, [row] 1fr);
-
-  @screen mdMax {
-    padding-bottom: calc(var(--tabbar-height) + (var(--spacing) * 4)); } }
+  grid-template-rows: repeat(3, [row] 1fr); }
 
 .content {
   max-width: 664px;
@@ -11,18 +18,17 @@
   grid-row: 2;
 
   @screen mdMax {
-    @apply text-center pb-16;
-    grid-row: 3;
+    @apply text-center;
     grid-column: content; } }
 
 .eraser {
+  transform: rotate(-30deg);
+
   @screen mdMax {
-    transform: rotate(-90deg) translate3d(50%, 0, 0);
-    top: 50%;
-    right: -16px; }
+    bottom: -25vh;
+    right: -17.5vmax; }
 
   @screen md {
-    transform: rotate(-30deg);
     top: 654px;
     right: 646px; } }
 
@@ -30,8 +36,8 @@
   transform: rotate(-60deg);
 
   @screen mdMax {
-    top: -426px;
-    left: -178px; }
+    top: -320px;
+    right: -25%; }
 
   @screen md {
     top: -138px;
@@ -41,8 +47,8 @@
   transform: rotate(-60deg);
 
   @screen mdMax {
-    top: -644px;
-    left: -188px; }
+    top: -48vmax;
+    left: -42vmax; }
 
   @screen md {
     top: 102px;
@@ -66,8 +72,14 @@
 
 .pen {
   transform: rotate(-30deg);
-  bottom: -52px;
-  right: 474px; }
+
+  @screen mdMax {
+    top: 40px;
+    left: -12vw; }
+
+  @screen md {
+    bottom: -52px;
+    right: 474px; } }
 
 .posca {
   transform: rotate(75deg);
@@ -84,8 +96,8 @@
 .sharpener {
   @screen mdMax {
     transform: rotate(-60deg);
-    bottom: 0;
-    right: -64px; }
+    top: -32px;
+    right: -32px; }
 
   @screen md {
     transform: rotate(-60deg);

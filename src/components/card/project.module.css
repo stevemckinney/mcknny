@@ -1,2 +1,6 @@
-.container img {
-  border-radius: var(--radius); }
+.container {
+  box-shadow: 0 0 0 2px var(--color-madison);
+  align-self: start;
+
+  & img {
+    border-radius: var(--radius) var(--radius) 0 0; } }

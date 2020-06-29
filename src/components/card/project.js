@@ -11,12 +11,12 @@ const Project = ({ className, link, props }) => {
   return (
     <React.Fragment>
       {/*<Dump individualProjectProps={props.image.childImageSharp} />*/}
-      <article className={`${styles.container} ${className}`}>
+      <article className={`${styles.container} ${className} bg-prussian radius`}>
         <Link to={link} className="block">
-          <Img fluid={props.image.childImageSharp.fluid} className="mb-8" />
+          <Img fluid={props.image.childImageSharp.fluid} />
         </Link>
-        <h2 className="font-headline text-f3">
-          <Link to={link} className="block">
+        <h2 className="font-headline text-f4 md:text-f2 m-0 text-center">
+          <Link to={link} className="block p-8 md:py-16 md:px-32">
             {props.description}
           </Link>
         </h2>

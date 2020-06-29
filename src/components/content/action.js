@@ -9,13 +9,13 @@ import styles from "./action.module.css";
 import Arrow from "@icons/arrow-right-24.inline.svg";
 
 const Action = props => {
-  const actionClass = `relative mdMax:justify-center text-f5 md:text-f3 font-bold text-jasmine flex items-center action ${styles.action}`;
-  
+  const actionClass = `relative mdMax:justify-center text-f6 md:text-f5 md:text-f3 font-bold text-jasmine flex items-center action ${styles.action}`;
+
   return (
     <React.Fragment>
       <Link to={props.to} className={actionClass}>
         {props.text}
-        <Arrow className="ml-4" style={{marginTop: "4px"}} />
+        <Arrow className="w-4 ml-2 md:ml-4" style={{marginTop: "4px"}} />
       </Link>
     </React.Fragment>
   )

@@ -12,6 +12,10 @@ module.exports = {
     author: `@irsteve`,
     navigation: [
       {
+        title: `home`,
+        route: `/`,
+      },
+      {
         title: `work`,
         route: `/work`,
       },
