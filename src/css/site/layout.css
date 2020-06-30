@@ -2,10 +2,10 @@
  * global
  */
 html {
+  overflow-x: hidden;
   background: var(--color-prussian); }
 
 body {
-  overflow-x: hidden;
   margin: 0;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;

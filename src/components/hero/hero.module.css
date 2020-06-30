@@ -9,8 +9,6 @@
  */
 
 .container {
-  overflow-x: hidden;
-  overflow-y: auto;
   grid-column: 1 / -1;
   grid-template-rows: repeat(3, [row] 1fr); }
 
@@ -93,8 +91,8 @@
     left: calc(100% - 25vw); }
 
   @screen sm {
-    top: calc(100% + 5vh);
-    left: calc(100% - 12.5vw); }
+    top: 100%;
+    left: calc(100% - 15vw); }
 
   @screen lg {
     top: 654px;
@@ -108,8 +106,8 @@
     left: -48px; }
 
   @screen sm {
-    bottom: -52px;
-    right: 474px; }
+    bottom: 132px;
+    right: 248px; }
 
   @screen lg {
     bottom: -52px;
