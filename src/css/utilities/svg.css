@@ -35,3 +35,6 @@
 .illo {
   @apply absolute;
   z-index: 0; }
+
+.status-bar {
+  display: none; }

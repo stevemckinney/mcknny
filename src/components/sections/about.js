@@ -21,7 +21,7 @@ const About = (props) => {
           <p className="mb-5">It’s likely down to the amount of stuff vying for your attention. Everything from popups, manipulative messaging and other dark patterns. It doesn’t instil trust.</p>
           <p className="mb-5">This isn’t what you want your website to be, right? You want to be guided, not ushered with haste. You can make sales and grow a loyal audience for the long term without resorting to these tactics.</p>
           <Action to="/about/" text="Read my process" />
-          <Ruler className={`illo ${styles.ruler}`} />
+          <Ruler className={`illo ${styles.ruler}`} style={{display:"none"}} />
         </div>
       </section>
     </React.Fragment>

@@ -1,3 +1,1 @@
-.header {  
-  @screen lg {
-    @apply py-10; } }
+.header {}

@@ -4,9 +4,9 @@ import PropTypes from "prop-types";
 import styles from "./nav.module.css";
 
 const Nav = ({ links }) => {
-  const navStyles = `${styles.nav} flex mdMax:w-full md:justify-end font-title`;
-  const linkStyles = `${styles.link} mdMax:flex-1 mdMax:text-center no-underline inline-block text-f7 md:text-f6 font-medium py-8`;
-  
+  const navStyles = `${styles.nav} flex justify-end font-title`;
+  const linkStyles = `${styles.link} no-underline inline-block text-f7 md:text-f6 font-medium py-8`;
+
   return (
     <React.Fragment>
       <nav className={navStyles}>

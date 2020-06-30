@@ -9,7 +9,7 @@ import styles from "./action.module.css";
 import Arrow from "@icons/arrow-right-24.inline.svg";
 
 const Action = props => {
-  const actionClass = `relative mdMax:justify-center text-f6 md:text-f5 md:text-f3 font-bold text-jasmine flex items-center action ${styles.action}`;
+  const actionClass = `relative text-f6 md:text-f5 md:text-f3 font-bold text-jasmine flex items-center action ${styles.action}`;
 
   return (
     <React.Fragment>

@@ -6,8 +6,8 @@ module.exports = {
     screens: {
       xxs: "360px",
       xxsMax: {"max": "359px"},
-      xs: "480px",
-      xsMax: {"max": "479px"},
+      xs: "414px",
+      xsMax: {"max": "413px"},
       sm: "640px",
       smMax: {"max": "639px"},
       md: "768px",

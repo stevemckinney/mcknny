@@ -100,7 +100,7 @@
     calc(var(--spacing) * 2);
 
   --grid-12:
-    calc(var(--spacing) * 2)
+    0
     [container-start]
       repeat(1, minmax(0, 1fr))
       [content-start]
@@ -108,11 +108,11 @@
       [content-end]
       repeat(1, minmax(0, 1fr))
     [container-end]
-    calc(var(--spacing) * 2);
+    0;
 
   --grid-6:
     [container-start]
-      calc(var(--spacing) * 2)
+      0
       [content-start]
         1fr
         [content-narrow-start]
@@ -120,12 +120,12 @@
         [content-narrow-end]
         1fr
       [content-end]
-      calc(var(--spacing) * 2)
+      0
     [container-end];
 
   /**
    * elements
    */
-  --tabbar-height: 48px;
+  --tabbar-height: 64px;
   --content-width: var(--grid-content);
 }
