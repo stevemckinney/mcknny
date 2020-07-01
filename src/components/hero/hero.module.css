@@ -9,6 +9,7 @@
  */
 
 .container {
+  padding-bottom: var(--tabbar-height);
   grid-column: 1 / -1;
   grid-template-rows: repeat(3, [row] auto); }
 
