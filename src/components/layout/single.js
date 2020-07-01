@@ -43,7 +43,7 @@ export default function Single({ data: { mdx } }) {
   return (
     <Layout>
       <SEO title={title}/>
-      <header className="grid full screen screen-rows bg-i sm:layout md:layout lg:layout relative">
+      <header className="grid layout full screen screen-rows bg-i relative">
         <div className={`${styles.content} screen-center col-span-5 col-start-4`}>
           <a href={url} className="mb-4 text-f8 text-melon uppercase tracking-title font-title font-bold">{url.replace("https://", "")}</a>
           <h1 className="relative z-10 mb-6 mdMax:leading-tight text-f3 lg:text-headline tracking-headline">{description}</h1>
@@ -75,7 +75,7 @@ export default function Single({ data: { mdx } }) {
           ))}
         </div>
       </header>
-      <article className={`${styles.article} grid full text-f4 sm:layout md:layout lg:layout`} style={{ marginTop: `-25vh` }}>
+      <article className={`${styles.article} grid layout full text-f4`} style={{ marginTop: `-25vh` }}>
         <MDXProvider components={shortcodes}>
           <MDXRenderer>{mdx.body}</MDXRenderer>
         </MDXProvider>

@@ -10,25 +10,19 @@
 
 .container {
   grid-column: 1 / -1;
-  grid-template-rows: repeat(3, [row] 1fr); }
+  grid-template-rows: repeat(3, [row] auto); }
 
 .content {
-  max-width: 664px;
+  width: clamp(256px, 664px, 75vw);
   grid-column: content-start / -1;
   grid-row: 2;
 
   @screen mdMax {
     grid-column: content; } }
 
-.heading {
-  @screen lgMax {
-    letter-spacing: -1px; }
-
-  @screen xsMax {
-    letter-spacing: normal; } }
-
 .palomino {
   transform: rotate(-60deg);
+  transform-origin: top right;
 
   @screen smMax {
     transform-origin: top left;
@@ -36,9 +30,14 @@
     right: 40%; }
 
   @screen sm {
-    transform-origin: top right;
     top: 112px;
-    right: 658px; } }
+    right: 658px; }
+
+  @screen xl {
+    /* top: 92px; */
+    top: auto;
+    bottom: -82px;
+    right: 984px; } }
 
 .pencil {
   transform: rotate(-60deg);
@@ -50,7 +49,13 @@
 
   @screen sm {
     top: 120px;
-    right: 482px; } }
+    right: 482px; }
+
+  @screen xl {
+    /* top: 316px; */
+    top: auto;
+    bottom: -238px;
+    right: 912px; } }
 
 .phone {
   transform: rotate(-60deg);
@@ -61,9 +66,9 @@
 
   @screen sm {
     top: 0;
-    right: 144px; }
+    right: 164px; }
 
-  @screen lg {
+  @screen xl {
     top: 68px;
     right: 362px; } }
 
@@ -78,14 +83,15 @@
     bottom: -48px;
     right: 125vw; }
 
-  @screen lg {
-    bottom: -30px;
-    right: calc(100vw - 228px); } }
+  @screen xl {
+    bottom: -28px;
+    right: 1688px; } }
 
-/* text grouped */
+/* text grouped, then free */
 .eraser {
   transform: rotate(-30deg);
 
+  /* pinned to text */
   @screen smMax {
     top: calc(100% + 12.5vh);
     left: calc(100% - 25vw); }
@@ -94,13 +100,17 @@
     top: 100%;
     left: calc(100% - 15vw); }
 
-  @screen lg {
-    top: 654px;
-    right: 646px; } }
+  /* pinned to screen */
+  @screen xl {
+    top: auto;
+    bottom: 148px;
+    right: 646px;
+    left: auto; } }
 
 .pen {
   transform: rotate(-30deg);
 
+  /* pinned to text */
   @screen smMax {
     bottom: calc(100% + 2.5vh);
     left: -48px; }
@@ -109,13 +119,18 @@
     bottom: 132px;
     right: 248px; }
 
-  @screen lg {
+  /* pinned to screen */
+  @screen xl {
     bottom: -52px;
-    right: 474px; } }
+    right: 474px; }
+
+  @screen xxl {
+  } }
 
 .sharpener {
   transform: rotate(-60deg);
 
+  /* pinned to text */
   @screen smMax {
     top: 32vh;
     left: 0; }
@@ -124,6 +139,8 @@
     right: 0;
     bottom: -64px; }
 
-  @screen lg {
-    top: 792px;
-    right: 350px; } }
+  /* pinned to screen */
+  @screen xl {
+    /* top: 792px; */
+    bottom: 102px;
+    right: 348px; } }

@@ -1,2 +1,5 @@
 .logo {
-  grid-column: content-start / 4; }
+  grid-column: content-start / 4;
+
+  @screen lg {
+    grid-column: content-start / 6; } }

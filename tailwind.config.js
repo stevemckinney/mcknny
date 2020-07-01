@@ -16,8 +16,12 @@ module.exports = {
       lgMax: {"max": "959px"},
       xl: "1280px",
       xlMax: {"max": "1279px"},
-      xxl: "1680px",
-      xxlMax: {"max": "1679px"}
+      xxl: "1440px",
+      xxlMax: {"max": "1439px"},
+      xxl: "1440px",
+      xxlMax: {"max": "1439px"},
+      xxxl: "1680px",
+      xxxlMax: {"max": "1659px"}
     },
     fontFamily: {
       display: ["var(--font-display)"],
@@ -81,6 +85,8 @@ module.exports = {
       '45': '45deg',
     },
     letterSpacing: {
+      tight: '-.5px',
+      tighter: '-1.5px',
       headline: '-3px',
       title: '2.5px'
     },

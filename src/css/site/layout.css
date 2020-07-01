@@ -51,7 +51,7 @@ body,
   @screen md {
     grid-template-columns: var(--grid-12); }
 
-  @screen xxl {
+  @screen xxxl {
     grid-gap: var(--grid-gutter);
     grid-template-columns: var(--grid-16); } }
 

@@ -22,13 +22,15 @@ const Footer = (props) => {
       }
     }
   `);
-  const footerStyles = `${props.className} ${styles.footer} grid mdMax:justify-center sm:layout md:layout lg:layout flex items-end md:items-center pb-16`;
+  const footerStyles = `${props.className} ${styles.footer} grid layout flex items-end md:items-center mdMax:justify-center pb-16`;
 
   return (
     <React.Fragment>
-      <Prompt className="py-36 grid mdMax:justify-center sm:layout md:layout lg:layout flex items-end md:items-center" />
-      <div className="grid sm:layout md:layout lg:layout"><Divider className="divider" /></div>
-      <Profile className="py-36 grid mdMax:justify-center sm:layout md:layout lg:layout flex items-end md:items-center" />
+      <Prompt className="py-36 grid layoutflex items-end   mdMax:justify-center md:items-center" />
+      <div className="grid layout">
+        <Divider className="divider" />
+      </div>
+      <Profile className="py-36 grid layout flex items-end mdMax:justify-center md:items-center" />
       <footer className={footerStyles}>
         <p className="content mb-0 text-f8 text-pearl uppercase tracking-title font-title font-bold">
           © {new Date().getFullYear()}<Bullet className="bg-madison mx-3" />{site.siteMetadata.title}

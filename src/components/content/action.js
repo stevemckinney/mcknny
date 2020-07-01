@@ -15,7 +15,7 @@ const Action = props => {
     <React.Fragment>
       <Link to={props.to} className={actionClass}>
         {props.text}
-        <Arrow className="w-4 ml-2 md:ml-4" style={{marginTop: "4px"}} />
+        <Arrow className="smMax:w-4 ml-2 md:ml-4" style={{marginTop: "4px"}} />
       </Link>
     </React.Fragment>
   )

@@ -34,7 +34,7 @@ function Layout({ className, children }) {
 }
 
 Layout.defaultProps = {
-  className: "grid sm:layout md:layout lg:layout",
+  className: "grid layout",
 }
 
 Layout.propTypes = {
