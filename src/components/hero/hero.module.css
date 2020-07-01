@@ -9,7 +9,7 @@
  */
 
 .container {
-  padding-bottom: var(--tabbar-height);
+  padding-bottom: calc(var(--tabbar-height) / 2);
   grid-column: 1 / -1;
   grid-template-rows: repeat(3, [row] auto); }
 
@@ -23,12 +23,12 @@
 
 .palomino {
   transform: rotate(-60deg);
-  transform-origin: top right;
+  transform-origin: top left;
+  top: 16px;
+  left: 164px;
 
-  @screen smMax {
-    transform-origin: top left;
-    top: 5%;
-    right: 40%; }
+  @screen xs {
+    }
 
   @screen sm {
     top: 112px;
@@ -42,11 +42,14 @@
 
 .pencil {
   transform: rotate(-60deg);
-  transform-origin: top right;
+  transform-origin: top left;
+  top: -280px;
+  left: -540px;
 
-  @screen smMax {
-    top: -264px;
-    left: -484px; }
+  @screen sm {
+    /* top: -264px; */
+    /* left: -484px; */
+  }
 
   @screen sm {
     top: 120px;
@@ -112,9 +115,11 @@
   transform: rotate(-30deg);
 
   /* pinned to text */
-  @screen smMax {
-    bottom: calc(100% + 2.5vh);
-    left: -48px; }
+  bottom: calc(100% + 2.5vh);
+  left: -64px;
+
+  @screen xs {
+    left: 0; }
 
   @screen sm {
     bottom: 132px;
@@ -125,8 +130,7 @@
     bottom: -52px;
     right: 474px; }
 
-  @screen xxl {
-  } }
+  @screen xxl {} }
 
 .sharpener {
   transform: rotate(-60deg);
