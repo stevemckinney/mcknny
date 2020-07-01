@@ -18,30 +18,25 @@
  * Illustrations
  */
 .figma {
-  display: none !important;
   transform: rotate(-15deg) translate3d(0, -50%, 0);
   top: 50%;
   right: 0; }
 
 .illustrator {
-  display: none !important;
   transform: rotate(15deg) translate3d(-50%, 0, 0);
   top: 0;
   left: 58%; }
 
 .pen {
-  display: none !important;
   transform: rotate(-30deg);
   bottom: -8%;
-  left: 12.5%; }
+  left: 15%; }
 
 .safari {
-  display: none !important;
   bottom: -20%;
   left: 48%; }
 
 .terminal {
-  display: none !important;
   transform: rotate(15deg);
   top: 0;
   left: 0; }
