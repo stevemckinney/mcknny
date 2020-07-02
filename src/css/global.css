@@ -23,4 +23,5 @@
 @import "utilities/svg";
 @import "utilities/columns";
 @import "utilities/radius";
+@import "utilities/overflow";
 @import "tailwindcss/utilities";

@@ -1,17 +1,43 @@
 /*! purgecss start ignore */
-.small .image {
-  max-width: 414px;
-  top: 68px;
-  right: 28px;
-  bottom: 32px;
-  left: 58px; }
+.small {
+  & svg {
+    @screen mdMax {
+      width: auto;
+      height: auto;
+      max-width: 320px; } }
 
-.medium .image {
-  max-width: 1366px;
-  top: 84px;
-  right: 28px;
-  bottom: 32px;
-  left: 108px; }
+  & .image {
+    max-width: 414px;
+    top: 68px;
+    right: 28px;
+    bottom: 32px;
+    left: 58px;
+
+    @screen mdMax {
+      top: 40px;
+      right: 18px;
+      bottom: 21px;
+      left: 38px; } } }
+
+.medium {
+  & svg {
+    @screen mdMax {
+      width: auto;
+      height: auto;
+      max-width: calc(1534px / 1.75); } }
+
+  & .image {
+    max-width: 1366px;
+    top: 84px;
+    right: 28px;
+    bottom: 32px;
+    left: 108px;
+
+    @screen mdMax {
+      top: 48px;
+      right: 34px;
+      bottom: 32px;
+      left: 62px; } } }
 
 .container {
   @apply relative; }

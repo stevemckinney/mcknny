@@ -14,7 +14,7 @@
 
   /* nested */
   & > h2 {
-    margin-top: calc(var(--spacing) * 6); }
+    margin-top: calc(var(--spacing) * 12); }
 
   & > h3 {
     margin-top: calc(var(--spacing) * 4); }
@@ -28,7 +28,16 @@
   & > :matches(h1, h2, h3, h4, h5, h6, p, ul, ol) {
     margin-bottom: 0;
     padding: 0;
-    grid-column: 9 / content-end; }
+    grid-column: content;
+
+    @screen lg {
+      grid-column: 5 / content-end; }
+
+    @screen xl {
+      grid-column: 7 / content-end; }
+
+    @screen xxxl {
+      grid-column: 9 / content-end; } }
 
   & > p + p,
   & > h3 + p {
