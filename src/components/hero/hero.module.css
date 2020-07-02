@@ -19,18 +19,21 @@
   grid-row: 2;
 
   @screen mdMax {
-    grid-column: content; } }
+    padding-top: 12vmax;
+    grid-row: 1;
+    grid-column: content-start / content-end; } }
 
 .palomino {
   transform: rotate(-60deg);
   transform-origin: top left;
-  top: 16px;
-  left: 164px;
+  bottom: -728px;
+  left: 8px;
 
   @screen xs {
     }
 
   @screen sm {
+    bottom: auto;
     top: 112px;
     right: 658px; }
 
@@ -43,8 +46,8 @@
 .pencil {
   transform: rotate(-60deg);
   transform-origin: top left;
-  top: -280px;
-  left: -540px;
+  bottom: -658px;
+  left: 192px;
 
   @screen sm {
     /* top: -264px; */
@@ -58,6 +61,7 @@
   @screen xl {
     /* top: 316px; */
     top: auto;
+    left: auto;
     bottom: -238px;
     right: 912px; } }
 
@@ -97,8 +101,8 @@
 
   /* pinned to text */
   @screen smMax {
-    top: calc(100% + 12.5vh);
-    left: calc(100% - 25vw); }
+    bottom: -80px;
+    left: 48px; }
 
   @screen sm {
     top: 100%;

@@ -22,8 +22,5 @@
   @apply relative;
 
   & p {
-    margin-bottom: 0; }
-
-  & img {
-    border-radius: 20px; } }
+    margin-bottom: 0; } }
 /*! purgecss end ignore */

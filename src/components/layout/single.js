@@ -75,7 +75,7 @@ export default function Single({ data: { mdx } }) {
           ))}
         </div>
       </header>
-      <article className={`${styles.article} grid layout full text-f4`} style={{ marginTop: `-25vh` }}>
+      <article className={`single ${styles.article} grid layout full text-f4`} style={{ marginTop: `-25vh` }}>
         <MDXProvider components={shortcodes}>
           <MDXRenderer>{mdx.body}</MDXRenderer>
         </MDXProvider>

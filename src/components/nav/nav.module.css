@@ -1,5 +1,8 @@
 .nav {
-  grid-column: 4 / content-end;
+  grid-column: 3 / content-end;
+
+  @screen sm {
+    grid-column: 4 / content-end; }
 
   @screen lg {
     grid-column: 6 / content-end; }

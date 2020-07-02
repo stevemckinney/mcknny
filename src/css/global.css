@@ -14,6 +14,7 @@
 @import "site/properties";
 @import "site/layout";
 @import "site/typography";
+@import "site/image";
 
 /**
  * Utilities (must be last)
