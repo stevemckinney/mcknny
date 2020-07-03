@@ -32,7 +32,7 @@ body,
  * grid
  */
 .layout {
-  grid-gap: calc(var(--grid-gutter) / 2);
+  grid-column-gap: calc(var(--grid-gutter) / 2);
   grid-template-columns: var(--grid-6);
 
   @screen md {
@@ -43,22 +43,22 @@ body,
     grid-template-columns: var(--grid-16); } }
 
 .sm\:layout {
-  grid-gap: calc(var(--grid-gutter) / 2);
+  grid-column-gap: calc(var(--grid-gutter) / 2);
   grid-template-columns: var(--grid-6); }
 
 .md\:layout {
   @screen md {
-    grid-gap: calc(var(--grid-gutter) / 2);
+    grid-column-gap: calc(var(--grid-gutter) / 2);
     grid-template-columns: var(--grid-12); } }
 
 .lg\:layout {
   @screen lg {
-    grid-gap: var(--grid-gutter);
+    grid-column-gap: var(--grid-gutter);
     grid-template-columns: var(--grid-16); } }
 
 .xxl\:layout {
   @screen xxl {
-    grid-gap: var(--grid-gutter);
+    grid-column-gap: var(--grid-gutter);
     grid-template-columns: var(--grid-16); } }
 
 @responsive {

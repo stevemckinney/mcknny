@@ -3,7 +3,7 @@
   grid-row-gap: 0;
   margin-top: -12.5vh;
 
-  @screen md {
+  @screen lg {
     margin-top: -25vh; }
 
   /* all */

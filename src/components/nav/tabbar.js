@@ -20,7 +20,7 @@ const Tabbar = ({ links }) => {
       <nav className={navStyles}>
         <Link to="/" className={linkStyles}>
           <Home />
-          Home
+          home
         </Link>
         {links.map(link => (
           <Link className={linkStyles} key={link.title} to={link.route}>

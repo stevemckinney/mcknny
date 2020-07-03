@@ -16,8 +16,8 @@ const Logo = (props) => {
       }
     }
   `);
-  const logoStyles = `${styles.logo} ${props.className} block text-f6 font-medium font-title`; 
-  
+  const logoStyles = `${styles.logo} ${props.className} block text-f8 md:text-f6 font-medium font-title`; 
+
   return (
     <React.Fragment>
       <Link to="/" className={ logoStyles }>

@@ -15,8 +15,8 @@ const Project = ({ className, link, props }) => {
         <Link to={link} className="block">
           <Img fluid={props.image.childImageSharp.fluid} />
         </Link>
-        <h2 className="font-headline text-f4 md:text-f2 m-0 text-center">
-          <Link to={link} className="block p-8 md:py-16 md:px-32">
+        <h2 className="font-headline text-f4 lg:text-f2 m-0 text-center">
+          <Link to={link} className="block p-8 lg:py-16 lg:px-32">
             {props.description}
           </Link>
         </h2>
