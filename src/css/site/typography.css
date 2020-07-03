@@ -14,7 +14,8 @@ p {
   margin: 0 0 8px; }
 
 p, ul, ol {
-  font-size: var(--f4);
+  @screen sm {
+    font-size: var(--f4); }
 
   @screen md {
     font-size: var(--f3); } }
