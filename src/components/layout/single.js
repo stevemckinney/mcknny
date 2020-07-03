@@ -47,14 +47,14 @@ export default function Single({ data: { mdx } }) {
     <Layout>
       <SEO title={title}/>
       <header className="grid layout full py-48 md:py-64 lg:py-0 lg:screen lg:screen-rows bg-i relative">
-        <div className={`content lg:screen-center lg:col-span-3 lg:col-start-3 xxxl:col-span-5 xxxl:col-start-4`}>
+        <div className={`content lg:screen-center lg:col-span-4 lg:col-start-3 xxxl:col-span-5 xxxl:col-start-4`}>
           {url ?
             <a href={url} className={titleStyles}>{title}</a> :
             <span className={titleStyles}>{title}</span>
           }
           <h1 className={headingStyles}>{description}</h1>
         </div>
-        <div className={`content max-w-full lg:screen-center lg:col-start-6 xl:col-start-7 lg:col-span-7 xl:col-span-7 xxxl:col-start-9`}>
+        <div className={`content max-w-full lg:screen-center lg:col-start-7 lg:col-span-6 xxxl:col-start-9`}>
           <ul className={`my-0 -mx-4 px-4 p-0 flex scroll mb-4 text-f9 md:text-f8 text-pearl uppercase tracking-title font-title font-bold`}>
             <li className="text-melon list-item pr-3 md:pr-4">Role</li>
             {role.map((name, i) => [
