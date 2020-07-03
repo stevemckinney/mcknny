@@ -2,7 +2,6 @@
 .small {
   & svg {
     @screen mdMax {
-      width: auto;
       height: auto;
       max-width: 320px; } }
 
@@ -22,7 +21,6 @@
 .medium {
   & svg {
     @screen mdMax {
-      width: auto;
       height: auto;
       max-width: calc(1534px / 1.75); } }
 

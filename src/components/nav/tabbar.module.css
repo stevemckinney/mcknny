@@ -1,9 +1,11 @@
-/* clip-path: url(../../images/squircle.svg#tabbar); */
 .tabbar {
   padding: 0 calc(var(--spacing) * 2);
-  backdrop-filter: blur(12px);
   border-radius: 32px 32px 0 0;
-  background-color: rgba(var(--color-prussian-rgb), .6); }
+  background-color: rgba(var(--color-prussian-rgb), .9);
+
+  @supports (backdrop-filter: blur(12px)) {
+    backdrop-filter: blur(12px) saturate(150%);
+    background-color: rgba(var(--color-prussian-rgb), .6); } }
 
 .link {
   padding: calc(var(--spacing) * 2.25) 0 calc(var(--spacing) * 1.25);

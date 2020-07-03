@@ -7,4 +7,7 @@
 
 .figure img {
   max-width: 100%;
-  border-radius: 32px; }
+  border-radius: var(--radius);
+
+  @screen md {
+    border-radius: 32px; } }

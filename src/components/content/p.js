@@ -10,7 +10,7 @@ const P = props => {
 }
 
 P.defaultProps = {
-  className: "text-f4",
+  className: "c-p",
 }
 
 P.propTypes = {

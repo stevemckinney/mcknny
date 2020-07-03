@@ -37,7 +37,7 @@ export default function Single({ data: { mdx } }) {
     description } = mdx.frontmatter;
 
   const headingStyles = `relative z-10 mb-2 md:mb-6 text-f3 xxs:text-f2 sm:text-f1 xxl:text-headline tracking-tight sm:tracking-tighter xxl:tracking-headline`;
-  const titleStyles = `mb-4 text-f8 text-melon uppercase tracking-title font-title font-bold`;
+  const titleStyles = `mb-4 block text-f9 md:text-f8 text-melon uppercase tracking-title font-title font-bold`;
 
   function createSeparator() {
     return {__html: '/'};
@@ -46,47 +46,44 @@ export default function Single({ data: { mdx } }) {
   return (
     <Layout>
       <SEO title={title}/>
-      <header className="grid layout full screen xxl:screen-rows bg-i relative">
-        <div
-          className={`
-            content xxl:screen-center xl:col-span-4 xl:col-start-3 xxxl:col-span-5 xxxl:col-start-4
-        `}>
+      <header className="grid layout full py-48 md:py-64 lg:py-0 lg:screen lg:screen-rows bg-i relative">
+        <div className={`content lg:screen-center lg:col-span-3 lg:col-start-3 xxxl:col-span-5 xxxl:col-start-4`}>
           {url ?
             <a href={url} className={titleStyles}>{title}</a> :
             <span className={titleStyles}>{title}</span>
           }
           <h1 className={headingStyles}>{description}</h1>
         </div>
-        <div className={`
-          content xxl:screen-center xxxl:col-start-10 xl:col-span-6
-        `}>
-          <ul className={`m-0 p-0 flex mb-4 text-f8 text-pearl uppercase tracking-title font-title font-bold gap-4`}>
-            <li className="text-melon list-item">Role</li>
+        <div className={`content max-w-full lg:screen-center lg:col-start-6 xl:col-start-7 lg:col-span-7 xl:col-span-7 xxxl:col-start-10`}>
+          <ul className={`my-0 -mx-4 px-4 p-0 flex scroll mb-4 text-f9 md:text-f8 text-pearl uppercase tracking-title font-title font-bold`}>
+            <li className="text-melon list-item pr-3 md:pr-4">Role</li>
             {role.map((name, i) => [
               <React.Fragment key={name.id}>
-                <li className="list-item">
+                <li className="list-item pr-3 md:pr-4">
                   {name}
                 </li>
-                {i < role.length - 1 ? <li className="list-item"  dangerouslySetInnerHTML={createSeparator()}/> : ``}
+                {i < role.length - 1 ? <li className="list-item pr-3 md:pr-4"  dangerouslySetInnerHTML={createSeparator()}/> : ``}
               </React.Fragment>
             ])}
-            <li className="list-item"><Bullet className="bg-madison" /></li>
-            <li className="text-melon list-item">Type</li>
+            <li className="list-item pr-3 md:pr-4"><Bullet className="bg-madison" /></li>
+            <li className="text-melon list-item pr-3 md:pr-4">Type</li>
             {category.map((name, i) => [
               <React.Fragment key={name.id}>
-                <li className="list-item">
+                <li className="list-item pr-3 md:pr-4">
                   {name}
                 </li>
-                {i < category.length - 1 ? <li className="list-item"  dangerouslySetInnerHTML={createSeparator()}/> : ``}
+                {i < category.length - 1 ? <li className="list-item pr-3 md:pr-4"  dangerouslySetInnerHTML={createSeparator()}/> : ``}
               </React.Fragment>
             ])}
           </ul>
+          <div className={`${styles.introduction}`}>
           {introduction.map(p => (
-            <p key={p.id} className="text-f4">{p}</p>
+            <p key={p.id}>{p}</p>
           ))}
+          </div>
         </div>
       </header>
-      <article className={`single ${styles.article} grid layout full text-f4`} style={{ marginTop: `-25vh` }}>
+      <article className={`single ${styles.article} grid layout full`}>
         <MDXProvider components={shortcodes}>
           <MDXRenderer>{mdx.body}</MDXRenderer>
         </MDXProvider>

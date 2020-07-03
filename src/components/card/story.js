@@ -7,7 +7,7 @@ import base from "./card.module.css";
 
 const Story = (props) => {
   const { className, children, style } = props;
-  const classNameStory = `card p-16 ${className}`;
+  const classNameStory = `card p-8 md:p-16 ${className}`;
 
   return (
     <React.Fragment>

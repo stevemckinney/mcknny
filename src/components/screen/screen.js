@@ -10,11 +10,11 @@ import Large from "@images/desktop.inline.svg";
 // css
 import styles from "./screen.module.css";
 
-const Screen = ({ caption, children, device }) => {
+const Screen = ({ className, caption, children, device }) => {
   return (
     <React.Fragment>
       {/* <Dump cls={`${styles[device]}-image`} /> */}
-      <figure className={`${styles.container}`}>
+      <figure className={`${styles.container} ${className}`}>
         <div className={`${styles[device]}`}>
           <div className={`${styles.image} absolute`}>
             {children}
@@ -31,10 +31,12 @@ const Screen = ({ caption, children, device }) => {
 
 Screen.defaultProps = {
   device: "small",
+  className: "device"
 }
 
 Screen.propTypes = {
   caption: PropTypes.string,
+  className: PropTypes.string,
   children: PropTypes.node.isRequired,
   device: PropTypes.string.isRequired,
 }

@@ -20,17 +20,18 @@ import List from "@components/content/list";
 import P from "@components/content/p";
 
 
-<div className="scroll flex full gap-8 -mb-16 pl-4 md:-ml-8">
-<Screen device="small">
+<div className="scroll scroll-offset flex full gap-8 -mb-16 -ml-4 md:-ml-8">
+<Screen device="small" className="snap-start">
 
   ![](./iamsteve-home-small.png)
 
 </Screen>
-<Screen device="medium">
+<Screen device="medium" className="snap-start">
 
   ![](./iamsteve-home-large.png)
 
 </Screen>
+<div className="flex-shrink-0 w-1/2"></div>
 </div>
 
 
@@ -43,7 +44,7 @@ There are two primary types of people who visit this website. Those who are curr
 **The distinction between the two is the time they have**. The person working wants a quick solution and the person learning wants to be guided and understand why.
 
 <div className="grid content grid-cols-10 lg:col-start-3 xxxl:col-start-6 lg:col-span-10 gap-8 mt-16">
-  <Story className="col-span-5">
+  <Story className="col-span-10 lg:col-span-5">
     <svg width={128} height={10} viewBox="0 0 128 10" fill="none" className="mb-16 stroke-animation">
       <path
         d="M0 1c4 0 4 8 7.999 8 4 0 4-8 7.999-8 3.999 0 3.999 8 7.998 8 4 0 4-8 7.999-8 4 0 4 8 7.999 8 4 0 4-8 7.998-8 4 0 4 8 8 8 3.999 0 3.999-8 7.998-8 4 0 4 8 7.999 8 4 0 4-8 7.998-8 4 0 4 8 8 8 3.999 0 3.999-8 7.998-8 4 0 4 8 7.999 8 3.999 0 3.999-8 7.998-8 4 0 4 8 8.009 8 4.01 0 4-8 8.009-8"
@@ -63,7 +64,7 @@ There are two primary types of people who visit this website. Those who are curr
       ]}
     />
   </Story>
-  <Story className="col-span-5">
+  <Story className="col-span-10 lg:col-span-5">
     <svg width={128} height={10} viewBox="0 0 128 10" fill="none" className="mb-16 stroke-animation">
       <path
         d="M0 1c10.67 0 10.67 8 21.33 8C32 9 32 1 42.66 1 53.33 1 53.33 9 64 9s10.67-8 21.33-8C96 1 96 9 106.66 9c10.66 0 10.67-8 21.34-8"
@@ -95,13 +96,13 @@ Each post has various assets associated with it. From application images, code s
 
 These things take time to gather and produce on top of an article alone. However, it’s important to add these extra details—they aren’t only necessary but improve engagement.
 
-<div className="scroll flex full gap-8 -mb-16 pl-4 md:-ml-8">
-<Screen device="small">
+<div className="scroll scroll-offset flex full gap-8 mt-16 -mb-16 -ml-4 md:-ml-8">
+<Screen device="small" className="snap-start">
 
 ![List of blog posts on mobile](./iamsteve-archive-small.png)
 
 </Screen>
-<Screen device="medium">
+<Screen device="medium" className="snap-start">
 
 ![List of blog posts on desktop](./iamsteve-archive-large.png)
 
@@ -133,23 +134,23 @@ All illustrations are drawn with 2px rounded strokes, so this was the main const
 ## Bold & clear typography, with enough white space
 For the design of articles, people reading or scanning articles will benefit from a clear visual hierarchy & lack of distractions.
 
-<div className="scroll flex full gap-8 -mb-16 pl-4 md:-ml-8">
-<Screen device="small">
+<div className="scroll scroll-offset flex full gap-8 -mb-16 -ml-4 md:-ml-8">
+<Screen device="small" className="snap-start">
 
 ![](./iamsteve-article-small-01.png)
 
 </Screen>
-<Screen device="medium">
+<Screen device="medium" className="snap-start">
 
 ![](./iamsteve-article-large-01.png)
 
 </Screen>
-<Screen device="small">
+<Screen device="small" className="snap-start">
 
 ![](./iamsteve-article-small-02.png)
 
 </Screen>
-<Screen device="medium">
+<Screen device="medium" className="snap-start">
 
 ![](./iamsteve-article-large-02.png)
 
@@ -171,14 +172,14 @@ I defined ways to create a more unified feel between list pages & articles thems
 
 Some of these things appear simple, but it was a challenge to define appropriate sizing for each element. So that it remained in harmony throughout the design.
 
-<div className="scroll flex full gap-8 -mb-16 pl-4 md:-ml-8">
-<Screen device="small">
+<div className="scroll scroll-offset flex full gap-8 -mb-16 -ml-4 md:-ml-8">
+<Screen device="small" className="snap-start">
 
 ![](./iamsteve-article-small-03.png)
 
 </Screen>
 
-<Screen device="medium">
+<Screen device="medium" className="snap-start">
 
 ![](./iamsteve-article-large-03.png)
 

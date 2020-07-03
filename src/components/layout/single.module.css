@@ -1,16 +1,20 @@
 /*! purgecss start ignore */
 .article {
   grid-row-gap: 0;
+  margin-top: -12.5vh;
+
+  @screen md {
+    margin-top: -25vh; }
 
   /* all */
   & h2 {
-    font-size: var(--f1); }
+    font-size: clamp(var(--f2), 5vw, var(--f1)); }
 
   & h3 {
-    font-size: var(--f2); }
+    font-size: clamp(var(--f3), 3.5vw, var(--f2)); }
 
   & h4 {
-    font-size: var(--f3); }
+    font-size: clamp(var(--f4), 2.5vw, var(--f3)); }
 
   /* nested */
   & > h2 {
@@ -45,4 +49,7 @@
 
   & li:not(:last-child) {
     margin-bottom: var(--spacing); } }
+
+.introduction p:not(:last-child) {
+  margin-bottom: calc(var(--spacing) * 2); }
 /*! purgecss end ignore */

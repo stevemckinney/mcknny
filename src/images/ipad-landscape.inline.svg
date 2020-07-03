@@ -1,8 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1534" height="1192" fill="none" color-interpolation-filters="sRGB">
-  <g class="fill-shadow">
-    <rect width="1532" height="1176" y="16" class="opacity-20" rx="120"/>
-    <rect width="1494" height="1142" x="40" y="10" class="opacity-40" rx="88"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1534" height="1192" viewBox="0 0 1534 1192" fill="none" color-interpolation-filters="sRGB">
+  <rect width="1532" height="1176" y="16" style="fill:var(--color-madison);opacity:.2;mix-blend-mode:overlay" rx="120"/>
+  <rect width="1494" height="1142" x="40" y="10" style="fill:var(--color-madison);opacity:.4;mix-blend-mode:overlay" rx="88"/>
   <rect width="1484" height="1140" x="50" y="2" fill="#334D50" rx="84"/>
   <rect width="1466" height="1124" x="58" y="10" fill="#000" rx="76"/>
   <rect width="1368" height="1026" x="107" y="59" fill="#121212" stroke="#242424" stroke-width="2" rx="21"/>

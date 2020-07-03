@@ -11,11 +11,13 @@
  * General
  */
 p {
-  margin: 0 0 8px;
-  font-size: var(--text-f4);
+  margin: 0 0 8px; }
+
+p, ul, ol {
+  font-size: var(--f4);
 
   @screen md {
-    font-size: var(--text-f3); } }
+    font-size: var(--f3); } }
 
 a {
   transition: .2s;

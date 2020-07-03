@@ -1,8 +1,21 @@
 .scroll {
   white-space: nowrap;
   overflow-x: auto;
+  scroll-snap-type: x proximity;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar; }
 
 .scroll::-webkit-scrollbar {
   display: none; }
+
+.scroll-offset {
+  @apply pl-4;
+
+  @screen md {
+    padding-left: 7.5998263889%; } /* 1 col + 2 gutter */
+
+  @screen xxxl {
+    padding-left: 14.2708333333%; } }
+
+.snap-start {
+  scroll-snap-align: start; }
