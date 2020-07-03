@@ -22,7 +22,7 @@ const Footer = (props) => {
       }
     }
   `);
-  const footerStyles = `${props.className} ${styles.footer} grid layout flex items-end md:items-center mdMax:justify-center pb-16`;
+  const footerStyles = `${props.className} ${styles.footer} grid layout flex items-end md:items-center mdMax:justify-center pb-64 md:pb-16`;
 
   return (
     <React.Fragment>

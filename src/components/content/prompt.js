@@ -14,10 +14,10 @@ const Prompt = props => {
   return (
     <React.Fragment>
       <div className={PromptClass}>
-        <Link to={props.to} className="p-8 absolute z-10 font-display text-f5 md:text-headline font-bold text-jasmine">
+        <Link to={props.to} className="p-8 absolute z-10 font-display text-center leading-tight text-f2 md:text-headline font-bold text-jasmine">
           {props.text}
         </Link>
-        <Glasses style={{ marginBottom: "-12px" }} />
+        <Glasses className="flex-none" style={{ marginBottom: "-12px" }} />
       </div>
     </React.Fragment>
   )

@@ -118,18 +118,15 @@
 .pen {
   transform: rotate(-30deg);
 
-  /* pinned to text */
-  bottom: calc(100% + 2.5vh);
-  left: -64px;
-
-  @screen xs {
-    left: 0; }
+  /* pinned to screen */
+  bottom: -34px;
+  left: 258px;
 
   @screen sm {
+    left: auto;
     bottom: 132px;
     right: 248px; }
 
-  /* pinned to screen */
   @screen xl {
     bottom: -52px;
     right: 474px; }

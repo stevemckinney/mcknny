@@ -24,14 +24,13 @@ const Hero = props => {
         <div className={`${styles.content} z-10 relative`}>
           <h1 className={`${headingStyles} ${styles.heading}`} dangerouslySetInnerHTML={{ __html:`Beautifully&nbsp;usable design&nbsp;your&nbsp;customers have&nbsp;come&nbsp;to&nbsp;expect` }}/>
           <Action to={props.link} text="View case studies" />
-          <Pen className={`illo sm:hidden ${styles.pen}`} role="presentation" />
         </div>
         {/* style={{ marginBottom: "-120px", paddingBottom: "120px" }} */}
         <Palomino className={`illo ${styles.palomino}`} role="presentation" />
         <Pencil className={`illo ${styles.pencil}`} role="presentation" />
         <Phone className={`illo ${styles.phone}`} role="presentation" />
         <Posca className={`illo ${styles.posca}`} role="presentation" />
-        <Pen className={`illo xlMax:hidden ${styles.pen}`} role="presentation" />
+        <Pen className={`illo ${styles.pen}`} role="presentation" />
         <Eraser className={`illo ${styles.eraser}`} role="presentation" />
         <Sharpener className={`illo smMax:hidden ${styles.sharpener}`} role="presentation" />
       </section>
