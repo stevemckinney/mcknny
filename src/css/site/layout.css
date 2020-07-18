@@ -3,7 +3,8 @@
  */
 html {
   overflow-x: hidden;
-  background: var(--color-prussian); }
+  min-height: -webkit-fill-available;
+  background: url(../images/bg.svg) var(--color-prussian) top center; }
 
 body {
   margin: 0;
@@ -23,10 +24,10 @@ body,
  * textured bg
  */
 .bg {
-  background: url(../images/bg-inverse.svg) var(--color-prussian); }
+  background: url(../images/bg.svg) var(--color-prussian) top center; }
 
 .bg-i {
-  background: url(../images/bg.svg) var(--color-spruce); }
+  background: url(../images/bg.svg) var(--color-spruce) top center; }
 
 /**
  * grid
@@ -64,9 +65,7 @@ body,
 @responsive {
   .screen {
     min-height: 100vh;
-    min-height: -moz-available;
-    min-height: -webkit-fill-available;
-    min-height: stretch; }
+    min-height: -webkit-fill-available; }
 
   .screen-rows {
     grid-template-rows: 25vh auto 25vh; }

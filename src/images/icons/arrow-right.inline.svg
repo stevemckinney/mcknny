@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .a, .b {
+        fill: none;
+      }
+
+      .b {
+        stroke: #ffdc7f;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect class="a" width="16" height="16"/>
+    <line class="b" x1="1" y1="8" x2="15" y2="8"/>
+    <polyline class="b" points="11 4 15 8 11 12"/>
+  </g>
+</svg>

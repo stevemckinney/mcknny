@@ -6,7 +6,7 @@ import { Link } from "gatsby";
 import styles from "./action.module.css";
 
 // icons
-import Arrow from "@icons/arrow-right-24.inline.svg";
+import Arrow from "@icons/arrow-right.inline.svg";
 
 const Action = props => {
   const actionClass = `relative text-f6 md:text-f5 md:text-f3 font-bold text-jasmine flex items-center action ${styles.action}`;
@@ -15,7 +15,9 @@ const Action = props => {
     <React.Fragment>
       <Link to={props.to} className={actionClass}>
         {props.text}
-        <Arrow className="smMax:w-4 ml-2 md:ml-4" style={{marginTop: "4px"}} />
+        <span className={`bg-madison ml-2 rounded-full w-8 h-8 flex items-center justify-center relative ${styles.icon}`}>
+          <Arrow />
+        </span>
       </Link>
     </React.Fragment>
   )

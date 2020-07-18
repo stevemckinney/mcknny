@@ -1,9 +1,11 @@
 .action {
   &:hover,
   &:focus {
-    color: var(--color-sidecar); }
-    
-  &:after {
-    content: "";
-    height: 4px;
-    background-color: var(--color-madison); } }
+    color: var(--color-sidecar);
+
+    & .icon {
+      transform: translate3d(4px, 3px, 0); } } }
+
+.icon {
+  transform: translate3d(0, 3px, 0);
+  transition: .2s; }
