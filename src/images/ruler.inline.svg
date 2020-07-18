@@ -1,8 +1,6 @@
 <svg width="944" height="176" viewBox="0 0 944 176" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g style="mix-blend-mode:soft-light">
-<rect opacity="0.2" y="12" width="936" height="164" rx="16" fill="#2A3C51"/>
-<rect opacity="0.4" x="12" width="932" height="164" rx="8" fill="#2A3C51"/>
-</g>
+<rect opacity="0.2" y="12" width="936" height="164" rx="16" fill="#041320"/>
+<rect opacity="0.4" x="12" width="932" height="164" rx="8" fill="#041320"/>
 <rect x="16" width="928" height="160" rx="4" fill="#D89F31"/>
 <path d="M48 160V112" stroke="#B27C26" stroke-width="2" stroke-miterlimit="10"/>
 <path d="M96 160V112" stroke="#B27C26" stroke-width="2" stroke-miterlimit="10"/>

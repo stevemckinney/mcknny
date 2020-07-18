@@ -32,10 +32,10 @@
     left: 108px;
 
     @screen mdMax {
-      top: 48px;
-      right: 34px;
-      bottom: 32px;
-      left: 62px; } } }
+      top: 86px;
+      right: 60px;
+      bottom: 114px;
+      left: 108px; } } }
 
 .container {
   @apply relative; }

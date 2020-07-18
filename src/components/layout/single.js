@@ -54,7 +54,7 @@ export default function Single({ data: { mdx } }) {
           }
           <h1 className={headingStyles}>{description}</h1>
         </div>
-        <div className={`content max-w-full lg:screen-center lg:col-start-7 lg:col-span-6 xxxl:col-start-9`}>
+        <div className={`content max-w-full lg:screen-center lg:col-start-7 lg:col-span-6 xxxl:col-span-7 xxxl:col-start-9`}>
           <ul className={`my-0 -mx-4 px-4 p-0 flex scroll mb-4 text-f9 md:text-f8 text-pearl uppercase tracking-title font-title font-bold`}>
             <li className="text-melon list-item pr-3 md:pr-4">Role</li>
             {role.map((name, i) => [

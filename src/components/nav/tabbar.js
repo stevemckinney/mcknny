@@ -18,12 +18,12 @@ const Tabbar = ({ links }) => {
   return (
     <React.Fragment>
       <nav className={navStyles}>
-        <Link to="/" className={linkStyles}>
+        <Link to="/" className={linkStyles} activeClassName="text-melon">
           <Home />
           home
         </Link>
         {links.map(link => (
-          <Link className={linkStyles} key={link.title} to={link.route}>
+          <Link className={linkStyles} key={link.title} to={link.route} activeClassName="text-melon">
             {link.title === "home" && <Home />}
             {link.title === "work" && <Portfolio />}
             {link.title === "about" && <About />}

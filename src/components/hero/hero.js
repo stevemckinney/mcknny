@@ -25,7 +25,6 @@ const Hero = props => {
           <h1 className={`${headingStyles} ${styles.heading}`} dangerouslySetInnerHTML={{ __html:`Beautifully&nbsp;usable design&nbsp;your&nbsp;customers have&nbsp;come&nbsp;to&nbsp;expect` }}/>
           <Action to={props.link} text="View case studies" />
         </div>
-        {/* style={{ marginBottom: "-120px", paddingBottom: "120px" }} */}
         <Palomino className={`illo ${styles.palomino}`} role="presentation" />
         <Pencil className={`illo ${styles.pencil}`} role="presentation" />
         <Phone className={`illo ${styles.phone}`} role="presentation" />

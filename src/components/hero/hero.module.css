@@ -29,19 +29,17 @@
   bottom: -728px;
   left: 8px;
 
-  @screen xs {
-    }
-
   @screen sm {
     bottom: auto;
+    left: auto;
     top: 112px;
     right: 658px; }
 
   @screen xl {
     /* top: 92px; */
     top: auto;
-    bottom: -82px;
-    right: 984px; } }
+    bottom: -138px;
+    right: 952px; } }
 
 .pencil {
   transform: rotate(-60deg);
@@ -50,20 +48,15 @@
   left: 192px;
 
   @screen sm {
-    /* top: -264px; */
-    /* left: -484px; */
-  }
-
-  @screen sm {
-    top: 120px;
-    right: 482px; }
+    top: auto;
+    left: auto;
+    bottom: 40px;
+    right: 912px; }
 
   @screen xl {
     /* top: 316px; */
-    top: auto;
-    left: auto;
-    bottom: -238px;
-    right: 912px; } }
+    bottom: -290px;
+    right: 882px; } }
 
 .phone {
   transform: rotate(-60deg);
