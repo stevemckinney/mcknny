@@ -69,7 +69,7 @@ module.exports = {
         start_url: `/`,
         background_color: fullConfig.theme.colors.background_color,
         theme_color: fullConfig.theme.colors.theme_color,
-        display: `minimal-ui`,
+        display: `standalone`,
         icon: `src/images/apple-touch-icon.png`,
       },
     },

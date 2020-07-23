@@ -113,7 +113,7 @@
 
   --grid-6:
     [container-start]
-      0
+      16px
       [content-start]
         1fr
         [content-narrow-start]
@@ -121,7 +121,7 @@
         [content-narrow-end]
         1fr
       [content-end]
-      0
+      16px
     [container-end];
 
   /**

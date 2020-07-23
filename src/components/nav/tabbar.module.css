@@ -4,12 +4,12 @@
   border-radius: 32px 32px 0 0;
   background-color: rgba(var(--color-prussian-rgb), .9);
 
-  @supports (backdrop-filter: blur(12px)) {
-    backdrop-filter: blur(12px);
-    background-color: rgba(var(--color-prussian-rgb), .75); } }
+  @supports (backdrop-filter: blur(8px)) {
+    backdrop-filter: blur(8px);
+    background-color: rgba(var(--color-prussian-rgb), .8); } }
 
 .link {
-  padding: calc(var(--spacing) * 2) 0 calc(var(--spacing) * 1.5);
+  padding: calc(var(--spacing) * 2) 6% calc(var(--spacing) * 1.5);
 
   & > svg {
     margin-bottom: calc(var(--spacing) / 4); } }

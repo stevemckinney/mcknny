@@ -16,7 +16,7 @@ import Sharpener from "@images/sharpener.inline.svg";
 
 const Hero = props => {
   const heroStyles = `${props.className} ${styles.container} grid layout items-center relative`;
-  const headingStyles = `relative z-10 mb-2 md:mb-6 text-f3 xxs:text-f2 sm:text-f1 xxl:text-headline tracking-tight sm:tracking-tighter xxl:tracking-headline`;
+  const headingStyles = `relative z-10 mb-6 md:mb-6 text-f3 xxs:text-f2 sm:text-f1 xxl:text-headline tracking-tight sm:tracking-tighter xxl:tracking-headline`;
 
   return (
     <React.Fragment>
@@ -31,7 +31,7 @@ const Hero = props => {
         <Posca className={`illo ${styles.posca}`} role="presentation" />
         <Pen className={`illo ${styles.pen}`} role="presentation" />
         <Eraser className={`illo ${styles.eraser}`} role="presentation" />
-        <Sharpener className={`illo smMax:hidden ${styles.sharpener}`} role="presentation" />
+        <Sharpener className={`illo ${styles.sharpener}`} role="presentation" />
       </section>
     </React.Fragment>
   )

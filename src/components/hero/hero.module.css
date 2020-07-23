@@ -19,15 +19,15 @@
   grid-row: 2;
 
   @screen mdMax {
-    padding-top: 12vmax;
+    padding-top: calc(var(--spacing) * 3);
     grid-row: 1;
     grid-column: content-start / content-end; } }
 
 .palomino {
   transform: rotate(-60deg);
   transform-origin: top left;
-  bottom: -728px;
-  left: 8px;
+  bottom: -628px;
+  left: 24px;
 
   @screen sm {
     bottom: auto;
@@ -44,8 +44,8 @@
 .pencil {
   transform: rotate(-60deg);
   transform-origin: top left;
-  bottom: -658px;
-  left: 192px;
+  bottom: -552px;
+  left: 220px;
 
   @screen sm {
     top: auto;
@@ -94,8 +94,8 @@
 
   /* pinned to text */
   @screen smMax {
-    bottom: -80px;
-    left: 48px; }
+    bottom: -64px;
+    left: 68px; }
 
   @screen sm {
     top: 100%;
@@ -112,8 +112,8 @@
   transform: rotate(-30deg);
 
   /* pinned to screen */
-  bottom: -34px;
-  left: 258px;
+  bottom: 120px;
+  left: 196px;
 
   @screen sm {
     left: auto;
@@ -131,8 +131,8 @@
 
   /* pinned to text */
   @screen smMax {
-    top: 32vh;
-    left: 0; }
+    bottom: -64px;
+    left: 320px; }
 
   @screen sm {
     right: 0;

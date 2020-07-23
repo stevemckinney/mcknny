@@ -15,7 +15,7 @@ const Action = props => {
     <React.Fragment>
       <Link to={props.to} className={actionClass}>
         {props.text}
-        <span className={`bg-madison ml-2 rounded-full w-8 h-8 flex items-center justify-center relative ${styles.icon}`}>
+        <span className={`md:bg-madison ml-2 rounded-full md:w-8 md:h-8 flex items-center justify-center relative ${styles.icon}`}>
           <Arrow />
         </span>
       </Link>
