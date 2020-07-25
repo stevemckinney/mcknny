@@ -1,21 +1,27 @@
-.container {}
-
 .content {
-  @screen md {
+  grid-column: content-end / 6;
+
+  @screen xl {
+    grid-column: content-start / 8; }
+
+  @screen xxxl {
     grid-column: content-start / 10; } }
 
 .image {
-  grid-column: 10 / content-end;
+  grid-column: 6 / content-end;
   height: 100%;
 
-  @screen md {
+  @screen xl {
+    grid-column: 8 / content-end; }
+
+  @screen xxxl {
     grid-column: 10 / content-end; } }
 
 .title {
   width: clamp(256px, 100%, 484px); }
 
 /**
- * Illustrations
+ * illustrations
  */
 .figma {
   transform: rotate(-15deg) translate3d(0, -50%, 0);

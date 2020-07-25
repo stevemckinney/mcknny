@@ -7,6 +7,7 @@
   --color-prussian: #1A2D3D;
   --color-prussian-rgb: 26, 45, 61;
   --color-madison: #2A3C51;
+  --color-daintree: #092135;
   --color-seagull: #7DB8CA;
   --color-ohahu: #CAE5EE;
 
@@ -111,7 +112,7 @@
     [container-end]
     0;
 
-  --grid-6:
+  --grid-8:
     [container-start]
       16px
       [content-start]
@@ -122,6 +123,19 @@
         1fr
       [content-end]
       16px
+    [container-end];
+
+  --grid-6:
+    [container-start]
+      0
+      [content-start]
+        1fr
+        [content-narrow-start]
+          repeat(4, 1fr)
+        [content-narrow-end]
+        1fr
+      [content-end]
+      0
     [container-end];
 
   /**

@@ -1,7 +1,7 @@
 /*! purgecss start ignore */
 .article {
   grid-row-gap: 0;
-  margin-top: -12.5vh;
+  margin-top: -17.5vh;
 
   @screen xl {
     margin-top: -25vh; }

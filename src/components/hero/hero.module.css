@@ -1,4 +1,5 @@
 /**
+ * hero: a regretable design decision
  * viewport heights
  * ui: 70 + 44 = 114
  * 5s: 454px
@@ -7,9 +8,7 @@
  * xs: 698px
  * xs max: 782px
  */
-
 .container {
-  padding-bottom: calc(var(--tabbar-height) / 2);
   grid-column: 1 / -1;
   grid-template-rows: repeat(3, [row] auto); }
 
@@ -18,21 +17,38 @@
   grid-column: content-start / -1;
   grid-row: 2;
 
-  @screen mdMax {
-    padding-top: calc(var(--spacing) * 3);
+  @screen smMax {
     grid-row: 1;
-    grid-column: content-start / content-end; } }
+    grid-column: content-start / content-end;
+
+    @media (max-height: 677px) {
+      padding-top: calc(var(--spacing) * 3); } } }
 
 .palomino {
   transform: rotate(-60deg);
   transform-origin: top left;
-  bottom: -668px;
-  right: 320px;
+  right: 240px;
+  bottom: -720px;
+
+  @screen xs {
+    right: 328px;
+    bottom: -698px;
+
+    @media (min-height: 678px) {
+      bottom: -588px; } }
 
   @screen sm {
     bottom: auto;
     top: 112px;
     right: 658px; }
+
+  @screen md {
+    top: 196px;
+    right: 600px; }
+
+  @screen lg {
+    top: 112px;
+    right: 636px; }
 
   @screen xl {
     /* top: 92px; */
@@ -44,18 +60,32 @@
   transform: rotate(-60deg);
   transform-origin: top left;
   bottom: -404px;
-  right: 864px;
+  right: 852px;
+
+  @screen xxs {
+    bottom: -424px;
+
+    @media (min-height: 678px) {
+      bottom: -326px; } }
 
   @screen sm {
     top: auto;
     left: auto;
-    bottom: 40px;
-    right: 912px; }
+    bottom: 0;
+    right: 680px; }
+
+  @screen md {
+    bottom: auto;
+    top: 204px;
+    right: 400px; }
+
+  @screen lg {
+    top: 320px;
+    right: 492px; }
 
   @screen xl {
-    /* top: 316px; */
-    bottom: -290px;
-    right: 882px; } }
+    top: 286px;
+    right: 842px; } }
 
 .phone {
   transform: rotate(-60deg);
@@ -65,8 +95,12 @@
     display: none; }
 
   @screen sm {
-    top: 0;
-    right: 164px; }
+    top: -64px;
+    right: 224px; }
+
+  @screen lg {
+    top: 48px;
+    right: 84px; }
 
   @screen xl {
     top: 68px;
@@ -78,66 +112,115 @@
   @screen smMax {
     display: none; }
 
+  @media (orientation: portrait) {}
+  @media (orientation: landscape) {}
+
   @screen sm {
     transform-origin: left bottom;
-    bottom: -48px;
+    bottom: 0;
     right: 125vw; }
 
+  @screen lg {
+    bottom: 24px;
+    right: 1180px; }
+
   @screen xl {
+    bottom: 2vh;
+    right: 1520px; }
+
+  @screen xxl {
     bottom: -28px;
     right: 1688px; } }
 
-/* text grouped, then free */
 .eraser {
   transform: rotate(-30deg);
 
-  /* pinned to text */
+  @screen xsMax {
+    display: none; }
+
   @screen smMax {
-    bottom: -104px;
-    left: 68px; }
+    bottom: -84px;
+    left: 0;
+
+    @media (min-height: 678px) {
+      bottom: -20px;
+      left: 76px; } }
 
   @screen sm {
-    top: 100%;
-    left: calc(100% - 15vw); }
+    bottom: 168px;
+    right: 72px; }
 
-  /* pinned to screen */
+  @screen md {
+    bottom: 220px;
+    right: 72px; }
+
+  @screen lg {
+    bottom: 320px;
+    right: 144px; }
+
   @screen xl {
     top: auto;
     bottom: 148px;
-    right: 646px;
+    right: 546px;
     left: auto; } }
 
 .pen {
   transform: rotate(-30deg);
-
-  /* pinned to screen */
   bottom: -56px;
-  left: 292px;
+  left: 222px;
+
+  @screen xs {
+    bottom: -56px;
+    left: 222px;
+
+    @media (min-height: 678px) {
+      bottom: 12px;
+      left: 292px; } }
 
   @screen sm {
     left: auto;
     bottom: 132px;
     right: 248px; }
 
+  @screen lg {
+    bottom: 120px;
+    right: 304px; }
+
   @screen xl {
-    bottom: -52px;
-    right: 474px; }
+    right: 324px; }
 
   @screen xxl {} }
 
 .sharpener {
-  @screen smMax {
-    transform: rotate(-30deg);
-    bottom: 356px;
-    right: 64px; }
+  transform: rotate(-30deg);
+
+  @screen xsMax {
+    bottom: -40px;
+    left: 48px; }
+
+  @screen xs {
+    bottom: 426px;
+    right: 70px;
+
+    @media (max-height: 677px) {
+      right: 48px;
+      bottom: 298px; }
+
+    @media (max-height: 619px) {
+      display: none; } }
 
   @screen sm {
     transform: rotate(-60deg);
     right: 0;
     bottom: -64px; }
 
-  /* pinned to screen */
+  @screen md {
+    bottom: -32px; }
+
+  @screen lg {
+    bottom: -32px; }
+
   @screen xl {
     /* top: 792px; */
-    bottom: 102px;
-    right: 348px; } }
+    bottom: -32px;
+    right: 0; } }

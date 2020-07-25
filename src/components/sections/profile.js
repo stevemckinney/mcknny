@@ -32,7 +32,7 @@ const Profile = (props) => {
           <h3 className="block text-f7 xxs:text-f6 text-pearl uppercase tracking-title font-title font-medium mb-4">Let’s talk design</h3>
           <ul className="flex smMax:flex-col font-bold text-f6 xxs:text-f5 p-0 m-0">
             <li className="pr-8">
-              <a href="mailto:steve+mcknny@iamsteve.me" className="text-jasmine">Email</a>
+              <a href="mailto:steve@mcknny.com" className="text-jasmine">Email</a>
             </li>
             <li className="pr-8">
               <a href="https://instagram.com/studiomcknny" className="text-jasmine">Instagram</a>

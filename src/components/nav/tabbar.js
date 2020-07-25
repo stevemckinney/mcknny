@@ -23,6 +23,7 @@ const Tabbar = ({ links }) => {
           bg="#1A2D3D"
           direction="left"
           to="/"
+          className={linkStyles}
           activeClassName="text-jasmine"
         >
           <Home />

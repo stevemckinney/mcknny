@@ -9,7 +9,7 @@ import styles from "./action.module.css";
 import Arrow from "@icons/arrow-right.inline.svg";
 
 const Action = props => {
-  const actionClass = `relative text-f6 md:text-f5 md:text-f3 font-bold text-jasmine flex items-center action ${styles.action}`;
+  const actionClass = `relative text-f6 xs:text-f5 md:text-f3 font-bold text-jasmine flex items-center action ${styles.action}`;
 
   return (
     <React.Fragment>
@@ -21,7 +21,7 @@ const Action = props => {
         className={actionClass}
       >
         {props.text}
-        <span className={`md:bg-madison ml-2 rounded-full md:w-8 md:h-8 flex items-center justify-center relative ${styles.icon}`}>
+        <span className={`sm:bg-madison ml-2 rounded-full sm:w-8 sm:h-8 flex items-center justify-center relative ${styles.icon}`}>
           <Arrow />
         </span>
       </AniLink>

@@ -12,4 +12,8 @@
 
   @screen md {
     bottom: -168px;
-    left: calc(100% - 120px); } }
+    left: calc(100% - 120px); }
+
+  @screen xl {
+    bottom: -88px;
+    left: calc(100% - 240px); } }

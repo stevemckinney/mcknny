@@ -4,16 +4,54 @@
 html {
   overflow-x: hidden;
   height: -webkit-fill-available;
-  @apply .bg; }
+  background-color: var(--color-daintree);
+
+  &:before {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    background: #fff;
+    border: 1px solid #000;
+    font-size: 11px;
+    color: #000;
+    padding: 0.2em 0.4em;
+    content: "screen: --";
+
+    @screen xxs {
+      content: "screen: xxs"; }
+
+    @screen xs {
+      content: "screen: xs"; }
+
+    @screen sm {
+      content: "screen: sm"; }
+
+    @screen md {
+      content: "screen: md"; }
+
+    @screen lg {
+      content: "screen: lg"; }
+
+    @screen xl {
+      content: "screen: xl"; }
+
+    @screen xxl {
+      content: "screen: xxl"; }
+
+    @screen xxxl {
+      content: "screen: xxxl"; } } }
 
 body {
-  margin: 0;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   color: var(--color-pearl);
   -webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale; }
+	-moz-osx-font-smoothing: grayscale;
+  max-width: 1920px;
+  margin: auto; }
 
 body,
 #___gatsby,
@@ -36,6 +74,9 @@ body,
 .layout {
   grid-column-gap: calc(var(--grid-gutter) / 2);
   grid-template-columns: var(--grid-6);
+
+  @screen xs {
+    grid-template-columns: var(--grid-8);  }
 
   @screen md {
     grid-template-columns: var(--grid-12); }
