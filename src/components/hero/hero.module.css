@@ -26,12 +26,11 @@
 .palomino {
   transform: rotate(-60deg);
   transform-origin: top left;
-  bottom: -628px;
-  left: 24px;
+  bottom: -668px;
+  right: 320px;
 
   @screen sm {
     bottom: auto;
-    left: auto;
     top: 112px;
     right: 658px; }
 
@@ -44,8 +43,8 @@
 .pencil {
   transform: rotate(-60deg);
   transform-origin: top left;
-  bottom: -552px;
-  left: 220px;
+  bottom: -404px;
+  right: 864px;
 
   @screen sm {
     top: auto;
@@ -94,7 +93,7 @@
 
   /* pinned to text */
   @screen smMax {
-    bottom: -64px;
+    bottom: -104px;
     left: 68px; }
 
   @screen sm {
@@ -112,8 +111,8 @@
   transform: rotate(-30deg);
 
   /* pinned to screen */
-  bottom: 120px;
-  left: 196px;
+  bottom: -56px;
+  left: 292px;
 
   @screen sm {
     left: auto;
@@ -127,14 +126,13 @@
   @screen xxl {} }
 
 .sharpener {
-  transform: rotate(-60deg);
-
-  /* pinned to text */
   @screen smMax {
-    bottom: -64px;
-    left: 320px; }
+    transform: rotate(-30deg);
+    bottom: 356px;
+    right: 64px; }
 
   @screen sm {
+    transform: rotate(-60deg);
     right: 0;
     bottom: -64px; }
 

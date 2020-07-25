@@ -65,7 +65,7 @@ body,
 
 @responsive {
   .screen {
-    min-height: 100vh; }
+    min-height: max(100vh, 640px); }
 
   .screen-rows {
     grid-template-rows: 25vh auto 25vh; }

@@ -32,5 +32,8 @@ About.propTypes = {
   className: PropTypes.node,
 }
 
+About.defaultProps = {
+  className: "grid screen content py-36",
+}
 
 export default About;

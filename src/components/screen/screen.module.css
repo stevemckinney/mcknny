@@ -32,13 +32,14 @@
     left: 108px;
 
     @screen mdMax {
-      top: 86px;
-      right: 60px;
+      top: 48px;
+      right: 34px;
       bottom: 114px;
-      left: 108px; } } }
+      left: 62px; } } }
 
 .container {
-  @apply relative; }
+  @apply relative;
+  margin-right: calc(var(--spacing) * 4); }
 
 .small,
 .medium,

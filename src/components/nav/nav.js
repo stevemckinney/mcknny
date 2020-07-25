@@ -1,6 +1,8 @@
-import { Link } from "gatsby";
 import React from "react";
 import PropTypes from "prop-types";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
+
+// css
 import styles from "./nav.module.css";
 
 const Nav = ({ links }) => {
@@ -11,9 +13,15 @@ const Nav = ({ links }) => {
     <React.Fragment>
       <nav className={navStyles}>
         {links.map(link => (
-          <Link className={linkStyles} activeClassName="text-harp" key={link.title} to={link.route}>
+          <AniLink
+            cover
+            bg="#1A2D3D"
+            direction="left"
+            className={linkStyles} activeClassName="text-jasmine" key={link.title}
+            to={link.route}
+          >
             {link.title}
-          </Link>
+          </AniLink>
         ))}
       </nav>
     </React.Fragment>

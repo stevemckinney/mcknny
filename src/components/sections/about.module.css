@@ -5,7 +5,7 @@
 
 .ruler {
   transform: rotate(-15deg);
-  bottom: -168px;
+  bottom: -288px;
 
   @screen mdMax {
     right: 0; }

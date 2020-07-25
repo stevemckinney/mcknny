@@ -12,7 +12,7 @@ function IndexPage() {
     <Layout>
       <SEO title="ux &amp; visual design" />
       <Hero className="screen bg-i" link="/work/" />
-      <About className="grid screen content md:py-36" />
+      <About />
       <Featured />
     </Layout>
   )

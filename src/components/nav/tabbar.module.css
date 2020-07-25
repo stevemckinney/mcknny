@@ -4,9 +4,9 @@
   border-radius: 32px 32px 0 0;
   background-color: rgba(var(--color-prussian-rgb), .9);
 
-  @supports (backdrop-filter: blur(8px)) {
-    backdrop-filter: blur(8px);
-    background-color: rgba(var(--color-prussian-rgb), .8); } }
+  @supports (backdrop-filter: blur(1px)) {
+    backdrop-filter: blur(12px) saturate(4);
+    background-color: rgba(var(--color-prussian-rgb), .9); } }
 
 .link {
   padding: calc(var(--spacing) * 2) 6% calc(var(--spacing) * 1.5);
