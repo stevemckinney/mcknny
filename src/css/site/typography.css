@@ -1,5 +1,5 @@
 /**
- * Headings
+ * headings
  */
 :--headings {
   @apply mt-0 font-display font-bold;
@@ -8,10 +8,17 @@
   text-rendering: optimizeLegibility; }
 
 /**
- * General
+ * text
  */
 p {
   margin: 0 0 8px; }
+
+p, ul, ol {
+  @screen sm {
+    font-size: var(--f4); }
+
+  @screen md {
+    font-size: var(--f3); } }
 
 a {
   transition: .2s;
@@ -26,6 +33,6 @@ a {
     outline: 0; } }
 
 /**
- * General
+ * general
  */
 address { font-style: normal; }

@@ -15,8 +15,6 @@ function Layout({ className, children }) {
   return (
     <React.Fragment>
       <Helmet key="head" bodyAttributes={{ class: layoutClass }}>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
         <link rel="preconnect" href="https://typekit.com" />
         <link rel="preconnect" href="https://use.typekit.net" />
         <link rel="preconnect" href="https://p.typekit.net" />
@@ -34,7 +32,7 @@ function Layout({ className, children }) {
 }
 
 Layout.defaultProps = {
-  className: "grid sm:layout md:layout lg:layout",
+  className: "grid layout",
 }
 
 Layout.propTypes = {

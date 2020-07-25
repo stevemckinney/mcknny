@@ -1,19 +1,24 @@
+/*! purgecss start ignore */
 .article {
   grid-row-gap: 0;
+  margin-top: -17.5vh;
+
+  @screen xl {
+    margin-top: -25vh; }
 
   /* all */
   & h2 {
-    font-size: var(--f1); }
+    font-size: clamp(var(--f2), 5vw, var(--f1)); }
 
   & h3 {
-    font-size: var(--f2); }
+    font-size: clamp(var(--f3), 3.5vw, var(--f2)); }
 
   & h4 {
-    font-size: var(--f3); }
+    font-size: clamp(var(--f4), 2.5vw, var(--f3)); }
 
   /* nested */
   & > h2 {
-    margin-top: calc(var(--spacing) * 6); }
+    margin-top: calc(var(--spacing) * 12); }
 
   & > h3 {
     margin-top: calc(var(--spacing) * 4); }
@@ -27,7 +32,16 @@
   & > :matches(h1, h2, h3, h4, h5, h6, p, ul, ol) {
     margin-bottom: 0;
     padding: 0;
-    grid-column: 9 / content-end; }
+    grid-column: content;
+
+    @screen lg {
+      grid-column: 5 / content-end; }
+
+    @screen xl {
+      grid-column: 7 / content-end; }
+
+    @screen xxxl {
+      grid-column: 9 / content-end; } }
 
   & > p + p,
   & > h3 + p {
@@ -36,12 +50,6 @@
   & li:not(:last-child) {
     margin-bottom: var(--spacing); } }
 
-.content {
-  /* max-width: 664px; */
-  /* grid-column: content-start / -1; */
-  /* grid-row: 2; */
-
-  @screen mdMax {
-    @apply text-center pb-16;
-    grid-row: 3;
-    grid-column: content; } }
+.introduction p:not(:last-child) {
+  margin-bottom: calc(var(--spacing) * 2); }
+/*! purgecss end ignore */

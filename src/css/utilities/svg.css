@@ -18,11 +18,20 @@
 .soft-light {
   mix-blend-mode: soft-light; }
 
+.overlay {
+  mix-blend-mode: overlay; }
+
 /* opacity */
-.opacity-20 {
+.opacity-30,
+.layer-03 {
+  opacity: .3; }
+
+.opacity-20,
+.layer-02 {
   opacity: .2; }
 
-.opacity-40 {
+.opacity-40,
+.layer-01 {
   opacity: .4; }
 
 .fill-opacity-20 {

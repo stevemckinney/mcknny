@@ -1,93 +1,232 @@
+/**
+ * hero: a regretable design decision
+ * viewport heights
+ * ui: 70 + 44 = 114
+ * 5s: 454px
+ * 6/7/8: 553px
+ * 6/7/8-plus: 622px
+ * xs: 698px
+ * xs max: 782px
+ */
 .container {
   grid-column: 1 / -1;
-  grid-template-rows: repeat(3, [row] 1fr);
-
-  @screen mdMax {
-    padding-bottom: calc(var(--tabbar-height) + (var(--spacing) * 4)); } }
+  grid-template-rows: repeat(3, [row] auto); }
 
 .content {
-  max-width: 664px;
+  width: clamp(256px, 664px, 75vw);
   grid-column: content-start / -1;
   grid-row: 2;
 
-  @screen mdMax {
-    @apply text-center pb-16;
-    grid-row: 3;
-    grid-column: content; } }
+  @screen smMax {
+    grid-row: 1;
+    grid-column: content-start / content-end; }
 
-.eraser {
-  @screen mdMax {
-    transform: rotate(-90deg) translate3d(50%, 0, 0);
-    top: 50%;
-    right: -16px; }
-
-  @screen md {
-    transform: rotate(-30deg);
-    top: 654px;
-    right: 646px; } }
+  @media (max-width: 480px) and (max-height: 677px), (max-width: 379px) {
+    padding-top: calc(var(--spacing) * 3); } }
 
 .palomino {
   transform: rotate(-60deg);
+  transform-origin: top left;
+  right: 240px;
+  bottom: -720px;
 
-  @screen mdMax {
-    top: -426px;
-    left: -178px; }
+  @screen xxs {
+    right: 328px;
+    bottom: -668px;
+
+    @media (min-height: 768px) {
+      bottom: -588px; } }
+
+  @screen sm {
+    bottom: auto;
+    top: 112px;
+    right: 658px; }
 
   @screen md {
-    top: -138px;
-    right: 522px; } }
+    top: 196px;
+    right: 600px; }
+
+  @screen lg {
+    top: 112px;
+    right: 636px; }
+
+  @screen xl {
+    right: 952px; }
+
+  @screen xxxl {
+    /* top: 92px; */
+    top: auto;
+    bottom: -138px;
+    right: 952px; } }
 
 .pencil {
   transform: rotate(-60deg);
+  transform-origin: top left;
+  bottom: -404px;
+  right: 852px;
 
-  @screen mdMax {
-    top: -644px;
-    left: -188px; }
+  @screen xxs {
+    bottom: -404px;
+
+    @media (min-height: 768px) {
+      bottom: -326px; } }
+
+  @screen sm {
+    top: auto;
+    left: auto;
+    bottom: 0;
+    right: 680px; }
 
   @screen md {
-    top: 102px;
-    right: 482px; } }
+    bottom: auto;
+    top: 204px;
+    right: 400px; }
+
+  @screen lg {
+    top: 320px;
+    right: 492px; }
+
+  @screen xl {
+    top: 286px;
+    right: 842px; } }
 
 .phone {
   transform: rotate(-60deg);
   transform-origin: left top;
-  top: 68px;
-  right: 362px;
 
-  .status-bar {
-    display: none;
-    color: #121212; }
-
-  @screen mdMax {
+  @screen smMax {
     display: none; }
 
-  @screen md {
-    display: block; } }
+  @screen sm {
+    top: -64px;
+    right: 224px; }
 
-.pen {
-  transform: rotate(-30deg);
-  bottom: -52px;
-  right: 474px; }
+  @screen lg {
+    top: 48px;
+    right: 84px; }
+
+  @screen xl {
+    top: 68px;
+    right: 362px; } }
 
 .posca {
   transform: rotate(75deg);
-  transform-origin: left bottom;
-  bottom: -30px;
-  right: calc(100vw - 228px);
 
-  @screen mdMax {
+  @screen smMax {
     display: none; }
 
+  @screen sm {
+    transform-origin: left bottom;
+    bottom: 0;
+    right: 125vw; }
+
+  @screen lg {
+    bottom: 24px;
+    right: 1180px; }
+
+  @screen xl {
+    bottom: 2vh;
+    right: 1520px; }
+
+  @screen xxl {
+    bottom: -28px;
+    right: 1688px; } }
+
+.eraser {
+  transform: rotate(-30deg);
+
+  @screen xsMax {
+    display: none; }
+
+  @screen smMax {
+    bottom: -64px;
+    left: 0;
+
+    @media (min-height: 768px) {
+      bottom: -20px;
+      left: 76px; } }
+
+  @screen sm {
+    bottom: 168px;
+    right: 72px; }
+
   @screen md {
-    display: block; } }
+    bottom: 220px;
+    right: 72px; }
+
+  @screen lg {
+    @media (orientation: portrait) {
+      bottom: 320px;
+      right: 144px; }
+
+    @media (orientation: landscape) {
+      bottom: 96px;
+      right: 320px; } }
+
+  @screen xl {
+    top: auto;
+    bottom: 148px;
+    right: 546px;
+    left: auto; } }
+
+.pen {
+  transform: rotate(-30deg);
+  bottom: -56px;
+  left: 222px;
+
+  @screen xs {
+    bottom: -36px;
+    left: 222px;
+
+    @media (min-height: 768px) {
+      bottom: 12px;
+      left: 292px; } }
+
+  @screen sm {
+    left: auto;
+    bottom: 132px;
+    right: 248px; }
+
+  @screen lg {
+    @media (orientation: portrait) {
+      bottom: 120px;
+      right: 304px; }
+
+    @media (orientation: landscape) {
+      bottom: -40px;
+      right: 192px; } }
+
+  @screen xl {
+    bottom: -40px;
+    right: 384px; }
+
+  @screen xxl {} }
 
 .sharpener {
-  @screen mdMax {
+  transform: rotate(-30deg);
+
+  @screen xsMax {
+    bottom: -40px;
+    left: 48px; }
+
+  @screen xs {
+    bottom: 426px;
+    right: 70px;
+
+    @media (max-height: 767px) {
+      display: none; } }
+
+  @screen sm {
     transform: rotate(-60deg);
-    bottom: 0;
-    right: -64px; }
+    right: 0;
+    bottom: -64px; }
 
   @screen md {
-    transform: rotate(-60deg);
-    top: 792px;
-    right: 350px; } }
+    bottom: -32px; }
+
+  @screen lg {
+    bottom: -32px; }
+
+  @screen xl {
+    bottom: 80px;
+    right: 240px; } }

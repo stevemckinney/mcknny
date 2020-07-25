@@ -6,8 +6,8 @@ module.exports = {
     screens: {
       xxs: "360px",
       xxsMax: {"max": "359px"},
-      xs: "480px",
-      xsMax: {"max": "479px"},
+      xs: "414px",
+      xsMax: {"max": "413px"},
       sm: "640px",
       smMax: {"max": "639px"},
       md: "768px",
@@ -16,8 +16,12 @@ module.exports = {
       lgMax: {"max": "959px"},
       xl: "1280px",
       xlMax: {"max": "1279px"},
-      xxl: "1680px",
-      xxlMax: {"max": "1679px"}
+      xxl: "1440px",
+      xxlMax: {"max": "1439px"},
+      xxl: "1440px",
+      xxlMax: {"max": "1439px"},
+      xxxl: "1680px",
+      xxxlMax: {"max": "1659px"}
     },
     fontFamily: {
       display: ["var(--font-display)"],
@@ -35,6 +39,7 @@ module.exports = {
 
       // blue
       madison: "var(--color-madison)",
+      prussian: "var(--color-prussian)",
       seagull: "var(--color-seagull)",
       ohahu: "var(--color-ohahu)",
 
@@ -80,6 +85,8 @@ module.exports = {
       '45': '45deg',
     },
     letterSpacing: {
+      tight: '-.5px',
+      tighter: '-1.5px',
       headline: '-3px',
       title: '2.5px'
     },

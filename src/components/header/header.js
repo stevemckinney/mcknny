@@ -22,7 +22,7 @@ const Header = (props) => {
     }
   `);
 
-  const headerStyles = `${props.className} ${styles.header} grid mdMax:hidden fixed right-0 left-0 z-10 top-0 sm:layout md:layout lg:layout items-center text-pearl`;
+  const headerStyles = `${props.className} ${styles.header} grid layout absolute md:fixed right-0 left-0 z-50 top-0 sm:py-6 lg:py-10 items-center text-pearl`;
 
   return (
     <React.Fragment>

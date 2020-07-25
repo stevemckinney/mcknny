@@ -1,15 +1,27 @@
 .content {
-  grid-column: content-start / 10; }
+  grid-column: content-end / 6;
+
+  @screen xl {
+    grid-column: content-start / 8; }
+
+  @screen xxxl {
+    grid-column: content-start / 10; } }
 
 .image {
-  grid-column: 10 / content-end;
-  height: 100%; }
+  grid-column: 6 / content-end;
+  height: 100%;
+
+  @screen xl {
+    grid-column: 8 / content-end; }
+
+  @screen xxxl {
+    grid-column: 10 / content-end; } }
 
 .title {
-  width: clamp(320px, 100%, 484px); }
+  width: clamp(256px, 100%, 484px); }
 
 /**
- * Illustrations
+ * illustrations
  */
 .figma {
   transform: rotate(-15deg) translate3d(0, -50%, 0);
@@ -24,7 +36,7 @@
 .pen {
   transform: rotate(-30deg);
   bottom: -8%;
-  left: 12.5%; }
+  left: 15%; }
 
 .safari {
   bottom: -20%;

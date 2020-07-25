@@ -1,0 +1,7 @@
+<svg width="320" height="64" viewBox="0 0 320 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="tabbar">
+      <path d="M0 64C0 33.8301 0 18.7452 9.37258 9.37258C18.7452 0 33.8301 0 64 0H311C341.17 0 356.255 0 365.627 9.37258C375 18.7452 375 33.8301 375 64V64H0V64Z" fill="#1A2D3D"/>
+    </clipPath>
+  </defs>
+</svg>

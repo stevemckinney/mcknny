@@ -1,8 +1,10 @@
 const path = require(`path`);
-const resolveConfig = require("tailwindcss/resolveConfig");
-const tailwindConfig = require("./tailwind.config.js");
-const fullConfig = resolveConfig(tailwindConfig);
 
+const resolveConfig = require("tailwindcss/resolveConfig");
+
+const tailwindConfig = require("./tailwind.config.js");
+
+const fullConfig = resolveConfig(tailwindConfig);
 module.exports = {
   siteMetadata: {
     title: `steve mckinney`,
@@ -58,8 +60,8 @@ module.exports = {
       options: {
         rule: {
           include: /\.inline\.svg$/,
-        }
-      }
+        },
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -69,7 +71,7 @@ module.exports = {
         start_url: `/`,
         background_color: fullConfig.theme.colors.background_color,
         theme_color: fullConfig.theme.colors.theme_color,
-        display: `minimal-ui`,
+        display: `standalone`,
         icon: `src/images/apple-touch-icon.png`,
       },
     },
@@ -100,16 +102,18 @@ module.exports = {
       options: {
         tailwind: true,
         whitelist: [
-          `fill-shadow`, `opacity-20`, `opacity-40`,
-          `grid-cols-10`, `image`,
+          `fill-shadow`,
+          `opacity-20`,
+          `opacity-40`,
+          `grid-cols-10`,
+          `image`,
+          ``,
         ],
         content: [
           path.join(process.cwd(), `content/**/!(*.d).{js,jsx,md,mdx,svg}`),
-          path.join(process.cwd(), `src/**/!(*.d).{js,jsx,md,mdx,svg}`)
+          path.join(process.cwd(), `src/**/!(*.d).{js,jsx,md,mdx,svg}`),
         ],
-        purgeOnly: [
-          `src/css/global.css`
-        ],
+        purgeOnly: [`src/css/global.css`],
       },
     },
     `gatsby-plugin-sharp`,
@@ -142,11 +146,11 @@ module.exports = {
               linkImagesToOriginal: false,
               tracedSVG: false,
               quality: 95,
-              backgroundColor: `#121212`
+              backgroundColor: `#121212`,
             },
-          }
+          },
         ],
-      }
+      },
     },
     {
       resolve: `gatsby-plugin-web-font-loader`,
@@ -156,5 +160,11 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-transition-link`,
+      // options: {
+      //   layout: require.resolve(`./src/components/layout/layout.js`)
+      // }
+    }
   ],
 };

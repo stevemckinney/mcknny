@@ -1,9 +1,7 @@
 <svg width="196" height="196" viewBox="0 0 196 196" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g style="mix-blend-mode:soft-light" opacity="0.2">
-<circle cx="102" cy="102" r="94" fill="#2A3C51"/>
-</g>
+<circle opacity="0.2" cx="102" cy="102" r="94" fill="#041320"/>
 <g style="mix-blend-mode:soft-light" opacity="0.4">
-<circle cx="91" cy="91" r="91" fill="#2A3C51"/>
+<circle cx="91" cy="91" r="91" fill="#041320"/>
 </g>
 <circle cx="88" cy="88" r="84" fill="#7DB8CA" stroke="#F4ECEB" stroke-width="8" stroke-miterlimit="10"/>
 <path d="M172 88C172 134.392 134.392 172 88 172C41.6081 172 4 134.392 4 88" stroke="#CAD4BF" stroke-width="8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -22,7 +20,7 @@
 <line x1="29.7516" y1="73.6956" x2="23.956" y2="72.1427" stroke="#F4ECEB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <line x1="150.044" y1="72.1427" x2="144.248" y2="73.6956" stroke="#F4ECEB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <line x1="30.269" y1="104.236" x2="24.4734" y2="105.789" stroke="#F4ECEB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<line x1="143.791" y1="56.3661" x2="138.595" y2="59.3661" stroke="#F4ECEB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="143.791" y1="56.366" x2="138.595" y2="59.366" stroke="#F4ECEB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <line x1="36.4042" y1="118.366" x2="31.2081" y2="121.366" stroke="#F4ECEB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <line x1="120.366" y1="32.2083" x2="117.366" y2="37.4045" stroke="#F4ECEB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <line x1="58.3658" y1="139.596" x2="55.3658" y2="144.792" stroke="#F4ECEB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

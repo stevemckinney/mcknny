@@ -1,0 +1,13 @@
+.single .gatsby-resp-image-wrapper {
+  overflow: hidden;
+  border-radius: 20px;
+
+  @screen mdMax {
+    border-radius: 18px; } }
+
+.figure img {
+  max-width: 100%;
+
+  @screen lg {
+    border-radius: var(--radius);
+    border-radius: 32px; } }

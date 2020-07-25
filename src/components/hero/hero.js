@@ -15,23 +15,23 @@ import Posca from "@images/posca.inline.svg";
 import Sharpener from "@images/sharpener.inline.svg";
 
 const Hero = props => {
-  const heroStyles = `${props.className} ${styles.container} grid sm:layout md:layout lg:layout mdMax:justify-center items-end md:items-center relative`;
-  const headingStyles = `relative z-10 mb-6 mdMax:leading-tight text-f3 lg:text-headline tracking-headline`;
+  const heroStyles = `${props.className} ${styles.container} grid layout items-center relative`;
+  const headingStyles = `relative z-10 mb-6 sm:mb-6 text-f3 xxs:text-f2 sm:text-f1 xxl:text-headline tracking-tight sm:tracking-tighter xxl:tracking-headline`;
 
   return (
     <React.Fragment>
-      <section className={heroStyles}>
-        <div className={styles.content}>
-          <h1 className={headingStyles}>Beautifully usable design your customers have come to expect</h1>
+      <section className={`${heroStyles}`}>
+        <div className={`${styles.content} z-10 relative`}>
+          <h1 className={`${headingStyles} ${styles.heading}`} dangerouslySetInnerHTML={{ __html:`Beautifully&nbsp;usable design&nbsp;your&nbsp;customers have&nbsp;come&nbsp;to&nbsp;expect` }}/>
           <Action to={props.link} text="View case studies" />
         </div>
-        <Eraser className={`illo ${styles.eraser}`} />
-        <Palomino className={`illo ${styles.palomino}`} />
-        <Pen className={`illo ${styles.pen}`} />
-        <Pencil className={`illo ${styles.pencil}`} />
-        <Phone className={`illo ${styles.phone}`} />
-        <Posca className={`illo ${styles.posca}`} />
-        <Sharpener className={`illo ${styles.sharpener}`} />
+        <Palomino className={`illo ${styles.palomino}`} role="presentation" />
+        <Pencil className={`illo ${styles.pencil}`} role="presentation" />
+        <Phone className={`illo ${styles.phone}`} role="presentation" />
+        <Posca className={`illo ${styles.posca}`} role="presentation" />
+        <Pen className={`illo ${styles.pen}`} role="presentation" />
+        <Eraser className={`illo ${styles.eraser}`} role="presentation" />
+        <Sharpener className={`illo ${styles.sharpener}`} role="presentation" />
       </section>
     </React.Fragment>
   )
