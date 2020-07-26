@@ -23,7 +23,7 @@ const Tabbar = ({ links }) => {
           home
         </Link>
         {links.map(link => (
-          <Link className={linkStyles} key={link.title} to={link.route} activeClassName="text-jasmine">
+          <Link className={linkStyles} key={link.title} to={link.route} activeClassName="text-jasmine" partiallyActive={true}>
             {link.title === "home" && <Home />}
             {link.title === "work" && <Portfolio />}
             {link.title === "about" && <About />}

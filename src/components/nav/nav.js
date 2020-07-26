@@ -13,7 +13,7 @@ const Nav = ({ links }) => {
     <React.Fragment>
       <nav className={navStyles}>
         {links.map(link => (
-          <Link className={linkStyles} activeClassName="text-jasmine" key={link.title} to={link.route}>
+          <Link className={linkStyles} partiallyActive={true} activeClassName="text-jasmine" key={link.title} to={link.route}>
             {link.title}
           </Link>
         ))}
