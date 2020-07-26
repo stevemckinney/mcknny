@@ -1,11 +1,11 @@
 import React from "react";
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+// components
+import SEO from "@components/seo";
 
 function AboutPage() {
   return (
-    <Layout>
+    <React.Fragment>
       <SEO title="About" />
       <section className="content text-f4">
         <header className="py-64 lg:mt-16 content">
@@ -13,7 +13,7 @@ function AboutPage() {
         </header>
         <p>Work in progress…</p>
       </section>
-    </Layout>
+    </React.Fragment>
   );
 }
 

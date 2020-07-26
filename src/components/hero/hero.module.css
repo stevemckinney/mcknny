@@ -88,7 +88,13 @@
 
   @screen xl {
     top: 286px;
-    right: 842px; } }
+    right: 842px; }
+
+  @screen xxl {
+    top: 366px; } }
+
+.status-bar {
+  fill: red; }
 
 .phone {
   transform: rotate(-60deg);

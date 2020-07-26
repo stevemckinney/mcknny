@@ -9,7 +9,6 @@ import styles from "./single.module.css";
 
 // components
 import SEO from '@components/seo';
-import Layout from '@components/layout';
 import Action from '@components/content/action';
 import Bullet from '@components/content/bullet';
 import H from '@components/content/h';
@@ -44,7 +43,7 @@ export default function Single({ data: { mdx } }) {
   }
 
   return (
-    <Layout>
+    <React.Fragment>
       <SEO title={title}/>
       <header className="grid layout full py-48 md:py-64 lg:py-0 lg:screen lg:screen-rows bg-i relative">
         <div className={`content lg:screen-center lg:col-span-4 lg:col-start-3 xxxl:col-span-5 xxxl:col-start-4`}>
@@ -88,7 +87,7 @@ export default function Single({ data: { mdx } }) {
           <MDXRenderer>{mdx.body}</MDXRenderer>
         </MDXProvider>
       </article>
-    </Layout>
+    </React.Fragment>
   )
 }
 

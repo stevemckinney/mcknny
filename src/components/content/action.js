@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import AniLink from "gatsby-plugin-transition-link/AniLink";
+import { Link } from "gatsby";
 
 // css
 import styles from "./action.module.css";
@@ -13,18 +13,12 @@ const Action = props => {
 
   return (
     <React.Fragment>
-      <AniLink
-        cover
-        bg="#1A2D3D"
-        direction="left"
-        to={props.to}
-        className={actionClass}
-      >
+      <Link to={props.to} className={actionClass}>
         {props.text}
         <span className={`sm:bg-madison ml-2 rounded-full sm:w-8 sm:h-8 flex items-center justify-center relative ${styles.icon}`}>
           <Arrow />
         </span>
-      </AniLink>
+      </Link>
     </React.Fragment>
   )
 }

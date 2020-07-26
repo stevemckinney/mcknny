@@ -5,7 +5,7 @@ html {
   overflow-x: hidden;
   height: -webkit-fill-available;
   background-color: var(--color-daintree);
-
+/*
   &:before {
     display: block;
     position: fixed;
@@ -41,7 +41,8 @@ html {
       content: "screen: xxl"; }
 
     @screen xxxl {
-      content: "screen: xxxl"; } } }
+      content: "screen: xxxl"; } } */
+}
 
 body {
   scroll-behavior: smooth;

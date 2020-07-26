@@ -16,7 +16,7 @@ import Pen from "@images/pen.inline.svg";
 
 const Profile = (props) => {
   const containerStyles = `${props.className} ${styles.container}`;
-  const contentStyles = `${styles.content} relative content`;
+  const contentStyles = `${styles.content} relative`;
   function setTitle() {
     return {
       __html: `I’m Steve McKinney, a&nbsp;Manchester based visual&nbsp;&amp;&nbsp;ux&nbsp;designer`
