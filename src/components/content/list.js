@@ -10,8 +10,8 @@ const List = props => {
 
   return (
     <L className={className}>
-      {items.map(li => (
-        <li key={li.id}>
+      {items.map((li, i) => (
+        <li key={i}>
           {li}
         </li>
       ))}

@@ -1,8 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link } from "gatsby";
 import { motion } from "framer-motion";
 
+// components
+import Link from "@components/link";
 // css
 import styles from "./prompt.module.css";
 
@@ -12,29 +13,29 @@ import Glasses from "@images/glasses.inline.svg";
 const Prompt = props => {
   const promptClass = `py-36 relative flex justify-center items-center prompt`;
 
-  const textMotion = {
+  const t = {
     normal: {
       scale: 1,
       transition: {
-        duration: 2,
-        type: "tween",
-        ease: "easeIn"
+        duration: .4,
+        type: "spring",
+        stiffness: 400
       }
     },
     hover: {
-      scale: 0.9,
+      scale: .9,
       transition: {
-        duration: 0.4,
-        type: "tween",
-        ease: "easeOut"
+        duration: .4,
+        type: "spring",
+        stiffness: 400
       }
     },
     tap: {
       scale: 0.85,
       transition: {
-        duration: 0.4,
-        type: "tween",
-        ease: "easeOut"
+        duration: .4,
+        type: "spring",
+        stiffness: 400
       }
     }
   };
@@ -54,7 +55,7 @@ const Prompt = props => {
         >
           <motion.span
             className="relative block transition font-display text-center leading-tight text-f2 md:text-headline font-bold text-jasmine"
-            variants={textMotion}
+            variants={t}
           >
             {props.text}
           </motion.span>

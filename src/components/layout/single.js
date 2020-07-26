@@ -55,19 +55,19 @@ export default function Single({ data: { mdx } }) {
         </div>
         <div className={`full md:content max-w-full lg:screen-center lg:col-start-7 lg:col-span-6 xxxl:col-span-7 xxxl:col-start-9`}>
           <ul className={`my-0 py-0 px-8 md:px-0 flex scroll mb-4 text-f9 md:text-f8 text-pearl uppercase tracking-title font-title font-bold`}>
-            <li className="text-melon list-item pr-3 md:pr-4">Role</li>
+            <li className="text-melon list-item pr-3 md:pr-4" key="r">Role</li>
             {role.map((name, i) => [
-              <React.Fragment key={name.id}>
+              <React.Fragment key={i}>
                 <li className="list-item pr-3 md:pr-4">
                   {name}
                 </li>
                 {i < role.length - 1 ? <li className="list-item pr-3 md:pr-4"  dangerouslySetInnerHTML={createSeparator()}/> : ``}
               </React.Fragment>
             ])}
-            <li className="list-item pr-3 md:pr-4"><Bullet className="bg-madison" /></li>
-            <li className="text-melon list-item pr-3 md:pr-4">Type</li>
+            <li className="list-item pr-3 md:pr-4" key="b"><Bullet className="bg-madison" /></li>
+            <li className="text-melon list-item pr-3 md:pr-4" key="t">Type</li>
             {category.map((name, i) => [
-              <React.Fragment key={name.id}>
+              <React.Fragment key={i}>
                 <li className="list-item pr-3 md:pr-4">
                   {name}
                 </li>
@@ -76,8 +76,8 @@ export default function Single({ data: { mdx } }) {
             ])}
           </ul>
           <div className={`${styles.introduction} mdMax:px-8`}>
-          {introduction.map(p => (
-            <p key={p.id}>{p}</p>
+          {introduction.map((p, i) => (
+            <p key={i}>{p}</p>
           ))}
           </div>
         </div>

@@ -12,7 +12,7 @@ import "../../css/global.css";
 import styles from "./layout.module.css";
 
 // animation
-const duration = 0.5
+const duration = .4;
 
 const variants = {
   initial: {

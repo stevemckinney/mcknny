@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import Img from "gatsby-image";
+import { motion } from "framer-motion";
 // import Dump from "@components/dump";
 
 // css
@@ -11,7 +12,15 @@ const Project = ({ className, link, props }) => {
   return (
     <React.Fragment>
       {/*<Dump individualProjectProps={props.image.childImageSharp} />*/}
-      <article className={`${styles.container} ${className} bg-prussian radius`}>
+      <motion.article
+        className={`${styles.container} ${className} bg-prussian radius`} whileHover={{
+          scale: .975
+        }}
+        transition={{
+          type: "spring",
+          stiffness: 400
+        }}
+      >
         <Link to={link} className="block">
           <Img fluid={props.image.childImageSharp.fluid} />
         </Link>
@@ -20,7 +29,7 @@ const Project = ({ className, link, props }) => {
             {props.description}
           </Link>
         </h2>
-      </article>
+      </motion.article>
     </React.Fragment>
   )
 }

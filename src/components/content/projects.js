@@ -57,8 +57,13 @@ const Projects = ({ props }) => {
 
 Projects.propTypes = {
   classNameProject: PropTypes.string,
-  data: PropTypes.node.isRequired,
-  props: PropTypes.node,
+  data: PropTypes.node,
+  props: PropTypes.oneOfType([
+    PropTypes.node,
+    PropTypes.string,
+    PropTypes.object,
+    PropTypes.symbol,
+  ]),
 }
 
 export default Projects;
