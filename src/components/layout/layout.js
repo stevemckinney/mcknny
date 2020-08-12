@@ -9,7 +9,6 @@ import Footer from "@components/footer";
 
 // css
 import "../../css/global.css";
-import styles from "./layout.module.css";
 
 // animation
 const duration = .4;
@@ -33,7 +32,7 @@ const variants = {
 }
 
 function Layout({ className, children }) {
-  const layoutClass = `font-body bg ${styles.layout}`;
+  const layoutClass = `font-body bg`;
 
   return (
     <React.Fragment>

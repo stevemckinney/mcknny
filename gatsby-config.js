@@ -159,6 +159,7 @@ module.exports = {
           id: `cbu1mww`,
         },
       },
-    }
+    },
+    "gatsby-plugin-emotion",
   ],
 };

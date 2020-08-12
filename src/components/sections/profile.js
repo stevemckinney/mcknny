@@ -19,7 +19,7 @@ const Profile = (props) => {
   const contentStyles = `${styles.content} relative`;
   function setTitle() {
     return {
-      __html: `I’m Steve McKinney, a&nbsp;Manchester based visual&nbsp;&amp;&nbsp;ux&nbsp;designer`
+      __html: `I’m Steve McKinney, a&nbsp;Manchester based visual&nbsp;&amp; ux&nbsp;designer`
     }
   }
 
@@ -28,7 +28,7 @@ const Profile = (props) => {
       <aside className={containerStyles}>
         <div className={contentStyles}>
           <Logo className="pb-8" />
-          <h2 className={`${styles.title} text-f3 xxs:text-f2 md:text-f1 text-remy content mb-12`} dangerouslySetInnerHTML={setTitle()} />
+          <h2 className={`${styles.title} text-f3 xxs:text-f2 lg:text-f1 text-remy content mb-12`} dangerouslySetInnerHTML={setTitle()} />
           <h3 className="block text-f7 xxs:text-f6 text-pearl uppercase tracking-title font-title font-medium mb-4">Let’s talk design</h3>
           <ul className="flex smMax:flex-col font-bold text-f6 xxs:text-f5 p-0 m-0">
             <li className="pr-8">
@@ -48,12 +48,12 @@ const Profile = (props) => {
             </li>
           </ul>
         </div>
-        <div className={`${styles.image} relative mdMax:hidden`} role="presentation">
+        <div className={`${styles.image} relative`} role="presentation">
           <Figma className={`illo ${styles.figma}`} />
           <Illustrator className={`illo ${styles.illustrator}`} />
-          <Pen className={`illo ${styles.pen}`} />
+          <Pen className={`illo ${styles.pen} mdMax:hidden`} />
           <Safari className={`illo ${styles.safari}`} />
-          <Terminal className={`illo ${styles.terminal}`} />
+          <Terminal className={`illo ${styles.terminal} mdMax:hidden`} />
         </div>
       </aside>
     </React.Fragment>

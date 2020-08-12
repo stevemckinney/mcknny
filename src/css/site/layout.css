@@ -2,7 +2,6 @@
  * global
  */
 html {
-  overflow-x: hidden;
   height: -webkit-fill-available;
   background-color: var(--color-daintree);
 /*
@@ -45,6 +44,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
