@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 // import Dump from "@components/dump";
 
 // svg
+import Xsmall from "@images/phone-xs.inline.svg";
 import Small from "@images/phone.inline.svg";
 import Medium from "@images/ipad-landscape.inline.svg";
 import Large from "@images/desktop.inline.svg";
@@ -19,6 +20,7 @@ const Screen = ({ className, caption, children, device }) => {
           <div className={`${styles.image} absolute`}>
             {children}
           </div>
+          { device === "xsmall" && <Xsmall role="presentation" />}
           { device === "small" && <Small role="presentation" />}
           { device === "medium" && <Medium role="presentation" />}
           { device === "large" && <Large role="presentation" />}

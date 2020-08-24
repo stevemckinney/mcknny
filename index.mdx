@@ -1,0 +1,251 @@
+---
+title: iamsteve
+description: Design blog with a renewed focus
+url: "https://iamsteve.me"
+role: ["Design", "Build"]
+category: ["Design", "Visual identity"]
+introduction: [
+  "iamsteve.me is a design & code blog, with the goal of helping you to implement your design vision. It’s aimed at designers & developers, looking to improve their visual design & CSS skills.",
+  "The website needed a design refresh to accommodate the change in focus—it was balanced between being a blog and a portfolio. As well, there was a need to improve the perception of this website being a place you can depend on to learn."
+]
+image: ./iamsteve@3x.png
+date: 2017-08-01
+published: true
+---
+
+import {
+  motion,
+  useViewportScroll,
+  useSpring,
+  useTransform
+} from "framer-motion";
+
+import Story from "@components/card/story";
+import Screen from "@components/screen";
+import H from "@components/content/h";
+import List from "@components/content/list";
+import P from "@components/content/p";
+
+
+<div className="scroll scroll-offset flex full -mb-16 -ml-1 md:-ml-8">
+<Screen device="small" className="snap-start">
+
+  ![](./iamsteve-home-small.png)
+
+</Screen>
+<Screen device="medium" className="snap-start">
+
+  ![](./iamsteve-home-large.png)
+
+</Screen>
+<div className="flex-shrink-0 w-1/2"></div>
+</div>
+
+
+## Understanding the visitors
+It’s important to understand the frame of mind people are in whilst looking for solutions in articles. So throughout the process I wanted to keep this in mind.
+
+### Time is the main factor
+There are two primary types of people who visit this website. Those who are currently working and those who are learning.
+
+**The distinction between the two is the time they have**. The person working wants a quick solution and the person learning wants to be guided and understand why.
+
+<div className="grid content grid-cols-10 lg:col-start-3 xxxl:col-start-6 lg:col-span-10 gap-8 mt-16">
+  <Story className="col-span-10 lg:col-span-5">
+    <motion.svg
+      className="mdMax:mt-8 mb-8 md:mb-16"
+      initial={false}
+      width="128"
+      height="10"
+      fill="none"
+      strokeWidth={2}
+      pathLength={1}
+      stroke="#7DB8CA"
+    >
+      <motion.path
+        d="M0 1c10.67 0 10.67 8 21.33 8C32 9 32 1 42.66 1 53.33 1 53.33 9 64 9s10.67-8 21.33-8C96 1 96 9 106.66 9c10.66 0 10.67-8 21.34-8"
+        initial={{ pathLength: 0, pathOffset: 0 }}
+        animate={{ pathLength: 1, pathOffset: 1 }}
+        transition={{
+          type: "tween",
+          duration: 2,
+          flip: Infinity,
+          ease: "easeInOut",
+        }}
+      />
+    </motion.svg>
+    <H as="h3">I’m working</H>
+    <P>I’m currently working on a project and in a hurry to find a solution to the problem. I want to skim the article, grab the solution and get back to what I’m doing.</P>
+    <List
+      items={[
+        "When I’m stuck I want to find the solution quickly within the article.",
+        "I want to trust when I copy code or values it’s the complete solution.",
+        "When I’m using a tool in an application, I want to know where it is without having to spend time hunting for it."
+      ]}
+    />
+  </Story>
+  <Story className="col-span-10 lg:col-span-5">
+    <motion.svg
+      className="mdMax:mt-8 mb-8 md:mb-16"
+      initial={false}
+      width="128"
+      height="10"
+      fill="none"
+      stroke="#7DB8CA"
+      strokeWidth={2}
+      pathLength={1}
+    >
+      <motion.path
+        d="M0 1c10.67 0 10.67 8 21.33 8C32 9 32 1 42.66 1 53.33 1 53.33 9 64 9s10.67-8 21.33-8C96 1 96 9 106.66 9c10.66 0 10.67-8 21.34-8"
+        initial={{ pathLength: 0, pathOffset: 0 }}
+        animate={{ pathLength: 1, pathOffset: 1 }}
+        transition={{
+          type: "tween",
+          duration: 4,
+          flip: Infinity,
+          ease: "easeInOut",
+        }}
+      />
+    </motion.svg>
+    <H as="h3">I’m learning</H>
+    <P>I’ve heard of this particular topic, I’d like to research and learn more about the topic. I’ll search for tutorials on this topic.</P>
+    <List
+      items={[
+        "When I’m trying to improve my skills, I want to understand a topic fully, so I can recall it easier when I’m working.",
+        "When I’m trying to improve my skills, I want to know why something is done this way, so I can form my own opinions.",
+        "When I’m using a new tool I want to know where it is, not only the keyboard shortcut."
+      ]}
+    />
+  </Story>
+</div>
+
+## Understanding the workflow behind content
+There was a reasonable amount of articles already on the website—so a workflow is in place. I wanted to see where I could make the design of articles better without increasing workload where possible.
+
+They are very much tutorial led, with the occasional essay.
+
+### Improve the design and aim to increase efficiency
+Each post has various assets associated with it. From application images, code samples, keyboard shortcuts and references to name a few things.
+
+These things take time to gather and produce on top of an article alone. However, it’s important to add these extra details—they aren’t only necessary but improve engagement.
+
+<div className="scroll scroll-offset flex full gap-8 mt-16 -mb-16 -ml-4 lg:-ml-8">
+<Screen device="small" className="snap-start">
+
+![List of blog posts on mobile](./iamsteve-archive-small.png)
+
+</Screen>
+<Screen device="medium" className="snap-start">
+
+![List of blog posts on desktop](./iamsteve-archive-large.png)
+
+</Screen>
+</div>
+
+## A vibrant & flexible set of colours
+Starting out, laying the foundations for producing content and addressing the primary goal is the colour palette.
+
+The aim is to be flexible and remain complementary. I wanted to give  variety in hues, tints and shades so that featured images and illustrations had enough freedom.
+
+<div className="full lg:content mt-16 figure">
+
+![A five colour palette](./iamsteve-colour.svg)
+
+</div>
+
+## Custom pixel perfect icons
+With the illustrations throughout the website having particular stylistic choices (eg: stroke weight) it made sense that the icons followed suit.
+
+All illustrations are drawn with 2px rounded strokes, so this was the main constraint to adhere to. Each icon is drawn on a 16px grid, being implemented in such a way the colour can be adjusted easily in code.
+
+<div className="full lg:content mt-16 figure">
+
+![A selection of icons for different uses](./iamsteve-icons.svg)
+
+</div>
+
+## Bold & clear typography, with enough white space
+For the design of articles, people reading or scanning articles will benefit from a clear visual hierarchy & lack of distractions.
+
+<div className="scroll scroll-offset flex full mb-8 mt-16 mdMax:-ml-1 md:-ml-8">
+<Screen device="small" className="snap-start">
+
+![](./iamsteve-article-small-01.png)
+
+</Screen>
+<Screen device="medium" className="snap-start">
+
+![](./iamsteve-article-large-01.png)
+
+</Screen>
+<Screen device="small" className="snap-start">
+
+![](./iamsteve-article-small-02.png)
+
+</Screen>
+<Screen device="medium" className="snap-start">
+
+![](./iamsteve-article-large-02.png)
+
+</Screen>
+</div>
+
+Headings are treated like a table of contents—in effect—denoting a new chapter. You can also click the icon next to these headings to grab a link to them.
+
+### It doesn’t stop at design
+Design defines a lot of the harmony found within articles, but it goes beyond typography and spacing. It’s up to the creation of content to maintain that experience.
+
+I defined ways to create a more unified feel between list pages & articles themselves efficiently.
+
+- Use the same sizing for featured & in article images
+- Even if the image could feasibly take up less space
+- Use light shades of the colour palette for featured image backgrounds
+- Aim to use one or two distinct colours within featured images
+- Set up templates to save having to refer to image sizes & colour
+
+Some of these things appear simple, but it was a challenge to define appropriate sizing for each element. So that it remained in harmony throughout the design.
+
+<div className="scroll scroll-offset flex full mb-8 mt-16 -mb-16 -ml-1 md:-ml-8">
+<Screen device="small" className="snap-start">
+
+![](./iamsteve-article-small-03.png)
+
+</Screen>
+
+<Screen device="medium" className="snap-start">
+
+![](./iamsteve-article-large-03.png)
+
+</Screen>
+</div>
+
+## Results
+The design wasn’t just a massive visual improvement, it was a restructuring and refocusing of a website that balanced two competing goals. Focusing on the writing side of the website saw the following:
+
+<div className="grid content grid-cols-10 lg:col-start-3 xxxl:col-start-6 lg:col-span-10 gap-8 mt-16 mb-10">
+  <Story className="col-span-10 md:col-span-5">
+    <H as="h3">Newsletter growth</H>
+    <P>The newsletter grew from 0 to 587 subscribers within a year</P>
+  </Story>
+
+  <Story className="col-span-10 md:col-span-5">
+    <H as="h3">Monthly visits increased</H>
+    <P>Traffic trebled <a href="https://iamsteve.me/blog/entry/a-year-in-writing-2017#website-year-in-review">year on year</a> every month for at least a year</P>
+  </Story>
+
+  <Story className="col-span-10 md:col-span-5">
+    <H as="h3">Site speed improved</H>
+    <P>A Google web.dev score of 99 on the homepage, Adobe Fonts is -1.</P>
+  </Story>
+
+  <Story className="col-span-10 md:col-span-5">
+    <H as="h3">More pages viewed</H>
+    <P>Visitors viewed more pages per session increasing from 1.4 to 2</P>
+  </Story>
+</div>
+
+### Features
+- The website was saw a few submissions to user generated galleries like [Site Inspire](https://www.siteinspire.com/websites/7248-iamsteve),  [HeaderLove](https://headerlove.com/i-am-steve/) and [Best Website Gallery](https://bestwebsite.gallery/sites/sotd/2017/04/27/i-am-steve)
+- Article featured in [CSS News](https://csslayout.news/issues/32)
+- Article featured in [HeyDesigner](https://heydesigner.com/?s=get+up+to+speed+with+css+shapes)
+- Articles featured on Awwwards, [1](https://www.awwwards.com/inspiration/how-to-use-kerning-and-tracking) and [2](https://www.awwwards.com/inspiration/creating-a-horizontal-responsive-menu)

@@ -11,7 +11,7 @@ import Footer from "@components/footer";
 import "../../css/global.css";
 
 // animation
-const duration = .4;
+const duration = .6;
 
 const variants = {
   initial: {
