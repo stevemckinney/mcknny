@@ -41,8 +41,7 @@ Project.defaultProps = {
 
 Project.propTypes = {
   link: PropTypes.string.isRequired,
-  data: PropTypes.object.isRequired,
-  description: PropTypes.string.isRequired,
+  description: PropTypes.string,
   className: PropTypes.string,
   image: PropTypes.node,
   props: PropTypes.node,
