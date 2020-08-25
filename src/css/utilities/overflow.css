@@ -1,7 +1,7 @@
 .scroll {
   white-space: nowrap;
   overflow-x: auto;
-  scroll-snap-type: x proximity;
+  /* scroll-snap-type: x proximity; */
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar; }
 

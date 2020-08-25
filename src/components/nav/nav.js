@@ -1,27 +1,21 @@
 import React from "react";
 import PropTypes from "prop-types";
-import AniLink from "gatsby-plugin-transition-link/AniLink";
+import { Link } from "gatsby";
 
 // css
 import styles from "./nav.module.css";
 
 const Nav = ({ links }) => {
   const navStyles = `${styles.nav} mdMax:hidden flex justify-end font-title`;
-  const linkStyles = `${styles.link} no-underline inline-block text-f8 md:text-f6 font-medium py-8`;
+  const linkStyles = `${styles.link} no-underline inline-block text-f8 md:text-f6 font-medium hover:text-jasmine py-8`;
 
   return (
     <React.Fragment>
       <nav className={navStyles}>
         {links.map(link => (
-          <AniLink
-            cover
-            bg="#1A2D3D"
-            direction="left"
-            className={linkStyles} activeClassName="text-jasmine" key={link.title}
-            to={link.route}
-          >
+          <Link className={linkStyles} partiallyActive={true} activeClassName="text-jasmine" key={link.title} to={link.route}>
             {link.title}
-          </AniLink>
+          </Link>
         ))}
       </nav>
     </React.Fragment>

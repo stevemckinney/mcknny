@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { graphql, useStaticQuery } from "gatsby";
-import AniLink from "gatsby-plugin-transition-link/AniLink";
+import { Link, graphql, useStaticQuery } from "gatsby";
 
 // css
 import styles from "./logo.module.css";
@@ -21,15 +20,9 @@ const Logo = (props) => {
 
   return (
     <React.Fragment>
-      <AniLink
-        cover
-        bg="#1A2D3D"
-        direction="right"
-        to="/"
-        className={logoStyles}
-      >
-        {site.siteMetadata.short_name}.
-      </AniLink>
+      <Link to="/" className={logoStyles}>
+        {site.siteMetadata.short_name}
+      </Link>
     </React.Fragment>
   )
 }

@@ -2,10 +2,9 @@
  * global
  */
 html {
-  overflow-x: hidden;
   height: -webkit-fill-available;
   background-color: var(--color-daintree);
-
+/*
   &:before {
     display: block;
     position: fixed;
@@ -41,9 +40,11 @@ html {
       content: "screen: xxl"; }
 
     @screen xxxl {
-      content: "screen: xxxl"; } } }
+      content: "screen: xxxl"; } } */
+}
 
 body {
+  overflow-x: hidden;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
@@ -63,10 +64,10 @@ body,
  * textured bg
  */
 .bg {
-  background: url(../images/bg.svg) var(--color-prussian) top center; }
+  background: /*url(../images/bg.svg)*/ var(--color-prussian) top center; }
 
 .bg-i {
-  background: url(../images/bg.svg) var(--color-spruce) top center; }
+  background: /*url(../images/bg.svg)*/ var(--color-spruce) top center; }
 
 /**
  * grid

@@ -1,17 +1,20 @@
 .content {
-  grid-column: content-end / 6;
+  grid-column: content;
 
-  @screen xl {
+  @screen md {
     grid-column: content-start / 8; }
 
   @screen xxxl {
     grid-column: content-start / 10; } }
 
 .image {
-  grid-column: 6 / content-end;
+  grid-column: content;
   height: 100%;
 
-  @screen xl {
+  @screen mdMax {
+    height: 400px; }
+
+  @screen md {
     grid-column: 8 / content-end; }
 
   @screen xxxl {
@@ -25,24 +28,33 @@
  */
 .figma {
   transform: rotate(-15deg) translate3d(0, -50%, 0);
-  top: 50%;
-  right: 0; }
+
+  @screen md {
+    top: 50%;
+    right: 0; } }
 
 .illustrator {
   transform: rotate(15deg) translate3d(-50%, 0, 0);
-  top: 0;
-  left: 58%; }
+
+  @screen md {
+    top: 0;
+    left: 58%; } }
 
 .pen {
   transform: rotate(-30deg);
-  bottom: -8%;
-  left: 15%; }
+
+  @screen md {
+    bottom: -8%;
+    left: 15%; } }
 
 .safari {
-  bottom: -20%;
-  left: 48%; }
+  @screen md {
+    bottom: -20%;
+    left: 48%; } }
 
 .terminal {
   transform: rotate(15deg);
-  top: 0;
-  left: 0; }
+
+  @screen md {
+    top: 0;
+    left: 0; } }

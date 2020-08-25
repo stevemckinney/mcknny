@@ -1,9 +1,5 @@
 .single .gatsby-resp-image-wrapper {
-  overflow: hidden;
-  border-radius: 20px;
-
-  @screen mdMax {
-    border-radius: 18px; } }
+  overflow: hidden; }
 
 .figure img {
   max-width: 100%;

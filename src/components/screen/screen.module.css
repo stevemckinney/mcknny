@@ -1,4 +1,28 @@
 /*! purgecss start ignore */
+.image {
+  overflow: hidden;
+  overflow-y: auto; }
+
+.xsmall {
+  & svg {
+    @screen mdMax {
+      height: auto;
+      max-width: 320px; } }
+
+  & .image {
+    max-width: 414px;
+    top: 108px;
+    right: 28px;
+    bottom: 136px;
+    left: 56px;
+    border-radius: 0 0 2px 2px;
+
+    @screen mdMax {
+      top: 40px;
+      right: 18px;
+      bottom: 21px;
+      left: 38px; } } }
+
 .small {
   & svg {
     @screen mdMax {
@@ -9,8 +33,9 @@
     max-width: 414px;
     top: 68px;
     right: 28px;
-    bottom: 32px;
-    left: 58px;
+    bottom: 102px;
+    left: 56px;
+    border-radius: 24px;
 
     @screen mdMax {
       top: 40px;
@@ -26,16 +51,39 @@
 
   & .image {
     max-width: 1366px;
+    border-radius: 20px;
     top: 84px;
     right: 28px;
-    bottom: 32px;
+    bottom: 110px;
     left: 108px;
+
+    @screen mdMax {
+      border-radius: 18px;
+      top: 48px;
+      right: 34px;
+      bottom: 112px;
+      left: 62px; } } }
+
+.large {
+  & svg {
+    @screen mdMax {
+      height: auto;
+      max-width: calc(1534px / 1.75); } }
+
+  & .image {
+    max-width: 1682px;
+    top: 40px;
+    right: 29px;
+    bottom: 110px;
+    left: 92px;
+    border-radius: 44px;
 
     @screen mdMax {
       top: 48px;
       right: 34px;
       bottom: 114px;
-      left: 62px; } } }
+      left: 62px;
+      border-radius: 18px; } } }
 
 .container {
   @apply relative;

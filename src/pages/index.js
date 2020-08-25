@@ -1,5 +1,4 @@
 import React from "react";
-import Layout from "@components/layout";
 import SEO from "@components/seo";
 
 // sections
@@ -9,12 +8,12 @@ import Featured from "@components/sections/featured";
 
 function IndexPage() {
   return (
-    <Layout>
+    <React.Fragment>
       <SEO title="ux &amp; visual design" />
       <Hero className="screen bg-i" link="/work/" />
       <About />
       <Featured />
-    </Layout>
+    </React.Fragment>
   )
 }
 

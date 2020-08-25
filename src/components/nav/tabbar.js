@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import AniLink from "gatsby-plugin-transition-link/AniLink";
+import { Link } from "gatsby";
 
 // css
 import styles from "./tabbar.module.css";
@@ -18,33 +18,18 @@ const Tabbar = ({ links }) => {
   return (
     <React.Fragment>
       <nav className={navStyles}>
-        <AniLink
-          cover
-          bg="#1A2D3D"
-          direction="left"
-          to="/"
-          className={linkStyles}
-          activeClassName="text-jasmine"
-        >
+        <Link to="/" className={linkStyles} activeClassName="text-jasmine">
           <Home />
           home
-        </AniLink>
+        </Link>
         {links.map(link => (
-          <AniLink
-            cover
-            bg="#1A2D3D"
-            direction="left"
-            className={linkStyles}
-            key={link.title}
-            to={link.route}
-            activeClassName="text-jasmine"
-          >
+          <Link className={linkStyles} key={link.title} to={link.route} activeClassName="text-jasmine" partiallyActive={true}>
             {link.title === "home" && <Home />}
             {link.title === "work" && <Portfolio />}
             {link.title === "about" && <About />}
             {link.title === "contact" && <Contact />}
             {link.title}
-          </AniLink>
+          </Link>
         ))}
       </nav>
     </React.Fragment>

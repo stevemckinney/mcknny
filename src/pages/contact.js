@@ -1,11 +1,11 @@
 import React from "react";
 
-import Layout from "@components/layout";
+// components
 import SEO from "@components/seo";
 
 function ContactPage() {
   return (
-    <Layout>
+    <React.Fragment>
       <SEO title="Contact" />
       <section className="content text-f4">
         <header className="py-64 lg:mt-16 content">
@@ -13,7 +13,7 @@ function ContactPage() {
         </header>
         <p><a href=""></a></p>
       </section>
-    </Layout>
+    </React.Fragment>
   );
 }
 

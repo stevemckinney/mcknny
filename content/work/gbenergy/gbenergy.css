@@ -1,0 +1,8 @@
+/* fixed nav */
+.xsmall-fixed-nav > p > .gatsby-resp-image-wrapper {
+  position: absolute !important;
+  right: 60px;
+  bottom: 136px;
+  left: 56px;
+  z-index: 10;
+  border-radius: 0 0 4px 4px; }
