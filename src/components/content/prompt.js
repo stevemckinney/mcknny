@@ -67,7 +67,7 @@ const Prompt = props => {
 }
 
 Prompt.defaultProps = {
-  to: "mailto:steve@mcknny.com",
+  to: "mailto:hi@mcknny.com",
   text: "Let’s work together"
 }
 

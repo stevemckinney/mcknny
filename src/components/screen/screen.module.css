@@ -54,7 +54,7 @@
     border-radius: 20px;
     top: 84px;
     right: 28px;
-    bottom: 110px;
+    bottom: 106px;
     left: 108px;
 
     @screen mdMax {
@@ -73,8 +73,8 @@
   & .image {
     max-width: 1682px;
     top: 40px;
-    right: 29px;
-    bottom: 110px;
+    right: 28px;
+    bottom: 108px;
     left: 92px;
     border-radius: 44px;
 

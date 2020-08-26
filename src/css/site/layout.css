@@ -64,10 +64,10 @@ body,
  * textured bg
  */
 .bg {
-  background: /*url(../images/bg.svg)*/ var(--color-prussian) top center; }
+  background: url(../images/bg.svg) var(--color-prussian) top center; }
 
 .bg-i {
-  background: /*url(../images/bg.svg)*/ var(--color-spruce) top center; }
+  background: url(../images/bg.svg) var(--color-spruce) top center; }
 
 /**
  * grid
