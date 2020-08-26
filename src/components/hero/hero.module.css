@@ -93,9 +93,6 @@
   @screen xxl {
     top: 366px; } }
 
-.status-bar {
-  fill: red; }
-
 .phone {
   transform: rotate(-60deg);
   transform-origin: left top;

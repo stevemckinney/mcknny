@@ -50,11 +50,10 @@
       max-width: calc(1534px / 1.75); } }
 
   & .image {
-    max-width: 1366px;
     border-radius: 20px;
     top: 84px;
-    right: 28px;
-    bottom: 106px;
+    right: 60px;
+    bottom: 114px;
     left: 108px;
 
     @screen mdMax {
