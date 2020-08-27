@@ -31,14 +31,14 @@
   & .image {
     top: 68px;
     right: 28px;
-    bottom: 102px;
+    bottom: 100px;
     left: 56px;
     border-radius: 24px;
 
     @screen mdMax {
       top: 40px;
       right: 18px;
-      bottom: 21px;
+      bottom: 73px;
       left: 38px; } } }
 
 .medium {
