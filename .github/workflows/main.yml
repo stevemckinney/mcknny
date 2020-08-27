@@ -27,12 +27,21 @@ jobs:
       - name: Verify build
         run: ls -la public
       
+#       - name: SSH Setup
+#         uses: MrSquaare/ssh-setup-action@v1.0.0
+#         with:
+#           # Private key required to access the host
+#           private-key: ${{ secrets.ssh_private_key }}
+#           # Hostname or IP to add to the known hosts file
+#           host: ${{ secrets.host }}
+#           private-key-name: github
+      
       - name: Setup SSH
         run: |
           mkdir -p ~/.ssh/
-          echo "${{ secrets.ssh_private_key }}" > ~/.ssh/deploy_key
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
           sudo chmod 600 ~/.ssh/deploy_key
-          ssh-keyscan -H "${{ secrets.host }}" > ~/.ssh/known_hosts
+          ssh-keyscan -H "${{ secrets.HOST }}" > ~/.ssh/known_hosts
       
       - name: SFTP upload
-        run: sftp -i ~/.ssh/deploy_key ${{ secrets.deploy_user }}@${{ secrets.host }} <<< $'cd ${{ secrets.destination_path }} \n put -r public/*'
+        run: sftp -i ~/.ssh/deploy_key ${{ secrets.DEPLOY_USER }}@${{ secrets.HOST }} <<< $'cd ${{ secrets.DESTINATION_PATH }} \n put -r public/*'
