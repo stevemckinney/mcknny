@@ -11,11 +11,11 @@ import Footer from "@components/footer";
 import "../../css/global.css";
 
 // animation
-const duration = 0;
+const duration = .6;
 
 const variants = {
   initial: {
-    opacity: 1,
+    opacity: 0,
   },
   enter: {
     opacity: 1,
@@ -26,7 +26,7 @@ const variants = {
     },
   },
   exit: {
-    opacity: 1,
+    opacity: 0,
     transition: { duration: duration },
   },
 }

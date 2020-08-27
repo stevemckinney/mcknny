@@ -143,4 +143,16 @@
    */
   --tabbar-height: 64px;
   --content-width: var(--grid-content);
+
+  /**
+   * general
+   */
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  color: var(--color-pearl);
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-daintree);
+  height: -webkit-fill-available;
 }

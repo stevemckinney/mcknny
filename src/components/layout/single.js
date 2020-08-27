@@ -38,8 +38,8 @@ export default function Single({ data: { mdx } }) {
   const headingStyles = `relative z-10 mb-4 md:mb-6 text-f3 xxs:text-f2 sm:text-f1 xxl:text-headline tracking-tight sm:tracking-tighter xxl:tracking-headline lowercase pr-4`;
   const titleStyles = `mb-4 block text-f9 md:text-f8 text-melon uppercase tracking-title font-title font-bold`;
 
-  function createSeparator() {
-    return {__html: '/'};
+  const createSeparator = function() {
+    return {__html: "/"};
   }
 
   return (

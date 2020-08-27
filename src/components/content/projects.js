@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from "gatsby";
 
 // components
 import Project from "@components/card/project";
-// import Dump from "@components/dump";
+//import Dump from "@components/dump";
 
 // css
 import styles from "./projects.module.css";
@@ -18,7 +18,7 @@ const Projects = ({ props }) => {
           allMdx(
             sort: { fields: [frontmatter___date], order: DESC }
             filter: { frontmatter: { published: { eq: true } } }
-            limit: 2
+            limit: 4
           ) {
             nodes {
               id
@@ -27,7 +27,7 @@ const Projects = ({ props }) => {
                 image {
                   childImageSharp {
                     fluid(maxWidth: 1328, maxHeight: 1416, quality: 98) {
-                      ...GatsbyImageSharpFluid
+                      ...GatsbyImageSharpFluid_noBase64
                     }
                   }
                 }
@@ -44,8 +44,8 @@ const Projects = ({ props }) => {
         <React.Fragment>
           {/*<Dump projectsProps={props} />*/}
           {/*<Dump projectsData={data} />*/}
-          {data.allMdx.nodes.map(({ fields, frontmatter }) => (
-            <React.Fragment key={data.id}>
+          {data.allMdx.nodes.map(({ fields, frontmatter, id }) => (
+            <React.Fragment key={id}>
               <Project className={`${props.classNameProject} ${styles.project}`} link={fields.slug} props={frontmatter} />
             </React.Fragment>
           ))}
@@ -58,12 +58,7 @@ const Projects = ({ props }) => {
 Projects.propTypes = {
   classNameProject: PropTypes.string,
   data: PropTypes.node,
-  props: PropTypes.oneOfType([
-    PropTypes.node,
-    PropTypes.string,
-    PropTypes.object,
-    PropTypes.symbol,
-  ]),
+  props: PropTypes.node,
 }
 
 export default Projects;

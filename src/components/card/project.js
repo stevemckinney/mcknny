@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 import styles from "./project.module.css";
 
 const Project = ({ className, link, props }) => {
+
   return (
     <React.Fragment>
       {/*<Dump individualProjectProps={props.image.childImageSharp} />*/}
@@ -25,7 +26,7 @@ const Project = ({ className, link, props }) => {
           <Img fluid={props.image.childImageSharp.fluid} />
         </Link>
         <h2 className="font-headline text-f4 md:text-f3 xl:text-f2 m-0 text-center">
-          <Link to={link} className="block p-8 lg:px-20 xl:py-16 xl:px-32">
+          <Link to={link} className="block p-8 lg:px-20 xl:py-16 xl:px-24 lowercase">
             {props.description}
           </Link>
         </h2>

@@ -10,7 +10,6 @@
       max-width: 320px; } }
 
   & .image {
-    max-width: 414px;
     top: 108px;
     right: 28px;
     bottom: 136px;
@@ -30,7 +29,6 @@
       max-width: 320px; } }
 
   & .image {
-    max-width: 414px;
     top: 68px;
     right: 28px;
     bottom: 102px;
