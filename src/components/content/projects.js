@@ -26,7 +26,7 @@ const Projects = ({ props }) => {
                 description
                 image {
                   childImageSharp {
-                    fluid(maxWidth: 1328, maxHeight: 1416, quality: 98) {
+                    fluid(maxWidth: 1328, maxHeight: 2048, quality: 100) {
                       ...GatsbyImageSharpFluid_noBase64
                     }
                   }

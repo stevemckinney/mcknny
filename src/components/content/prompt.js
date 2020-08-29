@@ -18,24 +18,21 @@ const Prompt = props => {
       scale: 1,
       transition: {
         duration: .4,
-        type: "spring",
-        stiffness: 400
+        ease: "easeOut"
       }
     },
     hover: {
-      scale: .9,
+      scale: .975,
       transition: {
         duration: .4,
-        type: "spring",
-        stiffness: 400
+        ease: "easeOut"
       }
     },
     tap: {
-      scale: 0.85,
+      scale: .8,
       transition: {
         duration: .4,
-        type: "spring",
-        stiffness: 400
+        ease: "easeOut"
       }
     }
   };

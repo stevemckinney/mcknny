@@ -9,17 +9,17 @@ import { motion } from "framer-motion";
 import styles from "./project.module.css";
 
 const Project = ({ className, link, props }) => {
-
   return (
     <React.Fragment>
       {/*<Dump individualProjectProps={props.image.childImageSharp} />*/}
       <motion.article
-        className={`${styles.container} ${className} bg-prussian radius`} whileHover={{
+        className={`${styles.container} ${className}`}
+        whileHover={{
           scale: .975
         }}
         transition={{
-          type: "spring",
-          stiffness: 400
+          duration: .4,
+          ease: "easeOut"
         }}
       >
         <Link to={link} className="block">
