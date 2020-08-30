@@ -26,8 +26,8 @@ const Projects = ({ props }) => {
                 description
                 image {
                   childImageSharp {
-                    fluid(maxWidth: 1328, maxHeight: 2048, quality: 100) {
-                      ...GatsbyImageSharpFluid_noBase64
+                    fluid(maxWidth: 1328, maxHeight: 2048, quality: 100, cropFocus: CENTER, fit: FILL) {
+                      ...GatsbyImageSharpFluid
                     }
                   }
                 }

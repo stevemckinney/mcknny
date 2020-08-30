@@ -1,2 +1,3 @@
 .project:nth-of-type(even) {
-  margin-top: calc(var(--spacing) * 4); }
+  @screen md {
+    margin-top: calc(var(--spacing) * 4); } }

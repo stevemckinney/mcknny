@@ -17,6 +17,9 @@ const Project = ({ className, link, props }) => {
         whileHover={{
           scale: .975
         }}
+        whileTap={{
+          opacity: .6
+        }}
         transition={{
           duration: .4,
           ease: "easeOut"
@@ -26,7 +29,7 @@ const Project = ({ className, link, props }) => {
           <Img fluid={props.image.childImageSharp.fluid} />
         </Link>
         <h2 className="font-headline text-f4 md:text-f3 xl:text-f2 m-0 text-center">
-          <Link to={link} className="block p-8 lg:px-20 xl:py-16 xl:px-24 lowercase">
+          <Link to={link} className="block px-8 pt-8 lg:px-20 xl:pt-16 xl:px-24 lowercase">
             {props.description}
           </Link>
         </h2>

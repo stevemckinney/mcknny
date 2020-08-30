@@ -28,7 +28,7 @@
  */
 .figma {
   transform: rotate(-15deg) translate3d(0, -50%, 0);
-  bottom: 0;
+  bottom: -48px;
   right: 0;
 
   @screen md {
@@ -37,8 +37,8 @@
 
 .illustrator {
   transform: rotate(15deg) translate3d(-50%, 0, 0);
-  bottom: 35%;
-  right: 15%;
+  top: 168px;
+  right: calc(20% + 32px);
 
   @screen md {
     top: 0;
@@ -52,6 +52,10 @@
     left: 15%; } }
 
 .safari {
+  @screen mdMax {
+    top: -84px;
+    right: 32px; }
+
   @screen md {
     bottom: -20%;
     left: 48%; } }
