@@ -28,6 +28,8 @@
  */
 .figma {
   transform: rotate(-15deg) translate3d(0, -50%, 0);
+  bottom: 0;
+  right: 0;
 
   @screen md {
     top: 50%;
@@ -35,6 +37,8 @@
 
 .illustrator {
   transform: rotate(15deg) translate3d(-50%, 0, 0);
+  bottom: 35%;
+  right: 15%;
 
   @screen md {
     top: 0;
