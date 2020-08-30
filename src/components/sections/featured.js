@@ -13,7 +13,7 @@ const Featured = (props) => {
     <React.Fragment>
       <section className={props.className}>
         <header className="flex justify-between mb-12 col-span-12">
-          <h2 className="text-f2 md:text-f1 text-melon content mb-0 content columns-all">Featured</h2>
+          <h2 className="text-f2 md:text-f1 text-melon content mb-0 content columns-all">Projects</h2>
           <Action to="/work/" text="View all projects" />
         </header>
 
