@@ -17,6 +17,7 @@ body,
 /**
  * textured bg
  */
+body,
 .bg {
   background: url(../images/bg.svg) var(--color-prussian) top center; }
 

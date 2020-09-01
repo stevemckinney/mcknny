@@ -51,7 +51,7 @@ const Prompt = props => {
           className="p-8 absolute z-10"
         >
           <motion.span
-            className="relative block transition font-display text-center leading-tight text-f2 md:text-headline font-bold text-jasmine"
+            className="relative block transition font-display text-center leading-tight text-f2 md:text-f1 xl:text-headline font-bold text-jasmine"
             variants={t}
           >
             {props.text}

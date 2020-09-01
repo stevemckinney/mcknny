@@ -16,13 +16,13 @@ import Sharpener from "@images/sharpener.inline.svg";
 
 const Hero = props => {
   const heroStyles = `${props.className} ${styles.container} grid layout items-center relative`;
-  const headingStyles = `relative z-10 mb-6 sm:mb-6 text-f3 xxs:text-f2 sm:text-f1 xxl:text-headline tracking-tight sm:tracking-tighter xxl:tracking-headline`;
+  const headingStyles = `relative z-10 mb-6 sm:mb-6 font-display leading-title text-f3 xxs:text-f2 sm:text-f1 xxl:text-headline tracking-tight sm:tracking-tighter xxl:tracking-headline`;
 
   return (
     <React.Fragment>
       <section className={`${heroStyles}`}>
         <div className={`${styles.content} z-10 relative`}>
-          <h1 className={`${headingStyles} ${styles.heading}`} dangerouslySetInnerHTML={{ __html:`Beautifully&nbsp;usable design&nbsp;your&nbsp;customers have&nbsp;come&nbsp;to&nbsp;expect` }}/>
+          <h1 className={`${headingStyles}`} dangerouslySetInnerHTML={{ __html:`Beautifully&nbsp;usable design&nbsp;your&nbsp;customers have&nbsp;come&nbsp;to&nbsp;expect` }}/>
           <Action to={props.link} text="View case studies" />
         </div>
         <Palomino className={`illo ${styles.palomino}`} role="presentation" />

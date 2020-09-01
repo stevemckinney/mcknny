@@ -2,7 +2,10 @@
   grid-column: content;
 
   @screen md {
-    grid-column: content-start / 8; }
+    grid-column: content-start / 10; }
+
+  @screen xl {
+    grid-column: content-start / 9; }
 
   @screen xxxl {
     grid-column: content-start / 10; } }
@@ -15,7 +18,10 @@
     height: 400px; }
 
   @screen md {
-    grid-column: 8 / content-end; }
+    grid-column: 10 / content-end; }
+
+  @screen lg {
+    grid-column: 9 / content-end; }
 
   @screen xxxl {
     grid-column: 10 / content-end; } }
@@ -28,7 +34,7 @@
  */
 .figma {
   transform: rotate(-15deg) translate3d(0, -50%, 0);
-  bottom: -48px;
+  bottom: -88px;
   right: 0;
 
   @screen md {
@@ -37,32 +43,49 @@
 
 .illustrator {
   transform: rotate(15deg) translate3d(-50%, 0, 0);
-  top: 168px;
-  right: calc(20% + 32px);
+  top: 192px;
+  right: calc(20% + 48px);
 
   @screen md {
     top: 0;
+    left: 26%; }
+
+  @screen xl {
     left: 58%; } }
 
 .pen {
   transform: rotate(-30deg);
 
   @screen md {
+    bottom: 6%;
+    left: 12%; }
+
+  @screen xl {
     bottom: -8%;
     left: 15%; } }
 
 .safari {
-  @screen mdMax {
-    top: -84px;
-    right: 32px; }
+  @screen lgMax {
+    top: 100%;
+    right: 0; }
 
-  @screen md {
-    bottom: -20%;
-    left: 48%; } }
+  @screen mdMax {
+    top: -72px;
+    right: 24px; }
+
+  @screen xsMax {
+    right: 0; }
+
+  @screen lg {
+    bottom: -50%;
+    left: 48%; }
+
+  @screen xl {
+    bottom: -20%; } }
 
 .terminal {
   transform: rotate(15deg);
 
-  @screen md {
+  @screen xl {
     top: 0;
     left: 0; } }

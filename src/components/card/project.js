@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 // css
 import styles from "./project.module.css";
 
-const Project = ({ className, link, props }) => {
+const Project = ({ props, className, link }) => {
   return (
     <React.Fragment>
       {/*<Dump individualProjectProps={props.image.childImageSharp} />*/}

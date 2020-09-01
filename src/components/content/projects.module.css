@@ -1,3 +1,11 @@
-.project:nth-of-type(even) {
+.project {
+  @screen mdMax {
+    &:not(:last-child) {
+      margin-bottom: calc(var(--spacing) * 8); } }
+
   @screen md {
-    margin-top: calc(var(--spacing) * 4); } }
+    align-self: start; }
+
+  &:nth-of-type(even) {
+    @screen md {
+      margin-top: calc(var(--spacing) * 4); } } }

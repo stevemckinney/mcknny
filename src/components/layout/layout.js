@@ -32,7 +32,7 @@ const variants = {
 }
 
 function Layout({ className, children }) {
-  const layoutClass = `font-body bg`;
+  const layoutClass = ``;
 
   return (
     <React.Fragment>

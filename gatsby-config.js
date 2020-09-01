@@ -90,6 +90,11 @@ module.exports = {
           require(`autoprefixer`),
           require(`postcss-preset-env`)({
             stage: 0,
+            autoprefixer: { grid: true },
+            features: {
+              "nesting-rules": true,
+            },
+            browsers: ["last 2 versions"],
           }),
           ...(process.env.NODE_ENV === `production`
             ? [require(`cssnano`)]

@@ -155,4 +155,5 @@
 	-moz-osx-font-smoothing: grayscale;
   background-color: var(--color-daintree);
   height: -webkit-fill-available;
+  @apply .font-body;
 }

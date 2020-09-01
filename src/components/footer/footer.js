@@ -22,11 +22,11 @@ const Footer = (props) => {
       }
     }
   `);
-  const footerStyles = `${props.className} ${styles.footer} grid layout flex items-end md:items-center mdMax:justify-center pb-64 md:pb-16`;
+  const footerStyles = `${props.className} ${styles.footer} grid layout flex items-end md:items-center mdMax:justify-center pb-48 md:pb-16`;
 
   return (
     <React.Fragment>
-      <Prompt className="py-36 grid layoutflex items-end   mdMax:justify-center md:items-center" />
+      <Prompt className="py-36 grid layoutflex items-end mdMax:justify-center md:items-center" />
       <div className="grid layout">
         <Divider className="divider" />
       </div>

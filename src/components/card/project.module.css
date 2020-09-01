@@ -1,6 +1,4 @@
 .container {
-  align-self: start;
-
   & img,
   & .gatsby-image-wrapper {
     border-radius: var(--radius); } }
