@@ -3,7 +3,9 @@
  */
 body {
   max-width: 1920px;
-  margin: auto; }
+  margin: auto;
+  color: var(--color-pearl);
+  background-color: var(--color-daintree); }
 
 body,
 #___gatsby,
@@ -19,10 +21,12 @@ body,
  */
 body,
 .bg {
-  background: url(../images/bg.svg) var(--color-prussian) top center; }
+  /* autoprefixer: ignore next */
+  background: url(../../static/images/bg.svg) var(--color-prussian) top center; }
 
 .bg-i {
-  background: url(../images/bg.svg) var(--color-spruce) top center; }
+  /* autoprefixer: ignore next */
+  background: url(../../static/images/bg.svg) var(--color-spruce) top center; }
 
 /**
  * grid

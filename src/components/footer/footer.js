@@ -32,8 +32,8 @@ const Footer = (props) => {
       </div>
       <Profile className="py-36 grid layout flex items-end mdMax:justify-center md:items-center" />
       <footer className={footerStyles}>
-        <p className="content mb-0 text-f8 text-pearl uppercase tracking-title font-title font-bold">
-          © {new Date().getFullYear()}<Bullet className="bg-madison mx-3" />{site.siteMetadata.title}
+        <p className="content mb-0 text-f8 text-pearl uppercase tracking-title font-title font-medium mdMax:text-center">
+          © {new Date().getFullYear()}<Bullet className="bg-patina mx-3" />{site.siteMetadata.title}
         </p>
       </footer>
     </React.Fragment>

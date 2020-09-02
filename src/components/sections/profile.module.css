@@ -4,7 +4,7 @@
   @screen md {
     grid-column: content-start / 10; }
 
-  @screen xl {
+  @screen lg {
     grid-column: content-start / 9; }
 
   @screen xxxl {
@@ -46,22 +46,34 @@
   top: 192px;
   right: calc(20% + 48px);
 
-  @screen md {
+  @screen sm {
     top: 0;
     left: 26%; }
 
   @screen xl {
-    left: 58%; } }
+    left: 32%; }
+
+  @screen xl {
+    left: 48%; }
+
+  @screen xxxl {
+    left: 62%; } }
 
 .pen {
   transform: rotate(-30deg);
 
-  @screen md {
+  @screen sm {
     bottom: 6%;
     left: 12%; }
 
+  @media (min-width: 768px) and (max-width: 1279px) {
+    display: none; }
+
   @screen xl {
     bottom: -8%;
+    left: -6%; }
+
+  @screen xxxl {
     left: 15%; } }
 
 .safari {
@@ -76,16 +88,32 @@
   @screen xsMax {
     right: 0; }
 
-  @screen lg {
+  /* @screen sm {
     bottom: -50%;
-    left: 48%; }
+    left: 44%; } */
+
+  @screen lg {
+    bottom: -20%;
+    left: 4%; }
 
   @screen xl {
-    bottom: -20%; } }
+    bottom: -20%;
+    left: 30%; }
+
+  @screen xxxl {
+    left: 48%; } }
 
 .terminal {
   transform: rotate(15deg);
+  /* lgMax hidden */
 
-  @screen xl {
+  @screen lg {
+    top: 0;
+    left: -38%; }
+
+  @screen xxl {
+    left: -25%; }
+
+  @screen xxxl {
     top: 0;
     left: 0; } }

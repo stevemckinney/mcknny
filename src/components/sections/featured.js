@@ -24,9 +24,7 @@ const Featured = (props) => {
 }
 
 Featured.defaultProps = {
-
-  // grid content gap-8
-  className: "featured content md:grid content gap-8 lg:gap-16 mdMax:pt-36",
+  className: "featured content md:grid gap-8 lg:gap-16 mdMax:pt-36",
 }
 
 Featured.propTypes = {

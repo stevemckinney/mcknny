@@ -150,10 +150,7 @@
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  color: var(--color-pearl);
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-  background-color: var(--color-daintree);
   height: -webkit-fill-available;
-  @apply .font-body;
-}
+  @apply .font-body; }
