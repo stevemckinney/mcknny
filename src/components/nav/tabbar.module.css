@@ -9,7 +9,7 @@
     background-color: rgba(var(--color-prussian-rgb), .9); } }
 
 .link {
-  padding: calc(var(--spacing) * 2) 6% calc(var(--spacing) * 1.5);
+  padding: calc(var(--spacing) * 2) 2.5% calc(var(--spacing) * 1.5);
 
   & > svg {
     margin-bottom: calc(var(--spacing) / 4); } }
