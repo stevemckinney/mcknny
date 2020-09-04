@@ -8,7 +8,7 @@ import Header from "@components/header";
 import Footer from "@components/footer";
 
 // animation
-const duration = 0.35
+const duration = .4
 
   const variants = {
     initial: {
