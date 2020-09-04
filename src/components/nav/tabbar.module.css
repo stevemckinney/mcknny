@@ -1,11 +1,11 @@
 .tabbar {
   padding: 0 calc(var(--spacing) * 2);
   padding: 0 env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
-  border-radius: 32px 32px 0 0;
+  border-radius: 48px 48px 0 0;
   background-color: rgba(var(--color-prussian-rgb), .9);
 
   @supports (backdrop-filter: blur(1px)) {
-    backdrop-filter: blur(12px) saturate(4);
+    backdrop-filter: blur(12px) saturate(2);
     background-color: rgba(var(--color-prussian-rgb), .9); } }
 
 .link {

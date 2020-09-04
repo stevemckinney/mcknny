@@ -1,8 +1,8 @@
 const path = require(`path`);
 
-const resolveConfig = require("tailwindcss/resolveConfig");
+const resolveConfig = require(`tailwindcss/resolveConfig`);
 
-const tailwindConfig = require("./tailwind.config.js");
+const tailwindConfig = require(`./tailwind.config.js`);
 
 const fullConfig = resolveConfig(tailwindConfig);
 module.exports = {
@@ -30,7 +30,6 @@ module.exports = {
   plugins: [
     `gatsby-plugin-eslint`,
     `gatsby-plugin-tailwindcss`,
-    `gatsby-plugin-styled-components`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
@@ -90,6 +89,13 @@ module.exports = {
           require(`autoprefixer`),
           require(`postcss-preset-env`)({
             stage: 0,
+            autoprefixer: {
+              grid: true,
+            },
+            features: {
+              "nesting-rules": true,
+            },
+            browsers: ["last 2 versions"],
           }),
           ...(process.env.NODE_ENV === `production`
             ? [require(`cssnano`)]
@@ -160,6 +166,5 @@ module.exports = {
         },
       },
     },
-    "gatsby-plugin-emotion",
   ],
 };

@@ -32,7 +32,7 @@ const Link = ({ children, to, activeClassName, partiallyActive, ...other }) => {
 export default Link;
 
 Link.defaultProps = {
-  to: "mailto:steve@mcknny.com",
+  to: "mailto:hi@mcknny.com",
   text: "Let’s work together"
 }
 

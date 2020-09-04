@@ -29,7 +29,7 @@ const shortcodes = {
 export default function Single({ data: { mdx } }) {
   const {
     url,
-    role,
+    service,
     category,
     introduction,
     title,
@@ -38,8 +38,8 @@ export default function Single({ data: { mdx } }) {
   const headingStyles = `relative z-10 mb-4 md:mb-6 text-f3 xxs:text-f2 sm:text-f1 xxl:text-headline tracking-tight sm:tracking-tighter xxl:tracking-headline lowercase pr-4`;
   const titleStyles = `mb-4 block text-f9 md:text-f8 text-melon uppercase tracking-title font-title font-bold`;
 
-  function createSeparator() {
-    return {__html: '/'};
+  const createSeparator = function() {
+    return {__html: "/"};
   }
 
   return (
@@ -53,15 +53,15 @@ export default function Single({ data: { mdx } }) {
           }
           <h1 className={headingStyles}>{description}</h1>
         </div>
-        <div className={`full md:content max-w-full lg:screen-center lg:col-start-7 lg:col-span-6 xxxl:col-span-7 xxxl:col-start-9`}>
-          <ul className={`my-0 py-0 px-8 md:px-0 flex scroll mb-4 text-f9 md:text-f8 text-pearl uppercase tracking-title font-title font-bold`}>
-            <li className="text-melon list-item pr-3 md:pr-4" key="r">Role</li>
-            {role.map((name, i) => [
+        <div className={`content max-w-full lg:screen-center lg:col-start-7 lg:col-span-6 xxxl:col-span-7 xxxl:col-start-9`}>
+          <ul className={`m-0 p-0 flex scroll mb-4 text-f9 md:text-f8 text-pearl uppercase tracking-title font-title font-bold`}>
+            <li className="text-melon list-item pr-3 md:pr-4" key="r">Service</li>
+            {service.map((name, i) => [
               <React.Fragment key={i}>
                 <li className="list-item pr-3 md:pr-4">
                   {name}
                 </li>
-                {i < role.length - 1 ? <li className="list-item pr-3 md:pr-4"  dangerouslySetInnerHTML={createSeparator()}/> : ``}
+                {i < service.length - 1 ? <li className="list-item pr-3 md:pr-4"  dangerouslySetInnerHTML={createSeparator()}/> : ``}
               </React.Fragment>
             ])}
             <li className="list-item pr-3 md:pr-4" key="b"><Bullet className="bg-madison" /></li>
@@ -75,7 +75,7 @@ export default function Single({ data: { mdx } }) {
               </React.Fragment>
             ])}
           </ul>
-          <div className={`${styles.introduction} mdMax:px-8`}>
+          <div className={`${styles.introduction}`}>
           {introduction.map((p, i) => (
             <p key={i}>{p}</p>
           ))}
@@ -99,7 +99,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         description
-        role
+        service
         category
         url
         introduction

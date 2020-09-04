@@ -1,58 +1,11 @@
 /**
  * global
  */
-html {
-  height: -webkit-fill-available;
-  background-color: var(--color-daintree);
-/*
-  &:before {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10000;
-    background: #fff;
-    border: 1px solid #000;
-    font-size: 11px;
-    color: #000;
-    padding: 0.2em 0.4em;
-    content: "screen: --";
-
-    @screen xxs {
-      content: "screen: xxs"; }
-
-    @screen xs {
-      content: "screen: xs"; }
-
-    @screen sm {
-      content: "screen: sm"; }
-
-    @screen md {
-      content: "screen: md"; }
-
-    @screen lg {
-      content: "screen: lg"; }
-
-    @screen xl {
-      content: "screen: xl"; }
-
-    @screen xxl {
-      content: "screen: xxl"; }
-
-    @screen xxxl {
-      content: "screen: xxxl"; } } */
-}
-
 body {
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-  color: var(--color-pearl);
-  -webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
   max-width: 1920px;
-  margin: auto; }
+  margin: auto;
+  color: var(--color-pearl);
+  background-color: var(--color-daintree); }
 
 body,
 #___gatsby,
@@ -60,14 +13,19 @@ body,
   min-height: 100vh;
   min-height: -webkit-fill-available; }
 
+#gatsby-focus-wrapper {
+  overflow-x: hidden; }
+
 /**
  * textured bg
  */
 .bg {
-  background: /*url(../images/bg.svg)*/ var(--color-prussian) top center; }
+  /* autoprefixer: ignore next */
+  background: url(../../static/images/bg.svg) var(--color-prussian) top center; }
 
 .bg-i {
-  background: /*url(../images/bg.svg)*/ var(--color-spruce) top center; }
+  /* autoprefixer: ignore next */
+  background: url(../../static/images/bg.svg) var(--color-spruce) top center; }
 
 /**
  * grid
