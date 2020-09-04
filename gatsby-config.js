@@ -18,6 +18,10 @@ module.exports = {
         route: `/work`,
       },
       {
+        title: `process`,
+        route: `/process`,
+      },
+      {
         title: `about`,
         route: `/about`,
       },

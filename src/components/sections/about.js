@@ -20,7 +20,7 @@ const About = (props) => {
           <p className="mb-5">You’ve likely been on a website where something feels off. Maybe it’s the amount of time the page took to load. Maybe you’re browsing—doing your research—but <strong>it feels unnecessarily difficult</strong>.</p>
           <p className="mb-5">It’s likely down to the amount of stuff vying for your attention. Everything from popups, manipulative messaging and other dark patterns. <strong>It doesn’t instil trust</strong>.</p>
           <p className="mb-5">In an impatient world, this isn’t what you want your website to be, right? You want to be guided, not ushered with haste. You can make sales and create repeat business for the long term without resorting to these tactics.</p>
-          <Action to="/about/" text="Read my process" />
+          <Action to="/process/" text="Read my process" />
           <Ruler className={`illo ${styles.ruler}`} />
         </div>
       </section>
