@@ -30,7 +30,6 @@ module.exports = {
   plugins: [
     `gatsby-plugin-eslint`,
     `gatsby-plugin-tailwindcss`,
-    `gatsby-plugin-styled-components`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
@@ -90,7 +89,9 @@ module.exports = {
           require(`autoprefixer`),
           require(`postcss-preset-env`)({
             stage: 0,
-            autoprefixer: { grid: true },
+            autoprefixer: {
+              grid: true,
+            },
             features: {
               "nesting-rules": true,
             },
@@ -165,6 +166,5 @@ module.exports = {
         },
       },
     },
-    "gatsby-plugin-emotion",
   ],
 };
