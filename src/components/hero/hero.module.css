@@ -9,6 +9,7 @@
  * xs max: 782px
  */
 .container {
+  background: url(../../../static/images/bg.svg) var(--color-spruce) top center;
   grid-column: 1 / -1;
   grid-template-rows: repeat(3, [row] auto); }
 
@@ -51,13 +52,12 @@
     right: 636px; }
 
   @screen xl {
+    top: auto;
+    bottom: -138px;
     right: 952px; }
 
   @screen xxxl {
-    /* top: 92px; */
-    top: auto;
-    bottom: -138px;
-    right: 952px; } }
+    bottom: -138px; } }
 
 .pencil {
   transform: rotate(-60deg);
@@ -74,8 +74,8 @@
   @screen sm {
     top: auto;
     left: auto;
-    bottom: 0;
-    right: 680px; }
+    bottom: -1f20px;
+    right: 440px; }
 
   @screen md {
     bottom: auto;
@@ -87,29 +87,28 @@
     right: 492px; }
 
   @screen xl {
-    top: 286px;
-    right: 842px; }
-
-  @screen xxl {
-    top: 366px; } }
+    top: auto;
+    bottom: -280px;
+    right: 842px; } }
 
 .phone {
   transform: rotate(-60deg);
   transform-origin: left top;
 
-  @screen smMax {
+  @screen lgMax {
     display: none; }
 
-  @screen sm {
+  /* @screen sm {
     top: -64px;
-    right: 224px; }
+    right: 224px; } */
 
   @screen lg {
     top: 48px;
     right: 84px; }
 
   @screen xl {
-    top: 68px;
+    top: auto;
+    bottom: 4px;
     right: 362px; } }
 
 .posca {
@@ -138,7 +137,7 @@
 .eraser {
   transform: rotate(-30deg);
 
-  @screen xsMax {
+  @screen xxsMax {
     display: none; }
 
   @screen smMax {
@@ -159,7 +158,7 @@
 
   @screen lg {
     @media (orientation: portrait) {
-      bottom: 320px;
+      bottom: 192px;
       right: 144px; }
 
     @media (orientation: landscape) {
@@ -192,8 +191,8 @@
 
   @screen lg {
     @media (orientation: portrait) {
-      bottom: 120px;
-      right: 304px; }
+      bottom: 80px;
+      right: 324px; }
 
     @media (orientation: landscape) {
       bottom: -40px;
@@ -214,8 +213,9 @@
 
   @screen xs {
     bottom: 426px;
-    right: 70px;
+    right: 70px; }
 
+  @screen smMax {
     @media (max-height: 767px) {
       display: none; } }
 

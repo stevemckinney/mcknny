@@ -8,25 +8,28 @@ import { motion } from "framer-motion";
 // css
 import styles from "./project.module.css";
 
-const Project = ({ className, link, props }) => {
-
+const Project = ({ props, className, link }) => {
   return (
     <React.Fragment>
       {/*<Dump individualProjectProps={props.image.childImageSharp} />*/}
       <motion.article
-        className={`${styles.container} ${className} bg-prussian radius`} whileHover={{
+        className={`${styles.container} ${className}`}
+        whileHover={{
           scale: .975
         }}
+        whileTap={{
+          opacity: .6
+        }}
         transition={{
-          type: "spring",
-          stiffness: 400
+          duration: .4,
+          ease: "easeOut"
         }}
       >
         <Link to={link} className="block">
           <Img fluid={props.image.childImageSharp.fluid} />
         </Link>
         <h2 className="font-headline text-f4 md:text-f3 xl:text-f2 m-0 text-center">
-          <Link to={link} className="block p-8 lg:px-20 xl:py-16 xl:px-24 lowercase">
+          <Link to={link} className="block px-8 pt-8 lg:px-20 xl:pt-16 xl:px-24 lowercase">
             {props.description}
           </Link>
         </h2>

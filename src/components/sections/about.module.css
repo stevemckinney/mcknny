@@ -5,14 +5,14 @@
 
 .ruler {
   transform: rotate(-15deg);
-  bottom: -288px;
-
-  @screen mdMax {
-    right: 0; }
+  bottom: -132px;
 
   @screen md {
-    bottom: -168px;
-    left: calc(100% - 120px); }
+    bottom: -96px;
+    left: 22vw; }
+
+  @screen lg {
+    bottom: -168px; }
 
   @screen xl {
     bottom: -88px;

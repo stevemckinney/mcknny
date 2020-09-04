@@ -9,14 +9,14 @@ import Project from "@components/card/project";
 // css
 import styles from "./projects.module.css";
 
-const Projects = ({ props }) => {
+const Projects = () => {
   // 664x708
   return (
     <StaticQuery
       query={graphql`
         query listProjects {
           allMdx(
-            sort: { fields: [frontmatter___date], order: DESC }
+            sort: { fields: [frontmatter___date, frontmatter___priority], order: DESC }
             filter: { frontmatter: { published: { eq: true } } }
             limit: 4
           ) {
@@ -26,8 +26,8 @@ const Projects = ({ props }) => {
                 description
                 image {
                   childImageSharp {
-                    fluid(maxWidth: 1328, maxHeight: 1416, quality: 98) {
-                      ...GatsbyImageSharpFluid_noBase64
+                    fluid(maxWidth: 1328, maxHeight: 2048, quality: 100, cropFocus: CENTER, fit: FILL) {
+                      ...GatsbyImageSharpFluid
                     }
                   }
                 }
@@ -46,7 +46,7 @@ const Projects = ({ props }) => {
           {/*<Dump projectsData={data} />*/}
           {data.allMdx.nodes.map(({ fields, frontmatter, id }) => (
             <React.Fragment key={id}>
-              <Project className={`${props.classNameProject} ${styles.project}`} link={fields.slug} props={frontmatter} />
+              <Project className={`md:col-span-6 ${styles.project}`} link={fields.slug} props={frontmatter} />
             </React.Fragment>
           ))}
         </React.Fragment>
@@ -56,9 +56,7 @@ const Projects = ({ props }) => {
 }
 
 Projects.propTypes = {
-  classNameProject: PropTypes.string,
   data: PropTypes.node,
-  props: PropTypes.node,
 }
 
 export default Projects;

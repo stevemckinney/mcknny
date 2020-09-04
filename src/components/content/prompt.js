@@ -18,24 +18,21 @@ const Prompt = props => {
       scale: 1,
       transition: {
         duration: .4,
-        type: "spring",
-        stiffness: 400
+        ease: "easeOut"
       }
     },
     hover: {
-      scale: .9,
+      scale: .975,
       transition: {
         duration: .4,
-        type: "spring",
-        stiffness: 400
+        ease: "easeOut"
       }
     },
     tap: {
-      scale: 0.85,
+      scale: .8,
       transition: {
         duration: .4,
-        type: "spring",
-        stiffness: 400
+        ease: "easeOut"
       }
     }
   };
@@ -54,7 +51,7 @@ const Prompt = props => {
           className="p-8 absolute z-10"
         >
           <motion.span
-            className="relative block transition font-display text-center leading-tight text-f2 md:text-headline font-bold text-jasmine"
+            className="relative block transition font-display text-center leading-tight text-f2 md:text-f1 xl:text-headline font-bold text-jasmine"
             variants={t}
           >
             {props.text}
