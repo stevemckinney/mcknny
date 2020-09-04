@@ -27,7 +27,7 @@ const Projects = () => {
                 image {
                   childImageSharp {
                     fluid(maxWidth: 1328, maxHeight: 2048, quality: 100, cropFocus: CENTER, fit: FILL) {
-                      ...GatsbyImageSharpFluid
+                      ...GatsbyImageSharpFluid_withWebp
                     }
                   }
                 }
