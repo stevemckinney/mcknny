@@ -1,4 +1,6 @@
 .container {
+  /* 664x708 */
   & img,
   & .gatsby-image-wrapper {
+    /* max-height: 708px; */
     border-radius: var(--radius); } }

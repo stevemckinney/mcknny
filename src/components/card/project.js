@@ -8,10 +8,10 @@ import { motion } from "framer-motion";
 // css
 import styles from "./project.module.css";
 
-const Project = ({ props, className, link }) => {
+const Project = ({ frontmatter, className, link }) => {
   return (
     <React.Fragment>
-      {/*<Dump individualProjectProps={props.image.childImageSharp} />*/}
+      {/*<Dump individualProjectProps={frontmatter.image.childImageSharp} />*/}
       <motion.article
         className={`${styles.container} ${className}`}
         whileHover={{
@@ -26,11 +26,11 @@ const Project = ({ props, className, link }) => {
         }}
       >
         <Link to={link} className="block">
-          <Img fluid={props.image.childImageSharp.fluid} />
+          <Img fluid={frontmatter.image.childImageSharp.fluid} />
         </Link>
         <h2 className="font-headline text-f4 md:text-f3 xl:text-f2 m-0 text-center">
           <Link to={link} className="block px-8 pt-8 lg:px-20 xl:pt-16 xl:px-24 lowercase">
-            {props.description}
+            {frontmatter.description}
           </Link>
         </h2>
       </motion.article>
@@ -45,10 +45,11 @@ Project.defaultProps = {
 
 Project.propTypes = {
   link: PropTypes.string.isRequired,
-  description: PropTypes.string,
   className: PropTypes.string,
-  image: PropTypes.node,
-  props: PropTypes.node,
+  frontmatter: PropTypes.shape({
+    image: PropTypes.object,
+    description: PropTypes.string,
+  }),
 }
 
 export default Project;
