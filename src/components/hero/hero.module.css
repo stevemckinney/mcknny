@@ -9,6 +9,7 @@
  * xs max: 782px
  */
 .container {
+  background: url(../../../static/images/bg.svg) var(--color-spruce) top center;
   grid-column: 1 / -1;
   grid-template-rows: repeat(3, [row] auto); }
 
@@ -94,7 +95,7 @@
   transform: rotate(-60deg);
   transform-origin: left top;
 
-  @screen mdMax {
+  @screen lgMax {
     display: none; }
 
   /* @screen sm {
@@ -136,7 +137,7 @@
 .eraser {
   transform: rotate(-30deg);
 
-  @screen xsMax {
+  @screen xxsMax {
     display: none; }
 
   @screen smMax {

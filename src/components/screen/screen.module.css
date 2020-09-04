@@ -55,10 +55,10 @@
     left: 108px;
 
     @screen mdMax {
-      border-radius: 18px;
+      border-radius: 12px;
       top: 48px;
       right: 34px;
-      bottom: 112px;
+      bottom: 68px;
       left: 62px; } } }
 
 .large {
@@ -78,7 +78,7 @@
     @screen mdMax {
       top: 48px;
       right: 34px;
-      bottom: 114px;
+      bottom: 68px;
       left: 62px;
       border-radius: 18px; } } }
 

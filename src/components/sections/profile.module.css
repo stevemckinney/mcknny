@@ -1,6 +1,9 @@
 .content {
   grid-column: content;
 
+  @screen sm {
+    grid-column: content-start / 6; }
+
   @screen md {
     grid-column: content-start / 10; }
 
@@ -14,8 +17,11 @@
   grid-column: content;
   height: 100%;
 
-  @screen mdMax {
+  @screen smMax {
     height: 400px; }
+
+  @screen sm {
+    grid-column: 6 / content-end; }
 
   @screen md {
     grid-column: 10 / content-end; }
@@ -33,28 +39,34 @@
  * illustrations
  */
 .figma {
-  transform: rotate(-15deg) translate3d(0, -50%, 0);
-  bottom: -88px;
+  transform: rotate(-15deg);
+  bottom: -44px;
   right: 0;
 
+  @screen sm {
+    bottom: 8%; }
+
   @screen md {
-    top: 50%;
-    right: 0; } }
+    bottom: 12%; } }
 
 .illustrator {
   transform: rotate(15deg) translate3d(-50%, 0, 0);
-  top: 192px;
+  top: 176px;
   right: calc(20% + 48px);
 
   @screen sm {
-    top: 0;
-    left: 26%; }
+    top: -6%;
+    left: 24%; }
 
-  @screen xl {
+  @screen md {
+    top: -6%;
+    left: 16%; }
+
+  @screen lg {
     left: 32%; }
 
   @screen xl {
-    left: 48%; }
+    left: 54%; }
 
   @screen xxxl {
     left: 62%; } }
@@ -77,22 +89,19 @@
     left: 15%; } }
 
 .safari {
-  @screen lgMax {
-    top: 100%;
-    right: 0; }
+  top: -72px;
+  right: 0;
 
-  @screen mdMax {
-    top: -72px;
-    right: 24px; }
+  @screen sm {
+    top: auto;
+    right: 50%;
+    bottom: -32%; }
 
-  @screen xsMax {
-    right: 0; }
-
-  /* @screen sm {
-    bottom: -50%;
-    left: 44%; } */
+  @screen md {
+    bottom: -40%; }
 
   @screen lg {
+    right: auto;
     bottom: -20%;
     left: 4%; }
 

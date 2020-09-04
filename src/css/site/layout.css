@@ -19,7 +19,6 @@ body,
 /**
  * textured bg
  */
-body,
 .bg {
   /* autoprefixer: ignore next */
   background: url(../../static/images/bg.svg) var(--color-prussian) top center; }
