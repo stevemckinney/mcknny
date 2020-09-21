@@ -10,7 +10,8 @@
  */
 .container {
   grid-column: 1 / -1;
-  grid-template-rows: repeat(3, [row] auto); }
+  grid-template-rows: repeat(3, [row] auto);
+}
 
 .content {
   width: clamp(256px, 664px, 75vw);
@@ -19,10 +20,13 @@
 
   @screen smMax {
     grid-row: 1;
-    grid-column: content-start / content-end; }
+    grid-column: content-start / content-end;
+  }
 
   @media (max-width: 480px) and (max-height: 677px), (max-width: 379px) {
-    padding-top: calc(var(--spacing) * 3); } }
+    padding-top: calc(var(--spacing) * 3);
+  }
+}
 
 .palomino {
   transform: rotate(-60deg);
@@ -35,28 +39,31 @@
     bottom: -668px;
 
     @media (min-height: 768px) {
-      bottom: -588px; } }
+      bottom: -588px;
+    }
+  }
 
   @screen sm {
     bottom: auto;
-    top: 112px;
-    right: 658px; }
-
-  @screen md {
     top: 196px;
-    right: 600px; }
+    right: 600px;
+  }
 
   @screen lg {
     top: 112px;
-    right: 636px; }
+    right: 636px;
+  }
 
   @screen xl {
     top: auto;
     bottom: -138px;
-    right: 952px; }
+    right: 952px;
+  }
 
   @screen xxxl {
-    bottom: -138px; } }
+    bottom: -138px;
+  }
+}
 
 .pencil {
   transform: rotate(-60deg);
@@ -68,34 +75,42 @@
     bottom: -404px;
 
     @media (min-height: 768px) {
-      bottom: -326px; } }
+      bottom: -326px;
+    }
+  }
 
   @screen sm {
     top: auto;
     left: auto;
     bottom: -1f20px;
-    right: 440px; }
+    right: 440px;
+  }
 
   @screen md {
     bottom: auto;
     top: 204px;
-    right: 400px; }
+    right: 400px;
+  }
 
   @screen lg {
     top: 320px;
-    right: 492px; }
+    right: 492px;
+  }
 
   @screen xl {
     top: auto;
     bottom: -280px;
-    right: 842px; } }
+    right: 842px;
+  }
+}
 
 .phone {
   transform: rotate(-60deg);
   transform-origin: left top;
 
   @screen lgMax {
-    display: none; }
+    display: none;
+  }
 
   /* @screen sm {
     top: -64px;
@@ -103,41 +118,51 @@
 
   @screen lg {
     top: 48px;
-    right: 84px; }
+    right: 84px;
+  }
 
   @screen xl {
     top: auto;
     bottom: 4px;
-    right: 362px; } }
+    right: 362px;
+  }
+}
 
 .posca {
   transform: rotate(75deg);
 
   @screen smMax {
-    display: none; }
+    display: none;
+  }
 
   @screen sm {
     transform-origin: left bottom;
     bottom: 0;
-    right: 125vw; }
+    right: 125vw;
+  }
 
   @screen lg {
     bottom: 24px;
-    right: 1180px; }
+    right: 1180px;
+  }
 
   @screen xl {
     bottom: 2vh;
-    right: 1520px; }
+    right: 1520px;
+  }
 
   @screen xxl {
     bottom: -28px;
-    right: 1688px; } }
+    right: 1688px;
+  }
+}
 
 .eraser {
   transform: rotate(-30deg);
 
   @screen xxsMax {
-    display: none; }
+    display: none;
+  }
 
   @screen smMax {
     bottom: -64px;
@@ -145,30 +170,39 @@
 
     @media (min-height: 768px) {
       bottom: -20px;
-      left: 76px; } }
+      left: 76px;
+    }
+  }
 
   @screen sm {
     bottom: 168px;
-    right: 72px; }
+    right: 72px;
+  }
 
   @screen md {
     bottom: 220px;
-    right: 72px; }
+    right: 72px;
+  }
 
   @screen lg {
     @media (orientation: portrait) {
       bottom: 192px;
-      right: 144px; }
+      right: 144px;
+    }
 
     @media (orientation: landscape) {
       bottom: 96px;
-      right: 320px; } }
+      right: 320px;
+    }
+  }
 
   @screen xl {
     top: auto;
     bottom: 148px;
     right: 546px;
-    left: auto; } }
+    left: auto;
+  }
+}
 
 .pen {
   transform: rotate(-30deg);
@@ -181,54 +215,72 @@
 
     @media (min-height: 768px) {
       bottom: 12px;
-      left: 292px; } }
+      left: 292px;
+    }
+  }
 
   @screen sm {
     left: auto;
     bottom: 132px;
-    right: 248px; }
+    right: 248px;
+  }
 
   @screen lg {
     @media (orientation: portrait) {
       bottom: 80px;
-      right: 324px; }
+      right: 324px;
+    }
 
     @media (orientation: landscape) {
       bottom: -40px;
-      right: 192px; } }
+      right: 192px;
+    }
+  }
 
   @screen xl {
     bottom: -40px;
-    right: 384px; }
+    right: 384px;
+  }
 
-  @screen xxl {} }
+  @screen xxl {
+  }
+}
 
 .sharpener {
   transform: rotate(-30deg);
 
   @screen xsMax {
     bottom: -40px;
-    left: 48px; }
+    left: 48px;
+  }
 
   @screen xs {
     bottom: 426px;
-    right: 70px; }
+    right: 70px;
+  }
 
   @screen smMax {
     @media (max-height: 767px) {
-      display: none; } }
+      display: none;
+    }
+  }
 
   @screen sm {
     transform: rotate(-60deg);
     right: 0;
-    bottom: -64px; }
+    bottom: -64px;
+  }
 
   @screen md {
-    bottom: -32px; }
+    bottom: -32px;
+  }
 
   @screen lg {
-    bottom: -32px; }
+    bottom: -32px;
+  }
 
   @screen xl {
     bottom: 80px;
-    right: 240px; } }
+    right: 240px;
+  }
+}
