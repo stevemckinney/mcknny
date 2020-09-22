@@ -12,7 +12,10 @@ body,
 #___gatsby,
 #gatsby-focus-wrapper {
   min-height: 100vh;
-  min-height: -webkit-fill-available;
+  
+  @supports (-webkit-touch-callout: none) {
+    min-height: -webkit-fill-available;
+  }
 }
 
 #gatsby-focus-wrapper {
