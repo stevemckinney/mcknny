@@ -7,7 +7,7 @@ const tailwindConfig = require(`./tailwind.config.js`);
 const fullConfig = resolveConfig(tailwindConfig);
 module.exports = {
   siteMetadata: {
-    title: `steve mckinney`,
+    title: `mcknny`,
     short_name: `mcknny`,
     siteUrl: `https://mcknny.com`,
     description: `Portfolio of Steve McKinney`,

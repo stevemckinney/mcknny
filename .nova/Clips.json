@@ -1,0 +1,16 @@
+{
+  "clips" : [
+    {
+      "children" : [
+        {
+          "content" : "@screen ${:screen} {\n\t${:css}\n}",
+          "name" : "media query",
+          "scope" : "editor",
+          "syntax" : "css",
+          "trigger" : "screen"
+        }
+      ],
+      "name" : "tailwind"
+    }
+  ]
+}
