@@ -11,7 +11,6 @@ import Portfolio from "@icons/portfolio.inline.svg";
 import About from "@icons/about.inline.svg";
 import Process from "@icons/process.inline.svg";
 import Contact from "@icons/contact.inline.svg";
-import Arrow from "@icons/arrow-right.inline.svg";
 
 const Tabbar = ({ links }) => {
   const navStyles = `${styles.tabbar} z-50 fixed bottom-0 right-0 left-0 flex justify-center md:hidden w-screen`;
@@ -37,7 +36,6 @@ const Tabbar = ({ links }) => {
             {link.title === "process" && <Process />}
             {link.title === "about" && <About />}
             {link.title === "contact" && <Contact />}
-            {link.title === "process" && <Arrow />}
             {link.title}
           </Link>
         ))}
