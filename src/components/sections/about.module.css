@@ -1,19 +1,31 @@
 .content {
   max-width: 664px;
   grid-column: content-start / -1;
-  grid-row: 2; }
+  grid-row: 2;
+}
 
 .ruler {
   transform: rotate(-15deg);
-  bottom: -132px;
+  right: -48px;
+  bottom: -252px;
+
+  @screen sm {
+    right: -440px;
+    bottom: -182px;
+  }
 
   @screen md {
+    right: auto;
     bottom: -96px;
-    left: 22vw; }
+    left: 22vw;
+  }
 
   @screen lg {
-    bottom: -168px; }
+    bottom: -168px;
+  }
 
   @screen xl {
     bottom: -88px;
-    left: calc(100% - 240px); } }
+    left: calc(100% - 240px);
+  }
+}

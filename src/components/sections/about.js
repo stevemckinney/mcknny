@@ -20,23 +20,25 @@ const About = (props) => {
             <span className="block text-f8 md:text-f6 text-pearl uppercase tracking-title font-title font-medium pb-4">
               Hi there, I’m Steve…
             </span>{" "}
-            I design websites to build trust & make readers want to return
+            I’m a designer who helps&nbsp;content focused companies build a
+            dedicated readership
           </h2>
           <p className="mb-5">
-            You’ve read an article on a website—more than once or twice I’m
-            sure—and something feels off immediately. Maybe it’s the amount of
-            time the page took to load. Maybe it’s how much your head is moving
-            to compensate for long line lengths.
+            You’ve read an article on a website—once or twice, I’m sure—and
+            something feels off. Maybe it’s the amount of time the page took to
+            load. Maybe it’s how much your head is moving to compensate for long
+            line lengths.
           </p>
           <p className="mb-5">
             Or maybe it’s down to the amount of stuff vying for your attention.
             Everything from popups, manipulative messaging and other dark
-            patterns—make it unnecessarily difficult to read today’s websites.
-            Above all, <strong>it doesn’t instil trust</strong>.
+            patterns, which make it unnecessarily difficult to browse. It sends
+            a negative impression—why would you spend time here?
           </p>
           <p className="mb-5">
-            I know you have to grow your readership, improve sales and the like.
-            However, you can do this without resorting to these tactics.
+            I get it, I know you have to grow your readership, improve sales and
+            the like. However, you can do this without resorting to these
+            tactics.
           </p>
           <Action to="/process/" text="Read my process" />
           <Ruler className={`illo ${styles.ruler}`} />
