@@ -46,7 +46,7 @@ const Projects = () => {
           {/*<Dump projectsData={data} />*/}
           {data.allMdx.nodes.map(({ fields, frontmatter, id }) => (
             <React.Fragment key={id}>
-              <Project className={`md:col-span-6 ${styles.project}`} link={fields.slug} frontmatter={frontmatter} />
+              <Project className={`sm:col-span-6 ${styles.project}`} link={fields.slug} frontmatter={frontmatter} />
             </React.Fragment>
           ))}
         </React.Fragment>
