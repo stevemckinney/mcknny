@@ -20,7 +20,7 @@ const About = (props) => {
             <span className="block text-f8 md:text-f6 text-pearl uppercase tracking-title font-title font-medium pb-4">
               Hi there, I’m Steve…
             </span>{" "}
-            I’m a designer who helps&nbsp;content focused companies build a
+            I’m a designer who helps content focused companies build a
             dedicated readership
           </h2>
           <p className="mb-5">
@@ -36,9 +36,7 @@ const About = (props) => {
             a negative impression—why would you spend time here?
           </p>
           <p className="mb-5">
-            I get it, I know you have to grow your readership, improve sales and
-            the like. However, you can do this without resorting to these
-            tactics.
+            I know how important it is for you to improve sales, grow your readership, increase newsletter subscribers and the like. However, your company can grow for the long term without short term tactics.
           </p>
           <Action to="/process/" text="Read my process" />
           <Ruler className={`illo ${styles.ruler}`} />
