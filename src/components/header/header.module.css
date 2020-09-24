@@ -2,3 +2,7 @@
   max-width: 1920px;
   margin: auto;
 }
+
+.subtitle {
+  grid-column: 4 / content-end;
+}

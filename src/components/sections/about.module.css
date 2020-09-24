@@ -7,7 +7,7 @@
 .ruler {
   transform: rotate(-15deg);
   right: -48px;
-  bottom: -252px;
+  bottom: -272px;
 
   @screen sm {
     right: -440px;
