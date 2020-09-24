@@ -25,7 +25,7 @@ const Hero = (props) => {
           <h1
             className={`${headingStyles}`}
             dangerouslySetInnerHTML={{
-              __html: `Beautifully&nbsp;usable design&nbsp;for content focused companies`,
+              __html: `Pretty good design that keeps your readers returning`,
             }}
           />
           <Action to={props.link} text="View case studies" />
