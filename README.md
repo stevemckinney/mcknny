@@ -1,4 +1,4 @@
-# Portfolio
+# mcknny.com
 This is my portfolio, currently a work in progress. It’s built on Gatsby and uses postcss with a mixture of global styles, tailwind and css modules. 
 
 ## Get started
