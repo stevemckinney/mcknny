@@ -102,4 +102,12 @@ body,
   .full {
     grid-column: 1 / -1;
   }
+  
+  .full-right {
+    grid-column: content-start / -1;
+  }
+  
+  .full-left {
+    grid-column: -1 / content-end;
+  }
 }
