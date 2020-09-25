@@ -46,7 +46,7 @@ function Layout({ className, children }) {
       <AnimatePresence exitBeforeEnter>
         <motion.main
           className={className}
-          key={location.pathname}
+          key={props.location.pathname}
           variants={variants}
           initial="initial"
           animate="enter"
