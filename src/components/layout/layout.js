@@ -30,7 +30,7 @@ const duration = .4
   }
 
 
-function Layout({ className, children }) {
+function Layout({ className, children, location }) {
   const layoutClass = `bg`;
 
   return (
@@ -46,7 +46,7 @@ function Layout({ className, children }) {
       <AnimatePresence exitBeforeEnter>
         <motion.main
           className={className}
-          key={props.location.pathname}
+          key={location.pathname}
           variants={variants}
           initial="initial"
           animate="enter"
