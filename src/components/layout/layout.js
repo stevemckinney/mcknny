@@ -30,7 +30,7 @@ const duration = .4
   }
 
 
-function Layout({ className, children }) {
+function Layout({ className, children, location }) {
   const layoutClass = `bg`;
 
   return (
