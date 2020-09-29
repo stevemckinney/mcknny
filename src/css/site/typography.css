@@ -11,21 +11,24 @@
  * text
  */
 p {
-  margin: 0 0 8px; }
+  margin: 0 0 var(--spacing);
+  
+  &:last-child {
+    margin-bottom: 0; } }
 
 p, ul, ol {
+  font-size: var(--f5);
+  
   @screen sm {
     font-size: var(--f4); }
 
-  @screen md {
+  @screen lg {
     font-size: var(--f3); } }
 
 a {
   transition: .2s;
   text-decoration: none;
   color: inherit;
-
-  /* Normalize */
   text-decoration-skip-ink: auto;
 
   &:active,

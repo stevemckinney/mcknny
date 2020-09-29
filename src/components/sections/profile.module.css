@@ -59,7 +59,7 @@
     left: 24%; }
 
   @screen md {
-    top: -6%;
+    top: -12%;
     left: 16%; }
 
   @screen lg {
@@ -98,7 +98,8 @@
     bottom: -32%; }
 
   @screen md {
-    bottom: -40%; }
+    right: 30%;
+    bottom: -54%; }
 
   @screen lg {
     right: auto;
