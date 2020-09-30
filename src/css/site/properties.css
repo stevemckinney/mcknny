@@ -153,4 +153,4 @@
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
   height: -webkit-fill-available;
-  @apply .font-body; }
+  @apply font-body; }
