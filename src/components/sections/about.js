@@ -32,7 +32,7 @@ const About = (props) => {
           <p className="mb-5">
             Or maybe it’s down to the amount of stuff vying for your attention.
             Everything from popups, manipulative messaging and other dark
-            patterns, which make it unnecessarily difficult to browse. It sends
+            patterns. It sends
             a negative impression—why would you spend time here?
           </p>
           <p className="mb-5">
