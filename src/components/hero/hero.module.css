@@ -14,7 +14,7 @@
 }
 
 .content {
-  width: clamp(256px, 580px, 75vw);
+  width: clamp(288px, 644px, 60vw);
   grid-column: content-start / -1;
   grid-row: 2;
 
@@ -149,9 +149,13 @@
   @screen sm {
     transform-origin: left bottom;
     bottom: 0;
-    right: 125vw;
+    right: 1024px;
   }
-
+  
+  @screen md {
+    right: 1120px;
+  }
+  
   @screen lg {
     bottom: 24px;
     right: 1180px;
