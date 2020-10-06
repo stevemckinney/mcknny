@@ -1,5 +1,5 @@
 .content {
-  max-width: 664px;
+  max-width: 626px;
   grid-column: content-start / -1;
   grid-row: 2;
 }
@@ -25,7 +25,7 @@
   }
 
   @screen xl {
-    bottom: -88px;
+    bottom: -120px;
     left: calc(100% - 240px);
   }
 }

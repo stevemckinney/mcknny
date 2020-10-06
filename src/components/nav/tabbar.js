@@ -19,10 +19,6 @@ const Tabbar = ({ links }) => {
   return (
     <React.Fragment>
       <nav className={navStyles}>
-        <Link to="/" className={linkStyles} activeClassName="text-jasmine">
-          <Home />
-          home
-        </Link>
         {links.map((link) => (
           <Link
             className={linkStyles}
