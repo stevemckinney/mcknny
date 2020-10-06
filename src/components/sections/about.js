@@ -20,11 +20,9 @@ const About = (props) => {
             <span className="block text-f8 md:text-f6 text-pearl uppercase tracking-title font-title font-medium pb-4">
               Hi there, I’m Steve…
             </span>{" "}
-            I’m a designer who helps content focused companies build a
-            dedicated readership
+            I’m a designer who helps you to grow steadily, without annoying your visitors 
           </h2>
           <p className="mb-5">
-            You’ve read an article on a website—once or twice, I’m sure—and
             something feels off. Maybe it’s the amount of time the page took to
             load. Maybe it’s how much your head is moving to compensate for long
             line lengths.
