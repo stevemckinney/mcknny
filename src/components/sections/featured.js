@@ -12,11 +12,11 @@ const Featured = (props) => {
   return (
     <React.Fragment>
       <section className={props.className}>
-        <header className="flex justify-between mb-12 col-span-12">
-          <h2 className="text-f2 md:text-f1 text-melon content mb-0 content columns-all">
+        <header className="flex justify-between items-center content-center mb-12 md:mb-20 col-span-10">
+          <h2 className="text-f2 md:text-f1 text-harp content mb-0 content columns-all">
             Projects
           </h2>
-          <Action to="/work/" text="View all projects" />
+          <Action to="/work/" text="View all projects" className="mt-2" />
         </header>
 
         <Projects />
@@ -26,7 +26,7 @@ const Featured = (props) => {
 }
 
 Featured.defaultProps = {
-  className: "featured content md:grid gap-8 mdMax:pt-36",
+  className: "featured grid content sm:grid-cols-10 sm:col-gap-16 sm:row-gap-0 mdMax:pt-32",
 }
 
 Featured.propTypes = {

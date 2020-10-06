@@ -14,7 +14,7 @@
 }
 
 .content {
-  width: clamp(256px, 664px, 75vw);
+  width: clamp(256px, 580px, 75vw);
   grid-column: content-start / -1;
   grid-row: 2;
 

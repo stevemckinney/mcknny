@@ -16,12 +16,11 @@ const About = (props) => {
     <React.Fragment>
       <section className={containerStyles}>
         <div className={contentStyles}>
-          <h2 className="text-f3 xxs:text-f2 md:text-f1 tracking-tight sm:tracking-tighter text-harp content mb-5 content columns-all">
-            <span className="block text-f8 md:text-f6 text-pearl uppercase tracking-title font-title font-medium pb-4">
+          <h2 className="text-f3 xxs:text-f2 sm:text-f1 text-harp content mb-5 content columns-all">
+            <span className="block text-f8 md:text-f6 text-pearl uppercase tracking-title font-title font-normal pb-4">
               Hi there, I’m Steve…
             </span>{" "}
-            I’m a designer who helps content focused companies build a
-            dedicated readership
+            I’m a designer who helps&nbsp;content focused companies build a dedicated readership
           </h2>
           <p className="mb-5">
             You’ve read an article on a website—once or twice, I’m sure—and
@@ -32,11 +31,11 @@ const About = (props) => {
           <p className="mb-5">
             Or maybe it’s down to the amount of stuff vying for your attention.
             Everything from popups, manipulative messaging and other dark
-            patterns, which make it unnecessarily difficult to browse. It sends
+            patterns. It sends
             a negative impression—why would you spend time here?
           </p>
           <p className="mb-5">
-            I know how important it is for you to improve sales, grow your readership, increase newsletter subscribers and the like. However, your company can grow for the long term without short term tactics.
+            I know how important it is for you to improve sales, grow your readership, increase newsletter subscribers and the like. However, you can grow for the long term without short term tactics.
           </p>
           <Action to="/process/" text="Read my process" />
           <Ruler className={`illo ${styles.ruler}`} />

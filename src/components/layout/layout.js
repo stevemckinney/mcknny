@@ -30,7 +30,7 @@ const duration = .4
   }
 
 
-function Layout({ className, children }) {
+function Layout({ className, children, location }) {
   const layoutClass = `bg`;
 
   return (
@@ -68,6 +68,7 @@ Layout.defaultProps = {
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
   className: PropTypes.node.isRequired,
+  location: PropTypes.string,
 }
 
 export default Layout;

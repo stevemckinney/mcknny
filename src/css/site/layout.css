@@ -1,6 +1,10 @@
 /**
  * global
  */
+html {
+  overflow-x: hidden;
+} 
+
 body {
   max-width: 1920px;
   margin: auto;
@@ -18,21 +22,17 @@ body,
   }
 }
 
-#gatsby-focus-wrapper {
-  overflow-x: hidden;
-}
-
 /**
  * textured bg
  */
 .bg {
   /* autoprefixer: ignore next */
-  background: var(--color-prussian) top center repeat;
+  background: url(/static/images/bg.svg) var(--color-prussian) top center repeat;
 }
 
 .bg-i {
   /* autoprefixer: ignore next */
-  background: var(--color-spruce) top center repeat;
+  background: url(/static/images/bg.svg) var(--color-spruce) top center repeat;
 }
 
 /**
@@ -101,5 +101,13 @@ body,
 
   .full {
     grid-column: 1 / -1;
+  }
+  
+  .full-right {
+    grid-column: content-start / -1;
+  }
+  
+  .full-left {
+    grid-column: -1 / content-end;
   }
 }
