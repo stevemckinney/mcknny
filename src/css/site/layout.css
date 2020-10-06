@@ -27,12 +27,12 @@ body,
  */
 .bg {
   /* autoprefixer: ignore next */
-  background: url(/static/images/bg.svg) var(--color-prussian) top center repeat;
+  background: url(../../static/images/bg.svg) var(--color-prussian) top center repeat;
 }
 
 .bg-i {
   /* autoprefixer: ignore next */
-  background: url(/static/images/bg.svg) var(--color-spruce) top center repeat;
+  background: url(../../static/images/bg.svg) var(--color-spruce) top center repeat;
 }
 
 /**
