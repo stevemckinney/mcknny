@@ -1,6 +1,10 @@
 /**
  * global
  */
+html {
+  overflow-x: hidden;
+} 
+
 body {
   max-width: 1920px;
   margin: auto;
@@ -16,10 +20,6 @@ body,
   @supports (-webkit-touch-callout: none) {
     min-height: -webkit-fill-available;
   }
-}
-
-body {
-  overflow-x: hidden;
 }
 
 /**

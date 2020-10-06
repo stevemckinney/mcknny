@@ -21,7 +21,7 @@ const About = (props) => {
               Hi there, I’m Steve…
             </span>{" "}
             I’m a designer who helps content focused companies build a
-            dedicated readership
+            dedicated audience
           </h2>
           <p className="mb-5">
             You’ve read an article on a website—once or twice, I’m sure—and
