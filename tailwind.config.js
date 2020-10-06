@@ -18,8 +18,6 @@ module.exports = {
       xlMax: {"max": "1279px"},
       xxl: "1440px",
       xxlMax: {"max": "1439px"},
-      xxl: "1440px",
-      xxlMax: {"max": "1439px"},
       xxxl: "1680px",
       xxxlMax: {"max": "1659px"}
     },
@@ -75,7 +73,7 @@ module.exports = {
       "f5": "18px",
       "f4": "21px",
       "f3": "24px",
-      "f2": "32px",
+      "f2": "36px",
       "f1": "48px",
       "headline": "64px"
     },

@@ -7,7 +7,7 @@ const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
 // https://www.gatsbyjs.org/docs/node-apis/#onCreateWebpackConfig
-exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
     resolve: {
       alias: {
@@ -69,7 +69,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // Create blog post pages.
   const posts = result.data.allMdx.edges
   // you'll call `createPage` for each result
-  posts.forEach(({ node }, index) => {
+  posts.forEach(({ node }) => {
     createPage({
       // This is the slug you created before
       // (or `node.frontmatter.slug`)

@@ -7,32 +7,31 @@ import { motion, AnimatePresence } from "framer-motion";
 import Header from "@components/header";
 import Footer from "@components/footer";
 
-// css
-import "../../css/global.css";
-
 // animation
-const duration = .6;
+const duration = .4
 
-const variants = {
-  initial: {
-    opacity: 0,
-  },
-  enter: {
-    opacity: 1,
-    transition: {
-      duration: duration,
-      delay: duration,
-      when: 'beforeChildren',
+  const variants = {
+    initial: {
+      opacity: 0,
     },
-  },
-  exit: {
-    opacity: 0,
-    transition: { duration: duration },
-  },
-}
+    enter: {
+      opacity: 1,
+      transition: {
+        duration: duration,
+        delay: duration,
+        when: "beforeChildren",
+        staggerChildren: 0.5,
+      },
+    },
+    exit: {
+      opacity: 0,
+      transition: { duration: duration },
+    },
+  }
 
-function Layout({ className, children }) {
-  const layoutClass = `font-body bg`;
+
+function Layout({ className, children, location }) {
+  const layoutClass = `bg`;
 
   return (
     <React.Fragment>
@@ -44,7 +43,7 @@ function Layout({ className, children }) {
 
       <Header className="header" />
 
-      <AnimatePresence>
+      <AnimatePresence exitBeforeEnter>
         <motion.main
           className={className}
           key={location.pathname}
@@ -69,6 +68,7 @@ Layout.defaultProps = {
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
   className: PropTypes.node.isRequired,
+  location: PropTypes.string,
 }
 
 export default Layout;

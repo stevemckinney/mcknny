@@ -1,8 +1,14 @@
 .content {
   grid-column: content;
 
+  @screen sm {
+    grid-column: content-start / 6; }
+
   @screen md {
-    grid-column: content-start / 8; }
+    grid-column: content-start / 10; }
+
+  @screen lg {
+    grid-column: content-start / 9; }
 
   @screen xxxl {
     grid-column: content-start / 10; } }
@@ -11,11 +17,17 @@
   grid-column: content;
   height: 100%;
 
-  @screen mdMax {
+  @screen smMax {
     height: 400px; }
 
+  @screen sm {
+    grid-column: 6 / content-end; }
+
   @screen md {
-    grid-column: 8 / content-end; }
+    grid-column: 10 / content-end; }
+
+  @screen lg {
+    grid-column: 9 / content-end; }
 
   @screen xxxl {
     grid-column: 10 / content-end; } }
@@ -27,38 +39,91 @@
  * illustrations
  */
 .figma {
-  transform: rotate(-15deg) translate3d(0, -50%, 0);
-  bottom: 0;
+  transform: rotate(-15deg);
+  bottom: -44px;
   right: 0;
 
+  @screen sm {
+    bottom: 8%; }
+
   @screen md {
-    top: 50%;
-    right: 0; } }
+    bottom: 12%; } }
 
 .illustrator {
   transform: rotate(15deg) translate3d(-50%, 0, 0);
-  bottom: 35%;
-  right: 15%;
+  top: 176px;
+  right: calc(20% + 48px);
+
+  @screen sm {
+    top: -6%;
+    left: 24%; }
 
   @screen md {
-    top: 0;
-    left: 58%; } }
+    top: -12%;
+    left: 16%; }
+
+  @screen lg {
+    left: 32%; }
+
+  @screen xl {
+    left: 54%; }
+
+  @screen xxxl {
+    left: 62%; } }
 
 .pen {
   transform: rotate(-30deg);
 
-  @screen md {
+  @screen sm {
+    bottom: 6%;
+    left: 12%; }
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    display: none; }
+
+  @screen xl {
     bottom: -8%;
+    left: -6%; }
+
+  @screen xxxl {
     left: 15%; } }
 
 .safari {
+  top: -72px;
+  right: 0;
+
+  @screen sm {
+    top: auto;
+    right: 50%;
+    bottom: -32%; }
+
   @screen md {
+    right: 30%;
+    bottom: -54%; }
+
+  @screen lg {
+    right: auto;
     bottom: -20%;
+    left: 4%; }
+
+  @screen xl {
+    bottom: -20%;
+    left: 30%; }
+
+  @screen xxxl {
     left: 48%; } }
 
 .terminal {
   transform: rotate(15deg);
+  /* lgMax hidden */
 
-  @screen md {
+  @screen lg {
+    top: 0;
+    left: -38%; }
+
+  @screen xxl {
+    left: -25%; }
+
+  @screen xxxl {
     top: 0;
     left: 0; } }

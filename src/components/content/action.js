@@ -9,7 +9,7 @@ import styles from "./action.module.css";
 import Arrow from "@icons/arrow-right.inline.svg";
 
 const Action = props => {
-  const actionClass = `relative text-f6 xs:text-f5 md:text-f3 font-bold text-jasmine flex items-center action ${styles.action}`;
+  const actionClass = `relative text-f6 sm:text-f5 md:text-f4 font-bold text-jasmine flex items-center action font-body ${styles.action} ${props.className}`;
 
   return (
     <React.Fragment>
@@ -30,7 +30,8 @@ Action.defaultProps = {
 
 Action.propTypes = {
   to: PropTypes.string.isRequired,
-  text: PropTypes.string
+  text: PropTypes.string,
+  className: PropTypes.node,
 }
 
 export default Action;

@@ -7,7 +7,7 @@ const tailwindConfig = require(`./tailwind.config.js`);
 const fullConfig = resolveConfig(tailwindConfig);
 module.exports = {
   siteMetadata: {
-    title: `steve mckinney`,
+    title: `mcknny`,
     short_name: `mcknny`,
     siteUrl: `https://mcknny.com`,
     description: `Portfolio of Steve McKinney`,
@@ -16,6 +16,10 @@ module.exports = {
       {
         title: `work`,
         route: `/work`,
+      },
+      {
+        title: `process`,
+        route: `/process`,
       },
       {
         title: `about`,
@@ -30,7 +34,6 @@ module.exports = {
   plugins: [
     `gatsby-plugin-eslint`,
     `gatsby-plugin-tailwindcss`,
-    `gatsby-plugin-styled-components`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
@@ -90,6 +93,13 @@ module.exports = {
           require(`autoprefixer`),
           require(`postcss-preset-env`)({
             stage: 0,
+            autoprefixer: {
+              grid: true,
+            },
+            features: {
+              "nesting-rules": true,
+            },
+            browsers: ["last 2 versions"],
           }),
           ...(process.env.NODE_ENV === `production`
             ? [require(`cssnano`)]
@@ -160,6 +170,5 @@ module.exports = {
         },
       },
     },
-    "gatsby-plugin-emotion",
   ],
 };
