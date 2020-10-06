@@ -16,7 +16,7 @@ import Sharpener from "@images/sharpener.inline.svg";
 
 const Hero = (props) => {
   const heroStyles = `${props.className} ${styles.container} grid layout items-center relative`;
-  const headingStyles = `relative z-10 mb-6 sm:mb-6 font-display leading-title text-f3 xxs:text-f2 sm:text-f1 xxl:text-headline tracking-tight sm:tracking-tighter xxl:tracking-headline`;
+  const headingStyles = `relative z-10 mb-6 sm:mb-6 font-display leading-title text-f3 xxs:text-f2 sm:text-f1 xxl:text-headline`;
 
   return (
     <React.Fragment>

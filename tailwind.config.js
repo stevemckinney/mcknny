@@ -73,7 +73,7 @@ module.exports = {
       "f5": "18px",
       "f4": "21px",
       "f3": "24px",
-      "f2": "32px",
+      "f2": "36px",
       "f1": "48px",
       "headline": "64px"
     },

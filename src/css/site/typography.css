@@ -19,11 +19,8 @@ p {
 p, ul, ol {
   font-size: var(--f5);
   
-  @screen sm {
-    font-size: var(--f4); }
-
   @screen lg {
-    font-size: var(--f3); } }
+    font-size: var(--f4); } }
 
 a {
   transition: .2s;
