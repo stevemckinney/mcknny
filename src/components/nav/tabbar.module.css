@@ -11,7 +11,7 @@
 }
 
 .link {
-  padding: calc(var(--spacing) * 2.5) 4vw calc(var(--spacing) * 1.5);
+  padding: calc(var(--spacing) * 2.5) 6vw calc(var(--spacing) * 1.5);
 
   & > svg {
     margin-bottom: calc(var(--spacing) / 4);
