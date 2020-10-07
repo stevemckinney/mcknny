@@ -74,8 +74,8 @@ module.exports = {
       "f4": "21px",
       "f3": "24px",
       "f2": "36px",
-      "f1": "48px",
-      "headline": "64px"
+      "f1": "56px",
+      "headline": "72px"
     },
     rotate: {
       '-15': '-15deg',
