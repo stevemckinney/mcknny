@@ -29,7 +29,7 @@ const Project = ({ frontmatter, className, link }) => {
           <Img fluid={frontmatter.image.childImageSharp.fluid} />
         </Link>
         <h2 className="font-headline text-f4 md:text-f3 xl:text-f2 m-0 text-center">
-          <Link to={link} className="block px-8 py-8 lg:px-20 xl:py-16 xl:px-24">
+          <Link to={link} className="block px-8 py-8 xs:px-16 lg:px-20 xl:py-16 xl:px-24">
             {frontmatter.description}
           </Link>
         </h2>
