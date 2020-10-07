@@ -16,11 +16,11 @@ const About = (props) => {
     <React.Fragment>
       <section className={containerStyles}>
         <div className={contentStyles}>
-          <h2 className="text-f3 xxs:text-f2 sm:text-f1 text-harp content mb-5 content columns-all" style={{maxWidth: "580px"}}>
-            <span className="block text-f8 md:text-f6 text-pearl uppercase tracking-title font-title font-normal pb-4">
+          <h2 className="mb-6 text-f2 sm:text-f1 text-harp content content columns-all" style={{maxWidth: "580px"}}>
+            <span className="block pb-3 text-f8 md:text-f6 text-pearl uppercase tracking-title font-title font-normal">
               Hi there, I’m Steve…
             </span>{" "}
-            I’m a designer who helps you to grow steadily without annoying your visitors
+            I’m a designer who helps your business to grow steadily without annoying your visitors
           </h2>
           <p className="mb-5">
             You’ve read an article, viewed a product, on the web—once or twice, I’m sure—and something feels off. Maybe it’s the amount of time the page took to load. Maybe it’s how much your head is moving to compensate for long line lengths.
