@@ -2,7 +2,8 @@
  * global
  */
 html,
-body {
+body,
+#gatsby-focus-wrapper {
   overflow-x: hidden;
 } 
 
