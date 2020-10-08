@@ -95,7 +95,7 @@ module.exports = {
       normal: '1.5',
       relaxed: '1.625',
       loose: '2',
-      title: '1.166666667'
+      title: '1.111111111'
     },
     extend: {
       spacing: {

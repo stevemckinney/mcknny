@@ -47,7 +47,10 @@
     bottom: 8%; }
 
   @screen md {
-    bottom: 12%; } }
+    bottom: 32%; }
+  
+  @screen lg {
+    bottom: 20%; } }
 
 .illustrator {
   transform: rotate(15deg) translate3d(-50%, 0, 0);
@@ -98,13 +101,13 @@
     bottom: -32%; }
 
   @screen md {
-    right: 30%;
-    bottom: -54%; }
+    right: -4%;
+    bottom: -32%; }
 
   @screen lg {
     right: auto;
     bottom: -20%;
-    left: 4%; }
+    left: 12%; }
 
   @screen xl {
     bottom: -20%;
