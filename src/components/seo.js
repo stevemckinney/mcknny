@@ -17,7 +17,7 @@ function SEO({ description, lang, meta, keywords, title, cover }) {
   `);
 
   const metaDescription = description || site.siteMetadata.description;
-  const ogImage = cover || `@images/social/opengraph.png`;
+  const ogImage = cover || `/static/images/social/opengraph.png`;
 
   return (
     <Helmet

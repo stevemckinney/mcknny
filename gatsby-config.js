@@ -10,7 +10,7 @@ module.exports = {
     title: `mcknny`,
     short_name: `mcknny`,
     siteUrl: `https://mcknny.com`,
-    description: `Portfolio of Steve McKinney`,
+    description: `I’m a designer who helps you grow steadily without resorting to annoyances`,
     author: `@irsteve`,
     navigation: [
       {
