@@ -1,9 +1,9 @@
+/*! purgecss start ignore */
 /**
  * global
  */
 html,
-body,
-#gatsby-focus-wrapper {
+body {
   overflow-x: hidden;
 } 
 
@@ -113,3 +113,4 @@ body,
     grid-column: -1 / content-end;
   }
 }
+/*! purgecss end ignore */

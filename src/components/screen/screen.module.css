@@ -1,4 +1,3 @@
-/*! purgecss start ignore */
 .image {
   overflow: hidden;
   overflow-y: auto; }
@@ -94,4 +93,3 @@
 
   & p {
     margin-bottom: 0; } }
-/*! purgecss end ignore */
