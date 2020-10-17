@@ -35,7 +35,7 @@ export default function Single({ data: { mdx } }) {
     title,
     description } = mdx.frontmatter;
 
-  const headingStyles = `relative z-10 mb-8 sm:mb-6 text-f3 xxs:text-f2 sm:text-f1 xxl:text-headline pr-4`;
+  const headingStyles = `relative z-10 mb-8 sm:mb-6 text-f3 xxs:text-f2 sm:text-f1 pr-4`;
   const titleStyles = `mb-2 sm:mb-4 block text-f9 md:text-f8 text-jasmine uppercase tracking-title font-title font-medium`;
 
   const createSeparator = function() {
