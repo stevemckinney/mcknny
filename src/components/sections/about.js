@@ -17,7 +17,7 @@ const About = (props) => {
       <section className={containerStyles}>
         <div className={contentStyles}>
           <h2 className="mb-6 text-f2 sm:text-f1 text-harp content content columns-all" style={{maxWidth: "580px"}}>
-            <span className="block pb-3 text-f8 md:text-f6 text-pearl uppercase tracking-title font-title font-normal">
+            <span className="block pb-2 md:pb-3 text-f8 md:text-f6 text-pearl lowercase font-title font-medium">
               Hi there, I’m Steve…
             </span>{" "}
             I design websites to help your company grow without the annoyances

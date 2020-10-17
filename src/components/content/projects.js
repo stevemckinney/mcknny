@@ -18,7 +18,7 @@ const Projects = () => {
           allMdx(
             sort: { fields: [frontmatter___date, frontmatter___priority], order: DESC }
             filter: { frontmatter: { published: { eq: true } } }
-            limit: 4
+            limit: 5
           ) {
             nodes {
               id
