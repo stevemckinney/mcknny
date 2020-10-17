@@ -107,8 +107,14 @@
     top: 320px;
     right: 492px;
   }
-
+  
   @screen xl {
+    top: auto;
+    bottom: -280px;
+    right: 788px;
+  }
+
+  @screen xxl {
     top: auto;
     bottom: -280px;
     right: 842px;
