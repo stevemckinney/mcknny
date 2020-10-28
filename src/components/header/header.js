@@ -22,13 +22,13 @@ const Header = (props) => {
     }
   `);
 
-  const headerStyles = `${props.className} ${styles.header} grid layout absolute md:fixed right-0 left-0 z-50 top-0 sm:py-6 lg:py-10 items-center text-harp`;
+  const headerStyles = `${props.className} ${styles.header} grid layout absolute md:fixed right-0 left-0 z-50 top-0 sm:py-6 lg:py-10 items-center text-pearl`;
 
   return (
     <React.Fragment>
       <header className={ headerStyles }>
         <Logo className="py-8" />
-        <span className={`${styles.subtitle} block text-f7 md:text-f6 font-medium font-title text-right sm:hidden` }dangerouslySetInnerHTML={{ __html: "ux & visual design" }} />
+        <span className={`${styles.subtitle} block text-f7 md:text-f6 font-medium font-title text-right md:hidden` }dangerouslySetInnerHTML={{ __html: "ux & visual design" }} />
         <Nav links={site.siteMetadata.navigation} />
       </header>
 
