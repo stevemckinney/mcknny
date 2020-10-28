@@ -6,3 +6,17 @@
 
   @screen lg {
     grid-column: content-start / 6; } }
+
+.beta {
+  border-radius: 20px;
+  padding: 2px 6px;
+  
+  &::before {
+    content: "";
+    background-color: var(--color-jasmine);
+    width: 6px;
+    height: 6px;
+    border-radius: var(--spacing);
+    margin-right: 4px;
+  }
+}

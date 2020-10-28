@@ -16,13 +16,18 @@ const Logo = (props) => {
       }
     }
   `);
-  const logoStyles = `${styles.logo} ${props.className} block text-f7 md:text-f6 font-medium font-title`;
+  const logoStyles = `${props.className} block text-f7 md:text-f6 font-medium font-title`;
 
   return (
     <React.Fragment>
-      <Link to="/" className={logoStyles}>
-        {site.siteMetadata.short_name}
-      </Link>
+      <div className={`${styles.logo} flex items-center`}>
+        <Link to="/" className={logoStyles}>
+          {site.siteMetadata.short_name}
+        </Link>
+        <Link to="/designing-in-the-open/" className={`${styles.beta} bg-prussian hover:bg-madison z-50 flex items-center text-jasmine uppercase font-bold text-f9 ml-2`}>
+          Beta
+        </Link>
+      </div>
     </React.Fragment>
   )
 }
