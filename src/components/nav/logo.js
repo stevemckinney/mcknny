@@ -20,11 +20,11 @@ const Logo = (props) => {
 
   return (
     <React.Fragment>
-      <div className={`${styles.logo} flex items-center`}>
+      <div className={`${styles.logo} flex items-center content-center flex-row`}>
         <Link to="/" className={logoStyles}>
           {site.siteMetadata.short_name}
         </Link>
-        <Link to="/designing-in-the-open/" className={`${styles.beta} bg-prussian hover:bg-madison z-50 flex items-center text-jasmine uppercase font-bold text-f9 ml-2`}>
+        <Link to="/designing-in-the-open/" className={`${styles.beta} ${props.className} bg-prussian hover:bg-madison z-50 flex items-center self-baseline text-jasmine uppercase font-bold text-f9 ml-2`}>
           Beta
         </Link>
       </div>

@@ -21,10 +21,10 @@ module.exports = {
         title: `process`,
         route: `/process`,
       },
-      {
-        title: `about`,
-        route: `/about`,
-      },
+      // {
+      //   title: `about`,
+      //   route: `/about`,
+      // },
       {
         title: `contact`,
         route: `/contact`,
