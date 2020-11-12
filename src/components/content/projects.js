@@ -16,7 +16,7 @@ const Projects = () => {
       query={graphql`
         query listProjects {
           allMdx(
-            sort: { fields: [frontmatter___date, frontmatter___priority], order: DESC }
+            sort: { fields: [frontmatter___priority], order: ASC }
             filter: { frontmatter: { published: { eq: true } } }
             limit: 5
           ) {
