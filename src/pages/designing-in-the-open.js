@@ -11,7 +11,7 @@ function DesigningPage() {
       <header className="full py-48 md:py-64 mb-16 bg-i relative text-center">
         <h1 className="relative z-10 mb-0 text-f2 xs:text-f1 xxl:text-headline px-16">Designing in the&nbsp;open</h1>
       </header>
-      <article className={`grid content sm:grid-cols-10 sm:col-gap-16 sm:row-gap-0`}>
+      <article className={`content max-w-full`}>
         <div style={{ maxWidth: "640px", margin: "auto" }}>
           <p>This page like much of this website is currently a work in progress. For anyone stumbling across this portfolio, they will likely see a largely complete design. But may find bugs and a lot incomplete bits of content.</p>
           <p>It’s not a great reflection—but a busy life leads to slow but steady progress. Over the coming <em>months</em>, I hope to complete more portfolio & content pages, refine the poorer parts of the design and layouts.</p>
