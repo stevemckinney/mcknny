@@ -41,6 +41,13 @@ function DesigningPage() {
         <ul>
           <li>Refine the responsive layout on <Link to="/work/" className="text-jasmine hover:text-sidecar">work</Link> at small screen sizes</li>
           <li>Learn how to use framer motion more effectively</li>
+          <li>
+            Create a better homepage flow
+            <ul>
+              <li className="pl-4">Break up the introduction and make it feel less like a text wall</li>
+              <li className="pl-4">Feature work better</li>
+            </ul>
+          </li>
         </ul>
       </article>
     </React.Fragment>
