@@ -14,7 +14,7 @@ import Contact from "@icons/contact.inline.svg";
 
 const Tabbar = ({ links }) => {
   const navStyles = `${styles.tabbar} z-50 fixed bottom-0 right-0 left-0 flex justify-center md:hidden w-screen`;
-  const linkStyles = `${styles.link} flex flex-col items-center text-f8 font-bold text-seagull no-underline`;
+  const linkStyles = `${styles.link} text-harp flex flex-col items-center text-f8 font-bold no-underline`;
 
   return (
     <React.Fragment>

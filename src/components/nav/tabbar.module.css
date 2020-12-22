@@ -6,13 +6,13 @@
   border-radius: 32px 32px 0 0;
 
   @supports (backdrop-filter: blur(1px)) {
-    backdrop-filter: blur(12px) saturate(8);
-    background-color: rgba(var(--color-prussian-rgb), .95);
+    backdrop-filter: blur(32px);
+    background-color: rgba(var(--color-prussian-rgb), .9);
   }
 }
 
 .link {
-  padding: calc((var(--spacing) * 2) + 1px) 4vw calc((var(--spacing) * 1.25) + 1px);
+  padding: calc((var(--spacing) * 2) + 1px) 4.5vw calc((var(--spacing) * 1.25) + 1px);
 
   & > svg {
     margin-bottom: calc(var(--spacing) / 4);
