@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 
 // css
 import styles from "./tabbar.module.css";
-
+3
 // icons
 import Home from "@icons/home.inline.svg";
 import Portfolio from "@icons/portfolio.inline.svg";
@@ -23,7 +23,7 @@ const Tabbar = ({ links }) => {
           className={linkStyles}
           key="home"
           to="/"
-          activeClassName="text-jasmine"
+          activeClassName="text-seagull"
         >
           <Home />
           home

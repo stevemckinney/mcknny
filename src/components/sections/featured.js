@@ -26,7 +26,7 @@ const Featured = (props) => {
 }
 
 Featured.defaultProps = {
-  className: "featured grid layout sm:grid-cols-10 full sm:content sm:col-gap-16 sm:row-gap-0 mdMax:pt-32",
+  className: "grid layout sm:grid-cols-10 full sm:content sm:col-gap-16 sm:row-gap-0 mdMax:pt-32",
 }
 
 Featured.propTypes = {
