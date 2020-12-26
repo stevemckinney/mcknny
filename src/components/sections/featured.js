@@ -12,7 +12,7 @@ const Featured = (props) => {
   return (
     <React.Fragment>
       <section className={props.className}>
-        <header className="flex justify-between items-center content-center mb-12 md:mb-20 col-span-10">
+        <header className="content sm:full flex justify-between items-center content-center mb-12 md:mb-20">
           <h2 className="text-f2 md:text-f1 text-harp content mb-0 content columns-all">
             Projects
           </h2>
@@ -26,7 +26,7 @@ const Featured = (props) => {
 }
 
 Featured.defaultProps = {
-  className: "featured grid content sm:grid-cols-10 sm:col-gap-16 sm:row-gap-0 mdMax:pt-32",
+  className: "grid layout sm:grid-cols-10 full sm:content sm:col-gap-16 sm:row-gap-0 mdMax:pt-32",
 }
 
 Featured.propTypes = {

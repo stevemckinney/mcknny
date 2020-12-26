@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 
 // css
 import styles from "./tabbar.module.css";
-
+3
 // icons
 import Home from "@icons/home.inline.svg";
 import Portfolio from "@icons/portfolio.inline.svg";
@@ -14,7 +14,7 @@ import Contact from "@icons/contact.inline.svg";
 
 const Tabbar = ({ links }) => {
   const navStyles = `${styles.tabbar} z-50 fixed bottom-0 right-0 left-0 flex justify-center md:hidden w-screen`;
-  const linkStyles = `${styles.link} flex flex-col items-center text-f8 font-bold text-seagull no-underline`;
+  const linkStyles = `${styles.link} text-harp flex flex-col items-center text-f8 font-bold no-underline`;
 
   return (
     <React.Fragment>
@@ -23,7 +23,7 @@ const Tabbar = ({ links }) => {
           className={linkStyles}
           key="home"
           to="/"
-          activeClassName="text-jasmine"
+          activeClassName="text-seagull"
         >
           <Home />
           home
