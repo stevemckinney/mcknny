@@ -11,11 +11,11 @@ import Large from "@images/desktop.inline.svg";
 // css
 import styles from "./screen.module.css";
 
-const Screen = ({ className, caption, children, device }) => {
+const Screen = ({ className, caption, children, device, scrollable }) => {
   return (
     <React.Fragment>
       {/* <Dump cls={`${styles[device]}-image`} /> */}
-      <figure className={`${styles.container} ${className}`}>
+      <figure className={`${styles.container} ${className} ${scrollable === true && "scrollable"}`}>
         <div className={`${styles[device]}`}>
           <div className={`${styles.image} absolute`}>
             {children}
@@ -41,6 +41,7 @@ Screen.propTypes = {
   className: PropTypes.string,
   children: PropTypes.node.isRequired,
   device: PropTypes.string.isRequired,
+  scrollable: PropTypes.bool
 }
 
 export default Screen;

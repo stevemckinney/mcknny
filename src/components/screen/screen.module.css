@@ -1,5 +1,7 @@
 .image {
-  overflow: hidden;
+  overflow: hidden; }
+  
+.scrollable .image {
   overflow-y: auto; }
 
 .xsmall {
