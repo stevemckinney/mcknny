@@ -24,7 +24,7 @@ const Logo = (props) => {
         <Link to="/" className={logoStyles}>
           {site.siteMetadata.short_name}
         </Link>
-        <Link to="/roadmap/" className={`${styles.beta} ${props.className} bg-prussian hover:bg-madison z-50 flex items-center self-baseline text-jasmine uppercase font-bold text-f9 ml-2`}>
+        <Link to="/roadmap/" className={`${styles.beta} ${props.className} bg-prussian hover:bg-madison z-50 text-jasmine uppercase font-bold font-display relative text-f9 ml-2`}>
           Beta
         </Link>
       </div>
