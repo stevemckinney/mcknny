@@ -49,11 +49,12 @@ body,
   }
 
   @screen md {
+    grid-gap: var(--grid-gutter);
     grid-template-columns: var(--grid-12);
   }
 
   @screen xxxl {
-    grid-gap: var(--grid-gutter);
+    grid-gap: calc(var(--grid-gutter * 1.5));
     grid-template-columns: var(--grid-16);
   }
 }
