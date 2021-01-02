@@ -36,7 +36,7 @@ export default function Single({ data: { mdx } }) {
     description } = mdx.frontmatter;
 
   const headingStyles = `relative z-10 mb-8 sm:mb-6 text-f3 xxs:text-f2 sm:text-f1 pr-4`;
-  const titleStyles = `mb-2 sm:mb-4 block text-f7 md:text-f5 text-jasmine lowercase font-title font-medium`;
+  const titleStyles = `block text-f7 md:text-f5 text-patina font-title lowercase mb-1`;
 
   const createSeparator = function() {
     return {__html: "/"};
@@ -54,7 +54,7 @@ export default function Single({ data: { mdx } }) {
           <h1 className={headingStyles}>{description}</h1>
         </div>
         <div className={`content max-w-full lg:screen-center lg:col-start-7 lg:col-span-6 xxxl:col-span-7 xxxl:col-start-9`}>
-          <ul className={`mx-0 mt-0 mb-8 sm:mb-4 p-0 flex scroll text-f9 md:text-f8 text-pearl uppercase tracking-title font-title font-medium`}>
+          <ul className={`mx-0 mt-0 mb-8 sm:mb-4 p-0 flex scroll block text-f7 md:text-f5 font-title lowercase`}>
             <li className="text-melon list-item pr-3 md:pr-4" key="r">Service</li>
             {service.map((name, i) => [
               <React.Fragment key={i}>

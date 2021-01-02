@@ -6,8 +6,11 @@ import PropTypes from "prop-types";
 import Header from "@components/header";
 import Footer from "@components/footer";
 
+// design
+import background from "../../images/bg.svg";
+
 function Layout({ className, children, location }) {
-  const layoutClass = `bg`;
+  const layoutClass = `bg-prussian bg-pattern`;
 
   return (
     <React.Fragment>
@@ -15,6 +18,9 @@ function Layout({ className, children, location }) {
         <link rel="preconnect" href="https://typekit.com" />
         <link rel="preconnect" href="https://use.typekit.net" />
         <link rel="preconnect" href="https://p.typekit.net" />
+        <style>
+          {`.bg-pattern { background: url(${background}) var(--color-prussian) top center repeat; }`}
+        </style>
       </Helmet>
 
       <Header className="header" />
