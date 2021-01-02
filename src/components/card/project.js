@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import Img from "gatsby-image";
-import { motion } from "framer-motion";
 //import Dump from "@components/dump";
 
 // css
@@ -12,19 +11,7 @@ const Project = ({ frontmatter, className, link }) => {
   return (
     <React.Fragment>
       {/*<Dump individualProjectProps={frontmatter} />*/}
-      <motion.article
-        className={`${styles.container} ${className}`}
-        whileHover={{
-          scale: .95
-        }}
-        whileTap={{
-          opacity: .6
-        }}
-        transition={{
-          duration: .4,
-          ease: "easeOut"
-        }}
-      >
+      <article className={`${styles.container} ${className}`}>
         <Link to={link} className="block">
           <Img fluid={frontmatter.image.childImageSharp.fluid} />
         </Link>
@@ -36,7 +23,7 @@ const Project = ({ frontmatter, className, link }) => {
             </Link>
           </h2>
         </div>
-      </motion.article>
+      </article>
     </React.Fragment>
   )
 }
