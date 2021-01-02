@@ -1,34 +1,10 @@
 import React from "react";
 import Helmet from "react-helmet";
 import PropTypes from "prop-types";
-import { motion, AnimatePresence } from "framer-motion";
 
 // components
 import Header from "@components/header";
 import Footer from "@components/footer";
-
-// animation
-const duration = .4
-
-  const variants = {
-    initial: {
-      opacity: 0,
-    },
-    enter: {
-      opacity: 1,
-      transition: {
-        duration: duration,
-        delay: duration,
-        when: "beforeChildren",
-        staggerChildren: 0.5,
-      },
-    },
-    exit: {
-      opacity: 0,
-      transition: { duration: duration },
-    },
-  }
-
 
 function Layout({ className, children, location }) {
   const layoutClass = `bg`;
@@ -43,18 +19,9 @@ function Layout({ className, children, location }) {
 
       <Header className="header" />
 
-      <AnimatePresence exitBeforeEnter>
-        <motion.main
-          className={className}
-          key={location.pathname}
-          variants={variants}
-          initial="initial"
-          animate="enter"
-          exit="exit"
-        >
-          {children}
-        </motion.main>
-      </AnimatePresence>
+      <main className={className} key={location.pathname}>
+        {children}
+      </main>
 
       <Footer />
     </React.Fragment>
