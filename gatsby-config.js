@@ -117,7 +117,8 @@ module.exports = {
           `opacity-40`,
           `grid-cols-10`,
           `image`,
-          ``,
+          `figure`,
+          `img`
         ],
         content: [
           path.join(process.cwd(), `content/**/!(*.d).{js,jsx,md,mdx,svg}`),
