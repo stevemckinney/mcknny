@@ -14,7 +14,7 @@ const Nav = ({ links }) => {
       <nav className={navStyles}>
         {links.map(link => (
           <Link className={linkStyles} partiallyActive={true} activeClassName="text-jasmine" key={link.title} to={link.route}>
-            <span variants={item} size={50}>{link.title}</span>
+            <span size={50}>{link.title}</span>
           </Link>
         ))}
       </nav>
