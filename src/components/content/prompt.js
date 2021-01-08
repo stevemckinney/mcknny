@@ -18,7 +18,7 @@ const Prompt = props => {
       <div className={promptClass}>
         <Link
           to={props.to}
-          className="p-8 absolute z-10 block transition font-display text-center leading-tight text-f2 sm:text-f1 xl:text-headline font-bold text-jasmine hover:text-melon transition duration-200"
+          className="p-8 absolute z-10 block transition font-display text-center leading-none text-f2 sm:text-f1 xl:text-headline font-bold text-jasmine hover:text-melon transition duration-200"
         >
           {props.text}
         </Link>

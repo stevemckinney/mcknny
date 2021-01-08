@@ -109,21 +109,6 @@ module.exports = {
       '-30': '-30deg',
       '45': '45deg',
     },
-    letterSpacing: {
-      tight: '-.5px',
-      tighter: '-1.5px',
-      headline: '-3px',
-      title: '2.5px'
-    },
-    lineHeight: {
-      none: '1',
-      tight: '1.25',
-      snug: '1.375',
-      normal: '1.5',
-      relaxed: '1.625',
-      loose: '2',
-      title: '1.111111111'
-    },
     extend: {
       spacing: {
         '36': '9rem'
