@@ -1,10 +1,8 @@
 const path = require(`path`);
-
 const resolveConfig = require(`tailwindcss/resolveConfig`);
-
 const tailwindConfig = require(`./tailwind.config.js`);
-
 const fullConfig = resolveConfig(tailwindConfig);
+
 module.exports = {
   siteMetadata: {
     title: `mcknny`,
@@ -87,7 +85,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-postcss`,
       options: {
-        postCssPlugins: [
+        postcssOptions: {
+          plugins: [
           require(`postcss-import`),
           require(`tailwindcss`)(tailwindConfig),
           require(`autoprefixer`),
@@ -104,27 +103,8 @@ module.exports = {
           ...(process.env.NODE_ENV === `production`
             ? [require(`cssnano`)]
             : []),
-        ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-purgecss`,
-      options: {
-        tailwind: true,
-        whitelist: [
-          `fill-shadow`,
-          `opacity-20`,
-          `opacity-40`,
-          `grid-cols-10`,
-          `image`,
-          `figure`,
-          `img`
-        ],
-        content: [
-          path.join(process.cwd(), `content/**/!(*.d).{js,jsx,md,mdx,svg}`),
-          path.join(process.cwd(), `src/**/!(*.d).{js,jsx,md,mdx,svg}`),
-        ],
-        purgeOnly: [`src/css/global.css`],
+          ],
+        },
       },
     },
     `gatsby-plugin-sharp`,
