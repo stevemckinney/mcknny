@@ -3,10 +3,11 @@ import PropTypes from "prop-types";
 
 // components
 import Link from "@components/link";
+
 // css
 import styles from "./prompt.module.css";
 
-// icons
+// illustration
 import Glasses from "@images/glasses.inline.svg";
 
 const Prompt = props => {
@@ -17,11 +18,9 @@ const Prompt = props => {
       <div className={promptClass}>
         <Link
           to={props.to}
-          className="p-8 absolute z-10"
+          className="p-8 absolute z-10 block transition font-display text-center leading-tight text-f2 sm:text-f1 xl:text-headline font-bold text-jasmine hover:text-melon transition duration-200"
         >
-          <span className="relative block transition font-display text-center leading-tight text-f2 sm:text-f1 xl:text-headline font-bold text-jasmine">
-            {props.text}
-          </span>
+          {props.text}
         </Link>
         <Glasses className={`${styles.glasses} flex-none`} style={{ marginBottom: "-12px" }} />
       </div>
