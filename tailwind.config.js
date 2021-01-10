@@ -1,7 +1,27 @@
 // See https://tailwindcss.com/docs/configuration for details
+const path = require(`path`);
 const { colors } = require(`tailwindcss/defaultTheme`);
 
 module.exports = {
+  purge: {
+    content: [
+      path.join(process.cwd(), `content/**/!(*.d).{js,jsx,md,mdx,svg}`),
+      path.join(process.cwd(), `src/**/!(*.d).{js,jsx,md,mdx,svg}`),
+    ],
+    purgeOnly: [`src/css/global.css`],
+    options: {
+      safelist: [
+        `fill-shadow`,
+        `opacity-20`,
+        `opacity-40`,
+        `grid-cols-10`,
+        `image`,
+        `figure`,
+        `img`
+      ],
+    }
+  },
+  darkMode: false,
   theme: {
     screens: {
       xxs: "360px",
@@ -89,21 +109,6 @@ module.exports = {
       '-30': '-30deg',
       '45': '45deg',
     },
-    letterSpacing: {
-      tight: '-.5px',
-      tighter: '-1.5px',
-      headline: '-3px',
-      title: '2.5px'
-    },
-    lineHeight: {
-      none: '1',
-      tight: '1.25',
-      snug: '1.375',
-      normal: '1.5',
-      relaxed: '1.625',
-      loose: '2',
-      title: '1.111111111'
-    },
     extend: {
       spacing: {
         '36': '9rem'
@@ -130,6 +135,4 @@ module.exports = {
     fontSize: ["responsive"],
   },
   corePlugins: {},
-  // https://github.com/tailwindcss/custom-forms
-  plugins: [require(`@tailwindcss/custom-forms`)],
 };
