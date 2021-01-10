@@ -16,7 +16,7 @@ const Logo = (props) => {
       }
     }
   `);
-  const logoStyles = `${props.className} block text-f7 md:text-f6 font-medium font-title`;
+  const logoStyles = `${props.className} block text-f8 md:text-f6 font-medium font-title`;
 
   return (
     <React.Fragment>
