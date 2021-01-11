@@ -28,7 +28,7 @@ const Header = (props) => {
     <React.Fragment>
       <header className={ headerStyles }>
         <Logo className="py-8" />
-        <span className={`${styles.subtitle} block text-f7 md:text-f6 font-medium font-title text-right md:hidden` }dangerouslySetInnerHTML={{ __html: "ux & visual design" }} />
+        <span className={`${styles.subtitle} block text-f8 md:text-f6 font-medium font-title text-right md:hidden` }dangerouslySetInnerHTML={{ __html: "ux & visual design" }} />
         <Nav links={site.siteMetadata.navigation} />
       </header>
 

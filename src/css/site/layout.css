@@ -4,15 +4,13 @@
  */
 html,
 body {
-  overflow-x: hidden;
-} 
+  overflow-x: hidden; } 
 
 body {
   max-width: 1920px;
   margin: auto;
   color: var(--color-pearl);
-  background-color: var(--color-daintree);
-}
+  background-color: var(--color-daintree); }
 
 body,
 #___gatsby,
@@ -20,9 +18,7 @@ body,
   min-height: 100vh;
   
   @supports (-webkit-touch-callout: none) {
-    min-height: -webkit-fill-available;
-  }
-}
+    min-height: -webkit-fill-available; } }
 
 /**
  * grid
@@ -32,73 +28,54 @@ body,
   grid-template-columns: var(--grid-6);
 
   @screen xs {
-    grid-template-columns: var(--grid-8);
-  }
+    grid-template-columns: var(--grid-8); }
 
   @screen md {
     grid-gap: var(--grid-gutter);
-    grid-template-columns: var(--grid-12);
-  }
+    grid-template-columns: var(--grid-12); }
 
   @screen xxxl {
     grid-gap: calc(var(--grid-gutter * 1.5));
-    grid-template-columns: var(--grid-16);
-  }
-}
+    grid-template-columns: var(--grid-16); } }
 
 .sm\:layout {
   grid-column-gap: calc(var(--grid-gutter) / 2);
-  grid-template-columns: var(--grid-6);
-}
+  grid-template-columns: var(--grid-6); }
 
 .md\:layout {
   @screen md {
     grid-column-gap: calc(var(--grid-gutter) / 2);
-    grid-template-columns: var(--grid-12);
-  }
-}
+    grid-template-columns: var(--grid-12); } }
 
 .lg\:layout {
   @screen lg {
     grid-column-gap: var(--grid-gutter);
-    grid-template-columns: var(--grid-16);
-  }
-}
+    grid-template-columns: var(--grid-16); } }
 
 .xxl\:layout {
   @screen xxl {
     grid-column-gap: var(--grid-gutter);
-    grid-template-columns: var(--grid-16);
-  }
-}
+    grid-template-columns: var(--grid-16); } }
 
 @responsive {
   .screen {
-    min-height: max(100vh, 640px);
-  }
+    min-height: max(100vh, 640px); }
 
   .screen-rows {
-    grid-template-rows: 25vh auto 25vh;
-  }
+    grid-template-rows: 25vh auto 25vh; }
 
   .screen-center {
-    grid-row-start: 2;
-  }
+    grid-row-start: 2; }
 
   .content {
-    grid-column: content-start / content-end;
-  }
+    grid-column: content-start / content-end; }
 
   .full {
-    grid-column: 1 / -1;
-  }
+    grid-column: 1 / -1; }
   
   .full-right {
-    grid-column: content-start / -1;
-  }
+    grid-column: content-start / -1; }
   
   .full-left {
-    grid-column: -1 / content-end;
-  }
-}
+    grid-column: -1 / content-end; } }
 /*! purgecss end ignore */
