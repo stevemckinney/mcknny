@@ -42,8 +42,9 @@ module.exports = {
       xxxlMax: {"max": "1659px"}
     },
     fontFamily: {
-      display: ["var(--font-display)"],
+      action: ["var(--font-action)"],
       body: ["var(--font-body)"],
+      display: ["var(--font-display)"],
       title: ["var(--font-title)"],
     },
     colors: {

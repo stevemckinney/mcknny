@@ -4,6 +4,9 @@ const tailwindConfig = require(`./tailwind.config.js`);
 const fullConfig = resolveConfig(tailwindConfig);
 
 module.exports = {
+  flags: {
+    PRESERVE_WEBPACK_CACHE: true,
+  },
   siteMetadata: {
     title: `mcknny`,
     short_name: `mcknny`,

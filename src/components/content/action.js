@@ -9,7 +9,7 @@ import styles from "./action.module.css";
 import Arrow from "@icons/arrow-right.inline.svg";
 
 const Action = props => {
-  const actionClass = `relative text-f6 sm:text-f5 md:text-f4 font-bold text-jasmine flex items-center action font-body ${styles.action} ${props.className}`;
+  const actionClass = `relative text-f6 sm:text-f5 md:text-f4 font-bold text-tumbleweed flex items-center action font-action lowercase ${styles.action} ${props.className}`;
 
   return (
     <React.Fragment>
