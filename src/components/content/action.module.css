@@ -4,9 +4,18 @@
     color: var(--color-sidecar);
 
     & .icon {
-      transform: translate3d(4px, 2px, 0); } } }
+      transform: translate3d(4px, 0, 0);
+     
+      @screen md {
+        transform: translate3d(4px, -2px, 0); } } } }
 
 .icon {
   position: relative;
-  transition: .2s;
-  transform: translate3d(0, 2px, 0); }
+  transform: translate3d(0, 0, 0);
+  
+  @screen md {
+    transform: translate3d(0, -2px, 0); } }
+
+.action,
+.icon {
+  transition: color .2s ease-out, transform .4s ease-out; }
