@@ -35,7 +35,7 @@ body,
     grid-template-columns: var(--grid-12); }
 
   @screen xxxl {
-    grid-gap: calc(var(--grid-gutter * 1.5));
+    grid-gap: calc(var(--grid-gutter) * 1.5);
     grid-template-columns: var(--grid-16); } }
 
 .sm\:layout {

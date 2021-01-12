@@ -6,8 +6,8 @@
   border-radius: 32px 32px 0 0;
 
   @supports (backdrop-filter: blur(1px)) {
-    backdrop-filter: saturate(180%) blur(20px);
-    background-color: rgba(var(--color-prussian-rgb), .9);
+    backdrop-filter: blur(64px) saturate(1) contrast(120%) brightness(140%);
+    background-color: rgba(var(--color-prussian-rgb), .8);
   }
 }
 

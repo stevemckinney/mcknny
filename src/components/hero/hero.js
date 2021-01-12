@@ -16,7 +16,7 @@ import Sharpener from "@images/sharpener.inline.svg";
 
 const Hero = (props) => {
   const heroStyles = `${props.className} ${styles.container} grid layout items-center relative`;
-  const headingStyles = `relative z-10 mb-6 sm:mb-6 font-display leading-tight text-f3 xxs:text-f2 sm:text-f1 lg:text-headline`;
+  const headingStyles = `relative z-10 mb-6 sm:mb-6 font-display leading-none text-f3 xxs:text-f2 sm:text-f1 lg:text-headline`;
 
   return (
     <React.Fragment>
@@ -28,7 +28,7 @@ const Hero = (props) => {
               __html: `Pretty good design that&nbsp;keeps your readers&nbsp;returning`,
             }}
           />
-          <Action to={props.link} text="View case studies" />
+          <Action to={props.link} text="See the work" />
         </div>
         <Palomino className={`illo ${styles.palomino}`} role="presentation" />
         <Pencil className={`illo ${styles.pencil}`} role="presentation" />

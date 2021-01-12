@@ -20,7 +20,7 @@ p {
 p, ul, ol {
   font-size: var(--f5);
   
-  @screen lg {
+  @screen sm {
     font-size: var(--f4); } }
 
 a {

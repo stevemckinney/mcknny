@@ -16,19 +16,19 @@ const About = (props) => {
     <React.Fragment>
       <section className={containerStyles}>
         <div className={contentStyles}>
-          <h2 className="mb-6 text-f2 sm:text-f1 text-pearl content content columns-all" style={{maxWidth: "580px"}}>
-            <span className="block pb-2 md:pb-3 text-f6 md:text-f4 text-harp lowercase font-bold font-action">
+          <h2 className="mb-6 sm:mb-8 text-f2 sm:text-f1 text-pearl content content columns-all" style={{maxWidth: "580px"}}>
+            <span className="block pb-1 sm:pb-2 text-f6 sm:text-f4 text-harp lowercase font-bold font-action">
               Hi there, I’m Steve…
             </span>{" "}
             I design websites to help your company grow without the annoyances
           </h2>
-          <p className="mb-5">
+          <p className="mb-4 sm:mb-6">
             You’ve read an article, viewed a product, on the web—more than once or twice—and something feels off. Maybe it’s the amount of time the page had taken to load. Maybe it’s how much your head is moving to compensate for long line lengths.
           </p>
-          <p className="mb-5">
+          <p className="mb-4 sm:mb-6">
             Or maybe it’s down to the amount of stuff vying for your attention. Everything from popups, manipulative messaging and other dark patterns. It sends a negative impression—why would you spend time here?
           </p>
-          <p className="mb-5">
+          <p className="mb-6 sm:mb-8">
             I know how important it is for you to improve sales, increase newsletter subscribers and the like. However, you can grow for the long term without short term tactics.
           </p>
           <Action to="/process/" text="Read my process" />
