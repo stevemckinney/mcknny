@@ -9,7 +9,6 @@
  * xs max: 782px
  */
 .container {
-  background: url(../../images/bg.svg) var(--color-spruce) top center repeat;
   grid-column: 1 / -1;
   grid-template-rows: repeat(3, [row] auto);
 }

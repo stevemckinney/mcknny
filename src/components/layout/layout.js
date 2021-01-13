@@ -19,7 +19,7 @@ function Layout({ className, children, location }) {
         <link rel="preconnect" href="https://use.typekit.net" />
         <link rel="preconnect" href="https://p.typekit.net" />
         <style>
-          {`.bg-pattern { background: url(${background}) var(--color-prussian) top center repeat; }`}
+          {`.bg-pattern { background-image: url(${background}); background-position: top center; background-repeat: repeat; }`}
         </style>
       </Helmet>
 
