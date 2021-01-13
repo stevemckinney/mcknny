@@ -1,7 +1,7 @@
-/*! purgecss start ignore */
 /**
  * global
  */
+/*! purgecss start ignore */
 html,
 body {
   overflow-x: hidden; } 
@@ -19,10 +19,12 @@ body,
   
   @supports (-webkit-touch-callout: none) {
     min-height: -webkit-fill-available; } }
+/*! purgecss end ignore */
 
 /**
  * grid
  */
+/*! purgecss start ignore */
 .layout {
   grid-column-gap: calc(var(--grid-gutter) / 2);
   grid-template-columns: var(--grid-6);
@@ -56,6 +58,7 @@ body,
   @screen xxl {
     grid-column-gap: var(--grid-gutter);
     grid-template-columns: var(--grid-16); } }
+/*! purgecss end ignore */
 
 @responsive {
   .screen {
@@ -78,4 +81,3 @@ body,
   
   .full-left {
     grid-column: -1 / content-end; } }
-/*! purgecss end ignore */
