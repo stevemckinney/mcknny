@@ -1,6 +1,7 @@
 import React from "react";
 
 // components
+import SEO from "@components/seo";
 import Projects from "@components/content/projects";
 
 const WorkPage = () => {
