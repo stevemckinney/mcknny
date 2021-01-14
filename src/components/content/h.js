@@ -18,7 +18,7 @@ const H = props => {
 }
 
 H.defaultProps = {
-  className: "heading mb-2 md:mb-4",
+  className: "heading text-jasmine mb-2 md:mb-4",
 }
 
 H.propTypes = {

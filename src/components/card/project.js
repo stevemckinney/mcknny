@@ -10,31 +10,22 @@ import styles from "./project.module.css";
 
 // motion
 const text = {
-  initial: {
-    duration: .8,
-    y: 0,
-    transition: {
-      type: "tween",
-      ease: "easeInOut"
-    },
+  initial: { scale: 1 },
+  transition:{
+    duration: .4,
   },
   hover: {
-    duration: .8,
-    y: -48
+    y: -48,
   }
 }
 
 const image = {
-  initial:{ scale: 0.7 },
-  animate:{ scale: 1.7 },
+  initial: { scale: 1 },
   transition:{
-    type: "tween",
-    duration: "2",
-    delay: "1"
+    duration: .4,
   },
   hover: {
-    duration: .4,
-    scale: .95,
+    scale: .9,
   }
 }
 

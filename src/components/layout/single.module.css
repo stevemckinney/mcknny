@@ -26,7 +26,7 @@
   & > :matches(p, ul, ol) {
     margin-top: calc(var(--spacing) * 2); }
 
-  & :matches(h1, h2, h3, h4, h5, h6) {
+  & > :matches(h1, h2, h3, h4, h5, h6) {
     color: var(--color-melon); }
 
   & > :matches(h1, h2, h3, h4, h5, h6, p, ul, ol) {
