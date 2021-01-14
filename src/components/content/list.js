@@ -20,7 +20,7 @@ const List = props => {
 }
 
 List.defaultProps = {
-  className: "p-0 m-0 text-remy",
+  className: "p-0 m-0 text-harp",
   text: "Find out more"
 }
 
