@@ -45,7 +45,7 @@ export default function Single({ data: { mdx } }) {
   return (
     <React.Fragment>
       <SEO title={title}/>
-      <header className="grid layout full py-48 md:py-64 lg:py-0 lg:screen lg:screen-rows bg-i relative">
+      <header className="grid layout full py-48 md:py-64 lg:py-0 lg:screen lg:screen-rows bg-i relative bg-pattern bg-spruce">
         <div className={`content lg:screen-center lg:col-span-4 lg:col-start-3 xxxl:col-span-5 xxxl:col-start-4`}>
           {url ?
             <a href={url} className={titleStyles}>{title}</a> :
