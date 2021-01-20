@@ -9,7 +9,7 @@ import Featured from "@components/sections/featured";
 function IndexPage() {
   return (
     <React.Fragment>
-      <SEO title="lovely design for content focused companies" />
+      <SEO title="design for companies who value their customers" />
       <Hero className="screen bg-i" link="/work/" />
       <About />
       <Featured />

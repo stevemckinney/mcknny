@@ -94,9 +94,12 @@ module.exports = {
       "f5": "18px",
       "f4": "21px",
       "f3": "24px",
+      "f3.5": "30px",
       "f2": "36px",
+      "f2.5": "40px",
       "f1": "56px",
-      "headline": "72px"
+      "f1.5": "64px",
+      "headline": "72px",
     },
     minWidth: {
       '0': '0',
