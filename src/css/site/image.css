@@ -1,9 +1,13 @@
 .single .gatsby-resp-image-wrapper {
   overflow: hidden; }
+  
+.screen-medium .gatsby-resp-image-background-image {
+  padding-bottom: 73.2064421669% !important; }
 
 .figure img {
   max-width: 100%;
+  
+  outline: 1px solid red;
 
   @screen lg {
-    border-radius: var(--radius);
-    border-radius: 32px; } }
+    border-radius: var(calc(--radius) * 2); } }

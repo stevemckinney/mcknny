@@ -48,6 +48,10 @@
     @screen mdMax {
       height: auto;
       max-width: calc(1534px / 1.75); } }
+  
+  & .gatsby-resp-image-background-image {
+    padding-bottom: calc(( 1000 / 1366 ) * 100%) !important;
+  }
 
   & .image {
     border-radius: 20px;

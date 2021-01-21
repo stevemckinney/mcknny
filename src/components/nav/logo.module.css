@@ -9,7 +9,7 @@
 
 .beta {
   border-radius: 20px;
-  padding: 0 8px 0 17px;
+  padding: 1px 8px 0 17px;
   line-height: 18px;
   height: 18px;
   
@@ -18,7 +18,7 @@
     position: absolute;
     top: 6px;
     left: 6px;
-    background-color: var(--color-jasmine);
+    background-color: var(--color-tumbleweed);
     width: 6px;
     height: 6px;
     border-radius: var(--spacing); } }

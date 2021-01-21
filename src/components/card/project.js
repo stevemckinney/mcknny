@@ -10,13 +10,23 @@ import styles from "./project.module.css";
 
 // motion
 const list = {
-  visible: { opacity: 1 },
-  hidden: { opacity: 0 },
+  hover: {
+    scale: .95
+  },
+  transition: {
+    staggerChildren: 0.5
+  }
 }
 
 const item = {
-  visible: { opacity: 1, x: 0 },
-  hidden: { opacity: 0, x: -100 },
+  visible: { 
+    opacity: 1,
+    x: 0
+  },
+  hidden: {
+    opacity: 0,
+    x: -48
+  },
 }
 
 const Project = ({ frontmatter, className, link }) => {
