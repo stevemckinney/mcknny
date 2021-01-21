@@ -30,6 +30,13 @@ const Hero = (props) => {
           />
           <Action to={props.link} text="See the work" />
         </div>
+        <style>
+        {`
+          .status-bar {
+            display: none;
+          }
+        `}
+        </style>
         <Palomino className={`illo ${styles.palomino}`} role="presentation" />
         <Pencil className={`illo ${styles.pencil}`} role="presentation" />
         <Phone className={`illo ${styles.phone}`} role="presentation" />

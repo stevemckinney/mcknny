@@ -10,7 +10,7 @@
  */
 .container {
   grid-column: 1 / -1;
-  grid-template-rows: repeat(3, [row] auto);
+  grid-template-rows: repeat(3, [row] auto);  
 }
 
 .content {

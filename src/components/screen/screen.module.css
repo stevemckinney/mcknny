@@ -43,11 +43,6 @@
       bottom: 74px;
       left: 38px; } } }
 
-.gatsby-resp-image-background-image {
-  outline: 1px solid red;
-  padding-bottom: 73.206442167% !important;
-}
-
 .medium {
   & svg {
     @screen mdMax {

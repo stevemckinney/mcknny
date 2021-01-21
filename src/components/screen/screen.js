@@ -16,7 +16,7 @@ const Screen = ({ className, caption, children, device, scrollable }) => {
     <React.Fragment>
       {/* <Dump cls={`${styles[device]}-image`} /> */}
       <figure className={`${styles.container} ${className} ${scrollable === true && "scrollable"}`}>
-        <div className={`${styles[device]}`}>
+        <div className={`${styles[device]} screen-${device}`}>
           <div className={`${styles.image} absolute`}>
             {children}
           </div>
