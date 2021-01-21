@@ -10,4 +10,4 @@
   outline: 1px solid red;
 
   @screen lg {
-    border-radius: var(calc(--radius) * 2); } }
+    border-radius: calc(var(--radius) * 2); } }
