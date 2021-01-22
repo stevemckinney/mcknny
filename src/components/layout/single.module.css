@@ -1,9 +1,9 @@
 /*! purgecss start ignore */
 .article {
   grid-row-gap: 0;
-  margin-top: -17.5vh;
+  margin-top: theme('margin.-32');
 
-  @screen xl {
+  @screen md {
     margin-top: -25vh; }
 
   /* all */
