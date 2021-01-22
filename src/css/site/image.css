@@ -6,8 +6,6 @@
 
 .figure img {
   max-width: 100%;
-  
-  outline: 1px solid red;
 
   @screen lg {
     border-radius: calc(var(--radius) * 2); } }

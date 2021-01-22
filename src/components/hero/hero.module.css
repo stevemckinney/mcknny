@@ -147,6 +147,10 @@
     bottom: 4px;
     right: 362px;
   }
+  
+  @screen xxl {
+    bottom: 32px;
+  }
 }
 
 .posca {
