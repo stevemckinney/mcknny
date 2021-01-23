@@ -11,22 +11,24 @@ import styles from "./project.module.css";
 // motion
 const list = {
   hover: {
-    scale: .95
-  },
-  transition: {
-    staggerChildren: 0.5
+    scale: .95,
+    transition: {
+      ease: [.12, 0, .39, 0],
+      duration: .2
+    },
   }
 }
 
-const item = {
-  visible: { 
+const image = {
+  hover: { 
+    opacity: .8,
+  }
+}
+
+const title = {
+  hover: { 
     opacity: 1,
-    x: 0
-  },
-  hidden: {
-    opacity: 0,
-    x: -48
-  },
+  }
 }
 
 const Project = ({ frontmatter, className, link }) => {
@@ -37,15 +39,16 @@ const Project = ({ frontmatter, className, link }) => {
         initial="hidden"
         animate="visible"
         whileHover="hover"
+        whileTap="hover"
         variants={list}
         className={`${styles.container} ${className}`}
       >
-        <motion.div variants={item}>
+        <motion.div variants={image}>
           <Link to={link} className="block">
             <Img fluid={frontmatter.image.childImageSharp.fluid} />
           </Link>
         </motion.div>
-        <motion.div variants={item} className="meta px-8 py-8 lg:px-20 xl:py-12 xl:px-24 xxl:px-16 text-center">
+        <motion.div variants={title} className="meta px-8 py-8 lg:px-20 xl:py-12 xl:px-24 xxl:px-16 text-center">
           <p className="block text-f7 md:text-f6 lg:text-f5 text-patina font-medium font-title lowercase mb-1">{frontmatter.title}</p>
           <h2 className="font-headline text-f3 lg:text-f2 m-0 w-11/12 mx-auto">
             <Link to={link} className="block">
