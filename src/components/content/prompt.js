@@ -11,14 +11,12 @@ import styles from "./prompt.module.css";
 import Glasses from "@images/glasses.inline.svg";
 
 const Prompt = props => {
-  const promptClass = `py-36 relative flex justify-center items-center prompt`;
-
   return (
     <React.Fragment>
-      <div className={promptClass}>
+      <div className={`${styles.prompt} py-36 relative flex justify-center items-center`}>
         <Link
           to={props.to}
-          className="p-8 absolute z-10 block transition font-display text-center leading-none text-f2 sm:text-f1 xl:text-headline font-bold text-jasmine hover:text-melon transition duration-200"
+          className={`${styles.link} p-8 absolute z-10 block transition font-display text-center leading-none text-f2 sm:text-f1 xl:text-headline font-bold text-jasmine hover:text-melon transition duration-200`}
         >
           {props.text}
         </Link>
