@@ -1,6 +1,15 @@
 .container {
+  &:hover .image {
+    transform: scale(.875) translateY(16px); }
+  
+  &:hover .meta {
+    transform: translateY(-48px); }
+  
   /* 664x708 */
   & img,
   & .gatsby-image-wrapper {
     /* max-height: 708px; */
     border-radius: var(--radius); } }
+
+.meta {
+  transition: color, transform .2s; }

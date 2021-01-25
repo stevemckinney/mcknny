@@ -3,9 +3,6 @@ import PropTypes from "prop-types";
 import { graphql, useStaticQuery } from "gatsby";
 
 // components
-import Profile from "@components/sections/profile";
-import Divider from "@components/content/divider";
-import Prompt from "@components/content/prompt";
 import Bullet from "@components/content/bullet";
 
 // style
@@ -26,11 +23,6 @@ const Footer = (props) => {
 
   return (
     <React.Fragment>
-      <Prompt className="py-36 grid layoutflex items-end mdMax:justify-center md:items-center" />
-      <div className="grid layout">
-        <Divider className="divider" />
-      </div>
-      <Profile className="py-36 grid layout flex items-end mdMax:justify-center md:items-center" />
       <footer className={footerStyles}>
         <p className="content mb-0 text-f8 text-pearl lowercase font-title font-medium text-center">
           © {new Date().getFullYear()}<Bullet className="bg-patina mx-3" />{site.siteMetadata.title}<Bullet className="bg-patina mx-3" />designed & built with figma, gatsby & netlify
