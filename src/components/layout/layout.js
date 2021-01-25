@@ -5,6 +5,9 @@ import PropTypes from "prop-types";
 // components
 import Header from "@components/header";
 import Footer from "@components/footer";
+import Profile from "@components/sections/profile";
+import Divider from "@components/content/divider";
+import Prompt from "@components/content/prompt";
 
 // design
 import background from "../../images/bg.svg";
@@ -28,7 +31,12 @@ function Layout({ className, children, location }) {
       <main className={className} key={location.pathname}>
         {children}
       </main>
-
+      
+      <Prompt className="py-36 grid layoutflex items-end mdMax:justify-center md:items-center" />
+      <div className="grid layout">
+        <Divider className="divider" />
+      </div>
+      <Profile className="py-36 grid layout flex items-end mdMax:justify-center md:items-center" />
       <Footer />
     </React.Fragment>
   );

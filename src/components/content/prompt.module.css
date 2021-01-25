@@ -1,12 +1,7 @@
-.prompt {
-  
-}
-
 .glasses {
   @screen smMax {
     position: relative;
     transform: rotate(-15deg) translate3d(-24%, 0, 0); } }
     
 .link {
-  position: relative;
   top: -8px; }
