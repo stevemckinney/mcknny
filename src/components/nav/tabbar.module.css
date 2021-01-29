@@ -1,13 +1,17 @@
 .tabbar {
+  --safe-area-inset-right: env(safe-area-inset-top);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --safe-area-inset-left: env(safe-area-inset-top);
+  
   padding: 0 calc(var(--spacing) * 2);
-  padding: 0 env(safe-area-inset-right) env(safe-area-inset-bottom)
-    env(safe-area-inset-left);
-  background-color: rgba(var(--color-prussian-rgb), .9);
+  padding: 0 calc((var(--spacing) * 4) + var(--safe-area-inset-right)) env(safe-area-inset-bottom)
+    calc((var(--spacing) * 4) + var(--safe-area-inset-left));
+  background-color: rgba(var(--color-prussian-rgb), 1);
   border-radius: 32px 32px 0 0;
 
   @supports (backdrop-filter: blur(1px)) {
-    backdrop-filter: blur(48px) saturate(2) contrast(120%);
-    background-color: rgba(var(--color-prussian-rgb), .8);
+    backdrop-filter: blur(48px) saturate(6) contrast(120%);
+    background-color: rgba(var(--color-prussian-rgb), .9);
   }
 }
 
