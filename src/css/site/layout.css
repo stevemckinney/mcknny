@@ -24,6 +24,7 @@ body,
 /**
  * grid
  */
+/* autoprefixer: off */
 /*! purgecss start ignore */
 .layout {
   grid-column-gap: calc(var(--grid-gutter) / 2);
@@ -59,6 +60,7 @@ body,
     grid-column-gap: var(--grid-gutter);
     grid-template-columns: var(--grid-16); } }
 /*! purgecss end ignore */
+/* autoprefixer: on */
 
 @responsive {
   .screen {
