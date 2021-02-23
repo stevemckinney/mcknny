@@ -1,4 +1,5 @@
 const path = require(`path`);
+const remarkSlug = require(`remark-slug`);
 const resolveConfig = require(`tailwindcss/resolveConfig`);
 const tailwindConfig = require(`./tailwind.config.js`);
 const fullConfig = resolveConfig(tailwindConfig);
@@ -125,6 +126,7 @@ module.exports = {
           `gatsby-remark-unwrap-images`,
           `gatsby-remark-smartypants`,
           `gatsby-plugin-feed-mdx`,
+          `gatsby-remark-slug`,
           {
             resolve: `gatsby-remark-copy-linked-files`,
             options: {

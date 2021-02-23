@@ -2,8 +2,7 @@
  * global
  */
 /*! purgecss start ignore */
-html,
-body {
+html {
   overflow-x: hidden; } 
 
 body {
@@ -74,6 +73,12 @@ body,
 
   .content {
     grid-column: content-start / content-end; }
+  
+  .content-start {
+    grid-column-start: content-start; }
+  
+  .content-end {
+    grid-column-end: content-end; }
 
   .full {
     grid-column: 1 / -1; }

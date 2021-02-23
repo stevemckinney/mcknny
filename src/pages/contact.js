@@ -14,7 +14,7 @@ function ContactPage() {
       </header>
       <article className={`grid layout full gap-y-8 pt-16`}>
         <p className="text-center content">You can email me at <a href="mailto:hi@mcknny.com" className="text-tumbleweed hover:text-sidecar transition">hi@mcknny.com</a> but feel free to use the contact form.</p>
-        <form method="post" action="/success" netlify-honeypot="number" data-netlify="true" name="contact" className="grid grid-cols-1 gap-8 content">
+        <form method="post" action="/success" netlify-honeypot="number" data-netlify="true" name="contact" className="grid grid-cols-1 gap-8 lg:col-start-7 lg:col-span-6">
           <input type="hidden" name="number" />
           <input type="hidden" name="form-name" value="contact" />
           

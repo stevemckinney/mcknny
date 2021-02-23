@@ -92,7 +92,7 @@ module.exports = {
         prussian: "var(--color-prussian)",
         daintree: "var(--color-daintree)",
         seagull: "var(--color-seagull)",
-        ohahu: "var(--color-ohahu)",
+        onahau: "var(--color-onahau)",
   
         // green
         jungle: "var(--color-jungle)",
