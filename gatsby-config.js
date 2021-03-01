@@ -127,7 +127,6 @@ module.exports = {
           `gatsby-remark-smartypants`,
           `gatsby-plugin-feed-mdx`,
           `gatsby-remark-slug`,
-          `gatsby-remark-embed-figma`,
           {
             resolve: `gatsby-remark-copy-linked-files`,
             options: {
