@@ -10,7 +10,8 @@ const Dump = props => (
       position: "relative",
       zIndex: "20",
       marginBottom: "32px",
-      overflow: "hidden"
+      overflow: "auto",
+      maxHeight: "480px"
     }}>
     {Object.entries(props).map(([key, val]) => (
       <pre key={key}>

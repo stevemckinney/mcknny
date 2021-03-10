@@ -19,14 +19,15 @@ const Footer = (props) => {
       }
     }
   `);
-  const footerStyles = `${props.className} ${styles.footer} grid layout flex items-end md:items-center mdMax:justify-center pb-48 md:pb-16`;
+  const footerStyles = `${props.className} ${styles.footer} flex lg:grid layout items-end md:items-center mdMax:justify-center pb-48 md:pb-16`;
 
   return (
     <React.Fragment>
       <footer className={footerStyles}>
-        <p className="content mb-0 text-f8 text-pearl lowercase font-title font-medium text-center">
-          © {new Date().getFullYear()}<Bullet className="bg-patina mx-3" />{site.siteMetadata.title}<Bullet className="bg-patina mx-3" />designed & built with figma, gatsby & netlify
+        <p className="lg:content-start lg:col-end-6 mb-0 text-f8 text-pearl lowercase font-title font-medium">
+          © {new Date().getFullYear()}<Bullet className="bg-patina mx-3" />{site.siteMetadata.title}
         </p>
+        <p className="lg:col-start-6 lg:content-end mb-0 text-f8 text-pearl lowercase font-title font-medium text-right">designed & built with figma, gatsby & netlify</p>
       </footer>
     </React.Fragment>
   );

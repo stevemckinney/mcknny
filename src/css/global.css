@@ -4,6 +4,7 @@
  */
 @import "framework/reset";
 @import "framework/selectors";
+@import "framework/form";
 @import "tailwindcss/components";
 
 /**

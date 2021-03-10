@@ -1,0 +1,19 @@
+.contents {
+  /* display: none; */
+  /* grid-row: 1; */
+  position: sticky;
+  top: 320px;
+  left: 0;
+  max-height: calc(-320px + 100vh);
+  overflow-x: auto;
+  overflow-y: auto;
+  padding-bottom: 16px;
+  
+  & li {
+    margin: 0 !important; }
+  
+  & li,
+  & a {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; } }

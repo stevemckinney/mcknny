@@ -2,8 +2,7 @@
  * global
  */
 /*! purgecss start ignore */
-html,
-body {
+html {
   overflow-x: hidden; } 
 
 body {
@@ -24,6 +23,7 @@ body,
 /**
  * grid
  */
+/* autoprefixer: off */
 /*! purgecss start ignore */
 .layout {
   grid-column-gap: calc(var(--grid-gutter) / 2);
@@ -59,6 +59,7 @@ body,
     grid-column-gap: var(--grid-gutter);
     grid-template-columns: var(--grid-16); } }
 /*! purgecss end ignore */
+/* autoprefixer: on */
 
 @responsive {
   .screen {
@@ -72,6 +73,12 @@ body,
 
   .content {
     grid-column: content-start / content-end; }
+  
+  .content-start {
+    grid-column-start: content-start; }
+  
+  .content-end {
+    grid-column-end: content-end; }
 
   .full {
     grid-column: 1 / -1; }

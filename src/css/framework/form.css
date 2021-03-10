@@ -1,0 +1,11 @@
+.input {
+  @apply font-body;
+  border: none;
+  box-shadow: inset 0 0 0 2px var(--color-madison);
+  appearance: none;
+  outline: none;
+  max-width: 100%;
+  line-height: normal;
+  
+  &:focus {
+    box-shadow: inset 0 0 0 2px var(--color-seagull); } }

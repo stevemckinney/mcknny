@@ -47,45 +47,6 @@ module.exports = {
       display: ["var(--font-display)"],
       title: ["var(--font-title)"],
     },
-    colors: {
-      // pwa
-      background_color: "#fff",
-      theme_color: "#00ffff",
-
-      // general
-      black: colors.black,
-      white: colors.white,
-
-      // blue
-      madison: "var(--color-madison)",
-      prussian: "var(--color-prussian)",
-      seagull: "var(--color-seagull)",
-      ohahu: "var(--color-ohahu)",
-
-      // green
-      jungle: "var(--color-jungle)",
-      spruce: "var(--color-spruce)",
-      patina: "var(--color-patina)",
-      harp: "var(--color-harp)",
-      blanc: "var(--color-blanc)",
-
-      // pink
-      thulian: "var(--color-thulian)",
-      melon: "var(--color-melon)",
-      remy: "var(--color-remy)",
-      pearl: "var(--color-pearl)",
-
-      // orange
-      feldspar: "var(--color-feldspar)",
-      tumbleweed: "var(--color-tumbleweed)",
-
-      // yellow
-      goldenrod: "var(--color-goldenrod)",
-      gold: "var(--color-goldenrod)",
-      jasmine: "var(--color-jasmine)",
-      marigold: "var(--color-gold)",
-      sidecar: "var(--color-sidecar)",
-    },
     fontSize: {
       "f9": "10px",
       "f8": "12px",
@@ -117,21 +78,46 @@ module.exports = {
       spacing: {
         '36': '9rem'
       },
-      gridTemplateColumns: {
-        '16': 'repeat(16, minmax(0, 1fr))'
+      colors: {
+        // pwa
+        background_color: "#fff",
+        theme_color: "#00ffff",
+  
+        // general
+        black: colors.black,
+        white: colors.white,
+  
+        // blue
+        madison: "var(--color-madison)",
+        prussian: "var(--color-prussian)",
+        daintree: "var(--color-daintree)",
+        seagull: "var(--color-seagull)",
+        onahau: "var(--color-onahau)",
+  
+        // green
+        jungle: "var(--color-jungle)",
+        spruce: "var(--color-spruce)",
+        patina: "var(--color-patina)",
+        harp: "var(--color-harp)",
+        blanc: "var(--color-blanc)",
+  
+        // pink
+        thulian: "var(--color-thulian)",
+        melon: "var(--color-melon)",
+        remy: "var(--color-remy)",
+        pearl: "var(--color-pearl)",
+  
+        // orange
+        feldspar: "var(--color-feldspar)",
+        tumbleweed: "var(--color-tumbleweed)",
+  
+        // yellow
+        goldenrod: "var(--color-goldenrod)",
+        gold: "var(--color-goldenrod)",
+        jasmine: "var(--color-jasmine)",
+        marigold: "var(--color-gold)",
+        sidecar: "var(--color-sidecar)",
       },
-      gridColumnStart: {
-        '13': '13',
-        '14': '14',
-        '15': '15',
-        '16': '16'
-      },
-      gridColumnEnd: {
-        '13': '13',
-        '14': '14',
-        '15': '15',
-        '16': '16'
-      }
     },
   },
   variants: {
