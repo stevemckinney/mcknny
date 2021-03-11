@@ -12,7 +12,7 @@ import styles from "./single.module.css";
 
 // components
 import SEO from '@components/seo';
-import TableOfContents from '@components/nav/contents';
+// import TableOfContents from '@components/nav/contents';
 import Action from '@components/content/action';
 import Bullet from '@components/content/bullet';
 import H from '@components/content/h';
@@ -39,9 +39,9 @@ export default function Single({ data: { mdx } }) {
     title,
     description } = mdx.frontmatter;
     
-  const {
-    tableOfContents
-  } = mdx;
+  // const {
+  //   tableOfContents
+  // } = mdx;
 
   const headingStyles = `relative z-10 mb-8 sm:mb-6 pr-4 text-f3 xxs:text-f2 md:text-f1`;
   const titleStyles = `block text-f7 md:text-f5 text-patina font-title lowercase mb-1`;
@@ -53,7 +53,7 @@ export default function Single({ data: { mdx } }) {
   return (
     <React.Fragment>
       <SEO title={title}/>
-      <TableOfContents contents={tableOfContents} />
+      {/*<TableOfContents contents={tableOfContents} />*/}
       <header className="grid layout full py-48 md:py-64 lg:py-0 lg:screen lg:screen-rows bg-i relative bg-pattern bg-spruce">
         <div className={`content lg:screen-center lg:col-span-4 lg:col-start-3 xxxl:col-span-5 xxxl:col-start-4`}>
           {url ?

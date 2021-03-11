@@ -20,7 +20,7 @@ const About = (props) => {
             <span className="block pb-1 sm:pb-2 text-f6 sm:text-f4 text-harp lowercase font-bold font-action">
               Hi there, I’m Steve…
             </span>{" "}
-            I design websites to help your company grow without the annoyances
+            I design websites that don’t have to be like a pushy salesman
           </h2>
           <p className="mb-4 sm:mb-6">
             You’ve read an article, viewed a product, on the web—more than once or twice—and something feels off. Maybe it’s the amount of time the page had taken to load. Maybe it’s how much your head is moving to compensate for long line lengths.
@@ -31,7 +31,7 @@ const About = (props) => {
           <p className="mb-6 sm:mb-8">
             I know how important it is for you to improve sales, increase newsletter subscribers and the like. However, you can grow for the long term without short term tactics.
           </p>
-          <Action to="/process/" text="Read my process" />
+          <Action to="/work/" text="See the work" />
           <Ruler className={`illo ${styles.ruler}`} />
         </div>
       </section>

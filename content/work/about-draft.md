@@ -10,3 +10,5 @@ With some changes, you could steadily improve that. Think of your own experience
 Maybe it’s all of the distractions, the tracking requests and the poorly timed newsletter bombardment. Throw in some manipulative messaging and you’ve got the perfect negative impression—why would you spend time here?
 
 You see this stuff and think it must work. But what figures does this lead to? High unsubscribe rates? Nonexistent sharing? A reducing conversion rate? It’s possible to grow for the long term without short term tactics. 
+
+# I design websites that don’t have to be like a pushy salesman
