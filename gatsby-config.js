@@ -69,6 +69,14 @@ module.exports = {
       },
     },
     {
+      resolve: '@mkitio/gatsby-theme-password-protect',
+      options: {
+        password: `chocolate-fireguard` // delete or `undefined` to disable password protection,
+        partialMatching: true,
+        pagePaths: [`yours-and-mine`]
+      }
+    }
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `steve mckinney`,
