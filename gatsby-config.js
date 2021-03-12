@@ -75,7 +75,7 @@ module.exports = {
         partialMatching: true,
         pagePaths: [`yours-and-mine`]
       }
-    }
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
