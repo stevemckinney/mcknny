@@ -71,7 +71,7 @@ module.exports = {
     {
       resolve: '@mkitio/gatsby-theme-password-protect',
       options: {
-        password: `chocolate-fireguard` // delete or `undefined` to disable password protection,
+        password: `chocolate-fireguard`, // delete or `undefined` to disable password protection
         partialMatching: true,
         pagePaths: [`yours-and-mine`]
       }
