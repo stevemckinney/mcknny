@@ -73,7 +73,7 @@ module.exports = {
       options: {
         password: `chocolate-fireguard`, // delete or `undefined` to disable password protection
         partialMatching: true,
-        pagePaths: [`yours-and-mine`]
+        pagePaths: ['/yours-and-mine']
       }
     },
     {
