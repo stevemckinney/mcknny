@@ -2,7 +2,10 @@
  * global
  */
 /*! purgecss start ignore */
-html {
+html,
+body,
+#___gatsby,
+#gatsby-focus-wrapper {
   overflow-x: hidden; } 
 
 body {
